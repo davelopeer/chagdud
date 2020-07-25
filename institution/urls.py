@@ -1,6 +1,9 @@
 from django.urls import path
-from institution.views import IndexView
+from institution.views import HomeView, AboutUsView
+
+app_name = 'institution'
 
 urlpatterns = [
-    path('', IndexView.as_view(), name='index')
+    path('', HomeView.as_view(), name='home'),
+    path('quem-somos', AboutUsView.as_view(), name='about-us')
 ]

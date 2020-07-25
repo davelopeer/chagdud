@@ -1,0 +1,174 @@
+{% extends 'institution/base.html' %}
+{% load static %}
+
+
+<html>
+
+<head>
+  {% block head %}
+  <link href="{% static 'css/style-chagdud.css' %}" rel="stylesheet">
+  <title>Quem Somos | Chagdud Gonpa Brasil</title>
+  {% endblock %}
+</head>
+
+<body>
+{% block body %}  
+  <div class="banner pt-5" style="background-color:#983628;">
+    <div class="container">
+      <div class="logo row justify-content-center">
+        <div class="col-md-12 col-sm-12 mt-5 pt-2 text-center">
+          
+          <h1 class="mb-5 titulo">Quem somos</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <main>
+    <div class="sobre">
+      <div class="container">
+        <div id="sobreNos" class="row justify-content-center">
+          <div class="col-md-8 col-sm-12 text-justify">
+              <p>O Chagdud Gonpa Brasil faz parte de uma rede internacional de centros cuja origem é o Chagdud
+                Gonpa no Tibete, um monastério fundado no século XV. Estabelecidos em 1994 por S. Ema.
+                Chagdud Tulku Rinpoche, os centros brasileiros oferecem ensinamentos e práticas de meditação
+                da tradição Nyingma do Budismo Tibetano Vajraiana.</p>
+                <p>O Chagdud Gonpa Khadro Ling é a sede do Chagdud Gonpa Brasil e está localizado em Três 
+                  Coroas, no Rio Grande do Sul. Desde o parinirvana do Rinpoche em 2002, a rede sul-americana 
+                  de centros está sob a direção espiritual de Chagdud Khadro.</p>
+                  <div class="mt-5 mb-4">
+                    <h3 class="titulo"> Hispanoamérica </h3>
+                    <b></b>
+                  </div>
+                <p>O Chagdud Gonpa Hispanoamérica foi fundado para realizar a aspiração de S. 
+                  Ema. Chagdud Tulku Rinpoche de estabelecer o darma de Buda, particularmente as 
+                  linhagens nyingmapa, nos países de língua espanhola da América Latina. Desde o 
+                  Parinirvana de Rinpoche, em 2002, a organização está sob a direção espiritual de 
+                  sua esposa e aluna, Chagdud Khadro.</p>
+
+                <p>No Uruguai, a cerca de uma hora e meia de Montevidéu, cercada por belas 
+                  montanhas, há uma construção feita de pedra no estilo arquitetônico do Tibete 
+                  Oriental e do Butão, chamada Sengue Dzong (Fortaleza do Leão). O interior deste 
+                  templo está ornamentado e quatro estátuas foram esculpidas por mestres artistas butaneses.</p>
+          
+                <p>Treinamentos mensais nos Quatro Pensamentos que Transformam a Mente são oferecidos 
+                  no Sengue Dzong, e sua sala de meditação é um local inspirador para retiros e ensinamentos. 
+                  Em Montevidéu, uma sanga bem estabelecida (Chagdud Gonpa Montevideo) reúne-se para praticar 
+                  Tara Vermelha e as Preliminares do Vajraiana. Grupos também se reúnem em outras cidades menores.</p>
+                  
+                <div class="mt-5 mb-5">
+                  <img class="imagensSobre" src="{% static 'images/uruguai.jpg' %}" width="100%;">
+                  <p class="legenda">O templo Sengue Dzong, a cerca de uma hora e meia de Montevidéu, no Uruguai. <p>
+                </div>
+
+                <p>No Chile, há sangas dinâmicas do Chagdud Gonpa em Santiago e Pirque, 
+                  cujo treinamento em meditação enfoca as práticas de Tara Vermelha, das Preliminares 
+                  do Vajraiana e de Powa. Na Venezuela, uma pequena sanga faz prática de Tara Vermelha 
+                  em Mérida com Yhana Riobueno, que também coordena um comitê internacional de tradutores 
+                  e editores que trabalham com traduções de livros e liturgias do darma para o espanhol. 
+                  Estes textos são publicados pela Editora Makara no Brasil. Particularmente, o livro 
+                  Portões da Prática Budista continua sendo um tesouro apreciado tanto por alunos 
+                  iniciantes quanto por praticantes avançados.</p>
+
+                <p>Um projeto conjunto do Chagdud Gonpa Hispanoamerica e do Chagdud Gonpa 
+                  Brasil envolve a criação de rodas de oração dentro das quais há mantras impressos 
+                  do Buda da Medicina, e a sua instalação nos principais países da América do Sul. Nossa 
+                  aspiração é que a intenção iluminada do Buda da Medicina, interdependente com a motivação 
+                  pura daqueles que contribuem para as rodas e com o poder do mantra, ajudará a evitar 
+                  doenças, desastres naturais e epidemias na América do Sul. Até o momento, as rodas já 
+                  foram instaladas no Brasil, Uruguai, Chile, Argentina e Venezuela.</p>
+
+                <div class="mt-5 mb-4">
+                  <h3 class="titulo"> Chagdud Gonpa Foundation </h3>
+                  <b></b>
+                </div>
+
+                <p>Em 1983, por solicitação de estudantes na Califórnia e em Oregon, 
+                  Chagdud Rinpoche concordou em estabelecer a Fundação Chagdud Gonpa, 
+                  como um meio para expandir os seus ensinamentos e atividades no Ocidente e 
+                  renovar a sua conexão com o Chagdud Gonpa do Tibete: uma conexão que se estende 
+                  ao longo de quinhentos anos, dezesseis vidas e décadas de vida no exílio. 
+                  Rinpoche visitou o Tibete quatro anos mais tarde, em 1987, e o poder da profunda 
+                  conexão com o seu assento de Darma de muitos séculos se tornou evidente como uma 
+                  fonte de bênçãos para o recém estabelecido Chagdud Gonpa no Ocidente.</p>
+
+                <p>Em 1988, uma vasta e esplêndida extensão de terra foi adquirida no norte da 
+                  Califórnia e Chagdud Rinpoche a nomeou Rigdzin Ling, “a morada dos detentores do 
+                  estado desperto”, a qual se tornou o assento da Fundação Chagdud Gonpa. O local 
+                  foi consagrado por grandes cerimônias, inúmeras oferendas e preces de aspiração. 
+                  Além de prover ensinamentos públicos e retiros, o Rigzin Ling abriga o Padma 
+                  Publishing, e o Tibetan Treasures. Padma Publishing é o braço editorial da Fundação, 
+                  que publica sadanas (liturgias), livros traduzidos e compilação de ensinamentos que 
+                  servem como manuais de meditação. Tibetan Treasures, a loja do Chagdud Gonpa, 
+                  distribui os livros do Padma Publishing, outros livros de Darma e disponibiliza 
+                  artigos de prática.</p>
+
+                <div class="mt-5 mb-5">
+                  <img class="imagensSobre" src="{% static 'images/rigdzin_ling.jpg' %}" width="100%;">
+                  <p class="legenda">Chagdud Gonpa Rigdzin Ling, Califórnia. <p>
+                </div>
+
+                <p>A programação incansável de ensinamentos de Chagdud Rinpoche resultou no 
+                  estabelecimento de uma rede dinâmica de centros e grupos de prática do Chagdud Gonpa. 
+                  A Fundação provê apoio fornecendo-lhes o status de organização religiosa sem fins lucrativos, 
+                  livres de impostos, e fornecendo-lhes uma estrutura organizacional. E o mais importante, 
+                  as linhagens de Darma oferecidas por Rinpoche são mantidas por praticantes de vários centros, 
+                  e por intermédio das instruções do Chagdud Gonpa e dos lamas visitantes.</p>
+
+                <p>Atualmente as atividades espirituais da Fundação são supervisionadas por um grupo 
+                  de oito lamas e praticantes seniores conhecida como Diretoria Espiritual. Jigme 
+                  Tromge Rinpoche serve como o principal lama de iniciações do Chagdud Gonpa e lama 
+                  Padma Gyatso como o lama principal da Fundação. Lamas do Chagdud Gonpa se revezam 
+                  para servir como professores residentes do CG/Rigdzing Ling, guiando as suas práticas 
+                  de meditação e projetos sagrados, ao mesmo tempo em que supervisionam o staff residente 
+                  e as atividades administrativas que desempenham para a Fundação.</p>
+
+                <p>Para maiores informações sobre a Fundação Chagdud Gonpa/Rigdzing Ling consulte 
+                  www.chagdudgonpa.org.</p>
+
+                  <div class="mt-5 mb-4">
+                    <h3 class="titulo"> Chagdud Gonpa Itália </h3>
+                    <b></b>
+                  </div>
+
+                <p>Chagdud Gonpa Itália é a união dos centros italianos de prática do Budismo 
+                  Vajrayana de acordo com a linhagem transmitida por Sua Eminência Chagdud Tulku Rinpoche. </p>
+                <p>Clique aqui para saber os endereços dos nossos centros. Ou, se você está no Facebook, mantenha-se atualizado por aqui.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  {% endblock %}
+
+  <script>
+  $('.btn-menu').on('click touchstart', function () {
+    $('html').toggleClass('btn-menu-active');
+  });
+  window.onscroll = function () { myFunction() };
+
+  var menu = document.getElementById("menu");
+  var sticky = menu.offsetTop;
+
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      menu.classList.add("sticky")
+    } else {
+      menu.classList.remove("sticky");
+    }
+  }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
