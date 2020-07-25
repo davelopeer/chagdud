@@ -1,0 +1,250 @@
+{% extends 'institution/base.html' %}
+{% load static %}
+{% block body %}
+
+  <div class="banner pt-5" style="background-image: url({% static 'images/chagdudRinpoche.jpg' %});">
+    <div class="container">
+      <div class="logo row justify-content-start">
+        <div class="col-md-6 col-sm-12 mt-5 pt-5">
+
+          <h1 class="mb-5 titulo">Chagdud Gonpa Brasil</h1>
+          <span class="subtitulo mb-5">Somos uma rede de centros de prática do budismo vajrayana fundada por S. Ema.
+            Chagdud Tulku
+            Rinpoche.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <div class="sobre bg-light">
+      <div class="container">
+        <div id="sobreNos" class="row justify-content-center">
+          <div class="col-8 text-center">
+            <h3 class="titulo">Sobre nós</h3>
+            <div class="mt-4 mb-4">
+              <span>O Chagdud Gonpa Brasil faz parte de uma rede internacional de centros cuja origem é o Chagdud
+                Gonpa no Tibete, um monastério fundado no século XV. Estabelecidos em 1994 por S. Ema.
+                Chagdud Tulku Rinpoche, os centros brasileiros oferecem ensinamentos e práticas de meditação
+                da tradição Nyingma do Budismo Tibetano Vajraiana.</span>
+            </div>
+            <a class="link" href="#">Conhecer mais</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div id="chagdud" class="row py-5">
+        <div class="col-md-12 col-sm-12 d-flex justify-content-center align-items-center py-5">
+          <b></b>
+          <h3 class="text-center titulo my-5 mr-3 ml-3"> Chagdud Khadro </h3>
+          <b></b>
+        </div>
+
+        <div class="d-flex flex-row-reverse align-items-center justify-content-center">
+          <div class="col-md-4 col-sm-12">
+            <img class="rounded fotoChagdud" src="{% static 'images/khadro_mauria3.jpg' %}">
+
+          </div>
+          <div class="col-md-4 col-sm-12 justify-content-center text-center">
+            <span>
+              Chagdud Khadro, esposa do S. Ema. Chagdud Tulku
+              Rinpoche, é a Diretora Espiritual dos seus centros na América do Sul.
+            </span>
+            <span class="d-block mt-3"><a class="link" href="#">Conhecer mais professores</a></span>
+          </div>
+        </div>
+      </div>
+      <div id="khadro" class="row py-5">
+        <div class="col-md-12 col-sm-12 d-flex justify-content-center align-items-center py-5">
+          <b></b>
+          <h3 class="text-center titulo my-5 mr-3 ml-3"> Khadro Ling </h3>
+          <b></b>
+        </div>
+
+        <div class="d-flex flex-wrap align-items-center justify-content-center">
+          <div class="col-md-4 col-sm-12 mt-3">
+            <img class="rounded" src="{% static 'images/HlaKang3.jpg' %}" width="100%">
+
+          </div>
+          <div class="col-md-4 col-sm-12 mt-3 text-center">
+            <span>
+              O Chagdud Gonpa Khadro Ling, localizado no município de Três Coroas, no Rio Grande do Sul,
+              é a sede sul-americana de nossa rede de Centros de Budismo Tibetano Vajraiana. Cerca de 50 praticantes
+              do Budismo Tibetano Vajraiana moram no Khadro Ling. São pessoas de vários locais do Brasil e
+              do mundo.
+            </span>
+            <span class="d-block mt-3"><a class="link" href="#">Saber mais</a></span>
+          </div>
+        </div>
+      </div>
+      <div id="centros" class="row py-5">
+        <div class="col-md-12 col-sm-12 d-flex justify-content-center align-items-center py-5">
+          <b></b>
+          <h3 class="text-center titulo mr-3 ml-3"> Outros Centros </h3>
+          <b></b>
+        </div>
+        <div class="d-flex flex-wrap align-items-center">
+          <div class="col-md-3 col-sm-12 offset-md-2 offset-sm-0 justify-content-center text-center">
+            <span>
+              Temos centros distribuídos por todas as regiões do país,
+              encontre o mais próximo e venha nos visitar.
+            </span>
+            <span class="d-block mt-3"><a class="link" href="#">Conhecer os centros</a></span>
+          </div>
+          <div class="col-md-5 col-sm-12 d-flex">
+            <div class="rowGrid align-items-center">
+              <div class="colGrid1">
+                <button type="button" class="imgCentros" data-toggle="modal" data-target=".bd-example-modal-lg1">
+                  <img class="rounded" src="{% static 'images/khadro.jpg' %}">
+                </button>
+              </div>
+              <div class="modal fade bd-example-modal-lg1" tabindex="10" role="dialog"
+                aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content ">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="TituloModalLongoExemplo">Centro Khadro Ling | Três Coroas, RS</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="col-12">
+                      <img class="rounded my-2" src="{% static 'images/khadro.jpg' %}" width="100%">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="colGrid2">
+                <button type="button" class="imgCentros" data-toggle="modal" data-target=".bd-example-modal-lg2">
+                  <img class="rounded" src="{% static 'images/saoPaulo.jpg' %}">
+                </button>
+                <div class="modal fade bd-example-modal-lg2" tabindex="10" role="dialog"
+                  aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content ">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="TituloModalLongoExemplo">Centro Odsal Ling | São Paulo, SP</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class=" col-12">
+                        <img class="rounded my-2" src="{% static 'images/saoPaulo.jpg" width="100%">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="imgCentros" data-toggle="modal" data-target=".bd-example-modal-lg3">
+                  <img class="rounded" src="{% static 'images/brasilia.jpeg' %}"> </button>
+                <div class="modal fade bd-example-modal-lg3" tabindex="10" role="dialog"
+                  aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content ">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="TituloModalLongoExemplo">Centro Padma Ling | Brasília, DF</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class=" col-12">
+                        <img class="rounded my-2" src="{% static 'images/brasilia.jpeg' %}" width="100%">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="imgCentros" data-toggle="modal" data-target=".bd-example-modal-lg4">
+                  <img class="rounded" src="{% static 'images/natal.jpg' %}"></button>
+                <div class="modal fade bd-example-modal-lg4" tabindex="10" role="dialog"
+                  aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content ">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="TituloModalLongoExemplo">Centro Ieshe Tso | Natal, RN</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class=" col-12">
+                        <img class="rounded my-2" src="{% static 'images/natal.jpg' %}" width="100%">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="windHorse mt-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-sm-12 text-center">
+            <h3 class="titulo mb-5 text-light">Wind Horse</h3>
+            <span class="text-light ">Sessão de notícias e texto sobre as novidades sobre a instituição e o budismo
+              em geral.
+              Um texto explicando um pouco sobre o que é.</span>
+            <div class="row mt-5 justify-content-around">
+              <div class="card windCard mb-3" style="width: 15rem;">
+                <img class="card-img-top" src="{% static 'images/natal.jpg' %}" alt="Imagem de capa do card">
+                <div class="card-body">
+                  <h5 class="card-title">Parinirvana de S. Em. Chagdud Tulku Rinpoche</h5>
+                  <p class="card-text"> 21.12.2019</p>
+                  <a class="link" href="#">Ler mais</a>
+                </div>
+              </div>
+              <div class="card windCard mb-3" style="width: 15rem;">
+                <img class="card-img-top" src="{% static 'images/saoPaulo.jpg' %}" alt="Imagem de capa do card">
+                <div class="card-body">
+                  <h5 class="card-title">Construção do Jardim das 21 Taras</h5>
+                  <p class="card-text"> 21.10.2018</p>
+                  <a class="link" href="#">Ler mais</a>
+                </div>
+              </div>
+              <div class="card windCard mb-3" style="width: 15rem;">
+                <img class="card-img-top" src="{% static 'images/natal.jpg' %}" alt="Imagem de capa do card">
+                <div class="card-body">
+                  <h5 class="card-title">Movendo textos sagrados </h5>
+                  <p class="card-text"> 08.12.2019</p>
+                  <a class="link" href="#">Ler mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row icones mt-5 justify-content-around text-center">
+        <div class="card align-items-center col-4">
+          <a class="" href="downloads.html">
+            <img class="card-img-top rounded-circle border" src="{% static 'images/icones-01.png' %}" alt="Imagem de capa do card">
+            <div class="card-body text-center">
+              <h5 class="card-title titulo">Downloads</h5>
+            </div>
+          </a>
+        </div>
+
+        <div class="card align-items-center col-4">
+          <a class="" href="#">
+            <img class="card-img-top rounded-circle border" src="{% static 'images/icones-02.png' %}" alt="Imagem de capa do card">
+            <div class="card-body text-center">
+              <h5 class="card-title titulo">Datas Sagradas</h5>
+            </div>
+          </a>
+        </div>
+
+        <div class="card align-items-center col-4">
+          <a class="" href="http://makara.com.br/">
+            <img class="card-img-top rounded-circle border" src="{% static 'images/icones-03.png' %}" alt="Imagem de capa do card">
+            <div class="card-body text-center">
+              <h5 class="card-title titulo">Editora Makara</h5>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+{% endblock %}

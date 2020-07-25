@@ -1,0 +1,256 @@
+{% load static %}
+<html>
+
+<head>
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+  <meta charset=”utf-8”>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lato:wght@100&display=swap" rel="stylesheet">
+  <title>Chagdud Gonpa Brasil</title>
+</head>
+
+<body>
+  <header>
+    <div class="topMenu">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex flex-row-reverse">
+            <ul class="nav text-white">
+              <li class="nav-item">
+                <a class="nav-link text-black-50" href="contato.html">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black-50" href="downloads.html">Downloads</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black-50" href="contato.html">Datas Sagradas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black-50" href="http://makara.com.br/">Editora Makara</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu" id="menu">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md-4 col-sm-3">
+            <ul class="nav d-flex flex-row text-white">
+              <li class="nav-item ">
+                <a class="nav-link text-black-50" href="quemSomos.html">Quem somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black-50" href="professores.html">Professores</a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex justify-content-center">
+            <a href="chagdud.html"><img src="{% static 'images/logoChagdud.png' %}" alt="Logo Chagdud Gonpa" width="100px"></a>
+          </div>
+          <div class="col-md-4 col-sm-5 d-flex flex-row-reverse">
+            <ul class="nav text-white">
+              <li class="nav-item">
+                <a class="nav-link text-black-50" href="../Khadro/khadro.html" target="_blank">Khadro Ling</a>
+              </li>
+              <li class="nav-item">
+                <div class="btn-group">
+                  <button type="button" class="btn dropdown-toggle text-black-50" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Visitar outros centros
+                  </button>
+                  <ul class="dropdown-menu row">
+                    <li class="col-4">
+                      <h4>Sul</h4>
+                      <a class="dropdown-item" href="http://yesheling.blogspot.com/" target="_blank">Yeshe Ling | Porto
+                        Alegre, RS</a>
+                      <a class="dropdown-item" href="https://pt-br.facebook.com/tchimedling/" target="_blank">Tchimed
+                        Ling | Santa Maria, RS </a>
+                      <a class="dropdown-item" href="https://www.facebook.com/budismocaxias/" target="_blank">Yeshe
+                        Melong | Caxias do Sul, RS</a>
+                      <a class="dropdown-item" href="https://www.facebook.com/meditacaofw/" target="_blank">Grupo de
+                        Meditação | Frederico Westphalen, RS</a>
+                      <a class="dropdown-item" href="http://www.rigdjed.org/" target="_blank">Rigdjed Ling |
+                        Florianópops, SC</a>
+                      <a class="dropdown-item" href="https://budismoemblumenau.wordpress.com/" target="_blank">Blumenau,
+                        SC</a>
+                      <a class="dropdown-item" href="https://www.facebook.com/budismocaxias/" target="_blank">Dordje
+                        Ling | Curitiba, PR</a>
+                      <a class="dropdown-item" href="mailto:treici_3cy@hotmail.com" target="_blank">Novo Hamburgo,
+                        RS</a>
+                    </li>
+                    <li class="col-4">
+                      <h4>Sudeste</h4>
+                      <a class="dropdown-item" href="https://www.odsalling.org/" target="_blank">Odsal Ling | São
+                        Paulo</a>
+                      <a class="dropdown-item" href="#" target="_blank">Padma Amrita Ling | Ribeirão Preto, SP</a>
+                      <a class="dropdown-item" href="https://dawadrolma.org/" target="_blank">Dawa Drolma | Belo
+                        Horizonte, MG</a>
+                      <a class="dropdown-item" href="https://www.facebook.com/sitio.esperanca.lambari/"
+                        target="_blank">Ngoy Drub Ling | Lambari, MG</a>
+                      <a class="dropdown-item" href="http://pedgyal.org/" target="_blank">Pedgyal Ling | Rio de Janeiro,
+                        RJ</a>
+                      <a class="dropdown-item" href="https://pt-br.facebook.com/dechenling.novafriburgo/"
+                        target="_blank">Dechen Ling | Nova Friburgo, RJ</a>
+                      <a class="dropdown-item" href="https://samdrubling.wordpress.com/" target="_blank">Sam Drub Ling |
+                        Vitória, ES</a>
+                    </li>
+                    <li class="col-4">
+                      <h4>Centro-Oeste</h4>
+                      <a class="dropdown-item" href="https://www.odsalling.org/" target="_blank">Padma Ling | Brasília,
+                        DF</a>
+                      <a class="dropdown-item" href="mailto:lidiogjr@gmail.com" target="_blank">Goiânia, GO</a>
+                    </li>
+                    <li class="col-4">
+                      <h4>Nordeste</h4>
+                      <a class="dropdown-item" href="https://ieshe.wordpress.com/" target="_blank">Ieshe Tso | Natal,
+                        RN</a>
+                    </li>
+                    <li class="col-4">
+                      <h4>Norte</h4>
+                      <a class="dropdown-item" href="https://pt-br.facebook.com/tromguephelling/" target="_blank">Trom
+                        Gue Phel Ling | Manaus, AM</a>
+                    </li>
+                  </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mobileMenu py-3">
+      <nav class="menu-mobile">
+        <ul>
+          <li><a href="quemSomos.html">Quem somos</a></li>
+          <li><a href="professores.html">Professores</a></li>
+          <li><a href="../Khadro/khadro.html" target="_blank">Khadro Ling</a></li>
+          <li>
+            <div class="btn-group">
+              <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Visitar outros centros
+              </button>
+              <ul class="dropdown-menu row">
+                <li class="col-4">
+                  <h4>Sul</h4>
+                  <a class="dropdown-item" href="http://yesheling.blogspot.com/" target="_blank">Yeshe Ling | Porto
+                    Alegre, RS</a>
+                  <a class="dropdown-item" href="https://pt-br.facebook.com/tchimedling/" target="_blank">Tchimed Ling |
+                    Santa Maria, RS </a>
+                  <a class="dropdown-item" href="https://www.facebook.com/budismocaxias/" target="_blank">Yeshe Melong |
+                    Caxias do Sul, RS</a>
+                  <a class="dropdown-item" href="https://www.facebook.com/meditacaofw/" target="_blank">Grupo de
+                    Meditação | Frederico Westphalen, RS</a>
+                  <a class="dropdown-item" href="http://www.rigdjed.org/" target="_blank">Rigdjed Ling | Florianópops,
+                    SC</a>
+                  <a class="dropdown-item" href="https://budismoemblumenau.wordpress.com/" target="_blank">Blumenau,
+                    SC</a>
+                  <a class="dropdown-item" href="https://www.facebook.com/budismocaxias/" target="_blank">Dordje Ling |
+                    Curitiba, PR</a>
+                  <a class="dropdown-item" href="mailto:treici_3cy@hotmail.com" target="_blank">Novo Hamburgo, RS</a>
+                </li>
+                <li class="col-4">
+                  <h4>Sudeste</h4>
+                  <a class="dropdown-item" href="https://www.odsalling.org/" target="_blank">Odsal Ling | São Paulo</a>
+                  <a class="dropdown-item" href="#" target="_blank">Padma Amrita Ling | Ribeirão Preto, SP</a>
+                  <a class="dropdown-item" href="https://dawadrolma.org/" target="_blank">Dawa Drolma | Belo Horizonte,
+                    MG</a>
+                  <a class="dropdown-item" href="https://www.facebook.com/sitio.esperanca.lambari/" target="_blank">Ngoy
+                    Drub Ling | Lambari, MG</a>
+                  <a class="dropdown-item" href="http://pedgyal.org/" target="_blank">Pedgyal Ling | Rio de Janeiro,
+                    RJ</a>
+                  <a class="dropdown-item" href="https://pt-br.facebook.com/dechenling.novafriburgo/"
+                    target="_blank">Dechen Ling | Nova Friburgo, RJ</a>
+                  <a class="dropdown-item" href="https://samdrubling.wordpress.com/" target="_blank">Sam Drub Ling |
+                    Vitória, ES</a>
+                </li>
+                <li class="col-4">
+                  <h4>Centro-Oeste</h4>
+                  <a class="dropdown-item" href="https://www.odsalling.org/" target="_blank">Padma Ling | Brasília,
+                    DF</a>
+                  <a class="dropdown-item" href="mailto:lidiogjr@gmail.com" target="_blank">Goiânia, GO</a>
+                </li>
+                <li class="col-4">
+                  <h4>Nordeste</h4>
+                  <a class="dropdown-item" href="https://ieshe.wordpress.com/" target="_blank">Ieshe Tso | Natal, RN</a>
+                </li>
+                <li class="col-4">
+                  <h4>Norte</h4>
+                  <a class="dropdown-item" href="https://pt-br.facebook.com/tromguephelling/" target="_blank">Trom Gue
+                    Phel Ling | Manaus, AM</a>
+                </li>
+              </ul>
+      </nav>
+
+      <span class="btn-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+
+      <img class="logoMobile" src="{% static 'images/logoChagdud.png' %}" alt="Logo Chagdud Gonpa" width="80px">
+    </div>
+
+  </header>
+
+  {% block body %}
+  {% endblock %}
+
+
+  <footer class="bg-dark text-light text-center">
+    <p class="apps my-4">
+      <a href="https://apps.apple.com/us/app/eventos-chagdud-gonpa-brasil/id1213795008"><i
+          class="fa fa-apple mr-2"></i></a>
+      <a href="https://play.google.com/store/apps/details?id=hr.apps.n207192230"><i class="fa fa-android mr-2"></i></a>
+    </p>
+    <p class="midia my-4">
+      <a href="https://www.facebook.com/chagdud"><i class="fa fa-facebook-square mr-2"></i></a>
+      <a href="https://www.instagram.com/khadro.ling/"><i class="fa fa-instagram mr-2" aria-hidden="true"></i></a>
+      <a href="https://www.youtube.com/user/chagdudgonpa"><i class="fa fa-youtube-play mr-2" aria-hidden="true"></i></a>
+      <a href="https://soundcloud.com/chagdudgonpa"><i class="fa fa-soundcloud mr-2" aria-hidden="true"></i></a>
+      <a href="https://www.flickr.com/photos/chagdudgonpa/albums"><i class="fa fa-flickr mr-2"
+          aria-hidden="true"></i></a>
+    </p>
+    <div class="col-12">
+      <p>© 2020 Chagdud Gonpa Brasil / © 2019 Chagdud Gonpa Khadro Ling</p>
+      <p>Contato: E-mail • fone: (51) 3546-8201 </p>
+      <p>Estr. Linha Águas Brancas, 1211 Cx. Postal 121, CEP 95660-000 - Três Coroas, RS</p>
+    </div>
+  </footer>
+
+  <script>
+    $('.btn-menu').on('click touchstart', function () {
+      $('html').toggleClass('btn-menu-active');
+    });
+    window.onscroll = function () { myFunction() };
+
+    var menu = document.getElementById("menu");
+    var sticky = menu.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        menu.classList.add("sticky")
+      } else {
+        menu.classList.remove("sticky");
+      }
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
