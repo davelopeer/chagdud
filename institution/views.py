@@ -7,3 +7,6 @@ class HomeView(TemplateView):
 
 class AboutUsView(TemplateView):
     template_name = 'institution/about_us.html'
+
+class TeachersView(TemplateView):
+     template_name = 'institution/teachers.html'

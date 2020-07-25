@@ -52,7 +52,7 @@
                 <a class="nav-link text-black-50" href="{% url 'institution:about-us' %}">Quem somos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-black-50" href="professores.html">Professores</a>
+                <a class="nav-link text-black-50" href="{% url 'institution:teachers' %}">Professores</a>
               </li>
             </ul>
           </div>
@@ -133,7 +133,7 @@
       <nav class="menu-mobile">
         <ul>
           <li><a href="{% url 'institution:about-us' %}">Quem somos</a></li>
-          <li><a href="professores.html">Professores</a></li>
+          <li><a href="{% url 'institution:teachers' %}">Professores</a></li>
           <li><a href="../Khadro/khadro.html" target="_blank">Khadro Ling</a></li>
           <li>
             <div class="btn-group">
