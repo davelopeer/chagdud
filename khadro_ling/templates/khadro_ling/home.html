@@ -1,0 +1,347 @@
+{% extends 'khadro_ling/base.html' %}
+{% load static %}
+
+{% block head %}
+<title>Khadro Ling</title>
+{% endblock %}
+
+
+{% block body %}
+<div class="banner pt-5" style="background-image: url({% static 'images/HlaKang2.jpg' %});">
+  
+</div>
+<main>
+  <div class="sobre">
+    <div class="container">
+      <div id="sobreNos" class="row justify-content-center">
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <b></b>
+          <h3 class="text-center titulo mr-5 ml-5"> Quem somos </h3>
+          <b></b>
+        </div>
+        <div class="col-md-8 col-sm-12 text-center">
+          <div class="mt-4 mb-4">
+            <span>O Chagdud Gonpa Khadro Ling, localizado no município de Três Coroas,
+              no Rio Grande do Sul, é a sede sul-americana de uma rede de Centros de Budismo
+              Tibetano Vajraiana fundado por Sua Emª Chagdud Tulku Rinpoche em 1995. Com o
+              falecimento de Rinpoche em 2002, os centros estão sob a direção espiritual de
+              Chagdud Khadro, sua esposa. Em tibetano, Kha significa “céu”; Dro significa “mover-se”,
+              “ir”, “dançar”; Khadro é a tradução de Dakini, palavra associada a um aspecto da energia
+              iluminada na forma feminina.</span>
+          </div>
+          <a class="link" href="#">Conhecer mais</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div id="professores" class="row pb-5 align-items-center">
+      <div class="col-12 d-flex justify-content-center align-items-center py-5">
+        <b></b>
+        <h3 class="text-center titulo mr-5 ml-5"> Eventos </h3>
+        <b></b>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-md-3 col-sm-5 offset-md-1 offset-sm-0 border-right menuTabs">
+          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active titulo titulo border-bottom" id="v-pills-home-tab" data-toggle="pill"
+              href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Introdução ao Budismo</a>
+            <a class="nav-link titulo titulo border-bottom" id="v-pills-profile-tab" data-toggle="pill"
+              href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Retiro de Ngondro</a>
+            <a class="nav-link titulo titulo border-bottom" id="v-pills-messages-tab" data-toggle="pill"
+              href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Drubchen de Essência do Siddhi</a>
+            <a class="nav-link titulo titulo border-bottom" id="v-pills-settings-tab" data-toggle="pill"
+              href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Treinamento Vajrayana</a>
+          </div>
+        </div>
+        <div class="col-md-7 col-sm-7">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+              aria-labelledby="v-pills-home-tab">
+              <div class="row align-items-center">
+                <div class="col-md-6 col-sm-12">
+                  <img class="mb-3" src="{% static 'images/saoPaulo.jpg' %}" alt="Eevento 1" width="100%">
+                </div>
+                <div class="col-md-6 col-sm-12">
+                  <h5 class="titulo">Retiro de Introdução ao Budismo</h5>
+                  <br>
+                  <p><i class="fa fa-user-circle-o" aria-hidden="true"></i> Com Lama Sherab</p>
+                  <p><i class="fa fa-calendar-check-o" aria-hidden="true"></i> De 18, às 9h, a 19 de maio, às 17h, de
+                    2019</p>
+                  <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Pré-requisitos: Não há pré-requisitos
+                    para a participação neste evento.</p>
+                  <p><i class="fa fa-map-marker" aria-hidden="true"></i> Chagdud Gonpa Khadro Ling</p>
+                  <a class="link" href="eventoEspecifico.html">Saber mais</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+              <div class="row">
+                <div class="col-md-6 col-sm-12">
+                  <img class="mb-3" src="{% static 'images/khadro.jpg' %}" alt="Eevento 1" width="100%">
+                </div>
+                <div class="col-md-6 col-sm-12">
+                  <h5 class="titulo">Retiro de Introdução ao Budismo</h5>
+                  <br>
+                  <p><i class="fa fa-user-circle-o" aria-hidden="true"></i> Com Lama Sherab</p>
+                  <p><i class="fa fa-calendar-check-o" aria-hidden="true"></i> De 18, às 9h, a 19 de maio, às 17h, de
+                    2019</p>
+                  <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Pré-requisitos: Não há pré-requisitos
+                    para a participação neste evento.</p>
+                  <p><i class="fa fa-map-marker" aria-hidden="true"></i> Chagdud Gonpa Khadro Ling</p>
+                  <a class="link" href="#">Saber mais</a>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+              <div class="row">
+                <div class="col-md-6 col-sm-12">
+                  <img class="mb-3" src="{% static 'images/natal.jpg' %}" alt="Eevento 1" width="100%">
+                </div>
+                <div class="col-md-6 col-sm-12">
+                  <h5 class="titulo">Retiro de Introdução ao Budismo</h5>
+                  <br>
+                  <p><i class="fa fa-user-circle-o" aria-hidden="true"></i> Com Lama Sherab</p>
+                  <p><i class="fa fa-calendar-check-o" aria-hidden="true"></i> De 18, às 9h, a 19 de maio, às 17h, de
+                    2019</p>
+                  <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Pré-requisitos: Não há pré-requisitos
+                    para a participação neste evento.</p>
+                  <p><i class="fa fa-map-marker" aria-hidden="true"></i> Chagdud Gonpa Khadro Ling</p>
+                  <a class="link" href="#">Saber mais</a>
+                  <span></span>
+                </div>
+              </div>
+
+            </div>
+            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+              <div class="row">
+                <div class="col-md-6 col-sm-12">
+                  <img class="mb-3" src="{% static 'images/natal.jpg' %}" alt="Eevento 1" width="100%">
+                </div>
+                <div class="col-md-6 col-sm-12">
+                  <h5 class="titulo">Retiro de Introdução ao Budismo</h5>
+                  <br>
+                  <p><i class="fa fa-user-circle-o" aria-hidden="true"></i> Com Lama Sherab</p>
+                  <p><i class="fa fa-calendar-check-o" aria-hidden="true"></i> De 18, às 9h, a 19 de maio, às 17h, de
+                    2019</p>
+                  <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Pré-requisitos: Não há pré-requisitos
+                    para a participação neste evento.</p>
+                  <p><i class="fa fa-map-marker" aria-hidden="true"></i> Chagdud Gonpa Khadro Ling</p>
+                  <a class="link" href="#">Saber mais</a>
+                  <span></span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="oferendas" class="row py-5">
+      <div class="col-12 d-flex justify-content-center align-items-center py-5">
+        <b></b>
+        <h3 class="text-center titulo mr-5 ml-5"> Oferendas </h3>
+        <b></b>
+      </div>
+      <div id="carouselExampleControls" class="carouselOferendas carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row text-center">
+              <div class="card-deck">
+                <div class="card cardOferendas">
+                  <img class="card-img-top" src="{% static 'images/lamparina.jpg' %}" alt="Imagem de capa do card">
+                  <div class="card-body">
+                    <h4 class="card-title titulo">Lamparinas</h4>
+                    <p class="card-text">Visualiza-se que se multiplicam, formando um caminho luminoso 
+                      que bane a escuridão, as más intenções e emoções negativas, um caminho que 
+                      conduz os seres à paz transcendente e à felicidade.</p>
+                    <a class="link" href="#">Oferecer</a>
+                  </div>
+                </div>
+                <div class="card cardOferendas">
+                  <img class="card-img-top" src="{% static 'images/lamparina.jpg' %}" alt="Imagem de capa do card">
+                  <div class="card-body">
+                    <h4 class="card-title titulo">Tsog</h4>
+                    <p class="card-text"> Significa “reunião”, em tibetano.
+                      Visualiza-se que as oferendas geram mérito ao invocar as
+                      bênçãos dos seres de sabedoria para que estes respondam aos seres
+                      sencientes com amor e compaixão.</p>
+                    <a class="link" href="#">Oferecer</a>
+                  </div>
+                </div>
+                <div class="card cardOferendas">
+                  <img class="card-img-top" src="{% static 'images/bandeira.JPG' %}" alt="Imagem de capa do card">
+                  <div class="card-body">
+                    <h4 class="card-title titulo">Bandeiras</h4>
+                    <p class="card-text"> Visualiza-se que preenchem o céu com desejos auspiciosos,
+                      que são soprados em todas as direções e tocam todos os seres, em todos os lugares.</p>
+                    <a class="link" href="#">Oferecer</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="carousel-item">
+            <div class="row text-center">
+              <div class="card-deck">
+                <div class="card cardOferendas">
+                  <img class="card-img-top" src="{% static 'images/lamparina.jpg' %}" alt="Imagem de capa do card">
+                  <div class="card-body">
+                    <h4 class="card-title titulo">Riwo Sangchod</h4>
+                    <p class="card-text">É uma prática poderosa para repelir obstáculos e negatividades.
+                      Particularmente, os obstáculos ao nosso caminho espiritual. No Khadro Ling,
+                      diariamente, são queimados galhos de cipreste e substâncias como alimentos e tecidos.</p>
+                    <a class="link" href="#">Oferecer</a>
+                  </div>
+                </div>
+                <div class="card cardOferendas">
+                  <img class="card-img-top" src="{% static 'images/akshobia.jpg' %}" alt="Imagem de capa do card">
+                  <div class="card-body">
+                    <h4 class="card-title titulo">Akshobia</h4>
+                    <p class="card-text"> Praticantes podem fazer a meditação e os rituais de purificação de
+                      Akshobia para si mesmos e para os outros. As pessoas também patrocinam Akshobia
+                      para seus animais de estimação ou para animais que mataram ao dirigir ou
+                      em outras circunstâncias.</p>
+                    <a class="link" href="#">Oferecer</a>
+                  </div>
+                </div>
+                <div class="card cardOferendas">
+                  <img class="card-img-top" src="{% static 'images/lamparina.jpg' %}" alt="Imagem de capa do card">
+                  <div class="card-body">
+                    <h4 class="card-title titulo">Financeiras</h4>
+                    <p class="card-text">É uma prática poderosa para repelir obstáculos e negatividades.
+                      Particularmente, os obstáculos ao nosso caminho espiritual. No Khadro Ling,
+                      diariamente, são queimados galhos de cipreste e substâncias como alimentos e tecidos.</p>
+                    <a class="link" href="#">Oferecer</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+          </a>
+        </div>
+      </div>
+      <div class="col-12 align-items-center ml-2">
+      <div id="carouselExampleControls2" class="carouselOferendasMobile carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row text-center">
+              <div class="card-deck">
+                <div class="card">
+                  <img class="card-img-top" src="{% static 'images/lamparina.jpg' %}" alt="Imagem de capa do card">
+                  <div class="card-body">
+                    <h4 class="card-title titulo">Lamparinas</h4>
+                    <p class="card-text">Visualiza-se que se multiplicam, formando um caminho luminoso que 
+                      bane a escuridão, as más intenções e emoções negativas, um caminho que conduz 
+                      os seres à paz transcendente e à felicidade.</p>
+                    <a class="link" href="#">Oferecer</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row text-center">
+              <div class="card-deck">
+                <div class="card">
+                  <img class="card-img-top" src="{% static 'images/akshobia.jpg' %}" alt="Imagem de capa do card">
+                  <div class="card-body">
+                    <h4 class="card-title titulo">Akshobia</h4>
+                    <p class="card-text">Praticantes podem fazer a meditação e os rituais de purificação de
+                      Akshobia para si mesmos e para os outros. As pessoas também patrocinam Akshobia
+                      para seus animais de estimação ou para animais que mataram ao dirigir ou
+                      em outras circunstâncias.</p>
+                    <a class="link" href="#">Oferecer</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row text-center">
+              <div class="card-deck">
+                <div class="card">
+                  <img class="card-img-top" src="{% static 'images/bandeira.jpg' %}" alt="Imagem de capa do card">
+                  <div class="card-body">
+                    <h4 class="card-title titulo">Bandeiras</h4>
+                    <p class="card-text">Visualiza-se que preenchem o céu com desejos auspiciosos,
+                      que são soprados em todas as direções e tocam todos os seres, em todos os lugares.</p>
+                    <a class="link" href="#">Oferecer</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row text-center">
+              <div class="card-deck">
+                <div class="card">
+                  <img class="card-img-top" src="{% static 'images/tsog.jpg' %}" alt="Imagem de capa do card">
+                  <div class="card-body">
+                    <h4 class="card-title titulo">Tsog</h4>
+                    <p class="card-text">Significa “reunião”, em tibetano.
+                      Visualiza-se que as oferendas geram mérito ao invocar as
+                      bênçãos dos seres de sabedoria para que estes respondam aos seres
+                      sencientes com amor e compaixão.</p>
+                    <a class="link" href="#">Oferecer</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row text-center">
+              <div class="card-deck">
+                <div class="card">
+                  <img class="card-img-top" src="{% static 'images/riwo.jpg' %}" alt="Imagem de capa do card">
+                  <div class="card-body">
+                    <h4 class="card-title titulo">Riwo Sangtchö</h4>
+                    <p class="card-text">É uma prática poderosa para repelir obstáculos e negatividades.
+                      Particularmente, os obstáculos ao nosso caminho espiritual. No Khadro Ling,
+                      diariamente, são queimados galhos de cipreste e substâncias como alimentos e tecidos.</p>
+                    <a class="link" href="#">Oferecer</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row text-center">
+              <div class="card-deck">
+                <div class="card">
+                  <img class="card-img-top" src="{% static 'images/lamparina.jpg' %}" alt="Imagem de capa do card">
+                  <div class="card-body">
+                    <h4 class="card-title titulo">Financeiras</h4>
+                    <p class="card-text">É uma prática poderosa para repelir obstáculos e negatividades.
+                      Particularmente, os obstáculos ao nosso caminho espiritual. No Khadro Ling,
+                      diariamente, são queimados galhos de cipreste e substâncias como alimentos e tecidos.</p>
+                    <a class="link" href="#">Oferecer</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+{% endblock %}

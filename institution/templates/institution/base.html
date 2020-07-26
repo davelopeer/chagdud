@@ -62,7 +62,7 @@
           <div class="col-md-4 col-sm-5 d-flex flex-row-reverse">
             <ul class="nav text-white">
               <li class="nav-item">
-                <a class="nav-link text-black-50" href="../Khadro/khadro.html" target="_blank">Khadro Ling</a>
+                <a class="nav-link text-black-50" href="{% url 'khadroling:home' %}" target="_blank">Khadro Ling</a>
               </li>
               <li class="nav-item">
                 <div class="btn-group">
@@ -134,7 +134,7 @@
         <ul>
           <li><a href="{% url 'institution:about-us' %}">Quem somos</a></li>
           <li><a href="{% url 'institution:teachers' %}">Professores</a></li>
-          <li><a href="../Khadro/khadro.html" target="_blank">Khadro Ling</a></li>
+          <li><a href="{% url 'khadroling:home' %}" target="_blank">Khadro Ling</a></li>
           <li>
             <div class="btn-group">
               <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
