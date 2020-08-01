@@ -1,0 +1,74 @@
+.banner {
+  height: 20em;
+}
+
+.professores {
+  height: 350px;
+  object-fit: cover;
+  object-position: 50% 0;
+}
+
+.professoresPosicao {
+  object-position: 80% 0;
+}
+
+.colEsquerda {
+  border-left: solid 1px #ccc;
+}
+
+.accordionDown {
+  border-style: none !important;
+}
+
+.cardAccordion {
+  border-style: none !important;
+  border-bottom: 1px solid #ccc;
+}
+
+.card-header {
+  background-color: #f5f5f5 !important;  
+}
+
+.collapsed .card-header {
+  background-color: transparent !important;
+  text-decoration: none !important;
+}
+
+
+.cardDown {
+  font-size: 0.8em;
+}
+
+.cardDown p {
+  color: #b9b8b8;
+}
+
+.cardDown a {
+  color: #983628 !important;
+}
+
+.cardDown img {
+  width: 80%;
+}
+
+
+@media screen and (max-width: 800px) {
+  .professores {
+    height: 400px;
+    object-fit: cover;
+    object-position: 80% 0;
+  }
+
+  .cardDown {
+    text-align: center;
+  }
+
+  .cardDown img {
+    width: 30%;
+  }
+  
+
+}
+
+
+

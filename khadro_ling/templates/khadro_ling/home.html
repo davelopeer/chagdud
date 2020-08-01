@@ -7,8 +7,26 @@
 
 
 {% block body %}
-<div class="banner pt-5" style="background-image: url({% static 'images/HlaKang2.jpg' %});">
-  
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100 h-80" src="{% static 'khadro_ling/images/HlaKang2.jpg' %}" alt="Primeiro Slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 h-80" src="{% static 'khadro_ling/images/templo.jpg' %}" alt="Segundo Slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 h-80" src="{% static 'khadro_ling/images/khadrovs2.jpg' %}" alt="Terceiro Slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Próximo</span>
+  </a>
 </div>
 <main>
   <div class="sobre">
@@ -60,7 +78,7 @@
               aria-labelledby="v-pills-home-tab">
               <div class="row align-items-center">
                 <div class="col-md-6 col-sm-12">
-                  <img class="mb-3" src="{% static 'images/saoPaulo.jpg' %}" alt="Eevento 1" width="100%">
+                  <img class="mb-3" src="{% static 'khadro_ling/images/saoPaulo.jpg' %}" alt="Eevento 1" width="100%">
                 </div>
                 <div class="col-md-6 col-sm-12">
                   <h5 class="titulo">Retiro de Introdução ao Budismo</h5>
@@ -78,7 +96,7 @@
             <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
               <div class="row">
                 <div class="col-md-6 col-sm-12">
-                  <img class="mb-3" src="{% static 'images/khadro.jpg' %}" alt="Eevento 1" width="100%">
+                  <img class="mb-3" src="{% static 'khadro_ling/images/khadro.jpg' %}" alt="Eevento 1" width="100%">
                 </div>
                 <div class="col-md-6 col-sm-12">
                   <h5 class="titulo">Retiro de Introdução ao Budismo</h5>
@@ -97,7 +115,7 @@
             <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
               <div class="row">
                 <div class="col-md-6 col-sm-12">
-                  <img class="mb-3" src="{% static 'images/natal.jpg' %}" alt="Eevento 1" width="100%">
+                  <img class="mb-3" src="{% static 'khadro_ling/images/natal.jpg' %}" alt="Eevento 1" width="100%">
                 </div>
                 <div class="col-md-6 col-sm-12">
                   <h5 class="titulo">Retiro de Introdução ao Budismo</h5>
@@ -117,7 +135,7 @@
             <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
               <div class="row">
                 <div class="col-md-6 col-sm-12">
-                  <img class="mb-3" src="{% static 'images/natal.jpg' %}" alt="Eevento 1" width="100%">
+                  <img class="mb-3" src="{% static 'khadro_ling/images/natal.jpg' %}" alt="Eevento 1" width="100%">
                 </div>
                 <div class="col-md-6 col-sm-12">
                   <h5 class="titulo">Retiro de Introdução ao Budismo</h5>
@@ -150,7 +168,7 @@
             <div class="row text-center">
               <div class="card-deck">
                 <div class="card cardOferendas">
-                  <img class="card-img-top" src="{% static 'images/lamparina.jpg' %}" alt="Imagem de capa do card">
+                  <img class="card-img-top" src="{% static 'khadro_ling/images/lamparina.jpg' %}" alt="Imagem de capa do card">
                   <div class="card-body">
                     <h4 class="card-title titulo">Lamparinas</h4>
                     <p class="card-text">Visualiza-se que se multiplicam, formando um caminho luminoso 
@@ -160,7 +178,7 @@
                   </div>
                 </div>
                 <div class="card cardOferendas">
-                  <img class="card-img-top" src="{% static 'images/lamparina.jpg' %}" alt="Imagem de capa do card">
+                  <img class="card-img-top" src="{% static 'khadro_ling/images/lamparina.jpg' %}" alt="Imagem de capa do card">
                   <div class="card-body">
                     <h4 class="card-title titulo">Tsog</h4>
                     <p class="card-text"> Significa “reunião”, em tibetano.
@@ -171,7 +189,7 @@
                   </div>
                 </div>
                 <div class="card cardOferendas">
-                  <img class="card-img-top" src="{% static 'images/bandeira.JPG' %}" alt="Imagem de capa do card">
+                  <img class="card-img-top" src="{% static 'khadro_ling/images/bandeira.JPG' %}" alt="Imagem de capa do card">
                   <div class="card-body">
                     <h4 class="card-title titulo">Bandeiras</h4>
                     <p class="card-text"> Visualiza-se que preenchem o céu com desejos auspiciosos,
@@ -187,7 +205,7 @@
             <div class="row text-center">
               <div class="card-deck">
                 <div class="card cardOferendas">
-                  <img class="card-img-top" src="{% static 'images/lamparina.jpg' %}" alt="Imagem de capa do card">
+                  <img class="card-img-top" src="{% static 'khadro_ling/images/lamparina.jpg' %}" alt="Imagem de capa do card">
                   <div class="card-body">
                     <h4 class="card-title titulo">Riwo Sangchod</h4>
                     <p class="card-text">É uma prática poderosa para repelir obstáculos e negatividades.
@@ -197,7 +215,7 @@
                   </div>
                 </div>
                 <div class="card cardOferendas">
-                  <img class="card-img-top" src="{% static 'images/akshobia.jpg' %}" alt="Imagem de capa do card">
+                  <img class="card-img-top" src="{% static 'khadro_ling/images/akshobia.jpg' %}" alt="Imagem de capa do card">
                   <div class="card-body">
                     <h4 class="card-title titulo">Akshobia</h4>
                     <p class="card-text"> Praticantes podem fazer a meditação e os rituais de purificação de
@@ -208,7 +226,7 @@
                   </div>
                 </div>
                 <div class="card cardOferendas">
-                  <img class="card-img-top" src="{% static 'images/lamparina.jpg' %}" alt="Imagem de capa do card">
+                  <img class="card-img-top" src="{% static 'khadro_ling/images/lamparina.jpg' %}" alt="Imagem de capa do card">
                   <div class="card-body">
                     <h4 class="card-title titulo">Financeiras</h4>
                     <p class="card-text">É uma prática poderosa para repelir obstáculos e negatividades.
@@ -237,7 +255,7 @@
             <div class="row text-center">
               <div class="card-deck">
                 <div class="card">
-                  <img class="card-img-top" src="{% static 'images/lamparina.jpg' %}" alt="Imagem de capa do card">
+                  <img class="card-img-top" src="{% static 'khadro_ling/images/lamparina.jpg' %}" alt="Imagem de capa do card">
                   <div class="card-body">
                     <h4 class="card-title titulo">Lamparinas</h4>
                     <p class="card-text">Visualiza-se que se multiplicam, formando um caminho luminoso que 
@@ -253,7 +271,7 @@
             <div class="row text-center">
               <div class="card-deck">
                 <div class="card">
-                  <img class="card-img-top" src="{% static 'images/akshobia.jpg' %}" alt="Imagem de capa do card">
+                  <img class="card-img-top" src="{% static 'khadro_ling/images/akshobia.jpg' %}" alt="Imagem de capa do card">
                   <div class="card-body">
                     <h4 class="card-title titulo">Akshobia</h4>
                     <p class="card-text">Praticantes podem fazer a meditação e os rituais de purificação de
@@ -270,7 +288,7 @@
             <div class="row text-center">
               <div class="card-deck">
                 <div class="card">
-                  <img class="card-img-top" src="{% static 'images/bandeira.jpg' %}" alt="Imagem de capa do card">
+                  <img class="card-img-top" src="{% static 'khadro_ling/images/bandeira.jpg' %}" alt="Imagem de capa do card">
                   <div class="card-body">
                     <h4 class="card-title titulo">Bandeiras</h4>
                     <p class="card-text">Visualiza-se que preenchem o céu com desejos auspiciosos,
@@ -285,7 +303,7 @@
             <div class="row text-center">
               <div class="card-deck">
                 <div class="card">
-                  <img class="card-img-top" src="{% static 'images/tsog.jpg' %}" alt="Imagem de capa do card">
+                  <img class="card-img-top" src="{% static 'khadro_ling/images/tsog.jpg' %}" alt="Imagem de capa do card">
                   <div class="card-body">
                     <h4 class="card-title titulo">Tsog</h4>
                     <p class="card-text">Significa “reunião”, em tibetano.
@@ -302,7 +320,7 @@
             <div class="row text-center">
               <div class="card-deck">
                 <div class="card">
-                  <img class="card-img-top" src="{% static 'images/riwo.jpg' %}" alt="Imagem de capa do card">
+                  <img class="card-img-top" src="{% static 'khadro_ling/images/riwo.jpg' %}" alt="Imagem de capa do card">
                   <div class="card-body">
                     <h4 class="card-title titulo">Riwo Sangtchö</h4>
                     <p class="card-text">É uma prática poderosa para repelir obstáculos e negatividades.
@@ -318,7 +336,7 @@
             <div class="row text-center">
               <div class="card-deck">
                 <div class="card">
-                  <img class="card-img-top" src="{% static 'images/lamparina.jpg' %}" alt="Imagem de capa do card">
+                  <img class="card-img-top" src="{% static 'khadro_ling/images/lamparina.jpg' %}" alt="Imagem de capa do card">
                   <div class="card-body">
                     <h4 class="card-title titulo">Financeiras</h4>
                     <p class="card-text">É uma prática poderosa para repelir obstáculos e negatividades.

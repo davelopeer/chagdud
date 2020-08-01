@@ -1,0 +1,306 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif !important;
+  color: #565555 !important;
+}
+
+.imagensSobre {
+  height: 250px;
+  object-fit: cover;
+}
+
+.legenda {
+  font-size: 0.8em;
+}
+
+.titulo {
+  font-family: 'EB Garamond', serif !important;
+}
+
+header .fa {
+  font-size: 1.3em !important;
+}
+
+.banner {
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  margin-top:-25px;
+  color: #fff;
+  height: 30em;
+}
+
+.sobre {
+  padding: 8rem 0;
+}
+
+.topMenu {
+  background-color: #983628;
+  font-size: 0.8em;
+}
+
+.topMenu a {
+  color: #fff !important;
+  padding-right: 15px;
+  padding-left: 0px;
+}
+
+.topMenu a:hover {
+  color: #de9e9e !important;
+}
+
+.topMenu>nav {
+  color: #fff;
+}
+
+.logo {
+  padding: 20 0 60 0;
+}
+
+
+.fotoChagdud {
+  width: 100%; 
+  height:250px;
+  object-fit: cover;
+  object-position: 25% 19%;
+}
+
+.dropdown-menu, .tab-content {
+  font-size: 0.8em !important;
+}
+
+
+.subtitulo {
+  font-size: 1.2em;
+}
+
+.imgCentros {
+  border-style: none;
+  background-color: #fff;
+}
+
+.imgCentros:active, .imgCentros:focus {
+  border-style: none;
+  background-color: #fff;
+}
+
+.windhorse {
+  background-color: #983628;
+  padding: 5rem 0;
+}
+
+.windCard {
+    font-size: 0.7em;
+}
+
+.windHorse .card-title{
+  font-size: 1.2em !important;
+}
+
+b { 
+  display: block;
+  -ms-flex: 1;
+  flex: 1;
+  height: 2px;
+  opacity: .1;
+  background-color: currentColor;
+}
+
+.link {
+  color: #d26e4b;
+  text-decoration: underline;
+  font-size: 0.8em;
+}
+
+.link:hover {
+  color: #bd3505;
+  font-weight: 600;
+}
+
+.menu {
+  border-bottom: 0.2px solid #cccccc5e;
+  margin-bottom: 25px;
+  background-color: #fff;
+}
+
+.menu a:hover, .menu .btn:hover {
+  color: #444 !important;
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.icones .card {
+  border-style: none;
+}
+
+.icones img {
+  border-width: 2px !important;
+  border-color: #983628 !important;
+  width:30%;
+}
+
+.icones img:hover {
+  background-color: #983628 !important;
+}
+
+.icones a {
+  color: #565555 !important;
+}
+
+
+
+.rowGrid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+footer {
+  padding: 40px 0;
+  font-size: 0.8em;
+  line-height: 0.5em;
+}
+
+footer .apps {
+  font-size: 4em !important;
+}
+
+footer .midia {
+  font-size: 2.3em !important;
+}
+
+/* Create two equal columns that sits next to each other */
+.colGrid1 {
+  flex: 75%;
+  max-width: 75%;
+  padding: 0 4px;
+}
+
+.colGrid2 {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.colGrid1 img, .colGrid2 img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.menu-mobile {
+  width:270px;
+  height:100%;
+  background-color: #fff;
+  position: fixed;
+  overflow: hidden;
+  overflow-y: auto;
+  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s; 
+  -moz-transition-duration: 0.3s;
+  z-index: 400;
+}
+
+.menu-mobile ul li {
+  font-size: 17px;
+  display: block;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.menu-mobile ul li a {
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  color: #ccc;
+}
+
+.menu-mobile ul li a:hover {
+  background-color: rgba(0,0,0,.1);
+}
+
+.logoMobile {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.btn-menu {
+  width: 45px;
+  height: 40px; 
+  position: absolute;
+  left: 10px;
+  top: 28px;
+  padding: 10px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s; 
+  -moz-transition-duration: 0.3s;
+}
+
+.btn-menu span {
+  height: 3px;
+  display: block;
+  margin-bottom: 5px;
+  background-color: #ccc;
+}
+
+.menu-mobile {transform: translateX(-270px);}
+.btn-menu {transform: translateX(0);}
+
+.btn-menu-active .menu-mobile {
+  transform: translateX(0);
+}
+
+.btn-menu-active .btn-menu {
+  transform: translateX(280px);
+  left: 0px;
+}
+
+.btn-menu {transform: translateX(0);}
+
+.mobileMenu {
+  display:none;
+  position: relative;
+  height: 8em;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: #ccc;;
+}
+
+@media screen and (max-width: 800px) {
+  .icones img {
+    width:70%;
+  }
+  footer {
+    line-height: 1.3em;
+  }
+
+  #menu, .topMenu {
+    display: none;
+  }
+
+  .mobileMenu {display: block; }  
+
+}
+
+
+
+
