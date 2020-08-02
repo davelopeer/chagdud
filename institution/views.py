@@ -15,3 +15,7 @@ class TeachersView(TemplateView):
 
 class DownloadsView(TemplateView):
      template_name = 'institution/downloads.html'
+
+
+class ContactView(TemplateView):
+     template_name = 'institution/contact.html'
