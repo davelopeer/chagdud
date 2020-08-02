@@ -1,0 +1,378 @@
+{% extends 'khadro_ling/base.html' %}
+{% load static %}
+
+{% block head %}
+<title>Evento | Khadro Ling</title>
+{% endblock %}
+
+{% block body %}
+<div class="container tituloEvento">
+  <div class="col-md-6">
+    <div class="row">
+    <div class="data col-md-1 mb-2">
+      <p class="diaData">29</p>
+      <p class="mesData">jun</p>
+    </div>
+    <div class="col-md-9">
+<h1 class="mb-3 titulo text-dark">Retiro de Introdução ao Budismo</h1>
+    </div>
+  </div>
+  </div>
+</div>
+<div class="bannerSobre" style="background-color:#333">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 col-sm-12 text-white mt-5 pt-1">
+        <p><i class="fa fa-user" aria-hidden="true"></i> | Com Lama Sherab</p>
+        <p><i class="fa fa-calendar" aria-hidden="true"></i> | De 18, às 9h, a 19 de maio, às 17h, de 2019</p>
+        <p><i class="fa fa-check-square-o" aria-hidden="true"></i> | Não há pré-requisitos para a participação neste evento.</p>
+        <p><i class="fa fa-map-marker" aria-hidden="true"></i> | Chagdud Gonpa Khadro Ling</p> 
+      </div>
+      <div class="col-md-7 col-sm-12 pt-1">
+        <img class="imgEvento" src="{% static 'khadro_ling/images/khadro.jpg' %}" width="100%">
+
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main>
+  <div class="sobre">
+    <div class="container">
+      <div id="evento" >
+        <div class="row align-items-center">   
+          <div class="mb-5 col-md-7 offset-md-1 offset-md-0 col-sm-12 text-justify border-right pr-5">
+            <p>
+              Buda, por meio da sua compaixão incomensurável, ensinou 
+              incontáveis métodos que propiciam a liberdade do sofrimento. 
+              Todos possuem o potencial para alcançar tal liberdade, que depende 
+              somente de nosso esforço e empenho.</p>
+
+              <p>Estamos agora em um universo de experiências confusas, e 
+                não compreendemos os mecanismos pelo qual criamos a nossa própria 
+                confusão. Com o estudo, contemplação e a meditação, podemos nos desvencilhar 
+                dessas experiências e alcançar um estado de paz interna e sabedoria.</p>
+        
+              <p>Durante esse final de semana, Lama Sherab Drolma abordará alguns princípios do 
+                budismo e instruções sobre meditação budista. Os dois dias serão divididos entre 
+                sessões de palestras intercaladas com sessões de meditação, além de momentos 
+                destinados para perguntas e respostas.
+              </p>
+
+              <p>Este retiro é especialmente indicado para pessoas que buscam um primeiro contato com 
+                os ensinamentos budistas ou que querem revisitar temas cruciais para a prática budista.</p>
+
+          </div>
+          <div class="col-md-4 col-sm-12 mb-5 pl-5">
+            <h3 class="titulo mb-3"> Utilidades</h3>
+            <p><i class="fa fa-bed" aria-hidden="true"></i> | Tipos de hospedagem</p>
+            <p><i class="fa fa-map" aria-hidden="true"></i> | Como chegar</p>
+            <p><i class="fa fa-bus" aria-hidden="true"></i> | Translados</p>
+            <p><i class="fa fa-cutlery" aria-hidden="true"></i> | Alimentação</p>
+            <p><i class="fa fa-info" aria-hidden="true"></i> | Outras informações</p>
+            <p><i class="fa fa-envelope" aria-hidden="true"></i> | Contato</p>
+            <p><i class="fa fa-times" aria-hidden="true"></i> | Cancelamento</p>
+          </div>
+
+          
+  </div>
+
+  <div class="col-12 d-flex justify-content-center align-items-center py-5">
+    <b></b>
+    <h3 class="text-center titulo mr-5 ml-5"> Ficha de Inscrição </h3>
+    <b></b>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-md-10 offset-md-1 offset-md-0 col-sm-12">
+
+        <h4 class="titulo">Dados Pessoais </h4>
+        <b></b>
+
+      <div class="row mt-5">
+        <div class="col-md">
+      <form>
+        <div class="form-group">
+          <label for="nome">Nome Completo</label>
+          <input type="text" class="form-control" id="nome" name="nome">
+          <small id="passwordHelpBlock" class="form-text text-muted">
+            Sem abreviações           
+          </small>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" name="email">
+        </div>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+      <form>
+        <div class="form-group">
+          <label for="telefone">Telefone / Celular</label>
+          <input type="number" class="form-control" id="telefone" name="telefone">
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="form-group">
+          <label for="dataNascimento">Data de Nascimento</label>
+          <input type="number" class="form-control" id="dataNascimento" name="dataNascimento">
+        </div>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+      <form>
+        <div class="form-group">
+          <label for="endereco">Endereço</label>
+          <input type="text" class="form-control" id="endereco" name="endereco">
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="form-group">
+          <label for="cidade">Cidade</label>
+          <input type="email" class="form-control" id="cidade" name="cidade">
+        </div>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+        <div class="form-group">
+          <label for="Estado">Estado</label>
+          <select id="Estado" class="form-control" name="estado">
+            <option selected>Selecionar</option>
+            <option>...</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="form-group">
+          <label for="CEP">CEP</label>
+          <input type="text" class="form-control" id="CEP" name="CEP">
+        </div>
+      </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md">
+          <p>Gênero</p>
+        <div class="form-check mt-2">
+      <input class="form-check-input" type="radio" name="genero" id="masculino" value="masculino" checked>
+      <label class="form-check-label" for="masculino">
+        Masculino
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="genero" id="feminino" value="feminino">
+      <label class="form-check-label" for="feminino">
+        Feminino
+      </label>
+    </div>
+    </div>
+    <div class="col-md">
+      <p>Preferência Alimentar</p>
+    <div class="form-check mt-2">
+  <input class="form-check-input" type="radio" name="alimentar" id="naoVegetariano" value="naoVegetariano" checked>
+  <label class="form-check-label" for="naoVegetariano">
+    Não-Vegetariano
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="alimentar" id="Vegetariano" value="Vegetariano">
+  <label class="form-check-label" for="Vegetariano">
+    Vegetariano
+  </label>
+</div>
+</div>
+<div class="col-md">
+  <p>Precisa de Cadeira?</p>
+<div class="form-check mt-2">
+<input class="form-check-input" type="radio" name="cadeira" id="sim" value="sim" checked>
+<label class="form-check-label" for="sim">
+Sim
+</label>
+</div>
+<div class="form-check">
+<input class="form-check-input" type="radio" name="cadeira" id="nao" value="nao">
+<label class="form-check-label" for="nao">
+Não
+</label>
+</div>
+<small id="passwordHelpBlock" class="form-text text-muted">
+Apenas pessoas com limitações físicas           
+</small>
+</div>
+  </div>
+  </div>
+
+  <div class="col-md-10 offset-md-1 offset-md-0 col-sm-12">
+
+    <h4 class="titulo mt-5 mb-3">Participação no Evento </h4>
+    <b></b>
+
+    <div class="mt-4">
+    <p>O preço do evento inclui hospedagem e alimentação a partir das 17h do dia 17 até às 17h do dia 19 de maio.</p>
+
+    <h5 class="titulo mt-5 mb-3"><strong>Check-in no Khadro Ling:</strong></h5>
+    <p> - 17 de maio – das 14h às 21h.</p>
+    <p> - 18 de maio – das 8h às 9h.</p>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-md">
+    <form>
+      <div class="form-group">
+        <label for="dataChegada">Data de Chegada</label>
+        <input type="text" class="form-control" id="dataChegada" name="dataChegada">
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="form-group">
+        <label for="horaChegada">Horário de Chegada</label>
+        <input type="email" class="form-control" id="horaChegada" name="horaChegada">
+      </div>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-md">
+    <form>
+      <div class="form-group">
+        <label for="dataPartida">Data de Partida</label>
+        <input type="text" class="form-control" id="dataPartida" name="dataPartida">
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="form-group">
+        <label for="horaPartida">Horário de Partida</label>
+        <input type="email" class="form-control" id="horaPartida" name="horaPartida">
+      </div>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-md">
+    <form>
+      <div class="form-group">
+        <label for="observacoes">Observações</label>
+        <textarea class="form-control" id="observacoes"  name="observacoes" rows="3"></textarea>
+      </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="col-md-10 offset-md-1 offset-md-0 col-sm-12">
+
+      <h4 class="titulo mt-5 mb-3">Opções do Eventos </h4>
+      <b></b>
+
+      <div class=" inverteMobile row mt-4">
+        <div class="col-md pt-5 mt-4">
+          <p>Evento completo</p>
+        <div class="form-check mt-2">
+      <input class="form-check-input" type="radio" name="evento" id="amitaba" value="amitaba" checked>
+      <label class="form-check-label" for="amitaba">
+        Alimentação e hospedagem no Amitaba:R$ 414,00
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="evento" id="retiro" value="retiro">
+      <label class="form-check-label" for="retiro">
+        Alimentação e hospedagem na casa de retiro: R$ 394,00
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="evento" id="dormitorio" value="dormitorio">
+      <label class="form-check-label" for="dormitorio">
+        Alimentação e hospedagem no dormitório: R$ 340,00        
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="evento" id="semHospedagem" value="semHospedagem">
+      <label class="form-check-label" for="semHospedagem">
+        Alimentação e sem hospedagem: R$ 296,00
+      </label>
+    </div>
+
+    <div class="form-check mt-5">
+      <input class="form-check-input" type="checkbox" value="aceito" id="aceitoPolitica">
+      <label class="form-check-label" for="aceitoPolitica">
+        Li e aceito a política de cancelamento de participação em eventos.
+      </label>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-5">Enviar</button>
+    </div>
+    <div class="col-md bg-light mt-4 p-5">
+      <p>Tipos de Hospedagem</p>
+
+      <div class="row">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item itemAcomodacao">
+              <a class="nav-link linkAcomodacao active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Casa Amitaba</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link linkAcomodacao" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Casa de Retiro 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link linkAcomodacao" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Casa de Retiro 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link linkAcomodacao" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Dormitório</a>
+            </li>
+          </ul>
+          <div class="tab-content bg-white p-3" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+              Localizada próxima ao templo; possui quartos com camas de solteiro para três pessoas. 
+              Os banheiros – feminino e masculino – são de uso comum entre os hóspedes de todos os quartos. 
+              Roupas de cama, banho, cobertor e travesseiro são fornecidos nesta acomodação.
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              Localizada próxima ao templo; possui quartos com camas de solteiro para três pessoas. 
+              Os banheiros – feminino e masculino – são de uso comum entre os hóspedes de todos os quartos. 
+              Roupas de cama, banho, cobertor e travesseiro são fornecidos nesta acomodação.
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+              Localizada próxima ao templo; possui quartos com camas de solteiro para três pessoas. 
+              Os banheiros – feminino e masculino – são de uso comum entre os hóspedes de todos os quartos. 
+              Roupas de cama, banho, cobertor e travesseiro são fornecidos nesta acomodação.
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+              Localizada próxima ao templo; possui quartos com camas de solteiro para três pessoas. 
+              Os banheiros – feminino e masculino – são de uso comum entre os hóspedes de todos os quartos. 
+              Roupas de cama, banho, cobertor e travesseiro são fornecidos nesta acomodação.
+            </div>
+
+          </div>
+        
+          <div class="mt-5 text-justify acomodacoes">
+          <p>Somente é permitido hospedar-se no Khadro Ling durante eventos e retiros. 
+            A hospedagem é restrita a praticantes budistas.</p>
+
+          <p>Há um número limitado de vagas em cada tipo de acomodação e a p
+            rioridade de escolha será dada às pessoas que se inscreverem primeiro.</p>
+    
+          <p>O Khadro Ling não é responsável pelo transporte dos participantes para os 
+            alojamentos durante o retiro.</p>
+            </div>
+        </div>
+      </div>
+      
+    
+
+
+
+</div>
+
+        
+
+  </form>
+
+
+
+  </div>
+  </div>
+  </div>
+  </div>
+</main>
+{% endblock %}

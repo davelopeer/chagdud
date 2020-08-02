@@ -13,3 +13,8 @@ class AboutUsView(TemplateView):
 class EventListView(ListView):
     model = Event
     context_object_name = 'event_list'
+
+
+class EventDetailView(DetailView):
+    model = Event
+    context_object_name = 'event'
