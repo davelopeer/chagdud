@@ -1,10 +1,11 @@
 from django.urls import path
-from khadro_ling.views import KhadroLingHomeView, KhadroLingAboutUsView
+from khadro_ling.views import HomeView, AboutUsView, EventListView
 
 
 app_name = 'khadroling'
 
 urlpatterns = [
-    path('', KhadroLingHomeView.as_view(), name='home'),
-    path('quem-somos', KhadroLingAboutUsView.as_view(), name='about-us'),
+    path('', HomeView.as_view(), name='home'),
+    path('quem-somos', AboutUsView.as_view(), name='about-us'),
+    path('evento', EventListView.as_view(), name='event'),
 ]

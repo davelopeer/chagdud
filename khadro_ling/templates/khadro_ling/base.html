@@ -29,10 +29,10 @@
                   <a class="nav-link text-black-50" href="#">Contato</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-black-50" href="#"><i class="fa fa-facebook"></i></a>
+                  <a class="nav-link text-black-50" href="https://www.facebook.com/chagdud"><i class="fa fa-facebook"></i></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-black-50" href="#"><i class="fa fa-instagram"></i></a>
+                  <a class="nav-link text-black-50" href="https://www.instagram.com/khadro.ling/"><i class="fa fa-instagram"></i></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link text-black-50" href="#"><i class="fa fa-envelope-o"></i></a>
@@ -46,7 +46,7 @@
         <div class="container">
           <div class="row align-items-center justify-content-between">
             <div class="d-flex justify-content-center">
-              <a href="khadro.html">
+              <a href="{% url 'khadroling:home' %}">
               <img src="{% static 'khadro_ling/images/khadro_ling_logo.png' %}" alt="Logo Khadro Ling" width="200px">
             </a>
             </div>
@@ -56,7 +56,7 @@
                   <a class="nav-link text-black-50" href="{% url 'khadroling:about-us' %}">Quem somos</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-black-50" href="../Khadro/eventos.html">Eventos</a>
+                  <a class="nav-link text-black-50" href="{% url 'khadroling:event' %}">Eventos</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link text-black-50" href="#">Oferendas</a>
@@ -70,8 +70,8 @@
         <nav class="menu-mobile">
           <ul>
             <li><a href="{% url 'khadroling:about-us' %}">Quem somos</a></li>
-            <li><a href="../Khadro/eventos.html">Eventos</a></li>
-            <li><a href="">Oferendas</a></li>
+            <li><a href="{% url 'khadroling:event' %}">Eventos</a></li>
+            <li><a href="#">Oferendas</a></li>
           </ul>
         </nav>
   

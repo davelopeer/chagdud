@@ -1,8 +1,15 @@
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, ListView, DetailView
+from khadro_ling.models import Event
 
 
-class KhadroLingHomeView(TemplateView):
+class HomeView(TemplateView):
     template_name = 'khadro_ling/home.html'
 
-class KhadroLingAboutUsView(TemplateView):
+
+class AboutUsView(TemplateView):
     template_name = 'khadro_ling/about_us.html'
+
+
+class EventListView(ListView):
+    model = Event
+    context_object_name = 'event_list'
