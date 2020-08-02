@@ -1,4 +1,4 @@
-from django.views.generic import TemplateView, ListView, DetailView
+from django.views.generic import View, TemplateView, ListView, DetailView
 from khadro_ling.models import Event
 
 
@@ -18,3 +18,7 @@ class EventListView(ListView):
 class EventDetailView(DetailView):
     model = Event
     context_object_name = 'event'
+
+
+class OfferingsView(TemplateView):
+    template_name = 'khadro_ling/offerings.html'

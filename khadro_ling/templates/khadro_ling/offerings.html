@@ -1,0 +1,864 @@
+{% extends 'khadro_ling/base.html' %}
+{% load static %}
+
+{% block head %}
+<title>Oferendas | Khadro Ling</title>
+{% endblock %}
+
+{% block body %}
+<div class="bannerSobre pt-5" style="background-color:#c5b1ec">
+  <div class="container">
+    <div class="logo row justify-content-center">
+      <div class="col-md-12 col-sm-12 mt-5 pt-1 text-center">
+
+        <h1 class="mb-5 titulo text-white">Oferendas</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main>
+  <div class="sobre">
+    <div class="container">
+      <div id="oferendas" class="row">  
+          <div class="mb-5 col-md-10 offset-md-1 offset-sm-0 col-sm-12 justify-content-center">
+            <nav>
+              <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                <a class="nav-item navOferendas nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Tsog</a>
+                <a class="nav-item navOferendas nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Lamparinas</a>
+                <a class="nav-item navOferendas nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Riwo Sangchod</a>
+                <a class="nav-item navOferendas nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Bandeiras</a>
+                <a class="nav-item navOferendas nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Akshobia</a>
+                <a class="nav-item navOferendas nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Financeiras</a>
+
+
+              </div>
+            </nav>
+            <div class="tab-content oferendaTab" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="row">
+                <div class="col-md-4 col-sm-12 my-5">
+                  <img class="imgOferenda" src="{% static 'khadro_ling/images/tsog.jpg' %}">
+                </div>
+                <div class="my-5 col-md-8 col-sm-12 justify-content-center">
+                  <h4 class="titulo"> Oferenda de Tsog </h4>
+                  <b class="mb-2"></b>
+                  
+                  <div class="mt-3"> 
+                  <p>
+                    O tsog é uma elaborada cerimônia do Budismo Tibetano que utiliza alimentos e bebidas 
+                    de diferentes sabores como objeto de meditação e purificação. Você pode participar 
+                    fazendo uma oferenda em dinheiro para o tsog.
+                  </p>
+
+                  <p>Você pode oferecer qualquer valor. Sua oferenda será feita após a confirmação 
+                    do depósito.</p>
+                    
+
+                  <h5 class="text-dark"><strong>Atenção</strong></h5>
+                  <p><strong>As oferendas são reunidas sempre às 14h do dia que antecede a 
+                    data do Tsog para que possam ser organizadas e lidas na respectiva data. 
+                    Após este horário, a oferenda será lida no próximo Tsog conforme o 
+                    calendário do Khadro Ling.</strong></p>
+
+                    <h5 class="mt-5"><strong>Dados para depósito</strong></h5>
+                    <p>Banco do Brasil<br>
+                    Titular: Chagdud Gonpa Brasil<br>
+                    CNPJ: 00.990.708/0001-37<br>
+                    Agência: 1380-3<br>
+                    Conta: 3583-1</p>
+                  </div>
+                </div>
+                
+                </div>
+                  <div class="accordion" id="accordionExample">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link text-dark" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Formulário para oferecer Tsog
+                          </button>
+                        </h5>
+                      </div>
+                  
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body py-5">
+                          <form>
+                            <div class="form-group">
+                              <label for="nome">Nome</label>
+                              <input type="text" class="form-control" id="nome" name="nome">
+                            </div>
+                            <div class="form-group">
+                              <label for="email">Email</label>
+                              <input type="email" class="form-control" id="email" name="email">
+                            </div>
+                            <div class="form-group">
+                              <label for="valor">Valor da oferenda em R$</label>
+                              <input type="number" class="form-control" id="valor" name="valor">
+                            </div>
+                            <div class="form-group">
+                              <label for="dedicacao">Dedicação</label>
+                              <textarea class="form-control" id="observacoes"  name="dedicacao" 
+                              rows="3" placeholder="Nome da pessoa ou sua intenção ao oferecer"></textarea>
+                            </div>
+                            <div class="form-group mb-5">
+                              <label for="data">Data do Depósito</label>
+                              <input type="text" class="form-control" id="data" name="data">
+                            </div>
+                            <p>Tipo de Pagamento</p>
+                              <div class="form-check mt-2">
+                              <input class="form-check-input" type="radio" name="pagamento" id="bb" value="bb" checked>
+                              <label class="form-check-label" for="bb">
+                                Transferência entre contas Banco do Brasil
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="pagamento" id="doc" value="doc">
+                              <label class="form-check-label" for="doc">
+                                DOC ou TED
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="pagamento" id="deposito" value="deposito">
+                              <label class="form-check-label" for="deposito">
+                                Depósito        
+                              </label>
+                            </div>
+                            <div class="form-group mt-5">
+                              <label for="comprovante">Envie o comprovante</label>
+                              <input type="file" class="form-control-file" name="comprovante" id="comprovante">
+                            </div>
+                            <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+                          </form>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed text-black-50" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Offer Tsok in an English form
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body py-5">
+                          <p> The tsok is an elaborated ceremony of Tibetan Buddhism, which uses food 
+                            and drinks of different flavours as objects of meditation and purification. 
+                            You can participate by making a financial offering towards the tsok.</p>   
+
+                          <p>Please, make your offering through PayPal using the form below.</p>
+
+                          <p>For PayPal donation/payment, please use the following email address 
+                            for payment receiver: <u>adm@chagdud.org.</u> Also, in comment field inform 
+                            that payment is for Tsok Offering. </p>
+                          <form>
+                            <div class="form-group mt-5">
+                              <label for="nameEn">Full Name</label>
+                              <input type="text" class="form-control" id="nameEn" name="nameEn">
+                            </div>
+                            <div class="form-group">
+                              <label for="emailEn">Email Adress</label>
+                              <input type="email" class="form-control" id="emailEn" name="emailEn">
+                            </div>
+                            <div class="form-group">
+                              <label for="amount">Amount offered: R$</label>
+                              <input type="number" class="form-control" id="amount" name="amount">
+                            </div>
+                            <div class="form-group">
+                              <label for="dedication">Write your dedication here</label>
+                              <textarea class="form-control" id="dedication"  name="dedication" 
+                              rows="3" placeholder="Write your intetion with this offering"></textarea>
+                            </div>
+                            <div class="form-group">
+                              <label for="total">Total amount paid: R$</label>
+                              <input type="number" class="form-control" id="total" name="total">
+                            </div>
+                            <div class="form-group">
+                              <label for="date">Date of PayPal transaction</label>
+                              <input type="text" class="form-control" id="date" name="date">
+                            </div>
+                            <div class="form-group">
+                              <label for="paypalId">Your PayPal ID</label>
+                              <input type="number" class="form-control" id="paypalId" name="paypalId">
+                            </div>
+                            <div class="form-group ">
+                              <label for="paypalEmail">Your PayPal account email</label>
+                              <input type="text" class="form-control" id="paypalEmail" name="paypalEmail">
+                            </div>
+                            <div class="form-group mt-5">
+                              <label for="receipt">Send you PayPal receipt</label>
+                              <input type="file" class="form-control-file" name="receipt" id="receipt">
+                            </div>
+                            <div class="form-group">
+                              <label for="extra">Extra information</label>
+                              <input type="text" class="form-control" id="extra" name="extra">
+                            </div>
+                            <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed text-black-50" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Ofrecer Tsog en un formulario en español
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                          <p> El tsog es una ceremonia elaborada del Budismo Tibetano que usa 
+                            alimentos y bebidas de diferentes sabores como objetos de meditación y 
+                            purificación. Usted puede ser partícipe haciendo ofrendas en dinero para el tsog.
+                          </p>   
+
+                            <p>Por favor realice su ofrenda a través de PayPal usando el formulario a continuación. </p>
+
+                            <p>Para donación/pago a través de PayPal por 
+                              favor use la siguiente dirección de correo electrónico 
+                              como receptor del pago : <u>adm@chagdud.org</u>. También, en el campo 
+                              de comentarios informe que el pago es para Ofrenda de Tsog.</p>
+                            <form>
+                              <div class="form-group mt-5">
+                                <label for="nombreEs">Nombre completo</label>
+                                <input type="text" class="form-control" id="nombreEs" name="nombreEs">
+                              </div>
+                              <div class="form-group">
+                                <label for="correoEn">Dirección de correo electrónico</label>
+                                <input type="email" class="form-control" id="correoEn" name="correoEn">
+                              </div>
+                              <div class="form-group">
+                                <label for="monto">Monto ofrecido: R$</label>
+                                <input type="number" class="form-control" id="monto" name="monto">
+                              </div>
+                              <div class="form-group">
+                                <label for="dedicacion">Escriba su dedicación aquí</label>
+                                <textarea class="form-control" id="dedicacion"  name="dedicacion" 
+                                rows="3" placeholder="Escriba su intención aquí"></textarea>
+                              </div>
+                              <div class="form-group">
+                                <label for="totalMonto">Monto total pagado - R$ </label>
+                                <input type="number" class="form-control" id="totalMonto" name="totalMonto">
+                              </div>
+                              <div class="form-group">
+                                <label for="fecha">Fecha de transacción</label>
+                                <input type="text" class="form-control" id="fecha" name="fecha">
+                              </div>
+                              <div class="form-group">
+                                <label for="paypalIdEs">Su ID de PayPal</label>
+                                <input type="number" class="form-control" id="paypalIdEs" name="paypalIdEs">
+                              </div>
+                              <div class="form-group ">
+                                <label for="paypalCorreo">Su correo electrónico de cuenta PayPal</label>
+                                <input type="text" class="form-control" id="paypalCorreo" name="paypalCorreo">
+                              </div>
+                              <div class="form-group mt-5">
+                                <label for="recibe">Envie su recibe de PayPal</label>
+                                <input type="file" class="form-control-file" name="recibe" id="recibe">
+                              </div>
+                              <div class="form-group">
+                                <label for="adicional">Información adicional</label>
+                                <input type="text" class="form-control" id="adicional" name="adicional">
+                              </div>
+                              <button type="submit" class="btn btn-primary mt-2">Enviar</button>
+                            </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <div class="row">
+                  <div class="col-md-4 col-sm-12 my-5">
+                    <img class="imgOferenda" src="{% static 'khadro_ling/images/lamparina.jpg' %}">
+                  </div>
+                  <div class="my-5 col-md-8 col-sm-12 justify-content-center">
+                    <h4 class="titulo"> Oferenda de Lamparinas </h4>
+                    <b class="mb-2"></b>
+                    
+                    <div class="mt-3"> 
+                    <p>
+                      Centenas de lamparinas são acesas todos os dias no Khadro Ling como uma oferenda 
+                      de luz para dispersar obstáculos de todos os seres.
+                    </p>
+
+                    <p>Você pode participar dessa oferenda diária e inclusive dedicar um determinado número de 
+                      lamparinas em benefício a você, sua família ou qualquer outra pessoa que esteja passando por 
+                      dificuldades ou que precise de bênçãos. Faça suas oferendas pelo formulário abaixo.
+                      O preço para cada lamparina é de R$ 2,50.</p>
+
+                      <h5 class="text-dark"><strong>Atenção</strong></h5>
+                      <p><strong>As oferendas de lamparinas são reunidas sempre às 14h de cada 
+                        dia para que possam ser organizadas e lidas no momento do acendimento 
+                        no dia seguinte. Após este horário, a oferenda será realizada no próximo dia.</strong></p>
+
+                      <h5 class="mt-5"><strong>Dados para depósito</strong></h5>
+                      <p>Banco do Brasil<br>
+                      Titular: Chagdud Gonpa Brasil<br>
+                      CNPJ: 00.990.708/0001-37<br>
+                      Agência: 1380-3<br>
+                      Conta: 3583-1</p>
+                    </div>
+                  </div>
+                  
+                  </div>
+                  <div>
+                    <div class="accordion" id="accordionExample">
+                      <div class="card">
+                        <div class="card-header" id="headingOne">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link text-dark" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Formulário para oferecer Lamparinas
+                            </button>
+                          </h5>
+                        </div>
+                    
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                          <div class="card-body py-5">
+                            <form>
+                              <div class="form-group">
+                                <label for="nome">Nome</label>
+                                <input type="text" class="form-control" id="nome" name="nome">
+                              </div>
+                              <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email">
+                              </div>
+                              <div class="form-group">
+                                <label for="valor">Valor da oferenda em R$</label>
+                                <input type="number" class="form-control" id="valor" name="valor">
+                              </div>
+                              <div class="form-group">
+                                <label for="qtdLamparinas">Número de Lamparinas</label>
+                                <input type="number" class="form-control" id="qtdLamparinas" name="qtdLamparinas">
+                              </div>
+                              <p>Quero oferecer</p>
+                                <div class="form-check mt-2">
+                                <input class="form-check-input" type="radio" name="oferLamparina" id="umaDia" value="umaDia" checked>
+                                <label class="form-check-label" for="umaDia">
+                                  1 por dia
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="oferLamparina" id="maisUma" value="maisUma">
+                                <label class="form-check-label" for="maisUma">
+                                  Mais de uma por dia
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="oferLamparina" id="todasDia" value="todasDia">
+                                <label class="form-check-label" for="todasDia">
+                                  Todas no mesmo dia        
+                                </label>
+                              </div>
+                              <div class="form-group">
+                                <label for="dedicacao">Dedicação</label>
+                                <textarea class="form-control" id="observacoes"  name="dedicacao" 
+                                rows="3" placeholder="Nome da pessoa ou sua intenção ao oferecer"></textarea>
+                              </div>
+                              <div class="form-group">
+                                <label for="valorDeposito">Valor do Depósito</label>
+                                <input type="number" class="form-control" id="valorDeposito" name="valorDeposito">
+                              </div>
+                              <div class="form-group mb-5">
+                                <label for="data">Data do Depósito</label>
+                                <input type="text" class="form-control" id="data" name="data">
+                              </div>
+                              <p>Tipo de Pagamento</p>
+                                <div class="form-check mt-2">
+                                <input class="form-check-input" type="radio" name="pagamento" id="bb" value="bb" checked>
+                                <label class="form-check-label" for="bb">
+                                  Transferência entre contas Banco do Brasil
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pagamento" id="doc" value="doc">
+                                <label class="form-check-label" for="doc">
+                                  DOC ou TED
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pagamento" id="deposito" value="deposito">
+                                <label class="form-check-label" for="deposito">
+                                  Depósito        
+                                </label>
+                              </div>
+                              <div class="form-group mt-5">
+                                <label for="comprovante">Envie o comprovante</label>
+                                <input type="file" class="form-control-file" name="comprovante" id="comprovante">
+                              </div>
+                              <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+                            </form>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingTwo">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed text-black-50" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Offer butterlamps in an English form
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                          <div class="card-body py-5">
+                            <p> Hundreds of butterlamps are lit at Khadro Ling everyday as an 
+                              offering of light to dispel obstacles for all beings. You can 
+                              participate in this daily offering and can dedicate an specific number 
+                              of butterlamps to the benefit of your family, yourself or any other b
+                              eing going through difficulties or needing blessings.
+                          </p>   
+
+                            <p>Please, make your offering through PayPal using the form below. 
+                              Each butterlamp costs R$ 2.50
+                            </p>
+
+                            <p>For PayPal donation/payment, please use the following email 
+                              address for payment receiver: <u>adm@chagdud.org</u>. Also, in comment 
+                              field inform that payment is for Butterlamps Offering.
+                            </p>
+
+                            <form>
+                              <div class="form-group mt-5">
+                                <label for="nameEn">Full Name</label>
+                                <input type="text" class="form-control" id="nameEn" name="nameEn">
+                              </div>
+                              <div class="form-group">
+                                <label for="emailEn">Email Adress</label>
+                                <input type="email" class="form-control" id="emailEn" name="emailEn">
+                              </div>
+                              <div class="form-group">
+                                <label for="amount">Amount offered: R$</label>
+                                <input type="number" class="form-control" id="amount" name="amount">
+                              </div>
+                              <div class="form-group">
+                                <label for="numberOffered">Number of butterlamps offered</label>
+                                <input type="number" class="form-control" id="numberOffered" name="numberOffered">
+                              </div>
+                              <p>I wish to offer</p>
+                                <div class="form-check mt-2">
+                                <input class="form-check-input" type="radio" name="oferLamparina" id="oneDay" value="oneDay" checked>
+                                <label class="form-check-label" for="oneDay">
+                                  1 a day
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="oferLamparina" id="allDay" value="allDay">
+                                <label class="form-check-label" for="allDay">
+                                  All in one day
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="oferLamparina" id="moreOneDay" value="moreOneDay">
+                                <label class="form-check-label" for="moreOneDay">
+                                  More than one in a day        
+                                </label>
+                              </div>
+                              <div class="form-group">
+                                <label for="dedication">Write your dedication here</label>
+                                <textarea class="form-control" id="dedication"  name="dedication" 
+                                rows="3" placeholder="Write your intetion with this offering"></textarea>
+                              </div>
+                              <div class="form-group">
+                                <label for="total">Total amount paid: R$</label>
+                                <input type="number" class="form-control" id="total" name="total">
+                              </div>
+                              <div class="form-group">
+                                <label for="date">Date of PayPal transaction</label>
+                                <input type="text" class="form-control" id="date" name="date">
+                              </div>
+                              <div class="form-group">
+                                <label for="paypalId">Your PayPal ID</label>
+                                <input type="number" class="form-control" id="paypalId" name="paypalId">
+                              </div>
+                              <div class="form-group ">
+                                <label for="paypalEmail">Your PayPal account email</label>
+                                <input type="text" class="form-control" id="paypalEmail" name="paypalEmail">
+                              </div>
+                              <div class="form-group mt-5">
+                                <label for="receipt">Send you PayPal receipt</label>
+                                <input type="file" class="form-control-file" name="receipt" id="receipt">
+                              </div>
+                              <div class="form-group">
+                                <label for="extra">Extra information</label>
+                                <input type="text" class="form-control" id="extra" name="extra">
+                              </div>
+                              <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingThree">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed text-black-50" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Ofrecer lamparitas en un formulario en español
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                          <div class="card-body">
+                            <p> Cientos de lamparitas se prenden en Khadro Ling cada día como 
+                              ofrenda de luz para disipar obstáculos para todos los seres. Usted 
+                              puede ser partícipe de esta ofrenda diaria y puede dedicar un número 
+                              específico de lamparitas para el beneficio de su familia, de Usted mismo, 
+                              o cualquier otro ser que esté pasando por dificultades o esté necesitando 
+                              bendiciones.
+                            </p>   
+  
+                              <p>Por favor realice su ofrenda a través de PayPal usando el formulario 
+                                a continuación. Cada lamparita tiene un costo de R$2.50
+                            </p>
+  
+                              <p>Para donación/pago a través de PayPal por favor use la siguiente 
+                                dirección de correo electrónico como receptor del pago : <u>adm@chagdud.org</u>. 
+                                También, en el campo de comentarios informe que el pago es para ofrenda de 
+                                lamparitas.
+                            </p>
+                              <form>
+                                <div class="form-group mt-5">
+                                  <label for="nombreEs">Nombre completo</label>
+                                  <input type="text" class="form-control" id="nombreEs" name="nombreEs">
+                                </div>
+                                <div class="form-group">
+                                  <label for="correoEn">Dirección de correo electrónico</label>
+                                  <input type="email" class="form-control" id="correoEn" name="correoEn">
+                                </div>
+                                <div class="form-group">
+                                  <label for="monto">Monto ofrecido: R$</label>
+                                  <input type="number" class="form-control" id="monto" name="monto">
+                                </div>
+                                <div class="form-group">
+                                <label for="numeroLamparitas">Número de lamparitas ofrecidas</label>
+                                <input type="number" class="form-control" id="numeroLamparitas" name="numeroLamparitas">
+                              </div>
+                              <p>Deseo ofrendar</p>
+                                <div class="form-check mt-2">
+                                <input class="form-check-input" type="radio" name="oferLamparina" id="diaria" value="diaria" checked>
+                                <label class="form-check-label" for="diaria">
+                                  1 diaria
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="oferLamparina" id="todasDiaEs" value="todasDiaEs">
+                                <label class="form-check-label" for="todasDiaEs">
+                                  Todas en 1 día
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="oferLamparina" id="masDiaria" value="masDiaria">
+                                <label class="form-check-label" for="masDiaria">
+                                  Más de una diaria        
+                                </label>
+                              </div>
+                                <div class="form-group">
+                                  <label for="dedicacion">Escriba su dedicación aquí</label>
+                                  <textarea class="form-control" id="dedicacion"  name="dedicacion" 
+                                  rows="3" placeholder="Escriba su intención aquí"></textarea>
+                                </div>
+                                <div class="form-group">
+                                  <label for="totalMonto">Monto total pagado - R$ </label>
+                                  <input type="number" class="form-control" id="totalMonto" name="totalMonto">
+                                </div>
+                                <div class="form-group">
+                                  <label for="fecha">Fecha de transacción</label>
+                                  <input type="text" class="form-control" id="fecha" name="fecha">
+                                </div>
+                                <div class="form-group">
+                                  <label for="paypalIdEs">Su ID de PayPal</label>
+                                  <input type="number" class="form-control" id="paypalIdEs" name="paypalIdEs">
+                                </div>
+                                <div class="form-group ">
+                                  <label for="paypalCorreo">Su correo electrónico de cuenta PayPal</label>
+                                  <input type="text" class="form-control" id="paypalCorreo" name="paypalCorreo">
+                                </div>
+                                <div class="form-group mt-5">
+                                  <label for="recibe">Envie su recibe de PayPal</label>
+                                  <input type="file" class="form-control-file" name="recibe" id="recibe">
+                                </div>
+                                <div class="form-group">
+                                  <label for="adicional">Información adicional</label>
+                                  <input type="text" class="form-control" id="adicional" name="adicional">
+                                </div>
+                                <button type="submit" class="btn btn-primary mt-2">Enviar</button>
+                              </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+              </div>
+              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <div class="row">
+                  <div class="col-md-4 col-sm-12 my-5">
+                    <img class="imgOferenda" src="{% static 'khadro_ling/images/riwo.jpg' %}">
+                  </div>
+                  <div class="mt-5 col-md-8 col-sm-12 justify-content-center">
+                    <h4 class="titulo"> Oferenda de Riwo Sangtchö </h4>
+                    <b class="mb-2"></b>
+                    
+                    <div class="mt-3"> 
+                    <p>
+                      Riwo Sangtchö (em tibetano, “Oferenda Queimada para Purificação 
+                      na Encosta da Montanha”) é realizado diariamente no Khadro Ling
+                    </p>
+
+                    <p>É uma prática muito poderosa para repelir obstáculos e negatividades. 
+                      Particularmente, os obstáculos ao nosso caminho espiritual. No Khadro Ling, 
+                      são queimados galhos de cipreste e uma grande quantidade de substâncias, 
+                      como alimentos e tecidos.</p>
+
+                      <p>A prática de Riwo Sangchod feita no Khadro Ling é uma instrução de transmissão 
+                        direta do ciclo terma Rigdzin Sogdrub (“Realização da Força Vital dos Detentores 
+                        do Estado Desperto”). Foi revelada pelo Terton Lhatsun Nankha Jigmed (imagem ao lado). 
+                        Ele nasceu em 1597, em Jaryul, no sul do Tibete e era, ao mesmo tempo, uma reencarnação 
+                        de Vimalamitra e do onisciente Longchenpa. Esta prática de linhagem ininterrupta foi 
+                        transmitida a Chagdud Rinpoche.</p>
+
+                      <p>Dzongsar Khyentse Rinpoche enfatizou que, nos tempos de degenerescência atuais, 
+                        é absolutamente importante e benéfico acumular o Louvor às 21 Taras e a prática de 
+                        Riwo Sangchod. Esta contém todos os aspectos do caminho budista ― quanto à disciplina, 
+                        é Hinayana; quanto à motivação, é Mahayana; e, no que diz respeito à Guru Yoga, é Vajrayana.</p>
+
+                        <p>A prática de Riwo Sangchod também pode ser feita em casa — de uma forma igualmente 
+                          poderosa —, queimando apenas incensos. No Khadro Ling, é praticada de forma 
+                          elaborada, todas as manhãs, na Terra Pura de Padmasambava, entre 10h30min e 12h. 
+                          Durante eventos, começa às 7h45min.</p>
+                    </div>
+                  </div>
+                  <div>
+                  <p>Você pode oferecer qualquer valor. Sua oferenda será feita após a confirmação 
+                    do depósito.</p>
+
+                  <h5 class="text-dark"><strong>Atenção</strong></h5>
+                  <p><strong>As oferendas são reunidas sempre às 14h do dia que antecede a 
+                    data do Tsog para que possam ser organizadas e lidas na respectiva data. 
+                    Após este horário, a oferenda será lida no próximo Tsog conforme o 
+                    calendário do Khadro Ling.</strong></p>
+
+                    <h5 class="mt-5"><strong>Dados para depósito</strong></h5>
+                    <p>Banco do Brasil<br>
+                    Titular: Chagdud Gonpa Brasil<br>
+                    CNPJ: 00.990.708/0001-37<br>
+                    Agência: 1380-3<br>
+                    Conta: 3583-1</p>
+                  </div>
+                  </div>
+                    <div class="accordion mt-5" id="accordionExample">
+                      <div class="card">
+                        <div class="card-header" id="headingOne">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link text-dark" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Formulário para oferenda de Riwo Sangtchö
+                            </button>
+                          </h5>
+                        </div>
+                    
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                          <div class="card-body py-5">
+                            <form>
+                              <div class="form-group">
+                                <label for="nome">Nome</label>
+                                <input type="text" class="form-control" id="nome" name="nome">
+                              </div>
+                              <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email">
+                              </div>
+                              <div class="form-group">
+                                <label for="valor">Valor da oferenda em R$</label>
+                                <input type="number" class="form-control" id="valor" name="valor">
+                              </div>
+                              <div class="form-group">
+                                <label for="dedicacao">Dedicação</label>
+                                <textarea class="form-control" id="observacoes"  name="dedicacao" 
+                                rows="3" placeholder="Nome da pessoa ou sua intenção ao oferecer"></textarea>
+                              </div>
+                              <div class="form-group mb-5">
+                                <label for="data">Data do Depósito</label>
+                                <input type="text" class="form-control" id="data" name="data">
+                              </div>
+                              <p>Tipo de Pagamento</p>
+                                <div class="form-check mt-2">
+                                <input class="form-check-input" type="radio" name="pagamento" id="bb" value="bb" checked>
+                                <label class="form-check-label" for="bb">
+                                  Transferência entre contas Banco do Brasil
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pagamento" id="doc" value="doc">
+                                <label class="form-check-label" for="doc">
+                                  DOC ou TED
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pagamento" id="deposito" value="deposito">
+                                <label class="form-check-label" for="deposito">
+                                  Depósito        
+                                </label>
+                              </div>
+                              <div class="form-group mt-5">
+                                <label for="comprovante">Envie o comprovante</label>
+                                <input type="file" class="form-control-file" name="comprovante" id="comprovante">
+                              </div>
+                              <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+                            </form>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingTwo">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed text-black-50" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Offer Riwo Sangtchö in an English form
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                          <div class="card-body py-5">
+                            <p> The tsok is an elaborated ceremony of Tibetan Buddhism, which uses food 
+                              and drinks of different flavours as objects of meditation and purification. 
+                              You can participate by making a financial offering towards the tsok.</p>   
+
+                            <p>Please, make your offering through PayPal using the form below.</p>
+
+                            <p>For PayPal donation/payment, please use the following email address 
+                              for payment receiver: <u>adm@chagdud.org.</u> Also, in comment field inform 
+                              that payment is for Tsok Offering. </p>
+                            <form>
+                              <div class="form-group mt-5">
+                                <label for="nameEn">Full Name</label>
+                                <input type="text" class="form-control" id="nameEn" name="nameEn">
+                              </div>
+                              <div class="form-group">
+                                <label for="emailEn">Email Adress</label>
+                                <input type="email" class="form-control" id="emailEn" name="emailEn">
+                              </div>
+                              <div class="form-group">
+                                <label for="amount">Amount offered: R$</label>
+                                <input type="number" class="form-control" id="amount" name="amount">
+                              </div>
+                              <div class="form-group">
+                                <label for="dedication">Write your dedication here</label>
+                                <textarea class="form-control" id="dedication"  name="dedication" 
+                                rows="3" placeholder="Write your intetion with this offering"></textarea>
+                              </div>
+                              <div class="form-group">
+                                <label for="total">Total amount paid: R$</label>
+                                <input type="number" class="form-control" id="total" name="total">
+                              </div>
+                              <div class="form-group">
+                                <label for="date">Date of PayPal transaction</label>
+                                <input type="text" class="form-control" id="date" name="date">
+                              </div>
+                              <div class="form-group">
+                                <label for="paypalId">Your PayPal ID</label>
+                                <input type="number" class="form-control" id="paypalId" name="paypalId">
+                              </div>
+                              <div class="form-group ">
+                                <label for="paypalEmail">Your PayPal account email</label>
+                                <input type="text" class="form-control" id="paypalEmail" name="paypalEmail">
+                              </div>
+                              <div class="form-group mt-5">
+                                <label for="receipt">Send you PayPal receipt</label>
+                                <input type="file" class="form-control-file" name="receipt" id="receipt">
+                              </div>
+                              <div class="form-group">
+                                <label for="extra">Extra information</label>
+                                <input type="text" class="form-control" id="extra" name="extra">
+                              </div>
+                              <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingThree">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed text-black-50" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Ofrecer Riwo Sangtchö en un formulario en español
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                          <div class="card-body">
+                            <p> El tsog es una ceremonia elaborada del Budismo Tibetano que usa 
+                              alimentos y bebidas de diferentes sabores como objetos de meditación y 
+                              purificación. Usted puede ser partícipe haciendo ofrendas en dinero para el tsog.
+                            </p>   
+  
+                              <p>Por favor realice su ofrenda a través de PayPal usando el formulario a continuación. </p>
+  
+                              <p>Para donación/pago a través de PayPal por 
+                                favor use la siguiente dirección de correo electrónico 
+                                como receptor del pago : <u>adm@chagdud.org</u>. También, en el campo 
+                                de comentarios informe que el pago es para Ofrenda de Tsog.</p>
+                              <form>
+                                <div class="form-group mt-5">
+                                  <label for="nombreEs">Nombre completo</label>
+                                  <input type="text" class="form-control" id="nombreEs" name="nombreEs">
+                                </div>
+                                <div class="form-group">
+                                  <label for="correoEn">Dirección de correo electrónico</label>
+                                  <input type="email" class="form-control" id="correoEn" name="correoEn">
+                                </div>
+                                <div class="form-group">
+                                  <label for="monto">Monto ofrecido: R$</label>
+                                  <input type="number" class="form-control" id="monto" name="monto">
+                                </div>
+                                <div class="form-group">
+                                  <label for="dedicacion">Escriba su dedicación aquí</label>
+                                  <textarea class="form-control" id="dedicacion"  name="dedicacion" 
+                                  rows="3" placeholder="Escriba su intención aquí"></textarea>
+                                </div>
+                                <div class="form-group">
+                                  <label for="totalMonto">Monto total pagado - R$ </label>
+                                  <input type="number" class="form-control" id="totalMonto" name="totalMonto">
+                                </div>
+                                <div class="form-group">
+                                  <label for="fecha">Fecha de transacción</label>
+                                  <input type="text" class="form-control" id="fecha" name="fecha">
+                                </div>
+                                <div class="form-group">
+                                  <label for="paypalIdEs">Su ID de PayPal</label>
+                                  <input type="number" class="form-control" id="paypalIdEs" name="paypalIdEs">
+                                </div>
+                                <div class="form-group ">
+                                  <label for="paypalCorreo">Su correo electrónico de cuenta PayPal</label>
+                                  <input type="text" class="form-control" id="paypalCorreo" name="paypalCorreo">
+                                </div>
+                                <div class="form-group mt-5">
+                                  <label for="recibe">Envie su recibe de PayPal</label>
+                                  <input type="file" class="form-control-file" name="recibe" id="recibe">
+                                </div>
+                                <div class="form-group">
+                                  <label for="adicional">Información adicional</label>
+                                  <input type="text" class="form-control" id="adicional" name="adicional">
+                                </div>
+                                <button type="submit" class="btn btn-primary mt-2">Enviar</button>
+                              </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+
+          
+
+
+        </div>
+      </div>
+  </div>
+  </div>
+  </div>
+</main>
+{% endblock %}
