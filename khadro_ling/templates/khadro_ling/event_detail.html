@@ -1,6 +1,7 @@
 {% extends 'khadro_ling/base.html' %}
 {% load static %}
 
+
 {% block head %}
 <title>Evento | Khadro Ling</title>
 {% endblock %}
@@ -10,11 +11,11 @@
   <div class="col-md-6">
     <div class="row">
     <div class="data col-md-1 mb-2">
-      <p class="diaData">29</p>
-      <p class="mesData">jun</p>
+      <p class="diaData">{{ event.start_date.day }}</p>
+      <p class="mesData">{{ short_month }}</p>
     </div>
     <div class="col-md-9">
-<h1 class="mb-3 titulo text-dark">Retiro de Introdução ao Budismo</h1>
+      <h1 class="mb-3 titulo text-dark">{{ event.name }}</h1>
     </div>
   </div>
   </div>
@@ -23,10 +24,16 @@
   <div class="container">
     <div class="row">
       <div class="col-md-5 col-sm-12 text-white mt-5 pt-1">
-        <p><i class="fa fa-user" aria-hidden="true"></i> | Com Lama Sherab</p>
-        <p><i class="fa fa-calendar" aria-hidden="true"></i> | De 18, às 9h, a 19 de maio, às 17h, de 2019</p>
-        <p><i class="fa fa-check-square-o" aria-hidden="true"></i> | Não há pré-requisitos para a participação neste evento.</p>
-        <p><i class="fa fa-map-marker" aria-hidden="true"></i> | Chagdud Gonpa Khadro Ling</p> 
+        <p><i class="fa fa-user" aria-hidden="true"></i> | Com {{ event.vajra_master }}</p>
+        <p><i class="fa fa-calendar" aria-hidden="true"></i> | De {{ event.start_date_pretty }}, a {{ event.end_date_pretty }}</p>
+        <p><i class="fa fa-check-square-o" aria-hidden="true"></i>
+          {% if event.requirements %}
+            | {{ event.requirements }}
+          {% else %}
+            | Não há pré-requisitos para a participação neste evento.
+          {% endif %}
+        </p>
+        <p><i class="fa fa-map-marker" aria-hidden="true"></i> | {{ event.place }}</p>
       </div>
       <div class="col-md-7 col-sm-12 pt-1">
         <img class="imgEvento" src="{% static 'khadro_ling/images/khadro.jpg' %}" width="100%">
@@ -44,26 +51,10 @@
         <div class="row align-items-center">   
           <div class="mb-5 col-md-7 offset-md-1 offset-md-0 col-sm-12 text-justify border-right pr-5">
             <p>
-              Buda, por meio da sua compaixão incomensurável, ensinou 
-              incontáveis métodos que propiciam a liberdade do sofrimento. 
-              Todos possuem o potencial para alcançar tal liberdade, que depende 
-              somente de nosso esforço e empenho.</p>
-
-              <p>Estamos agora em um universo de experiências confusas, e 
-                não compreendemos os mecanismos pelo qual criamos a nossa própria 
-                confusão. Com o estudo, contemplação e a meditação, podemos nos desvencilhar 
-                dessas experiências e alcançar um estado de paz interna e sabedoria.</p>
-        
-              <p>Durante esse final de semana, Lama Sherab Drolma abordará alguns princípios do 
-                budismo e instruções sobre meditação budista. Os dois dias serão divididos entre 
-                sessões de palestras intercaladas com sessões de meditação, além de momentos 
-                destinados para perguntas e respostas.
-              </p>
-
-              <p>Este retiro é especialmente indicado para pessoas que buscam um primeiro contato com 
-                os ensinamentos budistas ou que querem revisitar temas cruciais para a prática budista.</p>
-
+              {{ event.description | linebreaks }}
+            </p>
           </div>
+
           <div class="col-md-4 col-sm-12 mb-5 pl-5">
             <h3 class="titulo mb-3"> Utilidades</h3>
             <p><i class="fa fa-bed" aria-hidden="true"></i> | Tipos de hospedagem</p>
@@ -74,7 +65,6 @@
             <p><i class="fa fa-envelope" aria-hidden="true"></i> | Contato</p>
             <p><i class="fa fa-times" aria-hidden="true"></i> | Cancelamento</p>
           </div>
-
           
   </div>
 

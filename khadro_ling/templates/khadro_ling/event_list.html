@@ -22,43 +22,48 @@
     <div class="container">
       <div id="eventos" class="row">
         <div class="row align-items-center">   
-          <div class="mb-5 col-md-5 offset-md-1 offset-md-0 col-sm-12 justify-content-center">
-            <h3 class="titulo"> Introdução ao Budismo </h3>
-          <b class="mb-2"></b>
-          <p class="legenda text-black-50">De 21/03/2019 até 25/03/2019</p>
-            <span>
-              Retiro introdutório sobre o budismo com Lama Sherab Drolma. 
-              Este retiro é especialmente indicado para pessoas que nunca receberam ensinamentos 
-              budistas anteriormente. Durante esse retiro, Lama Sherab Drolma transmitirá os 
-              ensinamentos sobre os princípios básicos do budismo e instruções sobre meditação.
-            </span>
-            <span class="d-block mt-3"><a class="link" href="{% url 'khadroling:event-detail' 1 %}">Saiba mais</a></span>
-          </div>
-          <div class="col-md-5 col-sm-12 d-flex mb-5">
-            <img class="rounded" src="{% static 'khadro_ling/images/khadro.jpg' %}" width="100%">
-          </div>
-
-          <div class="col-md-8 col-sm-4 offset-md-2 border-bottom my-5"></div>
-
-          <div class="d-flex flex-wrap mb-5 col-md-4 offset-md-2 col-sm-12 justify-content-center">
-            <div class="data col-md-2 mb-2">
-              <p class="diaData">10</p>
-              <p class="mesData">abr</p>
-            </div>
-            <div class="nomeEvento col-10">
-            <h4 class="titulo"> Retiro de Ngondro </h4>
-          <b class="mb-2"></b>
-            </div>
-            <div class="ml-4"> 
-            <span>
-              Retiro de introdução ao Ngondro.
-            </span>
-            <span class="d-block mt-2"><a class="link" href="#">Saiba mais</a></span>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-12 d-flex mb-5">
-            <img class="rounded thumbEvento" src="{% static 'khadro_ling/images/natal.jpg' %}" width="100%">
-          </div>
+          {% for event in event_list %}
+            {% if event.id == 1 %}
+              <div class="mb-5 col-md-5 offset-md-1 offset-md-0 col-sm-12 justify-content-center">
+                <h3 class="titulo">{{ event.name }}</h3>
+              <b class="mb-2"></b>
+              <p class="legenda text-black-50">
+                De {{ event.start_date.day }}/{{ event.start_date.month }}/{{ event.start_date.year }} 
+                até {{ event.end_date.day }}/{{ event.end_date.month }}/{{ event.end_date.year }} 
+              </p>
+              <span>
+                {{ event.short_description }}
+              </span>
+              <span class="d-block mt-3"><a class="link" href="{% url 'khadroling:event-detail' event.pk %}">Saiba mais</a></span>
+              </div>
+              <div class="col-md-5 col-sm-12 d-flex mb-5">
+                <img class="rounded" src="{% static 'khadro_ling/images/khadro.jpg' %}" width="100%">
+              </div>
+    
+              <div class="col-md-8 col-sm-4 offset-md-2 border-bottom my-5"></div>
+            {% else %}
+              <div class="d-flex flex-wrap mb-5 col-md-4 offset-md-2 col-sm-12 justify-content-center">
+                <div class="data col-md-2 mb-2">
+                  <p class="diaData">{{ event.start_date.day }}</p>
+                  <p class="mesData">abr</p>
+                </div>
+                <div class="nomeEvento col-10">
+                <h4 class="titulo">{{ event.name }}</h4>
+              <b class="mb-2"></b>
+                </div>
+                <div class="ml-4"> 
+                <span>
+                  {{ event.short_description }}
+                </span>
+                <span class="d-block mt-2"><a class="link" href="{% url 'khadroling:event-detail' event.pk %}">Saiba mais</a></span>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-12 d-flex mb-5">
+                <img class="rounded thumbEvento" src="{% static 'khadro_ling/images/natal.jpg' %}" width="100%">
+              </div>
+            {% endif %}
+          {% endfor %}
+<!-- 
 
           <div class="d-flex flex-wrap mb-5 col-md-4 offset-md-2 col-sm-12 justify-content-center">
             <div class="data col-md-2 mb-2">
@@ -75,7 +80,7 @@
               Kyabje Dilgo Khyentse Rinpoche (1910-1991). Essa prática foi introduzida no Chagdud 
               Gonpa após, em 1987, o pró...
             </span>
-            <span class="d-block mt-2"><a class="link" href="#">Saiba mais</a></span>
+            <span class="d-block mt-2"><a class="link" href="{% url 'khadroling:event-detail' 3 %}">Saiba mais</a></span>
             </div>
           </div>
           <div class="col-md-4 col-sm-12 d-flex mb-5">
@@ -95,12 +100,12 @@
             <span>
               Retiro de 2 semanas com JTR.
             </span>
-            <span class="d-block mt-2"><a class="link" href="#">Saiba mais</a></span>
+            <span class="d-block mt-2"><a class="link" href="{% url 'khadroling:event-detail' 4 %}">Saiba mais</a></span>
             </div>
           </div>
           <div class="col-md-4 col-sm-12 d-flex mb-5">
             <img class="rounded thumbEvento" src="{% static 'khadro_ling/images/natal.jpg' %}" width="100%">
-          </div>
+          </div> -->
 
 
         </div>
