@@ -18,6 +18,10 @@
 }
 
 
+.sobreEvento {
+  padding: 8rem 0;
+}
+
 .nav-pills .nav-link {
   color: #6f6e6e;
 }
@@ -123,6 +127,13 @@
   object-fit: cover;
 }
 
+.imgOferenda2 {
+  height: 560px;
+  width: 240px;
+  object-fit: cover;
+  object-position: 85%;
+}
+
 .navOferendas {
   color: #444;
 }
@@ -152,10 +163,18 @@
   .inverteMobile {
     flex-direction: column-reverse;
   }
- 
 
+  .sobre {
+    padding: 4rem 0;
+}
+
+.imgEvento {
+  margin-top: 0px;
+
+}
+.sobreEvento {
+  padding: 10rem 0;
 }
 
 
-
-
+}

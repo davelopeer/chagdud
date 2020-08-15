@@ -36,7 +36,7 @@
                 <a class="nav-link text-black-50" href="{% url 'institution:sacred-dates' %}">Datas Sagradas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-black-50" href="http://makara.com.br/" target="_blank">Editora Makara</a>
+                <a class="nav-link text-black-50" href="http://makara.com.br/" target="blank">Editora Makara</a>
               </li>
             </ul>
           </div>
@@ -56,72 +56,77 @@
               </li>
             </ul>
           </div>
-          <div class="d-flex justify-content-center">
+          <div class="d-flex flex-column justify-content-center text-center">
             <a href="{% url 'institution:home' %}"><img src="{% static 'institution/images/logoChagdud.png' %}" alt="Logo Chagdud Gonpa" width="100px"></a>
+            <p class="titulo">Chagdud Gonpa Brasil</p>
           </div>
-          <div class="col-md-4 col-sm-5 d-flex flex-row-reverse">
+          <div class="col-md-4 col-sm-5 d-flex flex-row-reverse pt-3">
             <ul class="nav text-white">
               <li class="nav-item">
-                <a class="nav-link text-black-50" href="{% url 'khadroling:home' %}" target="_blank">Khadro Ling</a>
+                <a class="nav-link text-black-50 text-center" href="{% url 'khadroling:home' %}" target="_blank"> Khadro Ling
+                  <br>
+                  <span class="sede text-center">Sede do Chagdud Gonpa Brasil</span></a>
               </li>
               <li class="nav-item">
                 <div class="btn-group">
                   <button type="button" class="btn dropdown-toggle text-black-50" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
-                    Visitar outros centros
+                    Visitar outras filiais
                   </button>
-                  <ul class="dropdown-menu row">
-                    <li class="col-4">
-                      <h4>Sul</h4>
-                      <a class="dropdown-item" href="http://yesheling.blogspot.com/" target="_blank">Yeshe Ling | Porto
-                        Alegre, RS</a>
-                      <a class="dropdown-item" href="https://pt-br.facebook.com/tchimedling/" target="_blank">Tchimed
-                        Ling | Santa Maria, RS </a>
-                      <a class="dropdown-item" href="https://www.facebook.com/budismocaxias/" target="_blank">Yeshe
-                        Melong | Caxias do Sul, RS</a>
-                      <a class="dropdown-item" href="https://www.facebook.com/meditacaofw/" target="_blank">Grupo de
-                        Meditação | Frederico Westphalen, RS</a>
-                      <a class="dropdown-item" href="http://www.rigdjed.org/" target="_blank">Rigdjed Ling |
-                        Florianópops, SC</a>
-                      <a class="dropdown-item" href="https://budismoemblumenau.wordpress.com/" target="_blank">Blumenau,
-                        SC</a>
-                      <a class="dropdown-item" href="https://www.facebook.com/budismocaxias/" target="_blank">Dordje
-                        Ling | Curitiba, PR</a>
-                      <a class="dropdown-item" href="mailto:treici_3cy@hotmail.com" target="_blank">Novo Hamburgo,
-                        RS</a>
-                    </li>
-                    <li class="col-4">
-                      <h4>Sudeste</h4>
-                      <a class="dropdown-item" href="https://www.odsalling.org/" target="_blank">Odsal Ling | São
-                        Paulo</a>
-                      <a class="dropdown-item" href="#" target="_blank">Padma Amrita Ling | Ribeirão Preto, SP</a>
-                      <a class="dropdown-item" href="https://dawadrolma.org/" target="_blank">Dawa Drolma | Belo
-                        Horizonte, MG</a>
-                      <a class="dropdown-item" href="https://www.facebook.com/sitio.esperanca.lambari/"
-                        target="_blank">Ngoy Drub Ling | Lambari, MG</a>
-                      <a class="dropdown-item" href="http://pedgyal.org/" target="_blank">Pedgyal Ling | Rio de Janeiro,
-                        RJ</a>
-                      <a class="dropdown-item" href="https://pt-br.facebook.com/dechenling.novafriburgo/"
-                        target="_blank">Dechen Ling | Nova Friburgo, RJ</a>
-                      <a class="dropdown-item" href="https://samdrubling.wordpress.com/" target="_blank">Sam Drub Ling |
-                        Vitória, ES</a>
-                    </li>
-                    <li class="col-4">
-                      <h4>Centro-Oeste</h4>
-                      <a class="dropdown-item" href="https://www.odsalling.org/" target="_blank">Padma Ling | Brasília,
-                        DF</a>
-                      <a class="dropdown-item" href="mailto:lidiogjr@gmail.com" target="_blank">Goiânia, GO</a>
-                    </li>
-                    <li class="col-4">
-                      <h4>Nordeste</h4>
-                      <a class="dropdown-item" href="https://ieshe.wordpress.com/" target="_blank">Ieshe Tso | Natal,
-                        RN</a>
-                    </li>
-                    <li class="col-4">
-                      <h4>Norte</h4>
-                      <a class="dropdown-item" href="https://pt-br.facebook.com/tromguephelling/" target="_blank">Trom
-                        Gue Phel Ling | Manaus, AM</a>
-                    </li>
+                  <ul class="dropdown-menu">
+                    <div class="d-flex">
+                      <li class="col ml-3">
+                        <h5>Sul</h5>
+                        <a class="dropdown-item" href="http://yesheling.blogspot.com/" target="_blank">Yeshe Ling |
+                          Porto Alegre, RS</a>
+                        <a class="dropdown-item" href="https://pt-br.facebook.com/tchimedling/" target="_blank">Tchimed
+                          Ling | Santa Maria, RS </a>
+                        <a class="dropdown-item" href="https://www.facebook.com/budismocaxias/" target="_blank">Yeshe
+                          Melong | Caxias do Sul, RS</a>
+                        <a class="dropdown-item" href="https://www.facebook.com/meditacaofw/" target="_blank">Grupo de
+                          Meditação | Frederico Westphalen, RS</a>
+                        <a class="dropdown-item" href="http://www.rigdjed.org/" target="_blank">Rigdjed Ling |
+                          Florianópops, SC</a>
+                        <a class="dropdown-item" href="https://budismoemblumenau.wordpress.com/"
+                          target="_blank">Blumenau, SC</a>
+                        <a class="dropdown-item" href="https://www.facebook.com/budismocaxias/" target="_blank">Dordje
+                          Ling | Curitiba, PR</a>
+                        <a class="dropdown-item" href="mailto:treici_3cy@hotmail.com" target="_blank">Novo Hamburgo,
+                          RS</a>
+                      </li>
+                      <li class="col">
+                        <h5>Sudeste</h5>
+                        <a class="dropdown-item" href="https://www.odsalling.org/" target="_blank">Odsal Ling | São
+                          Paulo</a>
+                        <a class="dropdown-item" href="#" target="_blank">Padma Amrita Ling | Ribeirão Preto, SP</a>
+                        <a class="dropdown-item" href="https://dawadrolma.org/" target="_blank">Dawa Drolma | Belo
+                          Horizonte, MG</a>
+                        <a class="dropdown-item" href="https://www.facebook.com/sitio.esperanca.lambari/"
+                          target="_blank">Ngoy Drub Ling | Lambari, MG</a>
+                        <a class="dropdown-item" href="http://pedgyal.org/" target="_blank">Pedgyal Ling | Rio de
+                          Janeiro, RJ</a>
+                        <a class="dropdown-item" href="https://pt-br.facebook.com/dechenling.novafriburgo/"
+                          target="_blank">Dechen Ling | Nova Friburgo, RJ</a>
+                        <a class="dropdown-item" href="https://samdrubling.wordpress.com/" target="_blank">Sam Drub Ling
+                          | Vitória, ES</a>
+                      </li>
+                      <li>
+                        <h5>Centro-Oeste</h5>
+                        <a class="dropdown-item" href="https://www.odsalling.org/" target="_blank">Padma Ling |
+                          Brasília, DF</a>
+                        <a class="dropdown-item" href="mailto:lidiogjr@gmail.com" target="_blank">Goiânia, GO</a>
+                      </li>
+                      <li>
+                        <h5>Nordeste</h5>
+                        <a class="dropdown-item" href="https://ieshe.wordpress.com/" target="_blank">Ieshe Tso | Natal,
+                          RN</a>
+                      </li>
+                      <li>
+                        <h5>Norte</h5>
+                        <a class="dropdown-item" href="https://pt-br.facebook.com/tromguephelling/" target="_blank">Trom
+                          Gue Phel Ling | Manaus, AM</a>
+                      </li>
+                    </div>
                   </ul>
               </li>
             </ul>
@@ -134,62 +139,72 @@
         <ul>
           <li><a href="{% url 'institution:about-us' %}">Quem somos</a></li>
           <li><a href="{% url 'institution:teachers' %}">Professores</a></li>
-          <li><a href="{% url 'khadroling:home' %}" target="_blank">Khadro Ling</a></li>
+          <li><a href="{% url 'khadroling:home' %}" target="_blank">Khadro Ling<br>
+              <span class="sede">Sede do Chagdud Gonpa Brasil</span></a></li>
           <li>
             <div class="btn-group">
               <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                 aria-expanded="false">
                 Visitar outros centros
               </button>
-              <ul class="dropdown-menu row">
-                <li class="col-4">
-                  <h4>Sul</h4>
-                  <a class="dropdown-item" href="http://yesheling.blogspot.com/" target="_blank">Yeshe Ling | Porto
-                    Alegre, RS</a>
-                  <a class="dropdown-item" href="https://pt-br.facebook.com/tchimedling/" target="_blank">Tchimed Ling |
-                    Santa Maria, RS </a>
-                  <a class="dropdown-item" href="https://www.facebook.com/budismocaxias/" target="_blank">Yeshe Melong |
-                    Caxias do Sul, RS</a>
-                  <a class="dropdown-item" href="https://www.facebook.com/meditacaofw/" target="_blank">Grupo de
-                    Meditação | Frederico Westphalen, RS</a>
-                  <a class="dropdown-item" href="http://www.rigdjed.org/" target="_blank">Rigdjed Ling | Florianópops,
-                    SC</a>
-                  <a class="dropdown-item" href="https://budismoemblumenau.wordpress.com/" target="_blank">Blumenau,
-                    SC</a>
-                  <a class="dropdown-item" href="https://www.facebook.com/budismocaxias/" target="_blank">Dordje Ling |
-                    Curitiba, PR</a>
-                  <a class="dropdown-item" href="mailto:treici_3cy@hotmail.com" target="_blank">Novo Hamburgo, RS</a>
-                </li>
-                <li class="col-4">
-                  <h4>Sudeste</h4>
-                  <a class="dropdown-item" href="https://www.odsalling.org/" target="_blank">Odsal Ling | São Paulo</a>
-                  <a class="dropdown-item" href="#" target="_blank">Padma Amrita Ling | Ribeirão Preto, SP</a>
-                  <a class="dropdown-item" href="https://dawadrolma.org/" target="_blank">Dawa Drolma | Belo Horizonte,
-                    MG</a>
-                  <a class="dropdown-item" href="https://www.facebook.com/sitio.esperanca.lambari/" target="_blank">Ngoy
-                    Drub Ling | Lambari, MG</a>
-                  <a class="dropdown-item" href="http://pedgyal.org/" target="_blank">Pedgyal Ling | Rio de Janeiro,
-                    RJ</a>
-                  <a class="dropdown-item" href="https://pt-br.facebook.com/dechenling.novafriburgo/"
-                    target="_blank">Dechen Ling | Nova Friburgo, RJ</a>
-                  <a class="dropdown-item" href="https://samdrubling.wordpress.com/" target="_blank">Sam Drub Ling |
-                    Vitória, ES</a>
-                </li>
-                <li class="col-4">
-                  <h4>Centro-Oeste</h4>
-                  <a class="dropdown-item" href="https://www.odsalling.org/" target="_blank">Padma Ling | Brasília,
-                    DF</a>
-                  <a class="dropdown-item" href="mailto:lidiogjr@gmail.com" target="_blank">Goiânia, GO</a>
-                </li>
-                <li class="col-4">
-                  <h4>Nordeste</h4>
-                  <a class="dropdown-item" href="https://ieshe.wordpress.com/" target="_blank">Ieshe Tso | Natal, RN</a>
-                </li>
-                <li class="col-4">
-                  <h4>Norte</h4>
-                  <a class="dropdown-item" href="https://pt-br.facebook.com/tromguephelling/" target="_blank">Trom Gue
-                    Phel Ling | Manaus, AM</a>
-                </li>
+              <ul class="dropdown-menu mobileDropdown">
+                <div class="d-flex flex-column">
+                  <li>
+                    <h5>Sul</h5>
+                    <a class="dropdown-item" href="http://yesheling.blogspot.com/" target="_blank">Yeshe Ling | Porto
+                      Alegre, RS</a>
+                    <a class="dropdown-item" href="https://pt-br.facebook.com/tchimedling/" target="_blank">Tchimed Ling
+                      |
+                      Santa Maria, RS </a>
+                    <a class="dropdown-item" href="https://www.facebook.com/budismocaxias/" target="_blank">Yeshe Melong
+                      |
+                      Caxias do Sul, RS</a>
+                    <a class="dropdown-item" href="https://www.facebook.com/meditacaofw/" target="_blank">Grupo de
+                      Meditação | Frederico Westphalen, RS</a>
+                    <a class="dropdown-item" href="http://www.rigdjed.org/" target="_blank">Rigdjed Ling | Florianópops,
+                      SC</a>
+                    <a class="dropdown-item" href="https://budismoemblumenau.wordpress.com/" target="_blank">Blumenau,
+                      SC</a>
+                    <a class="dropdown-item" href="https://www.facebook.com/budismocaxias/" target="_blank">Dordje Ling
+                      |
+                      Curitiba, PR</a>
+                    <a class="dropdown-item" href="mailto:treici_3cy@hotmail.com" target="_blank">Novo Hamburgo, RS</a>
+                  </li>
+                  <li>
+                    <h5>Sudeste</h5>
+                    <a class="dropdown-item" href="https://www.odsalling.org/" target="_blank">Odsal Ling | São
+                      Paulo</a>
+                    <a class="dropdown-item" href="#" target="_blank">Padma Amrita Ling | Ribeirão Preto, SP</a>
+                    <a class="dropdown-item" href="https://dawadrolma.org/" target="_blank">Dawa Drolma | Belo
+                      Horizonte,
+                      MG</a>
+                    <a class="dropdown-item" href="https://www.facebook.com/sitio.esperanca.lambari/"
+                      target="_blank">Ngoy
+                      Drub Ling | Lambari, MG</a>
+                    <a class="dropdown-item" href="http://pedgyal.org/" target="_blank">Pedgyal Ling | Rio de Janeiro,
+                      RJ</a>
+                    <a class="dropdown-item" href="https://pt-br.facebook.com/dechenling.novafriburgo/"
+                      target="_blank">Dechen Ling | Nova Friburgo, RJ</a>
+                    <a class="dropdown-item" href="https://samdrubling.wordpress.com/" target="_blank">Sam Drub Ling |
+                      Vitória, ES</a>
+                  </li>
+                  <li>
+                    <h5>Centro-Oeste</h5>
+                    <a class="dropdown-item" href="https://www.odsalling.org/" target="_blank">Padma Ling | Brasília,
+                      DF</a>
+                    <a class="dropdown-item" href="mailto:lidiogjr@gmail.com" target="_blank">Goiânia, GO</a>
+                  </li>
+                  <li>
+                    <h5>Nordeste</h5>
+                    <a class="dropdown-item" href="https://ieshe.wordpress.com/" target="_blank">Ieshe Tso | Natal,
+                      RN</a>
+                  </li>
+                  <li>
+                    <h5>Norte</h5>
+                    <a class="dropdown-item" href="https://pt-br.facebook.com/tromguephelling/" target="_blank">Trom Gue
+                      Phel Ling | Manaus, AM</a>
+                  </li>
+                </div>
               </ul>
       </nav>
 
@@ -199,7 +214,7 @@
         <span></span>
       </span>
 
-      <img class="logoMobile" src="{% static 'institution/images/logoChagdud.png' %}" alt="Logo Chagdud Gonpa" width="80px">
+      <a href="{% url 'institution:home' %}"><img  class="logoMobile" src="{% static 'institution/images/logoChagdud.png' %}" alt="Logo Chagdud Gonpa" width="80px"></a>
     </div>
 
   </header>
@@ -224,7 +239,7 @@
     </p>
     <div class="col-12">
       <p>© 2020 Chagdud Gonpa Brasil / © 2020 Chagdud Gonpa Khadro Ling</p>
-      <p>Contato: E-mail • fone: (51) 3546-8201 </p>
+      <p>Contato: <a href="mailto:info@templobudista.org">E-mail</a> • Fone: (51) 3546-8201 </p>
       <p>Estr. Linha Águas Brancas, 1211 Cx. Postal 121, CEP 95660-000 - Três Coroas, RS</p>
     </div>
   </footer>

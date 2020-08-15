@@ -3,19 +3,23 @@
 
 
 {% block body %}
-  <div class="banner pt-5" style="background-image: url({% static 'institution/images/chagdudRinpoche.jpg' %});">
-    <div class="container">
-      <div class="logo row justify-content-start">
-        <div class="col-md-6 col-sm-12 mt-5 pt-5">
+  <div class="container">
+    <div id="inicio" class="logo justify-content-center align-items-center row justify-content-start mb-5">
+      <div class="col-md-5 col-sm-12 text-center mt-5">
+        <span class="subtitulo mb-5 text-black-50">Somos uma rede de centros de prática do budismo vajrayana fundada por
+          S. Ema.
+          Chagdud Tulku
+          Rinpoche.</span>
+      </div>
+      <div class="col-md-5 col-sm-12 text-center mt-5">
+        <img class="imgApres" src="{% static 'institution/images/CTR_site_2020.jpeg' %}" width="80%">
 
-          <h1 class="mb-5 titulo">Chagdud Gonpa Brasil</h1>
-          <span class="subtitulo mb-5">Somos uma rede de centros de prática do budismo vajrayana fundada por S. Ema.
-            Chagdud Tulku
-            Rinpoche.</span>
-        </div>
       </div>
     </div>
   </div>
+
+
+
 
   <main>
     <div class="sobre bg-light">
@@ -29,7 +33,7 @@
                 Chagdud Tulku Rinpoche, os centros brasileiros oferecem ensinamentos e práticas de meditação
                 da tradição Nyingma do Budismo Tibetano Vajraiana.</span>
             </div>
-            <a class="link" href="#">Conhecer mais</a>
+            <a class="link" href="{% url 'institution:about-us' %}">Conhecer mais</a>
           </div>
         </div>
       </div>
@@ -38,7 +42,6 @@
       <div id="chagdud" class="row py-5">
         <div class="col-md-12 col-sm-12 d-flex justify-content-center align-items-center py-5">
           <b></b>
-          <h3 class="text-center titulo my-5 mr-3 ml-3"> Chagdud Khadro </h3>
           <b></b>
         </div>
 
@@ -52,15 +55,18 @@
               Chagdud Khadro, esposa do S. Ema. Chagdud Tulku
               Rinpoche, é a Diretora Espiritual dos seus centros na América do Sul.
             </span>
-            <span class="d-block mt-3"><a class="link" href="#">Conhecer mais professores</a></span>
+            <span class="d-block mt-3"><a class="link" href="{% url 'institution:teachers' %}">Conhecer mais professores</a></span>
           </div>
         </div>
       </div>
       <div id="khadro" class="row py-5">
-        <div class="col-md-12 col-sm-12 d-flex justify-content-center align-items-center py-5">
+        <div class="col-md-12 col-sm-12 d-flex justify-content-center align-items-center pt-5">
           <b></b>
-          <h3 class="text-center titulo my-5 mr-3 ml-3"> Khadro Ling </h3>
+          <h3 class="text-center titulo mr-3 ml-3"> Khadro Ling </h3>
           <b></b>
+        </div>
+        <div class="col-md-12 col-sm-12 d-flex justify-content-center align-items-center pb-5">
+          <p class="text-center text-black-50"> Sede do Chagdud Gonpa Brasil </p>
         </div>
 
         <div class="d-flex flex-wrap align-items-center justify-content-center">
@@ -75,29 +81,28 @@
               do Budismo Tibetano Vajraiana moram no Khadro Ling. São pessoas de vários locais do Brasil e
               do mundo.
             </span>
-            <span class="d-block mt-3"><a class="link" href="#">Saber mais</a></span>
+            <span class="d-block mt-3"><a class="link" href="{% url 'khadroling:home' %}">Saber mais</a></span>
           </div>
         </div>
       </div>
       <div id="centros" class="row py-5">
         <div class="col-md-12 col-sm-12 d-flex justify-content-center align-items-center py-5">
           <b></b>
-          <h3 class="text-center titulo mr-3 ml-3"> Outros Centros </h3>
+          <h3 class="text-center titulo mr-3 ml-3"> Outras Filiais </h3>
           <b></b>
         </div>
         <div class="d-flex flex-wrap align-items-center">
           <div class="col-md-3 col-sm-12 offset-md-2 offset-sm-0 justify-content-center text-center">
             <span>
-              Temos centros distribuídos por todas as regiões do país,
-              encontre o mais próximo e venha nos visitar.
+              Temos filiais distribuídas por todas as regiões do país,
+              encontre a mais próxima e venha nos visitar.
             </span>
-            <span class="d-block mt-3"><a class="link" href="#">Conhecer os centros</a></span>
           </div>
           <div class="col-md-5 col-sm-12 d-flex">
             <div class="rowGrid align-items-center">
               <div class="colGrid1">
                 <button type="button" class="imgCentros" data-toggle="modal" data-target=".bd-example-modal-lg1">
-                  <img class="rounded" src="{% static 'institution/images/khadro.jpg' %}">
+                  <img class="rounded" src="{% static 'institution/images/dawaDrolma.jpg' %}">
                 </button>
               </div>
               <div class="modal fade bd-example-modal-lg1" tabindex="10" role="dialog"
@@ -105,22 +110,40 @@
                 <div class="modal-dialog modal-lg">
                   <div class="modal-content ">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="TituloModalLongoExemplo">Centro Khadro Ling | Três Coroas, RS</h5>
+                      <h5 class="modal-title" id="TituloModalLongoExemplo">Centro Dawa Drolma | Belo Horizonte, MG</h5>
                       <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                         <span aria-hidden="true">&times;</span>
                       </button>
                     </div>
                     <div class="col-12">
-                      <img class="rounded my-2" src="{% static 'institution/images/khadro.jpg' %}" width="100%">
+                      <img class="rounded my-2" src="{% static 'institution/images/dawaDrolma.jpg' %}" width="100%">
                     </div>
                   </div>
                 </div>
               </div>
               <div class="colGrid2">
                 <button type="button" class="imgCentros" data-toggle="modal" data-target=".bd-example-modal-lg2">
-                  <img class="rounded" src="{% static 'institution/images/saoPaulo.jpg' %}">
+                  <img class="rounded" src="{% static 'institution/images/yeshe.jpg' %}">
                 </button>
                 <div class="modal fade bd-example-modal-lg2" tabindex="10" role="dialog"
+                  aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content ">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="TituloModalLongoExemplo">Centro Yeshe Ling | Porto Alegre, RS</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class=" col-12">
+                        <img class="rounded my-2" src="{% static 'institution/images/yeshe.jpg" width="100%">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="imgCentros" data-toggle="modal" data-target=".bd-example-modal-lg3">
+                  <img class="rounded" src="{% static 'institution/images/saoPaulo.jpeg' %}"> </button>
+                <div class="modal fade bd-example-modal-lg3" tabindex="10" role="dialog"
                   aria-labelledby="myLargeModalLabel" aria-hidden="true">
                   <div class="modal-dialog modal-lg">
                     <div class="modal-content ">
@@ -131,25 +154,7 @@
                         </button>
                       </div>
                       <div class=" col-12">
-                        <img class="rounded my-2" src="{% static 'institution/images/saoPaulo.jpg" width="100%">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <button type="button" class="imgCentros" data-toggle="modal" data-target=".bd-example-modal-lg3">
-                  <img class="rounded" src="{% static 'institution/images/brasilia.jpeg' %}"> </button>
-                <div class="modal fade bd-example-modal-lg3" tabindex="10" role="dialog"
-                  aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-lg">
-                    <div class="modal-content ">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="TituloModalLongoExemplo">Centro Padma Ling | Brasília, DF</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class=" col-12">
-                        <img class="rounded my-2" src="{% static 'institution/images/brasilia.jpeg' %}" width="100%">
+                        <img class="rounded my-2" src="{% static 'institution/images/saoPaulo.jpeg' %}" width="100%">
                       </div>
                     </div>
                   </div>
@@ -187,28 +192,82 @@
               em geral.
               Um texto explicando um pouco sobre o que é.</span>
             <div class="row mt-5 justify-content-around">
-              <div class="card windCard mb-3" style="width: 15rem;">
-                <img class="card-img-top" src="{% static 'institution/images/natal.jpg' %}" alt="Imagem de capa do card">
-                <div class="card-body">
-                  <h5 class="card-title">Parinirvana de S. Em. Chagdud Tulku Rinpoche</h5>
-                  <p class="card-text"> 21.12.2019</p>
-                  <a class="link" href="#">Ler mais</a>
-                </div>
-              </div>
-              <div class="card windCard mb-3" style="width: 15rem;">
-                <img class="card-img-top" src="{% static 'institution/images/saoPaulo.jpg' %}" alt="Imagem de capa do card">
-                <div class="card-body">
-                  <h5 class="card-title">Construção do Jardim das 21 Taras</h5>
-                  <p class="card-text"> 21.10.2018</p>
-                  <a class="link" href="#">Ler mais</a>
-                </div>
-              </div>
-              <div class="card windCard mb-3" style="width: 15rem;">
-                <img class="card-img-top" src="{% static 'institution/images/natal.jpg' %}" alt="Imagem de capa do card">
-                <div class="card-body">
-                  <h5 class="card-title">Movendo textos sagrados </h5>
-                  <p class="card-text"> 08.12.2019</p>
-                  <a class="link" href="#">Ler mais</a>
+              <div id="carouselExampleControls2" class="carouselOferendas carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="text-center">
+                      <div class="card-deck">
+                        <div class="card windCard mb-3" style="width: 15rem;">
+                          <img class="card-img-top" src="{% static 'institution/images/natal.jpg' %}" alt="Imagem de capa do card">
+                          <div class="card-body">
+                            <h5 class="card-title">Parinirvana de S. Em. Chagdud Tulku Rinpoche</h5>
+                            <p class="card-text"> 21.12.2019</p>
+                            <a class="link" href="#">Ler mais</a>
+                          </div>
+                        </div>
+                        <div class="card windCard mb-3" style="width: 15rem;">
+                          <img class="card-img-top" src="{% static 'institution/images/saoPaulo.jpg' %}" alt="Imagem de capa do card">
+                          <div class="card-body">
+                            <h5 class="card-title">Construção do Jardim das 21 Taras</h5>
+                            <p class="card-text"> 21.10.2018</p>
+                            <a class="link" href="#">Ler mais</a>
+                          </div>
+                        </div>
+                        <div class="card windCard mb-3" style="width: 15rem;">
+                          <img class="card-img-top" src="{% static 'institution/images/natal.jpg' %}" alt="Imagem de capa do card">
+                          <div class="card-body">
+                            <h5 class="card-title">Movendo textos sagrados </h5>
+                            <p class="card-text"> 08.12.2019</p>
+                            <a class="link" href="#">Ler mais</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="carousel-item ">
+                    <div class="text-center">
+                      <div class="card-deck">
+                        <div class="card windCard mb-3" style="width: 15rem;">
+                          <img class="card-img-top" src="{% static 'institution/images/natal.jpg' %}" alt="Imagem de capa do card">
+                          <div class="card-body">
+                            <h5 class="card-title">Parinirvana de S. Em. Chagdud Tulku Rinpoche</h5>
+                            <p class="card-text"> 21.12.2019</p>
+                            <a class="link" href="#">Ler mais</a>
+                          </div>
+                        </div>
+                        <div class="card windCard mb-3" style="width: 15rem;">
+                          <img class="card-img-top" src="{% static 'institution/images/saoPaulo.jpg' %}" alt="Imagem de capa do card">
+                          <div class="card-body">
+                            <h5 class="card-title">Construção do Jardim das 21 Taras</h5>
+                            <p class="card-text"> 21.10.2018</p>
+                            <a class="link" href="#">Ler mais</a>
+                          </div>
+                        </div>
+                        <div class="card windCard mb-3" style="width: 15rem;">
+                          <img class="card-img-top" src="{% static 'institution/images/natal.jpg' %}" alt="Imagem de capa do card">
+                          <div class="card-body">
+                            <h5 class="card-title">Movendo textos sagrados </h5>
+                            <p class="card-text"> 08.12.2019</p>
+                            <a class="link" href="#">Ler mais</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <a class="carousel-control-prev text-black-50" href="#carouselExampleControls2" role="button"
+                    data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+
+                  </a>
+                  <a class="carousel-control-next text-black-50" href="#carouselExampleControls2" role="button"
+                    data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                  </a>
                 </div>
               </div>
             </div>

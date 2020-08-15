@@ -3,7 +3,7 @@
 <html>
 
 <head>
-  <link href="{% static 'khadro_ling/css/style.css' %}" rel="stylesheet">
+  <link href="{% static 'institution/css/style.css' %}" rel="stylesheet">
   <link href="{% static 'khadro_ling/css/style-khadro.css' %}" rel="stylesheet">
   <meta charset=”utf-8”>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,33 +24,39 @@
         <div class="container">
           <div class="row">
             <div class="col-12 d-flex flex-row-reverse">
-              <ul class="nav text-white">
+              <ul class="nav text-white ml-4">
                 <li class="nav-item">
-                  <a class="nav-link text-black-50" href="{% url 'institution:contact' %}">Contato</a>
+                  <a class="nav-link text-black-50" href="">|  Português</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-black-50" href="https://www.facebook.com/chagdud"><i class="fa fa-facebook"></i></a>
+                  <a class="nav-link text-black-50" href="">|  Inglês </a>
+                </li>
+              </ul>
+              <ul class="nav text-white">                
+                <li class="nav-item">
+                  <a class="nav-link text-black-50" href="https://www.facebook.com/chagdud" target="blank"><i class="fa fa-facebook"></i></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-black-50" href="https://www.instagram.com/khadro.ling/"><i class="fa fa-instagram"></i></a>
+                  <a class="nav-link text-black-50" href="https://www.instagram.com/khadro.ling/" target="blank"><i class="fa fa-instagram"></i></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-black-50" href="#"><i class="fa fa-envelope-o"></i></a>
+                  <a class="nav-link text-black-50" href="mailto:info@templobudista.org"><i class="fa fa-envelope-o"></i></a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
+
       <div class="menu" id="menu">
         <div class="container">
           <div class="row align-items-center justify-content-between">
             <div class="d-flex justify-content-center">
               <a href="{% url 'khadroling:home' %}">
-              <img src="{% static 'khadro_ling/images/khadro_ling_logo.png' %}" alt="Logo Khadro Ling" width="200px">
-            </a>
+                <img src="{% static 'khadro_ling/images/khadro_ling_logo.png' %}" alt="Logo Khadro Ling" width="200px">
+              </a>
             </div>
-            <div class="col-md-4 col-sm-5 d-flex flex-row-reverse">
+            <div class="col-md-5 col-sm-5 d-flex flex-row-reverse">
               <ul class="nav text-white">
                 <li class="nav-item">
                   <a class="nav-link text-black-50" href="{% url 'khadroling:about-us' %}">Quem somos</a>
@@ -60,6 +66,9 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link text-black-50" href="{% url 'khadroling:offerings' %}">Oferendas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-black-50" href="{% url 'institution:contact' %}">Contato</a>
                 </li>
               </ul>
             </div>
@@ -72,6 +81,7 @@
             <li><a href="{% url 'khadroling:about-us' %}">Quem somos</a></li>
             <li><a href="{% url 'khadroling:event-list' %}">Eventos</a></li>
             <li><a href="{% url 'khadroling:offerings' %}">Oferendas</a></li>
+            <li><a href="{% url 'institution:contact' %}">Oferendas</a></li>
           </ul>
         </nav>
   
@@ -81,7 +91,7 @@
           <span></span>
         </span>
   
-        <img class="logoMobile mt-4 mr-2" src="{% static 'khadro_ling/images/khadro_ling_logo.png' %}" alt="Logo Khadro Ling" width="130px">
+        <a href="{% url 'khadroling:home' %}"><img class="logoMobile mt-4 mr-2" src="{% static 'khadro_ling/images/khadro_ling_logo.png' %}" alt="Logo Khadro Ling" width="130px"></a>
       </div>
   
     </header>
@@ -104,7 +114,7 @@
     </p>
       <div class="col-12">
         <p>© 2020 Chagdud Gonpa Brasil / © 2020 Chagdud Gonpa Khadro Ling</p>
-        <p>Contato: E-mail • fone: (51) 3546-8201 </p>
+        <p>Contato: <a href="mailto:info@templobudista.org">E-mail</a> • Fone: (51) 3546-8201 </p>
         <p>Estr. Linha Águas Brancas, 1211 Cx. Postal 121, CEP 95660-000 - Três Coroas, RS</p>
       </div>
     </footer>
