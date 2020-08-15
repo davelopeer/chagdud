@@ -19,3 +19,7 @@ class DownloadsView(TemplateView):
 
 class ContactView(TemplateView):
      template_name = 'institution/contact.html'
+
+
+class SacredDatesView(TemplateView):
+     template_name = 'institution/sacred_dates.html'

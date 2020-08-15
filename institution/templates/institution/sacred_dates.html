@@ -1,0 +1,38 @@
+{% extends 'institution/base.html' %}
+{% load static %}
+
+{% block head %}
+<link href="{% static 'institution/css/style-chagdud.css' %}" rel="stylesheet">
+<title>Contato| Chagdud Gonpa Brasil</title>
+{% endblock %}
+{% block body %}
+
+<div class="banner pt-5" style="background-color:#267579ad;">
+  <div class="container">
+    <div class="logo row justify-content-center">
+      <div class="col-md-12 col-sm-12 mt-5 pt-2 text-center">
+
+        <h1 class="titulo">Datas Sagradas</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main>
+  <div class="sobre">
+    <div class="container">
+      <div id="sobreNos" class="row justify-content-center">
+        <div class="col-md-8 col-sm-12 text-justify">
+          <div class="mb-5">
+            <p><strong>Aqui você pode descobrir e aprender mais sobre as Datas Sagradas do Budismo.</strong></p>
+
+            <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FSao_Paulo&amp;src=ZW4uYnJhemlsaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%237CB342&amp;showNav=1&amp;showTitle=0&amp;showDate=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;hl=pt_BR&amp;title=Datas%20Sagradas" 
+            style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+{% endblock %}
