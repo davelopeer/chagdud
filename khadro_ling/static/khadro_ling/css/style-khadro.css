@@ -1,6 +1,9 @@
 
 .bannerSobre {
   height: 20em;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
 
 .menu {
@@ -123,15 +126,23 @@
 
 .imgOferenda {
   height: 560px;
-  width: 240px;
+  width: 100%;
   object-fit: cover;
 }
 
 .imgOferenda2 {
   height: 560px;
-  width: 240px;
+  width: 100%;
   object-fit: cover;
-  object-position: 85%;
+  object-position: 77%;
+}
+
+.setaEsquerda {
+  margin-right: 155px;
+}
+
+.setaDireita {
+  margin-left: 155px;
 }
 
 .navOferendas {

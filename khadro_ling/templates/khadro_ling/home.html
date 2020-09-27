@@ -115,7 +115,7 @@
             <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
               <div class="row">
                 <div class="col-md-6 col-sm-12">
-                  <img class="mb-3" src="{% static 'khadro_ling/images/natal.jpg' %}" alt="Eevento 1" width="100%">
+                  <img class="mb-3" src="{% static 'khadro_ling/images/saoPaulo.jpg' %}" alt="Eevento 1" width="100%">
                 </div>
                 <div class="col-md-6 col-sm-12">
                   <h5 class="titulo">Retiro de Introdução ao Budismo</h5>
@@ -157,206 +157,216 @@
       </div>
     </div>
     <div id="oferendas" class="py-5">
-      <div class="col-12 d-flex justify-content-center align-items-center py-5">
-        <b></b>
-        <h3 class="text-center titulo mr-5 ml-5"> Oferendas </h3>
-        <b></b>
-      </div>
-      <div id="carouselExampleControls2" class="carouselOferendas carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row text-center">
-              <div class="card-deck">
-                <div class="card cardOferendas">
-                  <img class="card-img-top" src="{% static 'khadro_ling/images/lamparina.jpg' %}" alt="Imagem de capa do card">
-                  <div class="card-body">
-                    <h4 class="card-title titulo">Lamparinas</h4>
-                    <p class="card-text">Visualiza-se que se multiplicam, formando um caminho luminoso 
-                      que bane a escuridão, as más intenções e emoções negativas, um caminho que 
-                      conduz os seres à paz transcendente e à felicidade.</p>
-                    <a class="link" href="#">Oferecer</a>
+        <div class="col-12 d-flex justify-content-center align-items-center py-5">
+          <b></b>
+          <h3 class="text-center titulo mr-5 ml-5"> Oferendas </h3>
+          <b></b>
+        </div>
+        <div id="carouselExampleControls2" class="carouselOferendas carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row text-center">
+                <div class="card-deck">
+                  <div class="card cardOferendas">
+                    <img class="card-img-top" src="{% static 'khadro_ling/images/lamparina.jpg' %}" alt="Imagem de capa do card">
+                    <div class="card-body">
+                      <h4 class="card-title titulo">Lamparinas</h4>
+                      <p class="card-text">Visualiza-se que se multiplicam, formando um caminho luminoso 
+                        que bane a escuridão, as más intenções e emoções negativas, um caminho que 
+                        conduz os seres à paz transcendente e à felicidade.</p>
+                      <a class="link" href="{% url 'khadroling:offerings' %}">Oferecer</a>
+                    </div>
                   </div>
-                </div>
-                <div class="card cardOferendas">
-                  <img class="card-img-top" src="{% static 'khadro_ling/images/lamparina.jpg' %}" alt="Imagem de capa do card">
-                  <div class="card-body">
-                    <h4 class="card-title titulo">Tsog</h4>
-                    <p class="card-text"> Significa “reunião”, em tibetano.
-                      Visualiza-se que as oferendas geram mérito ao invocar as
-                      bênçãos dos seres de sabedoria para que estes respondam aos seres
-                      sencientes com amor e compaixão.</p>
-                    <a class="link" href="#">Oferecer</a>
+                  <div class="card cardOferendas">
+                    <img class="card-img-top" src="{% static 'khadro_ling/images/Tsog.jpeg' %}" alt="Imagem de capa do card">
+                    <div class="card-body">
+                      <h4 class="card-title titulo">Tsog</h4>
+                      <p class="card-text"> Significa “reunião”, em tibetano.
+                        Visualiza-se que as oferendas geram mérito ao invocar as
+                        bênçãos dos seres de sabedoria para que estes respondam aos seres
+                        sencientes com amor e compaixão.</p>
+                      <a class="link" href="{% url 'khadroling:offerings' %}">Oferecer</a>
+                    </div>
                   </div>
-                </div>
-                <div class="card cardOferendas">
-                  <img class="card-img-top" src="{% static 'khadro_ling/images/bandeira.jpg' %}" alt="Imagem de capa do card">
-                  <div class="card-body">
-                    <h4 class="card-title titulo">Bandeiras</h4>
-                    <p class="card-text"> Visualiza-se que preenchem o céu com desejos auspiciosos,
-                      que são soprados em todas as direções e tocam todos os seres, em todos os lugares.</p>
-                    <a class="link" href="#">Oferecer</a>
+                  <div class="card cardOferendas">
+                    <img class="card-img-top" src="{% static 'khadro_ling/images/bandeira.jpg' %}" alt="Imagem de capa do card">
+                    <div class="card-body">
+                      <h4 class="card-title titulo">Bandeiras</h4>
+                      <p class="card-text"> Visualiza-se que preenchem o céu com desejos auspiciosos,
+                        que são soprados em todas as direções e tocam todos os seres, em todos os lugares.</p>
+                      <a class="link" href="{% url 'khadroling:offerings' %}">Oferecer</a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-          </div>
-          <div class="carousel-item">
-            <div class="row text-center">
-              <div class="card-deck">
-                <div class="card cardOferendas">
-                  <img class="card-img-top" src="{% static 'khadro_ling/images/riwo.jpg' %}" alt="Imagem de capa do card">
-                  <div class="card-body">
-                    <h4 class="card-title titulo">Riwo Sangchod</h4>
-                    <p class="card-text">É uma prática poderosa para repelir obstáculos e negatividades.
-                      Particularmente, os obstáculos ao nosso caminho espiritual. No Khadro Ling,
-                      diariamente, são queimados galhos de cipreste e substâncias como alimentos e tecidos.</p>
-                    <a class="link" href="#">Oferecer</a>
+            </div>
+            <div class="carousel-item">
+              <div class="row text-center">
+                <div class="card-deck">
+                  <div class="card cardOferendas">
+                    <img class="card-img-top" src="{% static 'khadro_ling/images/riwo.jpg' %}" alt="Imagem de capa do card">
+                    <div class="card-body">
+                      <h4 class="card-title titulo">Riwo Sangchod</h4>
+                      <p class="card-text">É uma prática poderosa para repelir obstáculos e negatividades.
+                        Particularmente, os obstáculos ao nosso caminho espiritual. No Khadro Ling,
+                        diariamente, são queimados galhos de cipreste e substâncias como alimentos e tecidos.</p>
+                      <a class="link" href="{% url 'khadroling:offerings' %}">Oferecer</a>
+                    </div>
                   </div>
-                </div>
-                <div class="card cardOferendas">
-                  <img class="card-img-top" src="{% static 'khadro_ling/images/akshobia.jpg' %}" alt="Imagem de capa do card">
-                  <div class="card-body">
-                    <h4 class="card-title titulo">Akshobia</h4>
-                    <p class="card-text"> Praticantes podem fazer a meditação e os rituais de purificação de
-                      Akshobia para si mesmos e para os outros. As pessoas também patrocinam Akshobia
-                      para seus animais de estimação ou para animais que mataram ao dirigir ou
-                      em outras circunstâncias.</p>
-                    <a class="link" href="#">Oferecer</a>
+                  <div class="card cardOferendas">
+                    <img class="card-img-top" src="{% static 'khadro_ling/images/akshobia.jpg' %}" alt="Imagem de capa do card">
+                    <div class="card-body">
+                      <h4 class="card-title titulo">Akshobia</h4>
+                      <p class="card-text"> Praticantes podem fazer a meditação e os rituais de purificação de
+                        Akshobia para si mesmos e para os outros. As pessoas também patrocinam Akshobia
+                        para seus animais de estimação ou para animais que mataram ao dirigir ou
+                        em outras circunstâncias.</p>
+                      <a class="link" href="{% url 'khadroling:offerings' %}">Oferecer</a>
+                    </div>
                   </div>
-                </div>
-                <div class="card cardOferendas">
-                  <img class="card-img-top" src="{% static 'khadro_ling/images/cerimoniais.jpg' %}" alt="Imagem de capa do card">
-                  <div class="card-body">
-                    <h4 class="card-title titulo">Cerimoniais</h4>
-                    <p class="card-text">É uma prática poderosa para repelir obstáculos e negatividades.
-                      Particularmente, os obstáculos ao nosso caminho espiritual. No Khadro Ling,
-                      diariamente, são queimados galhos de cipreste e substâncias como alimentos e tecidos.</p>
-                    <a class="link" href="#">Oferecer</a>
+                  <div class="card cardOferendas">
+                    <img class="card-img-top" src="{% static 'khadro_ling/images/cerimoniais.jpg' %}" alt="Imagem de capa do card">
+                    <div class="card-body">
+                      <h4 class="card-title titulo">Cerimoniais</h4>
+                      <p class="card-text">É uma prática poderosa para repelir obstáculos e negatividades.
+                        Particularmente, os obstáculos ao nosso caminho espiritual. No Khadro Ling,
+                        diariamente, são queimados galhos de cipreste e substâncias como alimentos e tecidos.</p>
+                      <a class="link" href="{% url 'khadroling:offerings' %}">Oferecer</a>
+                    </div>
+                  </div>
+                  <div class="card cardOferendas">
+                    <img class="card-img-top" src="{% static 'khadro_ling/images/doacoes.jpg' %}" alt="Imagem de capa do card">
+                    <div class="card-body">
+                      <h4 class="card-title titulo">Doações</h4>
+                      <p class="card-text">É uma prática poderosa para repelir obstáculos e negatividades.
+                        Particularmente, os obstáculos ao nosso caminho espiritual. No Khadro Ling,
+                        diariamente, são queimados galhos de cipreste e substâncias como alimentos e tecidos.</p>
+                      <a class="link" href="{% url 'khadroling:offerings' %}">Oferecer</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+            <a class="carousel-control-prev text-black-50" href="#carouselExampleControls2" role="button" data-slide="prev">
+              <i class="fa fa-chevron-left setaEsquerda" aria-hidden="true"></i>
+              
+            </a>
+            <a class="carousel-control-next text-black-50" href="#carouselExampleControls2" role="button" data-slide="next">
+              <i class="fa fa-chevron-right setaDireita" aria-hidden="true"></i>
+            </a>
           </div>
-          <a class="carousel-control-prev text-black-50" href="#carouselExampleControls2" role="button" data-slide="prev">
-            <i class="fa fa-chevron-left mr-5" aria-hidden="true"></i>
-            
-          </a>
-          <a class="carousel-control-next text-black-50" href="#carouselExampleControls2" role="button" data-slide="next">
-            <i class="fa fa-chevron-right" aria-hidden="true"></i>
-          </a>
+        </div>
+        <div class="col-12 align-items-center ml-2">
+        <div id="carouselExampleControls2" class="carouselOferendasMobile carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row text-center">
+                <div class="card-deck">
+                  <div class="card">
+                    <img class="card-img-top" src="{% static 'khadro_ling/images/lamparina.jpg' %}" alt="Imagem de capa do card">
+                    <div class="card-body">
+                      <h4 class="card-title titulo">Lamparinas</h4>
+                      <p class="card-text">Visualiza-se que se multiplicam, formando um caminho luminoso que 
+                        bane a escuridão, as más intenções e emoções negativas, um caminho que conduz 
+                        os seres à paz transcendente e à felicidade.</p>
+                      <a class="link" href="{% url 'khadroling:offerings' %}">Oferecer</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row text-center">
+                <div class="card-deck">
+                  <div class="card">
+                    <img class="card-img-top" src="{% static 'khadro_ling/images/akshobia.jpg' %}" alt="Imagem de capa do card">
+                    <div class="card-body">
+                      <h4 class="card-title titulo">Akshobia</h4>
+                      <p class="card-text">Praticantes podem fazer a meditação e os rituais de purificação de
+                        Akshobia para si mesmos e para os outros. As pessoas também patrocinam Akshobia
+                        para seus animais de estimação ou para animais que mataram ao dirigir ou
+                        em outras circunstâncias.</p>
+                      <a class="link" href="{% url 'khadroling:offerings' %}">Oferecer</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row text-center">
+                <div class="card-deck">
+                  <div class="card">
+                    <img class="card-img-top" src="{% static 'khadro_ling/images/bandeira.jpg' %}" alt="Imagem de capa do card">
+                    <div class="card-body">
+                      <h4 class="card-title titulo">Bandeiras</h4>
+                      <p class="card-text">Visualiza-se que preenchem o céu com desejos auspiciosos,
+                        que são soprados em todas as direções e tocam todos os seres, em todos os lugares.</p>
+                      <a class="link" href="{% url 'khadroling:offerings' %}">Oferecer</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row text-center">
+                <div class="card-deck">
+                  <div class="card">
+                    <img class="card-img-top" src="{% static 'khadro_ling/images/Tsog.jpeg' %}" alt="Imagem de capa do card">
+                    <div class="card-body">
+                      <h4 class="card-title titulo">Tsog</h4>
+                      <p class="card-text">Significa “reunião”, em tibetano.
+                        Visualiza-se que as oferendas geram mérito ao invocar as
+                        bênçãos dos seres de sabedoria para que estes respondam aos seres
+                        sencientes com amor e compaixão.</p>
+                      <a class="link" href="{% url 'khadroling:offerings' %}">Oferecer</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row text-center">
+                <div class="card-deck">
+                  <div class="card">
+                    <img class="card-img-top" src="{% static 'khadro_ling/images/riwo.jpg' %}" alt="Imagem de capa do card">
+                    <div class="card-body">
+                      <h4 class="card-title titulo">Riwo Sangtchö</h4>
+                      <p class="card-text">É uma prática poderosa para repelir obstáculos e negatividades.
+                        Particularmente, os obstáculos ao nosso caminho espiritual. No Khadro Ling,
+                        diariamente, são queimados galhos de cipreste e substâncias como alimentos e tecidos.</p>
+                      <a class="link" href="{% url 'khadroling:offerings' %}">Oferecer</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row text-center">
+                <div class="card-deck">
+                  <div class="card">
+                    <img class="card-img-top" src="{% static 'khadro_ling/images/cerimoniais.jpg' %}" alt="Imagem de capa do card">
+                    <div class="card-body">
+                      <h4 class="card-title titulo">Cerimoniais</h4>
+                      <p class="card-text">É uma prática poderosa para repelir obstáculos e negatividades.
+                        Particularmente, os obstáculos ao nosso caminho espiritual. No Khadro Ling,
+                        diariamente, são queimados galhos de cipreste e substâncias como alimentos e tecidos.</p>
+                      <a class="link" href="{% url 'khadroling:offerings' %}">Oferecer</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev text-black-50" href="#carouselExampleControls2" role="button" data-slide="prev">
+              <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </a>
+            <a class="carousel-control-next text-black-50" href="#carouselExampleControls2" role="button" data-slide="next">
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </a>
+          </div>
         </div>
       </div>
-      <div class="col-12 align-items-center ml-2">
-      <div id="carouselExampleControls2" class="carouselOferendasMobile carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row text-center">
-              <div class="card-deck">
-                <div class="card">
-                  <img class="card-img-top" src="{% static 'khadro_ling/images/lamparina.jpg' %}" alt="Imagem de capa do card">
-                  <div class="card-body">
-                    <h4 class="card-title titulo">Lamparinas</h4>
-                    <p class="card-text">Visualiza-se que se multiplicam, formando um caminho luminoso que 
-                      bane a escuridão, as más intenções e emoções negativas, um caminho que conduz 
-                      os seres à paz transcendente e à felicidade.</p>
-                    <a class="link" href="#">Oferecer</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row text-center">
-              <div class="card-deck">
-                <div class="card">
-                  <img class="card-img-top" src="{% static 'khadro_ling/images/akshobia.jpg' %}" alt="Imagem de capa do card">
-                  <div class="card-body">
-                    <h4 class="card-title titulo">Akshobia</h4>
-                    <p class="card-text">Praticantes podem fazer a meditação e os rituais de purificação de
-                      Akshobia para si mesmos e para os outros. As pessoas também patrocinam Akshobia
-                      para seus animais de estimação ou para animais que mataram ao dirigir ou
-                      em outras circunstâncias.</p>
-                    <a class="link" href="#">Oferecer</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row text-center">
-              <div class="card-deck">
-                <div class="card">
-                  <img class="card-img-top" src="{% static 'khadro_ling/images/bandeira.jpg' %}" alt="Imagem de capa do card">
-                  <div class="card-body">
-                    <h4 class="card-title titulo">Bandeiras</h4>
-                    <p class="card-text">Visualiza-se que preenchem o céu com desejos auspiciosos,
-                      que são soprados em todas as direções e tocam todos os seres, em todos os lugares.</p>
-                    <a class="link" href="#">Oferecer</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row text-center">
-              <div class="card-deck">
-                <div class="card">
-                  <img class="card-img-top" src="{% static 'khadro_ling/images/tsog.jpg' %}" alt="Imagem de capa do card">
-                  <div class="card-body">
-                    <h4 class="card-title titulo">Tsog</h4>
-                    <p class="card-text">Significa “reunião”, em tibetano.
-                      Visualiza-se que as oferendas geram mérito ao invocar as
-                      bênçãos dos seres de sabedoria para que estes respondam aos seres
-                      sencientes com amor e compaixão.</p>
-                    <a class="link" href="#">Oferecer</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row text-center">
-              <div class="card-deck">
-                <div class="card">
-                  <img class="card-img-top" src="{% static 'khadro_ling/images/riwo.jpg' %}" alt="Imagem de capa do card">
-                  <div class="card-body">
-                    <h4 class="card-title titulo">Riwo Sangtchö</h4>
-                    <p class="card-text">É uma prática poderosa para repelir obstáculos e negatividades.
-                      Particularmente, os obstáculos ao nosso caminho espiritual. No Khadro Ling,
-                      diariamente, são queimados galhos de cipreste e substâncias como alimentos e tecidos.</p>
-                    <a class="link" href="#">Oferecer</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row text-center">
-              <div class="card-deck">
-                <div class="card">
-                  <img class="card-img-top" src="{% static 'khadro_ling/images/cerimoniais.jpg' %}" alt="Imagem de capa do card">
-                  <div class="card-body">
-                    <h4 class="card-title titulo">Cerimoniais</h4>
-                    <p class="card-text">É uma prática poderosa para repelir obstáculos e negatividades.
-                      Particularmente, os obstáculos ao nosso caminho espiritual. No Khadro Ling,
-                      diariamente, são queimados galhos de cipreste e substâncias como alimentos e tecidos.</p>
-                    <a class="link" href="#">Oferecer</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a class="carousel-control-prev text-black-50" href="#carouselExampleControls2" role="button" data-slide="prev">
-            <i class="fa fa-chevron-left" aria-hidden="true"></i>
-          </a>
-          <a class="carousel-control-next text-black-50" href="#carouselExampleControls2" role="button" data-slide="next">
-            <i class="fa fa-chevron-right" aria-hidden="true"></i>
-          </a>
-        </div>
       </div>
-    </div>
-  </div>
 </main>
 
 {% endblock %}

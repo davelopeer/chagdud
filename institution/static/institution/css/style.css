@@ -16,6 +16,11 @@ body {
 }
 
 .imagensSobre {
+  height: 465px;
+  object-fit: cover;
+}
+
+.imagensSobre2 {
   height: 250px;
   object-fit: cover;
 }
@@ -43,16 +48,12 @@ header .fa {
 
 
 #inicio {
-  background-color: #f7f6f6;
   margin: 0 10%;
-  margin-top: -25px;
-  border: 2px solid rgb(235 235 235);
-  border-top: none;
 }
 
 .imgApres {
   border-color: #fff;
-  border-width: 5px;
+  border-width: 3px;
   border-style: solid;
   border-radius: 10px;
 }
@@ -98,7 +99,10 @@ header .fa {
 }
 
 .dropdown-menu {
-transform: translate3d(-79%, 20%, 0px) !important;
+  transform: translate3d(0, 0, 0px) !important;
+  width: 90vw !important;
+  top: 3vw !important;
+  left: -72vw !important;
 }
 
 .dropdown-item {
@@ -317,6 +321,22 @@ footer a:hover {
   color: #ccc;;
 }
 
+
+.windHorseMobile {
+  display: none;
+}
+
+@media screen and (max-device-width:640px), screen and (max-width:993px) {
+
+  .dropdown-menu {
+    transform: translate3d(0, 0, 0px) !important;
+    width: 90vw !important;
+    top: 7vw !important;
+    left: -60vw !important;
+  }
+  
+  }
+
 @media screen and (max-width: 800px) {
 
   .icones img {
@@ -337,6 +357,16 @@ footer a:hover {
   .dropdown-menu {
     transform: translate3d(5px, 0, 0px) !important;
     padding: 20px !important;
+    top: 0 !important;
+    left: 0 !important;
+    }
+
+    .windHorse {
+      display: none;
+    }
+  
+    .windHorseMobile {
+      display: block;
     }
 
 }

@@ -5,6 +5,7 @@
 <head>
 
   <link href="{% static 'institution/css/style.css' %}" rel="stylesheet">
+  <link href="{% static 'institution/css/style-chagdud.css' %}" rel="stylesheet">
   <meta charset=”utf-8”>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -25,6 +26,17 @@
       <div class="container">
         <div class="row">
           <div class="col-12 d-flex flex-row-reverse">
+            <ul class="nav text-white ml-4">
+              <li class="nav-item">
+                <a class="nav-link text-black-50" href="">|  Português</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black-50" href="">|  English </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black-50" href="">|  Español </a>
+              </li>
+            </ul>
             <ul class="nav text-white">
               <li class="nav-item">
                 <a class="nav-link text-black-50" href="{% url 'institution:contact' %}">Contato</a>
@@ -57,25 +69,42 @@
             </ul>
           </div>
           <div class="d-flex flex-column justify-content-center text-center">
-            <a href="{% url 'institution:home' %}"><img src="{% static 'institution/images/logoChagdud.png' %}" alt="Logo Chagdud Gonpa" width="100px"></a>
-            <p class="titulo">Chagdud Gonpa Brasil</p>
+            <a href="{% url 'institution:home' %}"><img src="{% static 'institution/images/logoChagdud.jpg' %}" alt="Logo Chagdud Gonpa" width="100px"></a>
+            <p class="titulo">Chagdud Gonpa América do Sul</p>
           </div>
           <div class="col-md-4 col-sm-5 d-flex flex-row-reverse pt-3">
             <ul class="nav text-white">
               <li class="nav-item">
-                <a class="nav-link text-black-50 text-center" href="{% url 'khadroling:home' %}" target="_blank"> Khadro Ling
-                  <br>
-                  <span class="sede text-center">Sede do Chagdud Gonpa Brasil</span></a>
-              </li>
-              <li class="nav-item">
                 <div class="btn-group">
-                  <button type="button" class="btn dropdown-toggle text-black-50" data-toggle="dropdown"
+                  <button type="button" class="btn dropdown-toggle text-black-50 sede" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
-                    Visitar outras filiais
+                    Brasil
                   </button>
                   <ul class="dropdown-menu">
-                    <div class="d-flex">
-                      <li class="col ml-3">
+                    <div class="row pl-3 d-flex">
+                      <li class="col">
+                        <h5>Khadro Ling </h5>
+                        <div class="dropdown">
+                            <a class="dropbtn dropdown-item">Sede do Chagdud Gonpa Brasil <br> 
+                              Três coroas - RS</a>
+                          <div class="dropdown-content">
+                            <a class="text-black-50" href="{% url 'khadroling:home' %}">Home</a>
+                            <a class="text-black-50" href="{% url 'khadroling:event-list' %}">Eventos</a>
+                            <a class="text-black-50" href="{% url 'khadroling:offerings' %}">Oferendas</a>
+                          </div>
+                        </div>
+                        <br>
+                        <br>
+                        <h5>Centro-Oeste</h5>
+                        <a class="dropdown-item" href="https://www.odsalling.org/" target="_blank">Padma Ling |
+                          Brasília, DF</a>
+                        <a class="dropdown-item" href="mailto:lidiogjr@gmail.com" target="_blank">Goiânia, GO</a>
+                        <br>
+                        <h5>Nordeste</h5>
+                        <a class="dropdown-item" href="https://ieshe.wordpress.com/" target="_blank">Ieshe Tso | Natal,
+                          RN</a>
+                      </li>
+                      <li class="col">
                         <h5>Sul</h5>
                         <a class="dropdown-item" href="http://yesheling.blogspot.com/" target="_blank">Yeshe Ling |
                           Porto Alegre, RS</a>
@@ -109,25 +138,18 @@
                           target="_blank">Dechen Ling | Nova Friburgo, RJ</a>
                         <a class="dropdown-item" href="https://samdrubling.wordpress.com/" target="_blank">Sam Drub Ling
                           | Vitória, ES</a>
-                      </li>
-                      <li>
-                        <h5>Centro-Oeste</h5>
-                        <a class="dropdown-item" href="https://www.odsalling.org/" target="_blank">Padma Ling |
-                          Brasília, DF</a>
-                        <a class="dropdown-item" href="mailto:lidiogjr@gmail.com" target="_blank">Goiânia, GO</a>
-                      </li>
-                      <li>
-                        <h5>Nordeste</h5>
-                        <a class="dropdown-item" href="https://ieshe.wordpress.com/" target="_blank">Ieshe Tso | Natal,
-                          RN</a>
-                      </li>
-                      <li>
-                        <h5>Norte</h5>
+                        <br>
+                          <h5>Norte</h5>
                         <a class="dropdown-item" href="https://pt-br.facebook.com/tromguephelling/" target="_blank">Trom
                           Gue Phel Ling | Manaus, AM</a>
                       </li>
+                      
                     </div>
                   </ul>
+                  </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black-50 text-center" href="http://www.chagdudhispano.org/" target="_blank"> Hispanomérica</a>
               </li>
             </ul>
           </div>
@@ -139,16 +161,27 @@
         <ul>
           <li><a href="{% url 'institution:about-us' %}">Quem somos</a></li>
           <li><a href="{% url 'institution:teachers' %}">Professores</a></li>
-          <li><a href="{% url 'khadroling:home' %}" target="_blank">Khadro Ling<br>
-              <span class="sede">Sede do Chagdud Gonpa Brasil</span></a></li>
+          <li><a href="http://www.chagdudhispano.org/" target="blank">Hispanoamérica</a></li>
           <li>
             <div class="btn-group">
-              <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+              <button type="button" class="btn dropdown-toggle text-black-50" data-toggle="dropdown" aria-haspopup="true"
                 aria-expanded="false">
-                Visitar outros centros
+                Brasil
               </button>
               <ul class="dropdown-menu mobileDropdown">
                 <div class="d-flex flex-column">
+                  <li>
+                    <h5>Khadro Ling </h5>
+                        <div class="dropdown">
+                            <a class="dropbtn dropdown-item">Sede do Chagdud Gonpa Brasil <br> 
+                              Três coroas - RS</a>
+                          <div class="dropdown-content">
+                            <a class="text-black-50" href="{% url 'khadroling:home' %}" target="blank">Home</a>
+                            <a class="text-black-50" href="{% url 'khadroling:event-list' %}" target="blank">Eventos</a>
+                            <a class="text-black-50" href="{% url 'khadroling:offerings' %}" target="blank">Oferendas</a>
+                          </div>
+                        </div>
+                  </li>
                   <li>
                     <h5>Sul</h5>
                     <a class="dropdown-item" href="http://yesheling.blogspot.com/" target="_blank">Yeshe Ling | Porto
@@ -214,7 +247,7 @@
         <span></span>
       </span>
 
-      <a href="{% url 'institution:home' %}"><img  class="logoMobile" src="{% static 'institution/images/logoChagdud.png' %}" alt="Logo Chagdud Gonpa" width="80px"></a>
+      <a href="{% url 'institution:home' %}"><img  class="logoMobile" src="{% static 'institution/images/logoChagdud.jpg' %}" alt="Logo Chagdud Gonpa" width="80px"></a>
     </div>
 
   </header>
