@@ -83,13 +83,13 @@ WSGI_APPLICATION = 'chagdud.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        # 'ENGINE': 'django.db.backends.mysql',
-        # 'HOST': 'localhost',
-        # 'NAME': 'chagdud',
-        # 'USER': 'root',
-        # 'PASSWORD': 'mysql',
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'HOST': 'localhost',
+        'NAME': 'chagdud',
+        'USER': 'chagdud',
+        'PASSWORD': 'chagdud',
     }
 }
 
@@ -118,7 +118,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Sao_Paulo'
 
 USE_I18N = True
 
@@ -134,3 +134,13 @@ STATIC_URL = '/static/'
 
 STATIC_DIR = os.path.join(BASE_DIR,"static")
 STATIC_ROOT = os.path.join(STATIC_DIR)
+
+# Email
+
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = 'apikey'
+EMAIL_HOST_PASSWORD = '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'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
+CONTACT_EMAIL = 'davidbarenco@gmail.com'
