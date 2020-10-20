@@ -179,6 +179,29 @@
           </div>
         </div>
       </div>
+      <div id="chagdud" class="row py-5">
+        <div class="col-md-12 col-sm-12 d-flex justify-content-center align-items-center py-5">
+          <b></b>
+          <h3 class="text-center titulo mr-3 ml-3"> Oferendas e Eventos  </h3>
+          <b></b>
+        </div>
+
+        <div class="d-flex flex-row-reverse text-center justify-content-center">
+          <div class="col-md-4 col-sm-12">
+            <a class="linkOE" href="{% url 'khadroling:offerings' %}">
+            <img class="rounded fotoChagdud" src="{% static 'khadro_ling/images/lamparina.jpg' %}">
+            <span class="d-block mt-3">Oferendas</a></span>
+
+
+          </div>
+          <div class="col-md-4 col-sm-12 justify-content-center text-center">
+            <a class="linkOE" href="{% url 'khadroling:event-list' %}">
+            <img class="rounded fotoChagdud" src="{% static 'khadro_ling/images/cerimoniais.jpg' %}">
+            <span class="d-block mt-3">Eventos</a></span>
+
+          </div>
+        </div>
+      </div>      
     </div>
     <div class="windHorse mt-5">
       <div class="container">
@@ -291,51 +314,31 @@
                             <a class="link" href="#">Ler mais</a>
                           </div>
                         </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  <div class="carousel-item ">
+                    <div class="text-center">
                         <div class="card windCard mb-3" style="width: 15rem;">
                           <img class="card-img-top" src="{% static 'institution/images/saoPaulo.jpg' %}" alt="Imagem de capa do card">
                           <div class="card-body">
                             <h5 class="card-title">Construção do Jardim das 21 Taras</h5>
                             <p class="card-text"> 21.10.2018</p>
-                            <a class="link" href="#">Ler mais</a>
-                          </div>
-                        </div>
-                        <div class="card windCard mb-3" style="width: 15rem;">
-                          <img class="card-img-top" src="{% static 'institution/images/yeshe.jpg' %}" alt="Imagem de capa do card">
-                          <div class="card-body">
-                            <h5 class="card-title">Movendo textos sagrados </h5>
-                            <p class="card-text"> 08.12.2019</p>
                             <a class="link" href="#">Ler mais</a>
                           </div>
                         </div>
                       </div>
                     </div>
-
-                  </div>
-                  <div class="carousel-item ">
-                    <div class="text-center">
-                      <div class="card-deck">
-                        <div class="card windCard mb-3" style="width: 15rem;">
-                          <img class="card-img-top" src="{% static 'institution/images/yeshe.jpg' %}" alt="Imagem de capa do card">
-                          <div class="card-body">
-                            <h5 class="card-title">Parinirvana de S. Em. Chagdud Tulku Rinpoche</h5>
-                            <p class="card-text"> 21.12.2019</p>
-                            <a class="link" href="#">Ler mais</a>
-                          </div>
-                        </div>
-                        <div class="card windCard mb-3" style="width: 15rem;">
-                          <img class="card-img-top" src="{% static 'institution/images/saoPaulo.jpg' %}" alt="Imagem de capa do card">
-                          <div class="card-body">
-                            <h5 class="card-title">Construção do Jardim das 21 Taras</h5>
-                            <p class="card-text"> 21.10.2018</p>
-                            <a class="link" href="#">Ler mais</a>
-                          </div>
-                        </div>
-                        <div class="card windCard mb-3" style="width: 15rem;">
-                          <img class="card-img-top" src="{% static 'institution/images/yeshe.jpg' %}" alt="Imagem de capa do card">
-                          <div class="card-body">
-                            <h5 class="card-title">Movendo textos sagrados </h5>
-                            <p class="card-text"> 08.12.2019</p>
-                            <a class="link" href="#">Ler mais</a>
+                    <div class="carousel-item ">
+                      <div class="text-center">
+                          <div class="card windCard mb-3" style="width: 15rem;">
+                            <img class="card-img-top" src="../images/yeshe.jpg" alt="Imagem de capa do card">
+                            <div class="card-body">
+                              <h5 class="card-title">Movendo textos sagrados </h5>
+                              <p class="card-text"> 08.12.2019</p>
+                              <a class="link" href="#">Ler mais</a>
+                            </div>
                           </div>
                         </div>
                       </div>

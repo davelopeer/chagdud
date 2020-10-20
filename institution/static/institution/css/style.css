@@ -64,7 +64,7 @@ header .fa {
 
 
 .topMenu {
-  background-color: #983628;
+  background-color: #343a40;
   font-size: 0.8em;
 }
 
@@ -100,9 +100,9 @@ header .fa {
 
 .dropdown-menu {
   transform: translate3d(0, 0, 0px) !important;
-  width: 90vw !important;
+  width: 70vw !important;
   top: 3vw !important;
-  left: -72vw !important;
+  left: -49vw !important;
 }
 
 .dropdown-item {
@@ -152,6 +152,15 @@ b {
 }
 
 .link:hover {
+  color: #bd3505;
+  font-weight: 600;
+}
+
+.linkOE {
+  color:#565555;
+}
+
+.linkOE:hover {
   color: #bd3505;
   font-weight: 600;
 }
@@ -367,6 +376,14 @@ footer a:hover {
   
     .windHorseMobile {
       display: block;
+      background-color: #983628;
+      padding-top: 55px;
+      padding-bottom: 55px;
+    }
+
+    .fotoChagdud {
+        width: 100%;
+        height: 180px;
     }
 
 }
