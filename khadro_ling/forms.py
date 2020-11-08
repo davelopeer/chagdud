@@ -1,5 +1,5 @@
 from django import forms
-from django.core.mail import send_mail
+from django.core.mail import EmailMessage
 from django.conf import settings
 
 
@@ -59,9 +59,14 @@ class BaseOfferingForm(forms.Form):
         'type':'radio',
         'name':'pagamento'
     }))
-    # deposit_receipt = forms.FileField()
 
-    
+    deposit_receipt = forms.FileField(widget=forms.FileInput(attrs={
+        'type': 'file',
+        'class': 'form-control-file',
+        'name': 'comprovante',
+        'id': 'comprovante'
+    }))
+
     def send_email(self):
         name = self.cleaned_data['name']
         email = self.cleaned_data['email']
@@ -69,7 +74,9 @@ class BaseOfferingForm(forms.Form):
         dedication = self.cleaned_data['dedication']
         deposit_date = self.cleaned_data['deposit_date']
         payment_type = self.cleaned_data['payment_type']
+        deposit_receipt = self.cleaned_data['deposit_receipt']
 
+        subject = f'{self.verbose_offerend_type} de {name}',
         message = f'''
             Valor: {offering_value}\n
             Dedicação: {dedication}\n
@@ -77,13 +84,14 @@ class BaseOfferingForm(forms.Form):
             Tipo de pagamento: {payment_type}\n
             '''
 
-        return send_mail(
-            f'{self.offerend_type} de {name}',
+        mail = EmailMessage(
+            subject,
             message,
             settings.CONTACT_EMAIL,
-            [settings.CONTACT_EMAIL],
-            fail_silently=False
+            [settings.CONTACT_EMAIL]
         )
+        mail.attach(deposit_receipt.name, deposit_receipt.read())
+        return mail.send()
 
     @property
     def verbose_offerend_type(self):
@@ -128,14 +136,6 @@ class LampForm(BaseOfferingForm):
             Data de depósito: {deposit_date}\n
             Tipo de pagamento: {payment_type}\n
             '''
-
-        return send_mail(
-            f'Oferenda de {name}',
-            message,
-            settings.CONTACT_EMAIL,
-            [settings.CONTACT_EMAIL],
-            fail_silently=False
-        )
 
     @property
     def verbose_offerend_type(self):

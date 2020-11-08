@@ -92,7 +92,7 @@
                   
                       <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                         <div class="card-body py-5">
-                          <form action="/khadroling/oferendas/" method="post">
+                          <form action="/khadroling/oferendas/" method="post" enctype="multipart/form-data">
                             {% csrf_token %}
                             <div class="form-group">
                               <label for="nome">Nome</label>
@@ -133,7 +133,7 @@
 
                             <div class="form-group mt-5">
                               <label for="comprovante">Envie o comprovante</label>
-                              <input type="file" class="form-control-file" name="comprovante" id="comprovante">
+                              {{ tsog_form.deposit_receipt }}
                             </div>
                             <button name='tsog' type="submit" class="btn btn-primary mt-3">Enviar</button>
                           </form>

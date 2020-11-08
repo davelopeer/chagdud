@@ -39,20 +39,19 @@ def offerings_view(request):
     if request.method == 'POST':
         post_keys = request.POST.keys()
         if 'tsog' in post_keys:
-            form = TsogForm(request.POST)
+            form = TsogForm(request.POST, request.FILES)
         elif 'lamp' in post_keys:
-            form = LampForm(request.POST)
+            form = LampForm(request.POST, request.FILES)
         elif 'riwo_sangchod' in post_keys:
-            form = RiwoSangchodForm(request.POST)
+            form = RiwoSangchodForm(request.POST, request.FILES)
         elif 'flag' in post_keys:
-            form = FlagForm(request.POST)
+            form = FlagForm(request.POST, request.FILES)
         elif 'akshobia' in post_keys:
-            form = AkshobiaForm(request.POST)
+            form = AkshobiaForm(request.POST, request.FILES)
         elif 'cerimonial' in post_keys:
-            form = CerimonialForm(request.POST)
+            form = CerimonialForm(request.POST, request.FILES)
         elif 'donation' in post_keys:
-            form = DonationForm(request.POST)
-
+            form = DonationForm(request.POST, request.FILES)
         if form.is_valid():
             mail_sended = form.send_email()
             context['mail_sended'] = True if mail_sended else False
