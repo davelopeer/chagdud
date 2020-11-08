@@ -6,20 +6,32 @@
 {% endblock %}
 
 {% block body %}
-<div class="bannerSobre pt-5" style="background-color:#c5b1ec">
+<div class="bannerSobre pt-5" style="background-image: url({% static 'khadro_ling/images/oferendasopcao2.jpg' %})">
   <div class="container">
     <div class="logo row justify-content-center">
       <div class="col-md-12 col-sm-12 mt-5 pt-1 text-center">
 
-        <h1 class="mb-5 titulo text-white">Oferendas</h1>
+        <h1 class="mb-5 titulo">Oferendas</h1>
       </div>
     </div>
   </div>
 </div>
 
 <main>
+  {% if mail_sended %}
+    Email enviado com sucesso
+  {% endif %}
   <div class="sobre">
     <div class="container">
+      <div class=" row justify-content-center mb-5">
+        <div class="col-md-10 col-sm-12 text-justify">
+          <p>Fazer oferendas é uma maneira de cultivar as qualidades de generosidade 
+            que gera contentamento, bem-estar, abundância e um caminho profundamente 
+            transformador. Cada uma das oferendas realizadas no Khadro Ling é acompanhada 
+            de uma prática de meditação especial que a incrementa.</p>
+        </div>
+        </div>
+
       <div id="oferendas" class="row">  
           <div class="mb-5 col-md-10 offset-md-1 offset-sm-0 col-sm-12 justify-content-center">
             <nav>
@@ -80,49 +92,38 @@
                   
                       <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                         <div class="card-body py-5">
-                          <form>
+                          <form action="/khadroling/oferendas/" method="post">
+                            {% csrf_token %}
                             <div class="form-group">
                               <label for="nome">Nome</label>
-                              <input type="text" class="form-control" id="nome" name="nome">
+                              {{ tsog_form.name }}
                             </div>
                             <div class="form-group">
                               <label for="email">Email</label>
-                              <input type="email" class="form-control" id="email" name="email">
+                              {{ tsog_form.email }}
                             </div>
                             <div class="form-group">
                               <label for="valor">Valor da oferenda em R$</label>
-                              <input type="number" class="form-control" id="valor" name="valor">
+                              {{ tsog_form.offering_value }}
                             </div>
                             <div class="form-group">
                               <label for="dedicacao">Dedicação</label>
-                              <textarea class="form-control" id="observacoes"  name="dedicacao" 
-                              rows="3" placeholder="Nome da pessoa ou sua intenção ao oferecer"></textarea>
+                              {{ tsog_form.dedication }}
                             </div>
                             <div class="form-group mb-5">
                               <label for="data">Data do Depósito</label>
-                              <input type="text" class="form-control" id="data" name="data">
+                              {{ tsog_form.deposit_date }}
                             </div>
                     
                             <p>Tipo de Pagamento</p>
+                              {% for payment_type in  tsog_form.payment_type %}
                               <div class="form-check mt-2">
-                              <input class="form-check-input" type="radio" name="pagamento" id="bb" value="bb" checked>
-                              <label class="form-check-label" for="bb">
-                                Transferência entre contas Banco do Brasil
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="pagamento" id="doc" value="doc">
-                              <label class="form-check-label" for="doc">
-                                DOC ou TED
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="pagamento" id="deposito" value="deposito">
-                              <label class="form-check-label" for="deposito">
-                                Depósito        
-                              </label>
-                            </div>
-                            
+                                <input class="form-check-input" type="radio" name="pagamento" id="bb" value="bb" checked>
+                                <label class="form-check-label" for="bb">
+                                  {{ payment_type }}
+                                </label>
+                              </div>
+                              {% endfor %}
                             <h5 class="mt-5"><strong>Dados para depósito</strong></h5>
                             <p>Banco do Brasil<br>
                               Titular: Chagdud Gonpa Brasil<br>
@@ -134,7 +135,7 @@
                               <label for="comprovante">Envie o comprovante</label>
                               <input type="file" class="form-control-file" name="comprovante" id="comprovante">
                             </div>
-                            <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+                            <button name='tsog' type="submit" class="btn btn-primary mt-3">Enviar</button>
                           </form>
 
                         </div>
@@ -318,46 +319,36 @@
                     
                         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                           <div class="card-body py-5">
-                            <form>
+                            <form action="/khadroling/oferendas/" method="post">
+                              {% csrf_token %}
                               <div class="form-group">
                                 <label for="nome">Nome</label>
-                                <input type="text" class="form-control" id="nome" name="nome">
+                                {{ lamp_form.name }}
                               </div>
                               <div class="form-group">
                                 <label for="email">Email</label>
-                                <input type="email" class="form-control" id="email" name="email">
+                                {{ lamp_form.email }}
                               </div>
                               <div class="form-group">
                                 <label for="valor">Valor da oferenda em R$</label>
-                                <input type="number" class="form-control" id="valor" name="valor">
+                                {{ lamp_form.offering_value }}
                               </div>
                               <div class="form-group">
                                 <label for="qtdLamparinas">Número de Lamparinas</label>
-                                <input type="number" class="form-control" id="qtdLamparinas" name="qtdLamparinas">
+                                {{ lamp_form.number_of_lamps }}
                               </div>
                               <p>Quero oferecer</p>
-                                <div class="form-check mt-2">
-                                <input class="form-check-input" type="radio" name="oferLamparina" id="umaDia" value="umaDia" checked>
-                                <label class="form-check-label" for="umaDia">
-                                  1 por dia
-                                </label>
-                              </div>
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="oferLamparina" id="maisUma" value="maisUma">
-                                <label class="form-check-label" for="maisUma">
-                                  Mais de uma por dia
-                                </label>
-                              </div>
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="oferLamparina" id="todasDia" value="todasDia">
-                                <label class="form-check-label" for="todasDia">
-                                  Todas no mesmo dia        
-                                </label>
-                              </div>
+                                {% for offering_period in lamp_form.offering_period %}
+                                  <div class="form-check mt-2">
+                                    <input class="form-check-input" type="radio" name="oferLamparina" id="umaDia" value="umaDia" checked>
+                                    <label class="form-check-label" for="umaDia">
+                                      {{ offering_period }}
+                                    </label>
+                                  </div>
+                                {% endfor %}
                               <div class="mt-3 form-group">
                                 <label for="dedicacao">Dedicação</label>
-                                <textarea class="form-control" id="observacoes"  name="dedicacao" 
-                                rows="3" placeholder="Nome da pessoa ou sua intenção ao oferecer"></textarea>
+                                {{ lamp_form.dedication }}
                               </div>
                               <div class="form-group">
                                 <label for="valorDeposito">Valor do Depósito</label>
@@ -365,27 +356,17 @@
                               </div>
                               <div class="form-group mb-5">
                                 <label for="data">Data do Depósito</label>
-                                <input type="text" class="form-control" id="data" name="data">
+                                {{ lamp_form.deposit_date }}
                               </div>
                               <p>Tipo de Pagamento</p>
+                                {% for payment_type in  tsog_form.payment_type %}
                                 <div class="form-check mt-2">
-                                <input class="form-check-input" type="radio" name="pagamento" id="bb" value="bb" checked>
-                                <label class="form-check-label" for="bb">
-                                  Transferência entre contas Banco do Brasil
-                                </label>
-                              </div>
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="pagamento" id="doc" value="doc">
-                                <label class="form-check-label" for="doc">
-                                  DOC ou TED
-                                </label>
-                              </div>
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="pagamento" id="deposito" value="deposito">
-                                <label class="form-check-label" for="deposito">
-                                  Depósito        
-                                </label>
-                              </div>
+                                  <input class="form-check-input" type="radio" name="pagamento" id="bb" value="bb" checked>
+                                  <label class="form-check-label" for="bb">
+                                    {{ payment_type }}
+                                  </label>
+                                </div>
+                                {% endfor %}
 
                               <h5 class="mt-5"><strong>Dados para depósito</strong></h5>
                       <p>Banco do Brasil<br>
@@ -398,7 +379,7 @@
                                 <label for="comprovante">Envie o comprovante</label>
                                 <input type="file" class="form-control-file" name="comprovante" id="comprovante">
                               </div>
-                              <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+                              <button name='lamp' type="submit" class="btn btn-primary mt-3">Enviar</button>
                             </form>
 
                           </div>
@@ -715,7 +696,7 @@
                                 <label for="comprovante">Envie o comprovante</label>
                                 <input type="file" class="form-control-file" name="comprovante" id="comprovante">
                               </div>
-                              <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+                              <button name="riwo_sangchod" type="submit" class="btn btn-primary mt-3">Enviar</button>
                             </form>
 
                           </div>
@@ -971,7 +952,7 @@
                                 <label for="comprovante">Envie o comprovante</label>
                                 <input type="file" class="form-control-file" name="comprovante" id="comprovante">
                               </div>
-                              <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+                              <button name="flag" type="submit" class="btn btn-primary mt-3">Enviar</button>
                             </form>
 
                           </div>
@@ -1337,7 +1318,7 @@
                                 <label for="comprovante">Envie o comprovante</label>
                                 <input type="file" class="form-control-file" name="comprovante" id="comprovante">
                               </div>
-                              <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+                              <button name="akshobia" type="submit" class="btn btn-primary mt-3">Enviar</button>
                             </form>
 
                           </div>
@@ -1567,7 +1548,7 @@
                                 <label for="comprovante">Envie o comprovante</label>
                                 <input type="file" class="form-control-file" name="comprovante" id="comprovante">
                               </div>
-                              <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+                              <button name="cerimonial" type="submit" class="btn btn-primary mt-3">Enviar</button>
                             </form>
 
                           </div>
@@ -1797,7 +1778,7 @@
                                 <label for="comprovante">Envie o comprovante</label>
                                 <input type="file" class="form-control-file" name="comprovante" id="comprovante">
                               </div>
-                              <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+                              <button name="donation" type="submit" class="btn btn-primary mt-3">Enviar</button>
                             </form>
 
                           </div>
