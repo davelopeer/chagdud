@@ -1,9 +1,10 @@
 from django.views.generic import View, TemplateView, ListView, DetailView
+from django.views.generic.edit import FormView
 from django.shortcuts import render
 
 from khadro_ling.models import Event
 from khadro_ling.forms import TsogForm, LampForm, RiwoSangchodForm, FlagForm, AkshobiaForm, \
-    CerimonialForm, DonationForm
+    CerimonialForm, DonationForm, EventForm
 
 
 class HomeView(TemplateView):
@@ -22,6 +23,26 @@ class EventListView(ListView):
 class EventDetailView(DetailView):
     model = Event
     context_object_name = 'event'
+
+    def get_context_data(self, **kwargs):
+        context = super(EventDetailView, self).get_context_data(**kwargs)
+        context['form'] = EventForm
+        return context
+
+
+class EventDetailFormView(FormView):
+    form_class = EventForm
+    success_url = '/khadroling/evento/'
+    template_name = 'khadro_ling/about_us.html'
+
+    def form_valid(self, form):
+        form.send_email()
+        return super().form_valid(form)
+
+    # REMOVE AFTER APPROVED
+    def form_invalid(self, form):
+        print(form.errors)
+        return super().form_invalid(form)
 
 
 def offerings_view(request):
@@ -52,6 +73,7 @@ def offerings_view(request):
             form = CerimonialForm(request.POST, request.FILES)
         elif 'donation' in post_keys:
             form = DonationForm(request.POST, request.FILES)
+
         if form.is_valid():
             mail_sended = form.send_email()
             context['mail_sended'] = True if mail_sended else False

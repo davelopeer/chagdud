@@ -12,7 +12,7 @@
     <div class="row">
     <div class="data col-md-1 mb-2">
       <p class="diaData">{{ event.start_date.day }}</p>
-      <p class="mesData">{{ short_month }}</p>
+      <p class="mesData">{{ event.short_month }}</p>
     </div>
     <div class="col-md-9">
       <h1 class="mb-3 titulo text-dark">{{ event.name }}</h1>
@@ -65,14 +65,13 @@
             <p><i class="fa fa-envelope" aria-hidden="true"></i> | Contato</p>
             <p><i class="fa fa-times" aria-hidden="true"></i> | Cancelamento</p>
           </div>
-          
-  </div>
+        </div>
 
-  <div class="col-12 d-flex justify-content-center align-items-center py-5">
-    <b></b>
-    <h3 class="text-center titulo mr-5 ml-5"> Ficha de Inscrição </h3>
-    <b></b>
-  </div>
+        <div class="col-12 d-flex justify-content-center align-items-center py-5">
+          <b></b>
+          <h3 class="text-center titulo mr-5 ml-5"> Ficha de Inscrição </h3>
+          <b></b>
+        </div>
 
   <div class="row mt-4">
     <div class="col-md-10 offset-md-1 offset-md-0 col-sm-12">
@@ -82,10 +81,11 @@
 
       <div class="row mt-5">
         <div class="col-md">
-      <form>
+      <form action="{% url 'khadroling:event-form' %}" method="post">
+        {% csrf_token %}
         <div class="form-group">
           <label for="nome">Nome Completo</label>
-          <input type="text" class="form-control" id="nome" name="nome">
+          {{ form.name }}
           <small id="passwordHelpBlock" class="form-text text-muted">
             Sem abreviações           
           </small>
@@ -94,37 +94,35 @@
       <div class="col-md">
         <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" class="form-control" id="email" name="email">
+          {{ form.email }}
         </div>
       </div>
       </div>
       <div class="row">
         <div class="col-md">
-      <form>
         <div class="form-group">
           <label for="telefone">Telefone / Celular</label>
-          <input type="number" class="form-control" id="telefone" name="telefone">
+          {{ form.phone }}
         </div>
       </div>
       <div class="col-md">
         <div class="form-group">
           <label for="dataNascimento">Data de Nascimento</label>
-          <input type="number" class="form-control" id="dataNascimento" name="dataNascimento">
+          {{ form.birth_date }}
         </div>
       </div>
       </div>
       <div class="row">
         <div class="col-md">
-      <form>
         <div class="form-group">
           <label for="endereco">Endereço</label>
-          <input type="text" class="form-control" id="endereco" name="endereco">
+          {{ form.address }}
         </div>
       </div>
       <div class="col-md">
         <div class="form-group">
           <label for="cidade">Cidade</label>
-          <input type="email" class="form-control" id="cidade" name="cidade">
+          {{ form.city }}
         </div>
       </div>
       </div>
@@ -132,73 +130,60 @@
         <div class="col-md">
         <div class="form-group">
           <label for="Estado">Estado</label>
-          <select id="Estado" class="form-control" name="estado">
-            <option selected>Selecionar</option>
-            <option>...</option>
-          </select>
+          {{ form.state }}
         </div>
       </div>
       <div class="col-md">
         <div class="form-group">
           <label for="CEP">CEP</label>
-          <input type="text" class="form-control" id="CEP" name="CEP">
+          {{ form.cep }}
         </div>
       </div>
       </div>
       <div class="row mt-4">
         <div class="col-md">
           <p>Gênero</p>
-        <div class="form-check mt-2">
-      <input class="form-check-input" type="radio" name="genero" id="masculino" value="masculino" checked>
-      <label class="form-check-label" for="masculino">
-        Masculino
-      </label>
+          {% for gender in form.gender %}
+            <div class="form-check mt-2">
+              <input class="form-check-input" type="radio" name="genero" checked>
+              <label class="form-check-label">
+                {{ gender }}
+              </label>
+            </div>
+          {% endfor %}
+
+        </div>
+        <div class="col-md">
+          <p>Preferência Alimentar</p>
+          {% for food_preference in form.food_preference %}
+            <div class="form-check mt-2">
+              <input class="form-check-input" type="radio" name="alimentar" checked>
+              <label class="form-check-label">
+                {{ food_preference }}
+              </label>
+            </div>
+          {% endfor %}
+
+        </div>
+        <div class="col-md">
+          <p>Precisa de Cadeira?</p>
+          {% for needs_chair in form.needs_chair %}
+            <div class="form-check mt-2">
+              <input class="form-check-input" type="radio" name="cadeira" checked>
+              <label class="form-check-label">
+              {{ needs_chair }}
+              </label>
+            </div>
+          {% endfor %}
+
+          <small id="passwordHelpBlock" class="form-text text-muted">
+            Apenas pessoas com limitações físicas           
+          </small>
+        </div>
+      </div>
     </div>
-    <div class="form-check">
-      <input class="form-check-input" type="radio" name="genero" id="feminino" value="feminino">
-      <label class="form-check-label" for="feminino">
-        Feminino
-      </label>
-    </div>
-    </div>
-    <div class="col-md">
-      <p>Preferência Alimentar</p>
-    <div class="form-check mt-2">
-  <input class="form-check-input" type="radio" name="alimentar" id="naoVegetariano" value="naoVegetariano" checked>
-  <label class="form-check-label" for="naoVegetariano">
-    Não-Vegetariano
-  </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="radio" name="alimentar" id="Vegetariano" value="Vegetariano">
-  <label class="form-check-label" for="Vegetariano">
-    Vegetariano
-  </label>
-</div>
-</div>
-<div class="col-md">
-  <p>Precisa de Cadeira?</p>
-<div class="form-check mt-2">
-<input class="form-check-input" type="radio" name="cadeira" id="sim" value="sim" checked>
-<label class="form-check-label" for="sim">
-Sim
-</label>
-</div>
-<div class="form-check">
-<input class="form-check-input" type="radio" name="cadeira" id="nao" value="nao">
-<label class="form-check-label" for="nao">
-Não
-</label>
-</div>
-<small id="passwordHelpBlock" class="form-text text-muted">
-Apenas pessoas com limitações físicas           
-</small>
-</div>
-  </div>
-  </div>
 
   <div class="col-md-10 offset-md-1 offset-md-0 col-sm-12">
-
     <h4 class="titulo mt-5 mb-3">Participação no Evento </h4>
     <b></b>
 
@@ -212,44 +197,27 @@ Apenas pessoas com limitações físicas
 
     <div class="row mt-5">
       <div class="col-md">
-    <form>
-      <div class="form-group">
-        <label for="dataChegada">Data de Chegada</label>
-        <input type="text" class="form-control" id="dataChegada" name="dataChegada">
+        <div class="form-group">
+          <label for="dataChegada">Data de Chegada</label>
+          {{ form.arrive_date }}
+        </div>
       </div>
-    </div>
-    <div class="col-md">
-      <div class="form-group">
-        <label for="horaChegada">Horário de Chegada</label>
-        <input type="email" class="form-control" id="horaChegada" name="horaChegada">
+      <div class="col-md">
+        <div class="form-group">
+          <label for="dataPartida">Data de Partida</label>
+          {{ form.depart_date }}
+        </div>
       </div>
-    </div>
     </div>
     <div class="row">
       <div class="col-md">
-    <form>
-      <div class="form-group">
-        <label for="dataPartida">Data de Partida</label>
-        <input type="text" class="form-control" id="dataPartida" name="dataPartida">
+        <div class="form-group">
+          <label for="observacoes">Observações</label>
+          {{ form.observations }}
+        </div>
       </div>
     </div>
-    <div class="col-md">
-      <div class="form-group">
-        <label for="horaPartida">Horário de Partida</label>
-        <input type="email" class="form-control" id="horaPartida" name="horaPartida">
-      </div>
-    </div>
-    </div>
-    <div class="row">
-      <div class="col-md">
-    <form>
-      <div class="form-group">
-        <label for="observacoes">Observações</label>
-        <textarea class="form-control" id="observacoes"  name="observacoes" rows="3"></textarea>
-      </div>
-    </div>
-    </div>
-    </div>
+  </div>
 
     <div class="col-md-10 offset-md-1 offset-md-0 col-sm-12">
 
@@ -259,40 +227,24 @@ Apenas pessoas com limitações físicas
       <div class=" inverteMobile row mt-4">
         <div class="col-md pt-5 mt-4">
           <p>Evento completo</p>
-        <div class="form-check mt-2">
-      <input class="form-check-input" type="radio" name="evento" id="amitaba" value="amitaba" checked>
-      <label class="form-check-label" for="amitaba">
-        Alimentação e hospedagem no Amitaba:R$ 414,00
-      </label>
-    </div>
-    <div class="form-check">
-      <input class="form-check-input" type="radio" name="evento" id="retiro" value="retiro">
-      <label class="form-check-label" for="retiro">
-        Alimentação e hospedagem na casa de retiro: R$ 394,00
-      </label>
-    </div>
-    <div class="form-check">
-      <input class="form-check-input" type="radio" name="evento" id="dormitorio" value="dormitorio">
-      <label class="form-check-label" for="dormitorio">
-        Alimentação e hospedagem no dormitório: R$ 340,00        
-      </label>
-    </div>
-    <div class="form-check">
-      <input class="form-check-input" type="radio" name="evento" id="semHospedagem" value="semHospedagem">
-      <label class="form-check-label" for="semHospedagem">
-        Alimentação e sem hospedagem: R$ 296,00
-      </label>
-    </div>
+          {% for accommodation_option in form.accommodation_option %}
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="evento">
+            <label class="form-check-label">
+              {{ accommodation_option }}
+            </label>
+          </div>
+          {% endfor %}
+        <div class="form-check mt-5">
+          <!-- <input class="form-check-input" type="checkbox" value="aceito" id="aceitoPolitica"> -->
+          {{ form.accepts_policy_terms }}
+          <label class="form-check-label" for="aceitoPolitica">
+            Li e aceito a política de cancelamento de participação em eventos.
+          </label>
+        </div>
 
-    <div class="form-check mt-5">
-      <input class="form-check-input" type="checkbox" value="aceito" id="aceitoPolitica">
-      <label class="form-check-label" for="aceitoPolitica">
-        Li e aceito a política de cancelamento de participação em eventos.
-      </label>
-    </div>
-
-    <button type="submit" class="btn btn-primary mt-5">Enviar</button>
-    </div>
+        <button type="submit" class="btn btn-primary mt-5">Enviar</button>
+      </div>
     <div class="col-md bg-light mt-4 p-5">
       <p>Tipos de Hospedagem</p>
 
@@ -347,15 +299,7 @@ Apenas pessoas com limitações físicas
             </div>
         </div>
       </div>
-      
-    
-
-
-
-</div>
-
-        
-
+    </div>
   </form>
 
 

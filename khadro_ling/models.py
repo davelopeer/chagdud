@@ -35,17 +35,36 @@ class Event(models.Model):
         if self.start_date.year == self.end_date.year:
             if self.start_date.month == self.end_date.month:
                 return f'{self.start_date.day}, às {self.start_date.hour}h'
-            return f'{self.start_date.day} de {self.month_pretty(self.start_date.month)},' \
+            return f'{self.start_date.day} de {self.month_verbose_name(self.start_date.month)},' \
                    f' às {self.start_date.hour}h'
-        return f'{self.start_date.day} de {self.month_pretty(self.start_date.month)}' \
+        return f'{self.start_date.day} de {self.month_verbose_name(self.start_date.month)}' \
                f' de {self.start_date.year}, às {self.start_date.hour}h'
 
     @property
     def end_date_pretty(self):
-        return f'{self.end_date.day} de {self.month_pretty(self.end_date.month)}' \
+        return f'{self.end_date.day} de {self.month_verbose_name(self.end_date.month)}' \
                f' de {self.end_date.year}, às {self.end_date.hour}h'
 
-    def month_pretty(self, month):
+    @property
+    def short_month(self):
+        """
+        Small representation of the month with 3 initial letters.
+
+        Return
+        Month initials (e.g.: jan)
+        """
+        return self.month_verbose_name(self.start_date.month)[:3]
+
+    def month_verbose_name(self, month):
+        """
+        Month verbose name.
+
+        Args
+        month (int): index for month in const variable
+
+        Return (str)
+        Month verbose name
+        """
         return MONTHS[month - 1]
 
 
