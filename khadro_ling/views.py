@@ -3,8 +3,7 @@ from django.views.generic.edit import FormView
 from django.shortcuts import render
 
 from khadro_ling.models import Event
-from khadro_ling.forms import TsogForm, LampForm, RiwoSangchodForm, FlagForm, AkshobiaForm, \
-    CerimonialForm, DonationForm, EventForm
+from khadro_ling.forms import EventForm
 
 
 class HomeView(TemplateView):
@@ -44,38 +43,3 @@ class EventDetailFormView(FormView):
         print(form.errors)
         return super().form_invalid(form)
 
-
-def offerings_view(request):
-    template = 'khadro_ling/offerings.html'
-    context = {
-       'tsog_form': TsogForm(),
-       'lamp_form': LampForm(),
-       'riwo_sangchod_form': RiwoSangchodForm(),
-       'flag_form': FlagForm(),
-       'akshobia_form': AkshobiaForm(),
-       'cerimonial_form': CerimonialForm(),
-       'donation_form': DonationForm(),
-    }
-
-    if request.method == 'POST':
-        post_keys = request.POST.keys()
-        if 'tsog' in post_keys:
-            form = TsogForm(request.POST, request.FILES)
-        elif 'lamp' in post_keys:
-            form = LampForm(request.POST, request.FILES)
-        elif 'riwo_sangchod' in post_keys:
-            form = RiwoSangchodForm(request.POST, request.FILES)
-        elif 'flag' in post_keys:
-            form = FlagForm(request.POST, request.FILES)
-        elif 'akshobia' in post_keys:
-            form = AkshobiaForm(request.POST, request.FILES)
-        elif 'cerimonial' in post_keys:
-            form = CerimonialForm(request.POST, request.FILES)
-        elif 'donation' in post_keys:
-            form = DonationForm(request.POST, request.FILES)
-
-        if form.is_valid():
-            mail_sended = form.send_email()
-            context['mail_sended'] = True if mail_sended else False
-
-    return render(request, template, context=context)

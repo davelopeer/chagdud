@@ -1,8 +1,9 @@
 from django.urls import path
 from django.views.decorators.http import require_POST
 from khadro_ling.views import HomeView, AboutUsView, EventListView,  \
-    EventDetailView, EventDetailFormView, offerings_view
+    EventDetailView, EventDetailFormView
 
+from offering.views import offerings_view
 
 app_name = 'khadroling'
 

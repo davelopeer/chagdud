@@ -66,7 +66,3 @@ class Event(models.Model):
         Month verbose name
         """
         return MONTHS[month - 1]
-
-
-class Offering(models.Model):
-    name = models.CharField(max_length=500)

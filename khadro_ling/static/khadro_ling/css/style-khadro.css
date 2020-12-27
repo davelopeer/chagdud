@@ -149,7 +149,13 @@
   color: #444;
 }
 
-
+.successMessage {
+  font-size: 1.2em;
+  text-align: center;
+  background-color: #43754B;
+  padding: 20px 0;
+  color: white;
+}
 
 @media screen and (max-width: 800px) {
   .tab-content {
