@@ -26,6 +26,37 @@ class OfferingForm(forms.Form):
         'min': '0'
     }))
 
+    dedication = forms.CharField(widget=forms.Textarea(attrs={
+        'class':'form-control',
+        'id':'observacoes',
+        'name':'dedicacao',
+        'rows':'3',
+        'placeholder':'Nome da pessoa ou sua intenção ao oferecer'
+    }))
+
+    deposit_date = forms.CharField(widget=forms.TextInput(attrs={
+        'type':'date',
+        'class':'form-control',
+        'id':'data',
+        'name':'data'
+    }))
+
+    deposit_value = forms.DecimalField(min_value=0, decimal_places=2, widget=forms.TextInput(attrs={
+        'type':'number',
+        'class':'form-control',
+        'id':'valor', 
+        'name':'valor',
+        'step': '.05',
+        'min': '0'
+    }))
+
+    deposit_receipt = forms.FileField(widget=forms.FileInput(attrs={
+        'type': 'file',
+        'class': 'form-control-file',
+        'name': 'comprovante',
+        'id': 'comprovante'
+    }))
+
     # ---------------------------------------------
     # Offerings types
 
@@ -99,37 +130,6 @@ class OfferingForm(forms.Form):
         'name':'prayer_flags',
         'step': '.05',
         'min': '0'
-    }))
-
-    dedication = forms.CharField(widget=forms.Textarea(attrs={
-        'class':'form-control',
-        'id':'observacoes',
-        'name':'dedicacao',
-        'rows':'3',
-        'placeholder':'Nome da pessoa ou sua intenção ao oferecer'
-    }))
-
-    deposit_date = forms.CharField(widget=forms.TextInput(attrs={
-        'type':'date',
-        'class':'form-control',
-        'id':'data',
-        'name':'data'
-    }))
-
-    deposit_value = forms.DecimalField(min_value=0, decimal_places=2, widget=forms.TextInput(attrs={
-        'type':'number',
-        'class':'form-control',
-        'id':'valor', 
-        'name':'valor',
-        'step': '.05',
-        'min': '0'
-    }))
-
-    deposit_receipt = forms.FileField(widget=forms.FileInput(attrs={
-        'type': 'file',
-        'class': 'form-control-file',
-        'name': 'comprovante',
-        'id': 'comprovante'
     }))
 
     def send_email(self):

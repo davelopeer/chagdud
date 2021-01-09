@@ -27,8 +27,20 @@
   object-position: 50% 0;
 }
 
-.professoresPosicao {
-  object-position: 80% 0;
+.posicaoCTR {
+  object-position: 50% 0;
+}
+
+.posicaoJigme {
+  object-position: 60% 0;
+}
+
+.posicaoTsering {
+  object-position: 75% 0;
+}
+
+.posicaoSherab {
+  object-position: 44% 0;
 }
 
 .colEsquerda {

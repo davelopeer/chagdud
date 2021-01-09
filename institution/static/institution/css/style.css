@@ -48,7 +48,7 @@ header .fa {
 
 
 #inicio {
-  margin: 0 10%;
+  margin: -25px 10% 0;
 }
 
 .imgApres {
@@ -110,6 +110,7 @@ header .fa {
 }
 
 .subtitulo {
+  color: #fff;
   font-size: 1.2em;
 }
 

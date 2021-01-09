@@ -3,20 +3,22 @@
 
 
 {% block body %}
-  <div class="container">
-    <div id="inicio" class="logo justify-content-center align-items-center row justify-content-start mb-5">
+<div style="background-image:url({% static 'institution/images/banner_blue.jpg' %});">
+  <div class="container" >
+    <div id="inicio" class="logo justify-content-center align-items-center row justify-content-start">
       <div class="col-md-5 col-sm-12 text-center mt-5">
-        <span class="subtitulo mb-5 text-black-50">Somos uma rede de centros de prática do budismo vajrayana fundada por
+        <span class="subtitulo mb-5">Somos uma rede de centros de prática do budismo vajrayana fundada por
           S. Ema.
           Chagdud Tulku
           Rinpoche.</span>
       </div>
       <div class="col-md-5 col-sm-12 text-center mt-5">
-        <img class="imgApres" src="{% static 'institution/images/CTR_KL_1998_vs2.jpg' %}" width="80%">
+        <img class="imgApres" src="{% static 'institution/images/CTR.jpeg' %}" width="80%">
 
       </div>
     </div>
   </div>
+</div>
 
 
 
@@ -196,7 +198,7 @@
           </div>
           <div class="col-md-4 col-sm-12 justify-content-center text-center">
             <a class="linkOE" href="{% url 'khadroling:event-list' %}">
-            <img class="rounded fotoChagdud" src="{% static 'khadro_ling/images/cerimoniais.jpg' %}">
+            <img class="rounded fotoChagdud" src="{% static 'institution/images/home-event.jpg' %}">
             <span class="d-block mt-3">Eventos</a></span>
 
           </div>

@@ -152,9 +152,9 @@
 .successMessage {
   font-size: 1.2em;
   text-align: center;
-  background-color: #43754B;
+  background-color: white;
   padding: 20px 0;
-  color: white;
+  color: #43754B;
 }
 
 @media screen and (max-width: 800px) {

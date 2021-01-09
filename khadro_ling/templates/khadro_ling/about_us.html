@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block body %}
-<div class="bannerSobre pt-5" style="background-image:url({% static 'khadro_ling/images/banner_vermelho_dragao.jpg' %});">
+<div class="bannerSobre pt-5" style="background-image:url({% static 'institution/images/banner_yellow.jpg' %});">
   <div class="container">
     <div class="logo row justify-content-center">
       <div class="col-md-12 col-sm-12 mt-5 pt-1 text-center">
@@ -40,9 +40,12 @@
             realizar e manter as práticas de meditação do budismo Vajraiana da linhagem 
             de Chagdud Tulku Rinpoche.</p>
 
-          <p>Você pode contribuir fazendo oferendas que serão utilizadas para a 
+          <p>
+            Você pode contribuir fazendo oferendas que serão utilizadas para a 
             aquisição das substâncias oferecidas durante essas cerimônias diárias, 
-            como lamparinas, incenso e tormas. Para fazer uma oferenda, <a href="../Khadro/oferendas.html" target="blank">clique aqui</a></p>.
+            como lamparinas, incenso e tormas. Para fazer uma oferenda, 
+            <a href="{% url 'khadroling:offerings' %}" target="blank">clique aqui</a>.
+          </p>
 
           <div class="row">
 
@@ -51,9 +54,6 @@
             <h3 class="titulo">Os Lamas Residentes </h3>
             <b></b>
           </div>
-
-
-          <div class="col-12 border-bottom my-5"></div>
 
           <div class="col-md-7 col-sm-12 mt-5">
             <h4 class="titulo mb-4"> Chagdud Khadro </h4>
