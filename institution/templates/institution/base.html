@@ -3,7 +3,7 @@
 <html>
 
 <head>
-
+  <link rel="shortcut icon" href="{% static 'institution/images/logo.ico' %}" type="image/x-icon" />
   <link href="{% static 'institution/css/style.css' %}" rel="stylesheet">
   <link href="{% static 'institution/css/style-chagdud.css' %}" rel="stylesheet">
   <meta charset=”utf-8”>
@@ -15,7 +15,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lato:wght@100&display=swap" rel="stylesheet">
-  <title>Chagdud Gonpa Brasil</title>
+  <title>Chagdud Gonpa América do Sul</title>
   {% block head %}
   {% endblock %}
 </head>
@@ -84,16 +84,8 @@
                     <div class="row pl-3 d-flex">
                       <li class="col">
                         <h5>Khadro Ling </h5>
-                        <div class="dropdown">
-                            <a class="dropbtn dropdown-item">Sede do Chagdud Gonpa Brasil <br> 
-                              Três coroas - RS</a>
-                          <div class="dropdown-content">
-                            <a class="text-black-50" href="{% url 'khadroling:home' %}">Home</a>
-                            <a class="text-black-50" href="{% url 'khadroling:event-list' %}">Eventos</a>
-                            <a class="text-black-50" href="{% url 'khadroling:offerings' %}">Oferendas</a>
-                          </div>
-                        </div>
-                        <br>
+                        <a class="dropdown-item" href="{% url 'khadroling:home' %}">Sede do Chagdud Gonpa Brasil<br> 
+                          Três coroas - RS</a>
                         <br>
                         <h5>Centro-Oeste</h5>
                         <a class="dropdown-item" href="https://www.odsalling.org/" target="_blank">Padma Ling |
@@ -257,12 +249,10 @@
 
 
   <footer class="bg-dark text-light text-center">
-    <p class="apps my-4">
-      <a href="https://apps.apple.com/us/app/eventos-chagdud-gonpa-brasil/id1213795008" target="_blank"><i
-          class="fa fa-apple mr-2"></i></a>
-      <a href="https://play.google.com/store/apps/details?id=hr.apps.n207192230" target="_blank"><i class="fa fa-android mr-2"></i></a>
-    </p>
     <p class="midia my-4">
+      <a href="https://apps.apple.com/us/app/eventos-chagdud-gonpa-brasil/id1213795008" target="_blank"><i
+        class="fa fa-apple mr-2"></i></a>
+      <a href="https://play.google.com/store/apps/details?id=hr.apps.n207192230" target="_blank"><i class="fa fa-android mr-2"></i></a>
       <a href="https://www.facebook.com/chagdud" target="_blank"><i class="fa fa-facebook-square mr-2"></i></a>
       <a href="https://www.instagram.com/khadro.ling/" target="_blank"><i class="fa fa-instagram mr-2" aria-hidden="true"></i></a>
       <a href="https://www.youtube.com/user/chagdudgonpa" target="_blank"><i class="fa fa-youtube-play mr-2" aria-hidden="true"></i></a>
@@ -273,7 +263,7 @@
     <div class="col-12">
       <p>© 2020 Chagdud Gonpa Brasil / © 2020 Chagdud Gonpa Khadro Ling</p>
       <p>Contato: <a href="mailto:info@templobudista.org">E-mail</a> • Fone: (51) 3546-8201 </p>
-      <p>Estr. Linha Águas Brancas, 1211 Cx. Postal 121, CEP 95660-000 - Três Coroas, RS</p>
+      <p>Rua Arnaldo Port, 1211 - Cx. Postal 121, CEP 95660-000 - Três Coroas, RS</p>
     </div>
   </footer>
 
