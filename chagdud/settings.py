@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'institution',
     'khadro_ling',
+    'offering',
+    'tinymce',
 ]
 
 MIDDLEWARE = [
@@ -83,13 +85,13 @@ WSGI_APPLICATION = 'chagdud.wsgi.application'
 
 DATABASES = {
     'default': {
-        # 'ENGINE': 'django.db.backends.sqlite3',
-        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        'ENGINE': 'django.db.backends.mysql',
-        'HOST': 'localhost',
-        'NAME': 'chagdud',
-        'USER': 'chagdud',
-        'PASSWORD': 'chagdud',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        # 'ENGINE': 'django.db.backends.mysql',
+        # 'HOST': 'localhost',
+        # 'NAME': 'chagdud',
+        # 'USER': 'chagdud',
+        # 'PASSWORD': 'chagdud',
     }
 }
 
@@ -135,11 +137,16 @@ STATIC_URL = '/static/'
 STATIC_DIR = os.path.join(BASE_DIR,"static")
 STATIC_ROOT = os.path.join(STATIC_DIR)
 
+# Media files
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 # Email
 
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_HOST_USER = 'apikey'
-EMAIL_HOST_PASSWORD = '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'
+EMAIL_HOST_PASSWORD = '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'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 

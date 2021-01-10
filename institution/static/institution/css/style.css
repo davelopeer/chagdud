@@ -62,6 +62,10 @@ header .fa {
   padding: 6rem 0 1rem;
 }
 
+.novidades {
+  padding: 4rem 0;
+}
+
 
 .topMenu {
   background-color: #343a40;
@@ -331,6 +335,61 @@ footer a:hover {
   color: #ccc;;
 }
 
+.news-image {
+  max-width: 100%;
+  max-height: 600px;
+}
+
+.news-text {
+  margin: 90px 0 5%;
+  font-size: 1.2em;
+}
+
+.news-list {
+  list-style-type: none;
+}
+
+.news-list-item {
+  margin-bottom: 50px;
+}
+
+.news-list-item-title {
+  margin-bottom: 15px;
+}
+
+.return-news-list {
+  font-size: 1.2em;
+  margin: 90px 0 5%;
+}
+
+.news-list-link {
+  color: #0081AF;
+  display: block;
+}
+.news-list-link:hover {
+  text-decoration: none;
+  transition: 0.2s;
+  color: #EAD2AC;
+}
+
+.news-title {
+  display: inline;
+}
+
+.fa-bullhorn {
+  display: inline;
+  margin-right: 1%;
+}
+
+.link-page {
+  font-size: 1.2em;
+  color: white;
+}
+
+.link-page:hover {
+  color: whitesmoke;
+  text-decoration: none;
+}
 
 .windHorseMobile {
   display: none;

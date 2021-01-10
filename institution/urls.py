@@ -1,6 +1,7 @@
 from django.urls import path
 from institution.views import HomeView, AboutUsView, TeachersView, \
-    DownloadsView, ContactView, SacredDatesView
+    DownloadsView, ContactView, SacredDatesView, NewsListView, \
+    NewsDetailView
 
 app_name = 'institution'
 
@@ -11,4 +12,6 @@ urlpatterns = [
     path('downloads/', DownloadsView.as_view(), name='downloads'),
     path('professores/', TeachersView.as_view(), name='teachers'),
     path('quem-somos/', AboutUsView.as_view(), name='about-us'),
+    path('novidades', NewsListView.as_view(), name='news-list'),
+    path('novidades/<int:pk>/', NewsDetailView.as_view(), name='news-detail'),
 ]

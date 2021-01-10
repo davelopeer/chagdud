@@ -1,0 +1,44 @@
+{% extends 'institution/base.html' %}
+{% load static %}
+
+{% block head %}
+<link href="{% static 'institution/css/style-chagdud.css' %}" rel="stylesheet">
+<title>Novidades | Chagdud Gonpa América do Sul</title>
+{% endblock %}
+
+{% block body %}
+<div class="banner pt-5" style="background-image:url({% static 'institution/images/banner_yellow.jpg' %});">
+  <div class="container">
+    <div class="logo row justify-content-center">
+      <div class="col-md-12 col-sm-12 mt-5 pt-2 text-center">
+
+        <h1 class="mb-5 titulo">Novidades</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main>
+  <h1></h1>
+  <div class="novidades">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-sm-12">
+          <ul class="news-list">
+            {% for news in news_list %}
+            <li class="news-list-item" >
+              <div class="news-list-item-title">
+                <i class="fa fa-bullhorn"></i>
+                <h4 class="news-title" >{{ news.title }}</h4>
+              </div>
+              <a class="news-list-link" href="{% url 'institution:news-detail' news.pk %}">Saiba mais</a>
+              <hr>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}
