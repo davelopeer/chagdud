@@ -65,6 +65,9 @@
   text-decoration: none !important;
 }
 
+.text-grey {
+  color: #AEACAF;
+}
 
 .cardDown {
   font-size: 0.8em;
