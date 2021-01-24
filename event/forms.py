@@ -3,6 +3,11 @@ from django.conf import settings
 from django.core.mail import EmailMessage
 
 class EventForm(forms.Form):
+    PAYMENT_CHOICES = (
+        ('deposito', 'Depósito Bancário'),
+        ('credito', 'Cartão de Crédito'),
+    )
+
     name = forms.CharField(widget=forms.TextInput(attrs={
         'type': 'text',
         'class': 'form-control',
@@ -59,6 +64,34 @@ class EventForm(forms.Form):
         'id': 'aceitoPolitica',
     }))
 
+    payment_options = forms.ChoiceField(choices=PAYMENT_CHOICES, widget=forms.RadioSelect(attrs={
+        'class':'form-check-input',
+        'type':'radio',
+        'name':'evento'
+    }))
+
+    deposit_date = forms.CharField(required=False, widget=forms.TextInput(attrs={
+        'type':'date',
+        'class':'form-control',
+        'id':'data',
+        'name':'data'
+    }))
+
+    deposit_value = forms.DecimalField(required=False, min_value=0, decimal_places=2, widget=forms.TextInput(attrs={
+        'type':'number',
+        'class':'form-control',
+        'id':'valor', 
+        'name':'valor',
+        'step': '.05',
+        'min': '0'
+    }))
+
+    deposit_receipt = forms.FileField(required=False, widget=forms.FileInput(attrs={
+        'type': 'file',
+        'class': 'form-control-file',
+        'name': 'comprovante',
+        'id': 'comprovante'
+    }))
 
     def send_email(self):
         name = self.cleaned_data['name']
@@ -69,6 +102,8 @@ class EventForm(forms.Form):
         city = self.cleaned_data['city']
         state = self.cleaned_data['state']
         cep = self.cleaned_data['cep']
+        deposit_date = self.cleaned_data['deposit_date'] if self.cleaned_data['deposit_date'] else '-'
+        deposit_value = self.cleaned_data['deposit_value'] if self.cleaned_data['deposit_value'] else '-'
 
 
         subject = f'Inscrição de {name}'
@@ -81,6 +116,8 @@ class EventForm(forms.Form):
             city: {city}
             state: {state}
             cep: {cep}
+            deposit_date: {deposit_date}
+            deposit_value: {deposit_value}
         '''
 
         mail = EmailMessage(
@@ -89,6 +126,11 @@ class EventForm(forms.Form):
             settings.CONTACT_EMAIL,
             [settings.CONTACT_EMAIL]
         )
+
+        if self.cleaned_data['deposit_receipt']:
+            deposit_receipt = self.cleaned_data['deposit_receipt']
+            mail.attach(deposit_receipt.name, deposit_receipt.read())
+
         return mail.send()
 
 class PresentialEventForm(EventForm):
@@ -153,7 +195,6 @@ class PresentialEventForm(EventForm):
         'name':'evento'
     }))
 
-
     def send_email(self):
         name = self.cleaned_data['name']
         email = self.cleaned_data['email']
@@ -171,7 +212,8 @@ class PresentialEventForm(EventForm):
         observations = self.cleaned_data['observations']
         accommodation_option = self.cleaned_data['accommodation_option']
         accepts_policy_terms = self.cleaned_data['accepts_policy_terms']
-
+        deposit_date = self.cleaned_data['deposit_date'] if self.cleaned_data['deposit_date'] else '-'
+        deposit_value = self.cleaned_data['deposit_value'] if self.cleaned_data['deposit_value'] else '-'
 
         subject = f'Inscrição de {name}'
         message = f'''
@@ -191,6 +233,8 @@ class PresentialEventForm(EventForm):
             observations: {observations}
             accommodation_option: {accommodation_option}
             accepts_policy_terms: {accepts_policy_terms}
+            deposit_date: {deposit_date}
+            deposit_value: {deposit_value}
         '''
 
         mail = EmailMessage(
@@ -199,4 +243,9 @@ class PresentialEventForm(EventForm):
             settings.CONTACT_EMAIL,
             [settings.CONTACT_EMAIL]
         )
+
+        if self.cleaned_data['deposit_receipt']:
+            deposit_receipt = self.cleaned_data['deposit_receipt']
+            mail.attach(deposit_receipt.name, deposit_receipt.read())
+
         return mail.send()

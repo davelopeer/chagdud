@@ -81,7 +81,7 @@
 
           <div class="row mt-5">
             <div class="col-md">
-              <form action="{% url 'event:online-event-form' %}" method="post">
+              <form action="{% url 'event:online-event-form' %}" method="post" enctype="multipart/form-data">
                 {% csrf_token %}
                 <div class="form-group">
                   <label for="nome">Nome Completo</label>
@@ -154,11 +154,102 @@
                 Li e aceito os termos acima.
               </label>
             </div>
-            <button type="submit" class="btn btn-primary mt-5">Enviar</button>
+
+            <div class="payment-title">
+              <h4 class="titulo">Formas de pagamento</h4>
+              <b></b>
+            </div>
+
+            {% if user_language == 'pt-br' %}
+              <div class="payment-container">
+                {% for payment in form.payment_options %}
+                  <div class="form-check mt-2">
+                    {{ payment }}
+                  </label>
+                </div>
+                {% endfor %}
+
+                <div id="deposit-container" class="hidden">
+                  <h6 class="mt-5"><strong>Dados para depósito</strong></h6>
+                  <hr>
+                  <p>
+                    Banco do Brasil<br>
+                    Titular: Chagdud Gonpa Brasil<br>
+                    CNPJ: 00.990.708/0001-37<br>
+                    Agência: 1380-3<br>
+                    Conta: 5454-2<br>
+                  </p>
+                  
+                  <div class="form-group">
+                    <label for="data">Valor do Depósito</label>
+                    {{ form.deposit_value }}
+                  </div>
+
+                  <div class="form-group">
+                    <label for="data">Data do Depósito</label>
+                    {{ form.deposit_date }}
+                  </div>
+
+                  <div class="form-group mt-5">
+                    <label for="comprovante">Envie o comprovante</label>
+                    {{ form.deposit_receipt }}
+                  </div>
+                </div>
+
+                <div id="credit-container" class="hidden">
+                  <small>Você será redirecionado para uma outra página.</small>
+                </div>
+
+                <button id="submit-btn" type="submit" class="btn btn-primary mt-5 hidden"></button>
+              </div>
+              
+            {% else %}
+
+            {% endif %}
+
+
           </form>
         </div>
       </div>
     </div>
   </div>
 </main>
+
+<script>
+  const depositCheck = document.getElementById("id_payment_options_0")
+  const depositContainer = document.getElementById("deposit-container")
+
+  const creditCheck = document.getElementById("id_payment_options_1")
+  const creditContainer = document.getElementById("credit-container")
+
+  const button = document.getElementById("submit-btn")
+
+  creditCheck.onclick = function(){
+    button.style.display = 'block';
+    button.innerText = 'Realizar pagamento';
+
+    creditContainer.style.display = 'block';
+    depositContainer.style.display = 'none';
+    
+    window.open(url,'_blank');
+  };
+
+  depositCheck.onclick = function(){
+    button.style.display = 'block';
+    button.innerText = 'Enviar';
+
+    creditContainer.style.display = 'none';
+    depositContainer.style.display = 'block';
+  };
+
+  button.onclick = function(){
+    const form = document.getElementsByTagName("form")[0]
+    const isValidForm = form.checkValidity();
+    if (isValidForm){
+      window.open('{{ event.cielo_link }}','_blank');
+    }
+  };
+
+</script>
+
 {% endblock %}

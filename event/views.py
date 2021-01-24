@@ -21,6 +21,7 @@ class EventDetailView(DetailView):
         context = super(EventDetailView, self).get_context_data(**kwargs)
 
         event = self.get_queryset().first()
+        context['user_language'] = 'pt-br'
         if event.event_type == 'online':
             context['form'] = EventForm
         elif event.event_type == 'presential':
@@ -47,7 +48,6 @@ class OnlineEventFormView(FormView):
         form.send_email()
         return super().form_valid(form)
 
-
 class PresentialEventFormView(FormView):
     form_class = PresentialEventForm
     success_url = '/khadroling/evento/'
@@ -56,4 +56,3 @@ class PresentialEventFormView(FormView):
     def form_valid(self, form):
         form.send_email()
         return super().form_valid(form)
-

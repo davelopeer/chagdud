@@ -397,6 +397,22 @@ footer a:hover {
   margin: 40px auto 30px; 
 }
 
+.payment-title {
+  margin: 40px auto 30px; 
+}
+
+.payment-container {
+  margin-bottom: 50px;
+}
+
+#submit-btn {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
 @media screen and (max-device-width:640px), screen and (max-width:993px) {
 
   .dropdown-menu {

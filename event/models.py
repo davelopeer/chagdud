@@ -36,6 +36,8 @@ class Event(models.Model):
     start_date = models.DateTimeField()
     end_date = models.DateTimeField()
 
+    cielo_link = models.CharField(max_length=1000)
+
     # Accommodations
     amitaba_accommodation_capacity = models.PositiveIntegerField(verbose_name="Lotação Amitaba")
     amitaba_accommodation_price = models.DecimalField(max_digits=6, decimal_places=2, verbose_name="Preço Amitaba")

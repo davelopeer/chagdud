@@ -73,299 +73,387 @@
           <b></b>
         </div>
 
-  <div class="row mt-4">
-    <div class="col-md-10 offset-md-1 offset-md-0 col-sm-12">
+        <div class="row mt-4">
+          <div class="col-md-10 offset-md-1 offset-md-0 col-sm-12">
 
-        <h4 class="titulo">Dados Pessoais </h4>
-        <b></b>
+              <h4 class="titulo">Dados Pessoais </h4>
+              <b></b>
 
-      <div class="row mt-5">
-        <div class="col-md">
-      <form action="{% url 'event:presential-event-form' %}" method="post">
-        {% csrf_token %}
-        <div class="form-group">
-          <label for="nome">Nome Completo</label>
-          {{ form.name }}
-          <small id="passwordHelpBlock" class="form-text text-muted">
-            Sem abreviações           
-          </small>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="form-group">
-          <label for="email">Email</label>
-          {{ form.email }}
-        </div>
-      </div>
-      </div>
-      <div class="row">
-        <div class="col-md">
-        <div class="form-group">
-          <label for="telefone">Telefone / Celular</label>
-          {{ form.phone }}
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="form-group">
-          <label for="dataNascimento">Data de Nascimento</label>
-          {{ form.birth_date }}
-        </div>
-      </div>
-      </div>
-      <div class="row">
-        <div class="col-md">
-        <div class="form-group">
-          <label for="endereco">Endereço</label>
-          {{ form.address }}
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="form-group">
-          <label for="cidade">Cidade</label>
-          {{ form.city }}
-        </div>
-      </div>
-      </div>
-      <div class="row">
-        <div class="col-md">
-        <div class="form-group">
-          <label for="Estado">Estado</label>
-          {{ form.state }}
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="form-group">
-          <label for="CEP">CEP</label>
-          {{ form.cep }}
-        </div>
-      </div>
-      </div>
-      <div class="row mt-4">
-        <div class="col-md">
-          <p>Gênero</p>
-          {% for gender in form.gender %}
-            <div class="form-check mt-2">
-              <input class="form-check-input" type="radio" name="genero" checked>
-              <label class="form-check-label">
-                {{ gender }}
-              </label>
+            <div class="row mt-5">
+              <div class="col-md">
+            <form action="{% url 'event:presential-event-form' %}" method="post" enctype="multipart/form-data">
+              {% csrf_token %}
+              <div class="form-group">
+                <label for="nome">Nome Completo</label>
+                {{ form.name }}
+                <small id="passwordHelpBlock" class="form-text text-muted">
+                  Sem abreviações           
+                </small>
+              </div>
             </div>
-          {% endfor %}
-
-        </div>
-        <div class="col-md">
-          <p>Preferência Alimentar</p>
-          {% for food_preference in form.food_preference %}
-            <div class="form-check mt-2">
-              <input class="form-check-input" type="radio" name="alimentar" checked>
-              <label class="form-check-label">
-                {{ food_preference }}
-              </label>
+            <div class="col-md">
+              <div class="form-group">
+                <label for="email">Email</label>
+                {{ form.email }}
+              </div>
             </div>
-          {% endfor %}
-
-        </div>
-        <div class="col-md">
-          <p>Precisa de Cadeira?</p>
-          {% for needs_chair in form.needs_chair %}
-            <div class="form-check mt-2">
-              <input class="form-check-input" type="radio" name="cadeira" checked>
-              <label class="form-check-label">
-              {{ needs_chair }}
-              </label>
             </div>
-          {% endfor %}
-
-          <small id="passwordHelpBlock" class="form-text text-muted">
-            Apenas pessoas com limitações físicas           
-          </small>
-        </div>
-      </div>
-    </div>
-  
-  <div class="col-md-10 offset-md-1 offset-md-0 col-sm-12">
-    <h4 class="titulo mt-5 mb-3">Participação no Evento </h4>
-    <b></b>
-
-    <div class="mt-4">
-      {{ event.participation_text | safe }}
-    </div>
-
-    <div class="row mt-5">
-      <div class="col-md">
-        <div class="form-group">
-          <label for="dataChegada">Data de Chegada</label>
-          {{ form.arrive_date }}
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="form-group">
-          <label for="dataPartida">Data de Partida</label>
-          {{ form.depart_date }}
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md">
-        <div class="form-group">
-          <label for="observacoes">Observações</label>
-          {{ form.observations }}
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-    <div class="col-md-10 offset-md-1 offset-md-0 col-sm-12">
-
-      <h4 class="titulo mt-5 mb-3">Opções do Evento </h4>
-      <b></b>
-
-      <div class=" inverteMobile row mt-4">
-        <div class="col-md pt-5 mt-4">
-          <p>Evento completo</p>
-
-          {% if event.amitaba_accommodation_capacity > 0  %}
-            <div class="form-check">
-              <!-- <input class="form-check-input" type="radio" name="evento"> -->
-              <!-- <label class="form-check-label"> -->
-              {{ form.accommodation_option.0 }}: R$ {{ event.amitaba_accommodation_price }}
-              <!-- </label> -->
+            <div class="row">
+              <div class="col-md">
+              <div class="form-group">
+                <label for="telefone">Telefone / Celular</label>
+                {{ form.phone }}
+              </div>
             </div>
-          {% else %}
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="evento-amitaba" disabled>
-              <label class="form-check-label accommodation-disabled" for="evento-amitaba">
-                Alimentação e hospedagem no Amitaba: R$ {{ event.amitaba_accommodation_price }}
-              </label>
+            <div class="col-md">
+              <div class="form-group">
+                <label for="dataNascimento">Data de Nascimento</label>
+                {{ form.birth_date }}
+              </div>
             </div>
-          {% endif %}
+            </div>
+            <div class="row">
+              <div class="col-md">
+              <div class="form-group">
+                <label for="endereco">Endereço</label>
+                {{ form.address }}
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="form-group">
+                <label for="cidade">Cidade</label>
+                {{ form.city }}
+              </div>
+            </div>
+            </div>
+            <div class="row">
+              <div class="col-md">
+              <div class="form-group">
+                <label for="Estado">Estado</label>
+                {{ form.state }}
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="form-group">
+                <label for="CEP">CEP</label>
+                {{ form.cep }}
+              </div>
+            </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-md">
+                <p>Gênero</p>
+                {% for gender in form.gender %}
+                  <div class="form-check mt-2">
+                    <input class="form-check-input" type="radio" name="genero" checked>
+                    <label class="form-check-label">
+                      {{ gender }}
+                    </label>
+                  </div>
+                {% endfor %}
 
-          {% if event.retreat_house_accommodation_capacity > 0  %}
-            <div class="form-check">
-              <!-- <input class="form-check-input" type="radio" name="evento"> -->
-              <!-- <label class="form-check-label"> -->
-              {{ form.accommodation_option.1 }}: R$ {{ event.retreat_house_accommodation_price }}
-              <!-- </label> -->
-            </div>
-          {% else %}
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="evento-retiro" disabled>
-              <label class="form-check-label accommodation-disabled" for="evento-retiro">
-                Alimentação e hospedagem na casa de retiro: R$ {{ event.retreat_house_accommodation_price }}
-              </label>
-            </div>
-          {% endif %}
+              </div>
+              <div class="col-md">
+                <p>Preferência Alimentar</p>
+                {% for food_preference in form.food_preference %}
+                  <div class="form-check mt-2">
+                    <input class="form-check-input" type="radio" name="alimentar" checked>
+                    <label class="form-check-label">
+                      {{ food_preference }}
+                    </label>
+                  </div>
+                {% endfor %}
 
-          {% if event.dormitory_accommodation_capacity > 0  %}
-            <div class="form-check">
-              <!-- <input class="form-check-input" type="radio" name="evento"> -->
-              <!-- <label class="form-check-label"> -->
-              {{ form.accommodation_option.2 }}: R$ {{ event.dormitory_accommodation_price }}
-              <!-- </label> -->
-            </div>
-          {% else %}
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="evento-dormitorio" disabled>
-              <label class="form-check-label accommodation-disabled" for="evento-dormitorio">
-                Alimentação e hospedagem no dormitório: R$ {{ event.dormitory_accommodation_price }}
-              </label>
-            </div>
-          {% endif %}
+              </div>
+              <div class="col-md">
+                <p>Precisa de Cadeira?</p>
+                {% for needs_chair in form.needs_chair %}
+                  <div class="form-check mt-2">
+                    <input class="form-check-input" type="radio" name="cadeira" checked>
+                    <label class="form-check-label">
+                    {{ needs_chair }}
+                    </label>
+                  </div>
+                {% endfor %}
 
-          {% if event.rno_accommodation_capacity > 0  %}
-            <div class="form-check">
-              <!-- <input class="form-check-input" type="radio" name="evento"> -->
-              <!-- <label class="form-check-label"> -->
-              {{ form.accommodation_option.3 }}: R$ {{ event.no_accommodation_price }}
-              <!-- </label> -->
+                <small id="passwordHelpBlock" class="form-text text-muted">
+                  Apenas pessoas com limitações físicas           
+                </small>
+              </div>
             </div>
-          {% else %}
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="evento-sem-hospedagem" disabled>
-              <label class="form-check-label accommodation-disabled" for="evento-sem-hospedagem">
-                Alimentação e sem hospedagem: R$ {{ event.no_accommodation_price }}
-              </label>
-            </div>
-          {% endif %}
-
-      </div>
-    <div class="col-md bg-light mt-4 p-5">
-      <p>Tipos de Hospedagem</p>
-
-      <div class="row">
-          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-            <li class="nav-item itemAcomodacao">
-              <a class="nav-link linkAcomodacao active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Casa Amitaba</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link linkAcomodacao" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Casa de Retiro 1</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link linkAcomodacao" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Casa de Retiro 2</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link linkAcomodacao" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Dormitório</a>
-            </li>
-          </ul>
-          <div class="tab-content bg-white p-3" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-              Localizada próxima ao templo; possui quartos com camas de solteiro para três pessoas. 
-              Os banheiros – feminino e masculino – são de uso comum entre os hóspedes de todos os quartos. 
-              Roupas de cama, banho, cobertor e travesseiro são fornecidos nesta acomodação.
-            </div>
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-              Localizada próxima ao templo; possui quartos com camas de solteiro para três pessoas. 
-              Os banheiros – feminino e masculino – são de uso comum entre os hóspedes de todos os quartos. 
-              Roupas de cama, banho, cobertor e travesseiro são fornecidos nesta acomodação.
-            </div>
-            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-              Localizada próxima ao templo; possui quartos com camas de solteiro para três pessoas. 
-              Os banheiros – feminino e masculino – são de uso comum entre os hóspedes de todos os quartos. 
-              Roupas de cama, banho, cobertor e travesseiro são fornecidos nesta acomodação.
-            </div>
-            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-              Localizada próxima ao templo; possui quartos com camas de solteiro para três pessoas. 
-              Os banheiros – feminino e masculino – são de uso comum entre os hóspedes de todos os quartos. 
-              Roupas de cama, banho, cobertor e travesseiro são fornecidos nesta acomodação.
-            </div>
-
           </div>
         
-          <div class="mt-5 text-justify acomodacoes">
-          <p>Somente é permitido hospedar-se no Khadro Ling durante eventos e retiros. 
-            A hospedagem é restrita a praticantes budistas.</p>
+        <div class="col-md-10 offset-md-1 offset-md-0 col-sm-12">
+          <h4 class="titulo mt-5 mb-3">Participação no Evento </h4>
+          <b></b>
 
-          <p>Há um número limitado de vagas em cada tipo de acomodação e a p
-            rioridade de escolha será dada às pessoas que se inscreverem primeiro.</p>
-    
-          <p>O Khadro Ling não é responsável pelo transporte dos participantes para os 
-            alojamentos durante o retiro.</p>
+          <div class="mt-4">
+            {{ event.participation_text | safe }}
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-md">
+              <div class="form-group">
+                <label for="dataChegada">Data de Chegada</label>
+                {{ form.arrive_date }}
+              </div>
             </div>
+            <div class="col-md">
+              <div class="form-group">
+                <label for="dataPartida">Data de Partida</label>
+                {{ form.depart_date }}
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md">
+              <div class="form-group">
+                <label for="observacoes">Observações</label>
+                {{ form.observations }}
+              </div>
+            </div>
+          </div>
         </div>
+
+
+          <div class="col-md-10 offset-md-1 offset-md-0 col-sm-12">
+
+            <h4 class="titulo mt-5 mb-3">Opções do Evento </h4>
+            <b></b>
+
+            <div class=" inverteMobile row mt-4">
+              <div class="col-md pt-5 mt-4">
+                <p>Evento completo</p>
+
+                {% if event.amitaba_accommodation_capacity > 0  %}
+                  <div class="form-check">
+                    <!-- <input class="form-check-input" type="radio" name="evento"> -->
+                    <!-- <label class="form-check-label"> -->
+                    {{ form.accommodation_option.0 }}: R$ {{ event.amitaba_accommodation_price }}
+                    <!-- </label> -->
+                  </div>
+                {% else %}
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="evento-amitaba" disabled>
+                    <label class="form-check-label accommodation-disabled" for="evento-amitaba">
+                      Alimentação e hospedagem no Amitaba: R$ {{ event.amitaba_accommodation_price }}
+                    </label>
+                  </div>
+                {% endif %}
+
+                {% if event.retreat_house_accommodation_capacity > 0  %}
+                  <div class="form-check">
+                    <!-- <input class="form-check-input" type="radio" name="evento"> -->
+                    <!-- <label class="form-check-label"> -->
+                    {{ form.accommodation_option.1 }}: R$ {{ event.retreat_house_accommodation_price }}
+                    <!-- </label> -->
+                  </div>
+                {% else %}
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="evento-retiro" disabled>
+                    <label class="form-check-label accommodation-disabled" for="evento-retiro">
+                      Alimentação e hospedagem na casa de retiro: R$ {{ event.retreat_house_accommodation_price }}
+                    </label>
+                  </div>
+                {% endif %}
+
+                {% if event.dormitory_accommodation_capacity > 0  %}
+                  <div class="form-check">
+                    <!-- <input class="form-check-input" type="radio" name="evento"> -->
+                    <!-- <label class="form-check-label"> -->
+                    {{ form.accommodation_option.2 }}: R$ {{ event.dormitory_accommodation_price }}
+                    <!-- </label> -->
+                  </div>
+                {% else %}
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="evento-dormitorio" disabled>
+                    <label class="form-check-label accommodation-disabled" for="evento-dormitorio">
+                      Alimentação e hospedagem no dormitório: R$ {{ event.dormitory_accommodation_price }}
+                    </label>
+                  </div>
+                {% endif %}
+
+                {% if event.rno_accommodation_capacity > 0  %}
+                  <div class="form-check">
+                    <!-- <input class="form-check-input" type="radio" name="evento"> -->
+                    <!-- <label class="form-check-label"> -->
+                    {{ form.accommodation_option.3 }}: R$ {{ event.no_accommodation_price }}
+                    <!-- </label> -->
+                  </div>
+                {% else %}
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="evento-sem-hospedagem" disabled>
+                    <label class="form-check-label accommodation-disabled" for="evento-sem-hospedagem">
+                      Alimentação e sem hospedagem: R$ {{ event.no_accommodation_price }}
+                    </label>
+                  </div>
+                {% endif %}
+
+            </div>
+          <div class="col-md bg-light mt-4 p-5">
+            <p>Tipos de Hospedagem</p>
+
+            <div class="row">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                  <li class="nav-item itemAcomodacao">
+                    <a class="nav-link linkAcomodacao active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Casa Amitaba</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link linkAcomodacao" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Casa de Retiro 1</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link linkAcomodacao" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Casa de Retiro 2</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link linkAcomodacao" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Dormitório</a>
+                  </li>
+                </ul>
+                <div class="tab-content bg-white p-3" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    Localizada próxima ao templo; possui quartos com camas de solteiro para três pessoas. 
+                    Os banheiros – feminino e masculino – são de uso comum entre os hóspedes de todos os quartos. 
+                    Roupas de cama, banho, cobertor e travesseiro são fornecidos nesta acomodação.
+                  </div>
+                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    Localizada próxima ao templo; possui quartos com camas de solteiro para três pessoas. 
+                    Os banheiros – feminino e masculino – são de uso comum entre os hóspedes de todos os quartos. 
+                    Roupas de cama, banho, cobertor e travesseiro são fornecidos nesta acomodação.
+                  </div>
+                  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    Localizada próxima ao templo; possui quartos com camas de solteiro para três pessoas. 
+                    Os banheiros – feminino e masculino – são de uso comum entre os hóspedes de todos os quartos. 
+                    Roupas de cama, banho, cobertor e travesseiro são fornecidos nesta acomodação.
+                  </div>
+                  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    Localizada próxima ao templo; possui quartos com camas de solteiro para três pessoas. 
+                    Os banheiros – feminino e masculino – são de uso comum entre os hóspedes de todos os quartos. 
+                    Roupas de cama, banho, cobertor e travesseiro são fornecidos nesta acomodação.
+                  </div>
+
+                </div>
+              
+                <div class="mt-5 text-justify acomodacoes">
+                <p>Somente é permitido hospedar-se no Khadro Ling durante eventos e retiros. 
+                  A hospedagem é restrita a praticantes budistas.</p>
+
+                <p>Há um número limitado de vagas em cada tipo de acomodação e a p
+                  rioridade de escolha será dada às pessoas que se inscreverem primeiro.</p>
+          
+                <p>O Khadro Ling não é responsável pelo transporte dos participantes para os 
+                  alojamentos durante o retiro.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="policies-title">
+            <h4 class="titulo">Ao enviar essa fica de inscrição:</h4>
+            <b></b>
+          </div>
+        
+          {{ event.policies | safe }}
+
+          <div class="form-check mt-5">
+            {{ form.accepts_policy_terms}}
+            <label class="form-check-label" for="aceitoPolitica">
+              Li e aceito os termos acima.
+            </label>
+          </div>
+
+          <div class="payment-title">
+            <h4 class="titulo">Formas de pagamento</h4>
+            <b></b>
+          </div>
+
+          {% if user_language == 'pt-br' %}
+            <div class="payment-container">
+              {% for payment in form.payment_options %}
+                <div class="form-check mt-2">
+                  {{ payment }}
+                </label>
+              </div>
+              {% endfor %}
+
+              <div id="deposit-container" class="hidden">
+                <h6 class="mt-5"><strong>Dados para depósito</strong></h6>
+                <hr>
+                <p>
+                  Banco do Brasil<br>
+                  Titular: Chagdud Gonpa Brasil<br>
+                  CNPJ: 00.990.708/0001-37<br>
+                  Agência: 1380-3<br>
+                  Conta: 5454-2<br>
+                </p>
+                
+                <div class="form-group">
+                  <label for="data">Valor do Depósito</label>
+                  {{ form.deposit_value }}
+                </div>
+
+                <div class="form-group">
+                  <label for="data">Data do Depósito</label>
+                  {{ form.deposit_date }}
+                </div>
+
+                <div class="form-group mt-5">
+                  <label for="comprovante">Envie o comprovante</label>
+                  {{ form.deposit_receipt }}
+                </div>
+              </div>
+
+              <div id="credit-container" class="hidden">
+                <small>Você será redirecionado para uma outra página.</small>
+              </div>
+
+              <button id="submit-btn" type="submit" class="btn btn-primary mt-5 hidden"></button>
+            </div>
+            
+          {% else %}
+
+          {% endif %}
+
+
+        </form>
+
+      </div>
       </div>
     </div>
-    <div class="policies-title">
-      <h4 class="titulo">Ao enviar essa fica de inscrição:</h4>
-      <b></b>
     </div>
-  
-    {{ event.policies | safe }}
-
-    <div class="form-check mt-5">
-      {{ form.accepts_policy_terms}}
-      <label class="form-check-label" for="aceitoPolitica">
-        Li e aceito os termos acima.
-      </label>
-    </div>
-    <button type="submit" class="btn btn-primary mt-5">Enviar</button>
-  </form>
-
-  </div>
-  </div>
-  </div>
-  </div>
   </div>
 
 </main>
+
+<script>
+  const depositCheck = document.getElementById("id_payment_options_0")
+  const depositContainer = document.getElementById("deposit-container")
+
+  const creditCheck = document.getElementById("id_payment_options_1")
+  const creditContainer = document.getElementById("credit-container")
+
+  const button = document.getElementById("submit-btn")
+
+  creditCheck.onclick = function(){
+    button.style.display = 'block';
+    button.innerText = 'Realizar pagamento';
+
+    creditContainer.style.display = 'block';
+    depositContainer.style.display = 'none';    
+  };
+
+  depositCheck.onclick = function(){
+    button.style.display = 'block';
+    button.innerText = 'Enviar';
+
+    creditContainer.style.display = 'none';
+    depositContainer.style.display = 'block';
+  };
+
+  button.onclick = function(){
+    const form = document.getElementsByTagName("form")[0]
+    const isValidForm = form.checkValidity();
+    if (isValidForm){
+      window.open('{{ event.cielo_link }}','_blank');
+    }
+  };
+
+</script>
 {% endblock %}
