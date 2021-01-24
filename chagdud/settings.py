@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'institution',
     'khadro_ling',
     'offering',
+    'event',
     'tinymce',
 ]
 

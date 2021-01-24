@@ -81,7 +81,7 @@
 
       <div class="row mt-5">
         <div class="col-md">
-      <form action="{% url 'khadroling:event-form' %}" method="post">
+      <form action="{% url 'event:presential-event-form' %}" method="post">
         {% csrf_token %}
         <div class="form-group">
           <label for="nome">Nome Completo</label>
@@ -182,17 +182,13 @@
         </div>
       </div>
     </div>
-
+  
   <div class="col-md-10 offset-md-1 offset-md-0 col-sm-12">
     <h4 class="titulo mt-5 mb-3">Participação no Evento </h4>
     <b></b>
 
     <div class="mt-4">
-    <p>O preço do evento inclui hospedagem e alimentação a partir das 17h do dia 17 até às 17h do dia 19 de maio.</p>
-
-    <h5 class="titulo mt-5 mb-3"><strong>Check-in no Khadro Ling:</strong></h5>
-    <p> - 17 de maio – das 14h às 21h.</p>
-    <p> - 18 de maio – das 8h às 9h.</p>
+      {{ event.participation_text | safe }}
     </div>
 
     <div class="row mt-5">
@@ -219,31 +215,80 @@
     </div>
   </div>
 
+
     <div class="col-md-10 offset-md-1 offset-md-0 col-sm-12">
 
-      <h4 class="titulo mt-5 mb-3">Opções do Eventos </h4>
+      <h4 class="titulo mt-5 mb-3">Opções do Evento </h4>
       <b></b>
 
       <div class=" inverteMobile row mt-4">
         <div class="col-md pt-5 mt-4">
           <p>Evento completo</p>
-          {% for accommodation_option in form.accommodation_option %}
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="evento">
-            <label class="form-check-label">
-              {{ accommodation_option }}
-            </label>
-          </div>
-          {% endfor %}
-        <div class="form-check mt-5">
-          <!-- <input class="form-check-input" type="checkbox" value="aceito" id="aceitoPolitica"> -->
-          {{ form.accepts_policy_terms }}
-          <label class="form-check-label" for="aceitoPolitica">
-            Li e aceito a política de cancelamento de participação em eventos.
-          </label>
-        </div>
 
-        <button type="submit" class="btn btn-primary mt-5">Enviar</button>
+          {% if event.amitaba_accommodation_capacity > 0  %}
+            <div class="form-check">
+              <!-- <input class="form-check-input" type="radio" name="evento"> -->
+              <!-- <label class="form-check-label"> -->
+              {{ form.accommodation_option.0 }}: R$ {{ event.amitaba_accommodation_price }}
+              <!-- </label> -->
+            </div>
+          {% else %}
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="evento-amitaba" disabled>
+              <label class="form-check-label accommodation-disabled" for="evento-amitaba">
+                Alimentação e hospedagem no Amitaba: R$ {{ event.amitaba_accommodation_price }}
+              </label>
+            </div>
+          {% endif %}
+
+          {% if event.retreat_house_accommodation_capacity > 0  %}
+            <div class="form-check">
+              <!-- <input class="form-check-input" type="radio" name="evento"> -->
+              <!-- <label class="form-check-label"> -->
+              {{ form.accommodation_option.1 }}: R$ {{ event.retreat_house_accommodation_price }}
+              <!-- </label> -->
+            </div>
+          {% else %}
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="evento-retiro" disabled>
+              <label class="form-check-label accommodation-disabled" for="evento-retiro">
+                Alimentação e hospedagem na casa de retiro: R$ {{ event.retreat_house_accommodation_price }}
+              </label>
+            </div>
+          {% endif %}
+
+          {% if event.dormitory_accommodation_capacity > 0  %}
+            <div class="form-check">
+              <!-- <input class="form-check-input" type="radio" name="evento"> -->
+              <!-- <label class="form-check-label"> -->
+              {{ form.accommodation_option.2 }}: R$ {{ event.dormitory_accommodation_price }}
+              <!-- </label> -->
+            </div>
+          {% else %}
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="evento-dormitorio" disabled>
+              <label class="form-check-label accommodation-disabled" for="evento-dormitorio">
+                Alimentação e hospedagem no dormitório: R$ {{ event.dormitory_accommodation_price }}
+              </label>
+            </div>
+          {% endif %}
+
+          {% if event.rno_accommodation_capacity > 0  %}
+            <div class="form-check">
+              <!-- <input class="form-check-input" type="radio" name="evento"> -->
+              <!-- <label class="form-check-label"> -->
+              {{ form.accommodation_option.3 }}: R$ {{ event.no_accommodation_price }}
+              <!-- </label> -->
+            </div>
+          {% else %}
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="evento-sem-hospedagem" disabled>
+              <label class="form-check-label accommodation-disabled" for="evento-sem-hospedagem">
+                Alimentação e sem hospedagem: R$ {{ event.no_accommodation_price }}
+              </label>
+            </div>
+          {% endif %}
+
       </div>
     <div class="col-md bg-light mt-4 p-5">
       <p>Tipos de Hospedagem</p>
@@ -300,13 +345,27 @@
         </div>
       </div>
     </div>
+    <div class="policies-title">
+      <h4 class="titulo">Ao enviar essa fica de inscrição:</h4>
+      <b></b>
+    </div>
+  
+    {{ event.policies | safe }}
+
+    <div class="form-check mt-5">
+      {{ form.accepts_policy_terms}}
+      <label class="form-check-label" for="aceitoPolitica">
+        Li e aceito os termos acima.
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary mt-5">Enviar</button>
   </form>
 
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
 
-
-  </div>
-  </div>
-  </div>
-  </div>
 </main>
 {% endblock %}

@@ -393,6 +393,10 @@ footer a:hover {
   display: none;
 }
 
+.policies-title {
+  margin: 40px auto 30px; 
+}
+
 @media screen and (max-device-width:640px), screen and (max-width:993px) {
 
   .dropdown-menu {

@@ -111,6 +111,10 @@
   border: 2px solid #fff;
 }
 
+.accommodation-disabled {
+  margin-bottom: .5rem !important;
+  text-decoration: line-through;
+}
 
 .linkAcomodacao, .linkAcomodacao:active .itemAcomodacao .nav-link.active {
   font-size: 0.7em !important;

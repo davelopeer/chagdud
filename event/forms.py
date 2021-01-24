@@ -1,27 +1,8 @@
 from django import forms
+from django.conf import settings
 from django.core.mail import EmailMessage
 
 class EventForm(forms.Form):
-    GENDER_CHOICES = (
-        ('male', 'Masculino'),
-        ('female', 'Feminino'),
-        ('other', 'Outro'),
-    )
-    FOOD_PREFERENCE_CHOICES = (
-        ('vegetarian', 'Vegetariano'),
-        ('non-vegetarian', 'Não-Vegetariano'),
-    )
-    NEEDS_CHAIR_CHOICES = (
-        ('yes', 'Sim'),
-        ('no', 'Não'),
-    )
-    ACCOMMODATION_OPTION_CHOICES = (
-        ('amitaba', 'Alimentação e hospedagem no Amitaba:R$ 414,00'),
-        ('retreat', 'Alimentação e hospedagem na casa de retiro: R$ 394,00'),
-        ('dormitory', 'Alimentação e hospedagem no dormitório: R$ 340,00'),
-        ('no-accommodation', 'Alimentação e sem hospedagem: R$ 296,00'),
-    )
-
     name = forms.CharField(widget=forms.TextInput(attrs={
         'type': 'text',
         'class': 'form-control',
@@ -71,6 +52,66 @@ class EventForm(forms.Form):
         'name': 'CEP',
     }))
 
+    accepts_policy_terms = forms.BooleanField(widget=forms.CheckboxInput(attrs={
+        'type': 'checkbox',
+        'class': 'form-check-input',
+        'value': 'aceito',
+        'id': 'aceitoPolitica',
+    }))
+
+
+    def send_email(self):
+        name = self.cleaned_data['name']
+        email = self.cleaned_data['email']
+        phone = self.cleaned_data['phone']
+        birth_date = self.cleaned_data['birth_date']
+        address = self.cleaned_data['address']
+        city = self.cleaned_data['city']
+        state = self.cleaned_data['state']
+        cep = self.cleaned_data['cep']
+
+
+        subject = f'Inscrição de {name}'
+        message = f'''
+            name: {name}
+            email: {email}
+            phone: {phone}
+            birth_date: {birth_date}
+            address: {address}
+            city: {city}
+            state: {state}
+            cep: {cep}
+        '''
+
+        mail = EmailMessage(
+            subject,
+            message,
+            settings.CONTACT_EMAIL,
+            [settings.CONTACT_EMAIL]
+        )
+        return mail.send()
+
+class PresentialEventForm(EventForm):
+    GENDER_CHOICES = (
+        ('male', 'Masculino'),
+        ('female', 'Feminino'),
+        ('other', 'Outro'),
+    )
+    FOOD_PREFERENCE_CHOICES = (
+        ('vegetarian', 'Vegetariano'),
+        ('non-vegetarian', 'Não-Vegetariano'),
+    )
+    NEEDS_CHAIR_CHOICES = (
+        ('yes', 'Sim'),
+        ('no', 'Não'),
+    )
+    ACCOMMODATION_OPTION_CHOICES = (
+        ('amitaba', 'Alimentação e hospedagem no Amitaba'),
+        ('retreat', 'Alimentação e hospedagem na casa de retiro'),
+        ('dormitory', 'Alimentação e hospedagem no dormitório'),
+        ('no-accommodation', 'Alimentação e sem hospedagem'),
+    )
+
     gender = forms.ChoiceField(choices=GENDER_CHOICES, widget=forms.RadioSelect(attrs={
         'class':'form-check-input',
         'type':'radio',
@@ -112,12 +153,6 @@ class EventForm(forms.Form):
         'name':'evento'
     }))
 
-    accepts_policy_terms = forms.BooleanField(widget=forms.CheckboxInput(attrs={
-        'type': 'checkbox',
-        'class': 'form-check-input',
-        'value': 'aceito',
-        'id': 'aceitoPolitica',
-    }))
 
     def send_email(self):
         name = self.cleaned_data['name']
@@ -164,7 +199,4 @@ class EventForm(forms.Form):
             settings.CONTACT_EMAIL,
             [settings.CONTACT_EMAIL]
         )
-        print('-'*20)
-        print('Enviado')
-        print('-'*20)
         return mail.send()

@@ -34,7 +34,7 @@
               <span>
                 {{ event.short_description }}
               </span>
-              <span class="d-block mt-3"><a class="link" href="{% url 'khadroling:event-detail' event.pk %}">Saiba mais</a></span>
+              <span class="d-block mt-3"><a class="link" href="{% url 'event:event-detail' event.pk %}">Saiba mais</a></span>
               </div>
               <div class="col-md-5 col-sm-12 d-flex mb-5">
                 <img class="rounded" src="{% static 'khadro_ling/images/khadro.jpg' %}" width="100%">
@@ -55,7 +55,7 @@
                 <span>
                   {{ event.short_description }}
                 </span>
-                <span class="d-block mt-2"><a class="link" href="{% url 'khadroling:event-detail' event.pk %}">Saiba mais</a></span>
+                <span class="d-block mt-2"><a class="link" href="{% url 'event:event-detail' event.pk %}">Saiba mais</a></span>
                 </div>
               </div>
               <div class="col-md-4 col-sm-12 d-flex mb-5">
@@ -80,7 +80,7 @@
               Kyabje Dilgo Khyentse Rinpoche (1910-1991). Essa prática foi introduzida no Chagdud 
               Gonpa após, em 1987, o pró...
             </span>
-            <span class="d-block mt-2"><a class="link" href="{% url 'khadroling:event-detail' 3 %}">Saiba mais</a></span>
+            <span class="d-block mt-2"><a class="link" href="{% url 'event:event-detail' 3 %}">Saiba mais</a></span>
             </div>
           </div>
           <div class="col-md-4 col-sm-12 d-flex mb-5">
@@ -100,7 +100,7 @@
             <span>
               Retiro de 2 semanas com JTR.
             </span>
-            <span class="d-block mt-2"><a class="link" href="{% url 'khadroling:event-detail' 4 %}">Saiba mais</a></span>
+            <span class="d-block mt-2"><a class="link" href="{% url 'event:event-detail' 4 %}">Saiba mais</a></span>
             </div>
           </div>
           <div class="col-md-4 col-sm-12 d-flex mb-5">
