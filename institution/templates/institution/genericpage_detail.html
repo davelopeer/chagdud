@@ -1,0 +1,31 @@
+{% extends 'institution/base.html' %}
+{% load static %}
+
+{% block head %}
+<link href="{% static 'institution/css/style-chagdud.css' %}" rel="stylesheet">
+<title> {{news.title}} </title>
+{% endblock %}
+
+{% block body %}
+<main>
+  <div class="container">
+    <div class="logo row justify-content-center">
+      <div class="col-md-12 col-sm-12 mt-5 pt-2 text-center">
+        <h1 class="mb-5 titulo">{{ generic_page.title }}</h1>
+      </div>
+    </div>
+  </div>
+  {% if generic_page.image %}
+  <div class="container text-center">
+    <img class="news-image" src="{{ generic_page.image.url }}" alt="imagem da novidade">
+  </div>
+  {% endif %}
+  <div class="container news-text">
+    <p>{{ generic_page.text | safe  }}</p>
+  </div>
+  <p class="return-news-list text-center">
+    <a class="styled-link" href="{% url 'institution:news-list' %}"> <i class="fa fa-reply"></i> Voltar</a>
+  </p>
+</main>
+
+{% endblock %}

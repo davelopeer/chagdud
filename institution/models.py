@@ -28,3 +28,18 @@ class SacredDates(models.Model):
 
   def __str__(self):
     return f'{self.title}'
+
+
+class GenericPage(models.Model):
+  slug = models.SlugField()
+  title = models.CharField(max_length=500)
+  image = models.ImageField(null=True, blank=True)
+  text = HTMLField()
+
+  class Meta:
+    verbose_name = 'Página Genérica'
+    verbose_name_plural = 'Páginas Genéricas'
+    ordering = ['-id']
+
+  def __str__(self):
+    return f'{self.title}'

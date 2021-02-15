@@ -1,7 +1,7 @@
 from django.urls import path
 from institution.views import HomeView, AboutUsView, TeachersView, \
     DownloadsView, ContactView, SacredDatesView, NewsListView, \
-    NewsDetailView, BranchesView
+    NewsDetailView, BranchesView, GenericPageView
 
 app_name = 'institution'
 
@@ -15,4 +15,5 @@ urlpatterns = [
     path('filiais/', BranchesView.as_view(), name='branches'),
     path('novidades', NewsListView.as_view(), name='news-list'),
     path('novidades/<int:pk>/', NewsDetailView.as_view(), name='news-detail'),
+    path('<int:slug>/', GenericPageView.as_view(), name='news-detail'),
 ]

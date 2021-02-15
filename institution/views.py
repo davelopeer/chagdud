@@ -3,7 +3,7 @@ from django.views.generic.edit import FormView
 from django.urls import reverse
 
 from institution.forms import ContactForm
-from institution.models import News, SacredDates
+from institution.models import News, SacredDates, GenericPage
 
 
 class HomeView(TemplateView):
@@ -58,3 +58,7 @@ class NewsDetailView(DetailView):
 
 class BranchesView(TemplateView):
      template_name = 'institution/branches.html'
+
+class GenericPageView(DetailView):
+     model = GenericPage
+     context_object_name = 'generic_page'
