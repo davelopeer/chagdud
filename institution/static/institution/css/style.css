@@ -361,11 +361,11 @@ footer a:hover {
   margin: 90px 0 5%;
 }
 
-.news-list-link {
+.styled-link {
   color: #0081AF;
   display: block;
 }
-.news-list-link:hover {
+.styled-link:hover {
   text-decoration: none;
   transition: 0.2s;
   color: #EAD2AC;

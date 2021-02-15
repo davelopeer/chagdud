@@ -54,3 +54,7 @@ class NewsListView(ListView):
 class NewsDetailView(DetailView):
     model = News
     context_object_name = 'news'
+
+
+class BranchesView(TemplateView):
+     template_name = 'institution/branches.html'

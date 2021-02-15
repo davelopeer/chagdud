@@ -1,0 +1,143 @@
+{% extends 'institution/base.html' %}
+{% load static %}
+
+{% block head %}
+<link href="{% static 'institution/css/style-chagdud.css' %}" rel="stylesheet">
+<title> Filiais | Chagdud Gonpa América do Sul </title>
+{% endblock %}
+
+{% block body %}
+<main>
+  <div class="container">
+    <div class="logo row justify-content-center">
+      <div class="col-md-12 col-sm-12 mt-5 pt-2 text-center">
+        <h1 class="mb-5 titulo">Filiais do Chagdud Gonpa Brasil</h1>
+      </div>
+    </div>
+    <hr>
+  </div>
+
+  <div class="container news-text">
+    <div class="row mb-5">
+      <div class="col-md-4 col-sm-12 offset-md-1 offset-sm-0">
+        <h2 class="mb-5">Sul</h2>
+        <div class="mb-4">
+          <p class="mb-1">Três Coroas, RS</p>
+          <p><a class="styled-link" href="{% url 'khadroling:home' %}">Khadro Ling</a></p>
+        </div>
+        <div class="mb-4">
+          <p class="mb-1">Porto Alegre, RS</p>
+          <p><a class="styled-link" href="https://yesheling.blogspot.com/">Yeshe Ling</a></p>
+        </div>
+        <div class="mb-4">
+          <p class="mb-1">Santa Maria, RS</p>
+          <p><a class="styled-link" href="https://pt-br.facebook.com/tchimedling/">Tchimed Ling</a></p>
+        </div>
+        <div class="mb-4">
+          <p class="mb-1">Caxias do Sul, RS</p>
+          <p><a class="styled-link" href="https://www.facebook.com/budismocaxias/">Yeshe Melong</a></p>
+        </div>
+        <div class="mb-4">
+          <p class="mb-1">Frederico Westphalen, RS</p>
+          <p><a class="styled-link" href="https://www.facebook.com/meditacaofw/">Grupo de Meditação</a></p>
+        </div>
+        <div class="mb-4">
+          <p class="mb-1">Florianópolis, SC</p>
+          <p><a class="styled-link" href="http://budismofloripa.com.br/">Rigdjed Ling</a></p>
+        </div>
+        <div class="mb-4">
+          <p class="mb-1">Blumenau, SC</p>
+          <p><a class="styled-link" href="https://budismoemblumenau.wordpress.com/">Sangha</a></p>
+        </div>
+        <div class="mb-4">
+          <p class="mb-1">Curitiba, PR</p>
+          <p><a class="styled-link" href="https://www.dordjeling.org/">Dordje Ling</a></p>
+        </div>
+        <div class="mb-4">
+          <p class="mb-1">Novo Hamburgo, RS</p>
+          <p><a class="styled-link" href="mailto:treici_3cy@hotmail.com">Contato</a></p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <h2 class="mb-5">Sudeste</h2>
+        <div class="mb-4">
+          <p class="mb-1">São Paulo, SP</p>
+          <p><a class="styled-link" href="http://odsalling.org/">Odsal Ling</a></p>
+        </div>
+        <div class="mb-4">
+          <p class="mb-1">Ribeirão Preto, SP</p>
+          <p>Padma Amrita Ling</p>
+        </div>
+        <div class="mb-4">
+          <p class="mb-1">Belo Horizonte, MG</p>
+          <p><a class="styled-link" href="http://www.dawadrolma.org/">Dawa Drolma</a></p>
+        </div>
+        <div class="mb-4">
+          <p class="mb-1">Lambari, MG</p>
+          <p><a class="styled-link" href="https://www.facebook.com/sitio.esperanca.lambari/">Ngöy Drub Ling</a></p>
+        </div>
+        <div class="mb-4">
+          <p class="mb-1">Rio de Janeiro, RJ</p>
+          <p><a class="styled-link" href="http://pedgyal.org/">Pedgyal Ling</a></p>
+        </div>
+        <div class="mb-4">
+          <p class="mb-1">Nova Friburgo, RJ</p>
+          <p><a class="styled-link" href="https://pt-br.facebook.com/dechenling.novafriburgo/">Dechen Ling</a></p>
+        </div>
+        <div class="mb-4">
+          <p class="mb-1">Vitória, ES</p>
+          <p><a class="styled-link" href="https://samdrubling.wordpress.com/">Sam Drub Ling</a></p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-12">
+        <h2 class="mb-5">Centro-Oeste</h2>
+        <div class="mb-4">
+          <p class="mb-1">Brasília, DF</p>
+          <p><a class="styled-link" href="http://pl-chagdud.org/">Padma Ling</a></p>
+        </div>
+        <div class="mb-5">
+          <p class="mb-1">Goiânia, GO</p>
+          <p><a class="styled-link" href="mailto:lidiogjr@gmail.com">Contato</a></p>
+        </div>
+        <h2 class="mb-5">Nordeste</h2>
+        <div class="mb-5">
+          <p class="mb-1">Natal, RN</p>
+          <p><a class="styled-link" href="https://ieshe.wordpress.com/">Ieshe Tso</a></p>
+        </div>
+        <h2 class="mb-5">Norte</h2>
+        <div class="mb-5">
+          <p class="mb-1">Manaus, AM</p>
+          <p><a class="styled-link" href="https://pt-br.facebook.com/tromguephelling/">Trom Gue Phel Ling</a></p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="mb-5">
+
+    <div class="row">
+      <div class="col-md-4 col-sm-12 offset-md-1 offset-sm-0">
+        <h2 class="mb-5">Fora do Brasil</h2>
+        <div class="mb-4">
+          <p><a class="styled-link" href="http://chagdudgonpa.org/">Estados Unidos</a></p>
+        </div>
+        <div class="mb-4">
+          <p><a class="styled-link" href="https://chagdudhispano.org/">Chagdud Gonpa Hispanoamérica</a></p>
+        </div>
+        <div class="mb-4">
+          <p><a class="styled-link" href="http://www.budismo.com.uy/">Uruguai</a></p>
+        </div>
+        <div class="mb-4">
+          <p><a class="styled-link" href="http://www.chagdudgonpachile.com/">Chile</a></p>
+        </div>
+        <div class="mb-4">
+          <p><a class="styled-link" href="http://chagdudhispano.org/venezuela.html">Venezuela</a></p>
+        </div>
+        <div class="mb-4">
+          <p><a class="styled-link" href="https://www.facebook.com/groups/178097485665187/">Itália</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+{% endblock %}
