@@ -3,7 +3,7 @@ from django.views.generic.edit import FormView
 from django.urls import reverse
 
 from institution.forms import ContactForm
-from institution.models import News
+from institution.models import News, SacredDates
 
 
 class HomeView(TemplateView):
@@ -40,8 +40,10 @@ class ContactView(FormView):
           return reverse('institution:contact')
 
 
-class SacredDatesView(TemplateView):
+class SacredDatesView(ListView):
      template_name = 'institution/sacred_dates.html'
+     model = SacredDates
+     context_object_name = 'sacred_dates'
 
 
 class NewsListView(ListView):

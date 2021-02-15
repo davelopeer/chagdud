@@ -53,6 +53,10 @@ class Event(models.Model):
 
     policies = HTMLField() 
 
+    class Meta:
+        verbose_name = 'Evento'
+        verbose_name_plural = 'Eventos'
+
     def __str__(self):
         return str(self.id) + self.name
 

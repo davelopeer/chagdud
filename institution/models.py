@@ -16,3 +16,15 @@ class News(models.Model):
 
   def __str__(self):
     return f'{self.title}'
+
+
+class SacredDates(models.Model):
+  title = models.CharField(max_length=1000)
+  text = HTMLField()
+
+  class Meta:
+    verbose_name = 'Datas Sagradas'
+    verbose_name_plural = 'Datas Sagradas'
+
+  def __str__(self):
+    return f'{self.title}'
