@@ -49,6 +49,7 @@ header .fa {
 
 #inicio {
   margin: -25px 10% 0;
+  height: 310px;
 }
 
 .imgApres {
@@ -213,7 +214,7 @@ b {
 }
 
 footer {
-  padding: 40px 0;
+  padding: 10px 0 20px;
   font-size: 0.8em;
   line-height: 0.5em;
 }

@@ -85,6 +85,10 @@
   width: 80%;
 }
 
+.news-images {
+  object-fit: cover;
+  height: 230px;
+}
 
 @media screen and (max-width: 800px) {
   .professores {

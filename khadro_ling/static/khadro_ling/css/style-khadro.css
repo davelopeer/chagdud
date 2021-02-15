@@ -20,6 +20,10 @@
   border-bottom-color: #d26e4b !important;
 }
 
+.carouselImages {
+  max-height: 7600px;
+  object-fit: cover;
+}
 
 .sobreEvento {
   padding: 8rem 0;
@@ -43,7 +47,7 @@
 
 .card-img-top {
   object-fit: cover;
-    height: 170px;
+  height: 170px;
 }
 
 .carouselOferendasMobile {

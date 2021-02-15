@@ -9,13 +9,13 @@
 <div style="background-image:url({% static 'institution/images/banner_blue.jpg' %});">
   <div class="container" >
     <div id="inicio" class="logo justify-content-center align-items-center row justify-content-start">
-      <div class="col-md-5 col-sm-12 text-center mt-5">
+      <div class="col-md-5 col-sm-12 text-center mt-2">
         <span class="subtitulo mb-5">Somos uma rede de centros de prática do budismo vajrayana fundada por
           S. Ema.
           Chagdud Tulku
           Rinpoche.</span>
       </div>
-      <div class="col-md-5 col-sm-12 text-center mt-5">
+      <div class="col-md-5 col-sm-12 text-center mt-2">
         <img class="imgApres" src="{% static 'institution/images/CTR.jpeg' %}" width="80%">
 
       </div>
@@ -97,7 +97,7 @@
         <div class="d-flex flex-wrap align-items-center">
           <div class="col-md-3 col-sm-12 offset-md-2 offset-sm-0 justify-content-center text-center">
             <span>
-              Saiba onde encontrar uma filial do Chagdud Gonpa para iniciar seus estudos e praticar.
+              Saiba onde encontrar uma das filiais do Chagdud Gonpa no Brasil.
             </span>
           </div>
           <div class="col-md-5 col-sm-12 d-flex">
@@ -223,7 +223,7 @@
                         {% for news in news_list_1 %}
                           <div class="card windCard mb-3" style="width: 15rem;">
                             <a class="link" href="{% url 'institution:news-detail' news.pk %}">
-                              <img class="card-img-top" src="{{ news.image.url }}" alt="Imagem de capa do card">
+                              <img class="card-img-top news-images" src="{{ news.image.url }}" alt="Imagem de capa do card">
                             </a>
                             <div class="card-body">
                               <h5 class="card-title">{{ news.title }}</h5>
@@ -242,7 +242,7 @@
                         {% for news in news_list_2 %}
                           <div class="card windCard mb-3" style="width: 15rem;">
                             <a class="link" href="{% url 'institution:news-detail' news.pk %}">
-                              <img class="card-img-top" src="{{ news.image.url }}" alt="Imagem de capa do card">
+                              <img class="card-img-top news-images" src="{{ news.image.url }}" alt="Imagem de capa do card">
                             </a>
                             <div class="card-body">
                               <h5 class="card-title">{{ news.title }}</h5>
@@ -282,7 +282,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 col-sm-12 text-center">
-            <h3 class="titulo mb-5 text-light">Wind Horse</h3>
+            <h3 class="titulo mb-5 text-light">Notícias e Novidades</h3>
             <span class="text-light ">Sessão de notícias e texto sobre as novidades sobre a instituição e o budismo
               em geral.
               Um texto explicando um pouco sobre o que é.</span>
@@ -293,7 +293,7 @@
                     <div class="text-center">
                       <div class="card-deck">
                         <div class="card windCard mb-3" style="width: 15rem;">
-                          <img class="card-img-top" src="{% static 'institution/images/yeshe.jpg' %}" alt="Imagem de capa do card">
+                          <img class="card-img-top news-images" src="{% static 'institution/images/yeshe.jpg' %}" alt="Imagem de capa do card">
                           <div class="card-body">
                             <h5 class="card-title">Parinirvana de S. Em. Chagdud Tulku Rinpoche</h5>
                             <p class="card-text"> 21.12.2019</p>
@@ -307,7 +307,7 @@
                   <div class="carousel-item ">
                     <div class="text-center">
                         <div class="card windCard mb-3" style="width: 15rem;">
-                          <img class="card-img-top" src="{% static 'institution/images/saoPaulo.jpg' %}" alt="Imagem de capa do card">
+                          <img class="card-img-top news-images" src="{% static 'institution/images/saoPaulo.jpg' %}" alt="Imagem de capa do card">
                           <div class="card-body">
                             <h5 class="card-title">Construção do Jardim das 21 Taras</h5>
                             <p class="card-text"> 21.10.2018</p>
@@ -319,7 +319,7 @@
                     <div class="carousel-item ">
                       <div class="text-center">
                           <div class="card windCard mb-3" style="width: 15rem;">
-                            <img class="card-img-top" src="{% static 'institution/images/yeshe.jpg' %}" alt="Imagem de capa do card">
+                            <img class="card-img-top news-images" src="{% static 'institution/images/yeshe.jpg' %}" alt="Imagem de capa do card">
                             <div class="card-body">
                               <h5 class="card-title">Movendo textos sagrados</h5>
                               <p class="card-text"> 08.12.2019</p>
