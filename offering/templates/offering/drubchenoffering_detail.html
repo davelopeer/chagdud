@@ -1,0 +1,105 @@
+{% extends 'khadro_ling/base.html' %}
+{% load static %}
+
+{% block head %}
+<title>{{ offering.title }}| Chagdud Gonpa Brasil</title>
+{% endblock %}
+
+{% block body %}
+<main>
+  <!-- Conteúdo  -->
+  <div class="container">
+    <div class="logo row justify-content-center">
+      <div class="col-md-12 col-sm-12 mt-5 pt-2 text-center">
+        <h1 class="mb-5 titulo">{{ offering.title }}</h1>
+      </div>
+    </div>
+    {% if mail_sended %}
+    <p class="successMessage">Sua oferenda foi enviada.</p>
+    {% else %}
+    <hr>
+    {% endif %}
+  </div>
+
+
+  <div class="container news-text">
+    <p>{{ offering.text | safe }}</p>
+  </div>
+
+  <!-- Formulário -->
+  <div class="container">
+    <div class="card-body py-5">
+      <form action="{% url 'offering:drubchen-offering-form' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          {{ form.name }}
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          {{ form.email }}
+        </div>
+        <div class="form-group">
+          <label for="valor">Valor da oferenda em R$</label>
+          {{ form.offering_value }}
+        </div>
+        <h5 class="mt-5"><strong>Destino da oferenda</strong></h5>
+        <hr>
+        <p>
+          Indique o valor para cada oferenda.  <br>
+          Caso você não queira oferecer determinado item, mantenha-o sem preenchimento.
+        </p>
+
+        <div class="form-group">
+          <label for="dedicacao">Valor para cada Tsog</label>
+          {{ form.value_for_tsogs }}
+        </div>
+
+        <div class="form-group">
+          <label for="dedicacao">Substâncias utilizadas para a cerimônia do Drubchen.</label>
+          {{ form.value_for_substances }}
+        </div>
+
+        <div class="form-group">
+          <label for="dedicacao">Lamparinas (valor em R$ / quantidade). Cada lamparina custa R$ 3,00</label>
+          {{ form.value_for_lamps }}
+        </div>
+
+        <div class="form-group">
+          <label for="dedicacao">Dedicação</label>
+          {{ form.dedication }}
+        </div>
+
+        <h5 class="mt-5"><strong>Dados para depósito</strong></h5>
+        <hr>
+        <p>
+          Banco do Brasil<br>
+          Titular: Chagdud Gonpa Brasil<br>
+          CNPJ: 00.990.708/0001-37<br>
+          Agência: 1380-3<br>
+          Conta: 3583-1<br>
+          Chave PIX: oferendas@templobudista.org
+        </p>
+
+        <div class="form-group">
+          <label for="data">Data do Depósito</label>
+          {{ form.deposit_date }}
+        </div>
+
+        <div class="form-group mt-5">
+          <label for="comprovante">Envie o comprovante</label>
+          {{ form.deposit_receipt }}
+        </div>
+
+        <div class="form-group">
+          <label for="data">Observações</label>
+          {{ form.observations }}
+        </div>
+
+        <button name='general-form' type="submit" class="btn btn-primary mt-3">Enviar</button>
+      </form>
+    </div>   
+  </div>
+</main>
+
+{% endblock %}

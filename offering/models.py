@@ -2,6 +2,8 @@ from django.db import models
 from django.conf import settings
 from django.template.loader import render_to_string
 from django.core.mail import EmailMessage
+from tinymce.models import HTMLField
+
 
 
 class Offering(object):
@@ -47,6 +49,50 @@ class Offering(object):
 
     subject = f'Oferenda'
     message = render_to_string('offering/email/email_data.html', context)
+
+    mail = EmailMessage(
+        subject,
+        message,
+        settings.CONTACT_EMAIL,
+        [settings.CONTACT_EMAIL]
+    )
+    mail.content_subtype = "html"
+
+    deposit_receipt = data['deposit_receipt']
+    mail.attach(deposit_receipt.name, deposit_receipt.read())
+
+    return mail.send()
+
+
+class DrubchenOffering(models.Model, Offering):
+  slug = models.SlugField()
+  title = models.CharField(max_length=500)
+  text = HTMLField()
+
+  class Meta:
+    verbose_name = 'Oferenda de Drubchen'
+    verbose_name_plural = 'Oferendas de Drubchen'
+    ordering = ['-id']
+
+  def __str__(self):
+    return f'{self.title}'
+
+  @staticmethod
+  def send_offering_data_email(data):
+    context = {
+        'name': data['name'],
+        'email': data['email'],
+        'offering_value': data['offering_value'],
+        'value_for_tsogs': data['value_for_tsogs'],
+        'value_for_substances': data['value_for_substances'],
+        'value_for_lamps': data['value_for_lamps'],
+        'dedication': data['dedication'],
+        'deposit_date': data['deposit_date'],
+        'observations': data['observations'],
+    }
+
+    subject = f'Oferenda de Drubchen'
+    message = render_to_string('offering/email/drubchen_email_data.html', context)
 
     mail = EmailMessage(
         subject,

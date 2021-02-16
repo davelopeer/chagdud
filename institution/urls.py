@@ -15,5 +15,5 @@ urlpatterns = [
     path('filiais/', BranchesView.as_view(), name='branches'),
     path('novidades', NewsListView.as_view(), name='news-list'),
     path('novidades/<int:pk>/', NewsDetailView.as_view(), name='news-detail'),
-    path('<int:slug>/', GenericPageView.as_view(), name='news-detail'),
+    path('<slug:slug>/', GenericPageView.as_view(), name='news-detail'),
 ]

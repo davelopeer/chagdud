@@ -7,9 +7,10 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('tinymce/', include('tinymce.urls')),
-    path('', include('institution.urls')),
-    path('khadroling/', include('khadro_ling.urls')),
     path('khadroling/evento/', include('event.urls')),
+    path('khadroling/oferendas/', include('offering.urls')),
+    path('khadroling/', include('khadro_ling.urls')),
+    path('', include('institution.urls')),
 ]
 
 # In the development server you may serve the user uploaded files (media) 
