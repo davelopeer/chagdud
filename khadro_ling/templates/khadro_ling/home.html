@@ -52,7 +52,9 @@
       </div>
     </div>
   </div>
+
   <div class="container">
+    {% if events.0 %}
     <div id="professores" class="row pb-5 align-items-center">
       <div class="col-12 d-flex justify-content-center align-items-center py-5">
         <b></b>
@@ -63,13 +65,19 @@
         <div class="col-md-3 col-sm-5 offset-md-1 offset-sm-0 border-right menuTabs">
           <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
             <a class="nav-link active titulo titulo border-bottom" id="v-pills-home-tab" data-toggle="pill"
-              href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Introdução ao Budismo</a>
+              href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">{{ events.0.name }}</a>
+            {% if events.1 %}
             <a class="nav-link titulo titulo border-bottom" id="v-pills-profile-tab" data-toggle="pill"
-              href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Retiro de Ngondro</a>
+              href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">{{ events.1.name }}</a>
+            {% endif %}
+            {% if events.2 %}
             <a class="nav-link titulo titulo border-bottom" id="v-pills-messages-tab" data-toggle="pill"
-              href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Drubchen de Essência do Siddhi</a>
+              href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">{{ events.2.name }}</a>
+            {% endif %}
+            {% if events.3 %}
             <a class="nav-link titulo titulo border-bottom" id="v-pills-settings-tab" data-toggle="pill"
-              href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Treinamento Vajrayana</a>
+              href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">{{ events.3.name }}</a>
+            {% endif %}
           </div>
         </div>
         <div class="col-md-7 col-sm-7">
@@ -78,84 +86,125 @@
               aria-labelledby="v-pills-home-tab">
               <div class="row align-items-center">
                 <div class="col-md-6 col-sm-12">
-                  <img class="mb-3" src="{% static 'khadro_ling/images/saoPaulo.jpg' %}" alt="Eevento 1" width="100%">
+                  <a class="link" href="{% url 'event:event-detail' events.0.pk %}">
+                    <img class="mb-3" src="{% static 'khadro_ling/images/saoPaulo.jpg' %}" alt="Eevento 1" width="100%">
+                  </a>
                 </div>
                 <div class="col-md-6 col-sm-12">
-                  <h5 class="titulo">Retiro de Introdução ao Budismo</h5>
+                  <h5 class="titulo">{{ events.0.name }}</h5>
                   <br>
-                  <p><i class="fa fa-user-circle-o" aria-hidden="true"></i> Com Lama Sherab</p>
-                  <p><i class="fa fa-calendar-check-o" aria-hidden="true"></i> De 18, às 9h, a 19 de maio, às 17h, de
-                    2019</p>
-                  <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Pré-requisitos: Não há pré-requisitos
-                    para a participação neste evento.</p>
-                  <p><i class="fa fa-map-marker" aria-hidden="true"></i> Chagdud Gonpa Khadro Ling</p>
-                  <a class="link" href="eventoEspecifico.html">Saber mais</a>
+                  <p><i class="fa fa-user-circle-o" aria-hidden="true"></i> Com {{ events.0.vajra_master }}</p>
+                  <p><i class="fa fa-calendar-check-o" aria-hidden="true"></i> De {{ events.0.start_date_pretty }},
+                    a {{ events.0.end_date_pretty }}</p>
+                  <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Pré-requisitos:
+                    {% if events.0.requirements %}
+                      {{ events.0.requirements }}
+                    {% else %}
+                      Não há pré-requisitos para a participação neste evento.
+                    {% endif %}
+                  </p>
+                  {% if events.0.event_type == 'online' %}
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i> {{ events.0.event_type.capitalize }}</p>
+                  {% else %}
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i> {{ events.0.place }}</p>
+                  {% endif %}
+                  <a class="link" href="{% url 'event:event-detail' events.0.pk %}">Saber mais</a>
                 </div>
               </div>
             </div>
+            {% if events.1 %}
             <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
               <div class="row">
                 <div class="col-md-6 col-sm-12">
                   <img class="mb-3" src="{% static 'khadro_ling/images/khadro.jpg' %}" alt="Eevento 1" width="100%">
                 </div>
                 <div class="col-md-6 col-sm-12">
-                  <h5 class="titulo">Retiro de Introdução ao Budismo</h5>
+                  <h5 class="titulo">{{ events.1.name }}</h5>
                   <br>
-                  <p><i class="fa fa-user-circle-o" aria-hidden="true"></i> Com Lama Sherab</p>
-                  <p><i class="fa fa-calendar-check-o" aria-hidden="true"></i> De 18, às 9h, a 19 de maio, às 17h, de
-                    2019</p>
-                  <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Pré-requisitos: Não há pré-requisitos
-                    para a participação neste evento.</p>
-                  <p><i class="fa fa-map-marker" aria-hidden="true"></i> Chagdud Gonpa Khadro Ling</p>
-                  <a class="link" href="#">Saber mais</a>
+                  <p><i class="fa fa-user-circle-o" aria-hidden="true"></i> Com {{ events.1.vajra_master }}</p>
+                  <p><i class="fa fa-calendar-check-o" aria-hidden="true"></i> De {{ events.1.start_date_pretty }},
+                    a {{ events.1.end_date_pretty }}</p>
+                  <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Pré-requisitos:
+                    {% if events.1.requirements %}
+                      {{ events.1.requirements }}
+                    {% else %}
+                      Não há pré-requisitos para a participação neste evento.
+                    {% endif %}
+                  </p>
+                  {% if events.1.event_type == 'online' %}
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i> {{ events.1.event_type.capitalize }}</p>
+                  {% else %}
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i> {{ events.1.place }}</p>
+                  {% endif %}
+                  <a class="link" href="{% url 'event:event-detail' events.1.pk %}">Saber mais</a>
                   <span></span>
                 </div>
               </div>
             </div>
+            {% endif %}
+            {% if events.2 %}
             <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
               <div class="row">
                 <div class="col-md-6 col-sm-12">
                   <img class="mb-3" src="{% static 'khadro_ling/images/saoPaulo.jpg' %}" alt="Eevento 1" width="100%">
                 </div>
                 <div class="col-md-6 col-sm-12">
-                  <h5 class="titulo">Retiro de Introdução ao Budismo</h5>
+                  <h5 class="titulo">{{ events.2.name }}</h5>
                   <br>
-                  <p><i class="fa fa-user-circle-o" aria-hidden="true"></i> Com Lama Sherab</p>
-                  <p><i class="fa fa-calendar-check-o" aria-hidden="true"></i> De 18, às 9h, a 19 de maio, às 17h, de
-                    2019</p>
-                  <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Pré-requisitos: Não há pré-requisitos
-                    para a participação neste evento.</p>
-                  <p><i class="fa fa-map-marker" aria-hidden="true"></i> Chagdud Gonpa Khadro Ling</p>
-                  <a class="link" href="#">Saber mais</a>
+                  <p><i class="fa fa-user-circle-o" aria-hidden="true"></i> Com {{ events.2.vajra_master }}</p>
+                  <p><i class="fa fa-calendar-check-o" aria-hidden="true"></i> De {{ events.2.start_date_pretty }},
+                    a {{ events.2.end_date_pretty }}</p>
+                  <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Pré-requisitos: 
+                    {% if events.2.requirements %}
+                      {{ events.2.requirements }}
+                    {% else %}
+                      Não há pré-requisitos para a participação neste evento.
+                    {% endif %}
+                  </p>
+                  {% if events.2.event_type == 'online' %}
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i> {{ events.2.event_type.capitalize }}</p>
+                  {% else %}
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i> {{ events.2.place }}</p>
+                  {% endif %}
+                  <a class="link" href="{% url 'event:event-detail' events.2.pk %}">Saber mais</a>
                   <span></span>
                 </div>
               </div>
-
             </div>
+            {% endif %}
+            {% if events.3 %}
             <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
               <div class="row">
                 <div class="col-md-6 col-sm-12">
                   <img class="mb-3" src="{% static 'khadro_ling/images/natal.jpg' %}" alt="Eevento 1" width="100%">
                 </div>
                 <div class="col-md-6 col-sm-12">
-                  <h5 class="titulo">Retiro de Introdução ao Budismo</h5>
+                  <h5 class="titulo">{{ events.3.name }}</h5>
                   <br>
-                  <p><i class="fa fa-user-circle-o" aria-hidden="true"></i> Com Lama Sherab</p>
-                  <p><i class="fa fa-calendar-check-o" aria-hidden="true"></i> De 18, às 9h, a 19 de maio, às 17h, de
-                    2019</p>
-                  <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Pré-requisitos: Não há pré-requisitos
-                    para a participação neste evento.</p>
-                  <p><i class="fa fa-map-marker" aria-hidden="true"></i> Chagdud Gonpa Khadro Ling</p>
-                  <a class="link" href="#">Saber mais</a>
+                  <p><i class="fa fa-user-circle-o" aria-hidden="true"></i> Com {{ events.3.vajra_master }}</p>
+                  <p><i class="fa fa-calendar-check-o" aria-hidden="true"></i> De {{ events.3.start_date_pretty }}, a {{ events.3.end_date_pretty }}</p>
+                  <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Pré-requisitos: 
+                    {% if events.3.requirements %}
+                      {{ events.3.requirements }}
+                    {% else %}
+                      Não há pré-requisitos para a participação neste evento.
+                    {% endif %}
+                  </p>
+                  {% if events.3.event_type == 'online' %}
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i> {{ events.3.event_type.capitalize }}</p>
+                  {% else %}
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i> {{ events.3.place }}</p>
+                  {% endif %}
+                  <a class="link" href="{% url 'event:event-detail' events.3.pk %}">Saber mais</a>
                   <span></span>
                 </div>
               </div>
-
+              {% endif %}
             </div>
           </div>
         </div>
       </div>
-    </div>
+    {% endif %}
     <div id="oferendas" class="py-5">
         <div class="col-12 d-flex justify-content-center align-items-center py-5">
           <b></b>

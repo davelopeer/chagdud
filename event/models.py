@@ -1,5 +1,6 @@
 from django.db import models
 from tinymce.models import HTMLField
+from datetime import date
 
 
 MONTHS = [
@@ -16,6 +17,11 @@ MONTHS = [
     'novembro',
     'dezembro',
 ]
+
+class FutureEventManager(models.Manager):
+    def get_queryset(self):
+        return super().get_queryset().filter(
+            start_date__gte=date.today()).order_by('start_date')
 
 class Event(models.Model):
     EVENT_TYPE_OPTIONS = (
@@ -52,6 +58,9 @@ class Event(models.Model):
     no_accommodation_price = models.DecimalField(max_digits=6, decimal_places=2, verbose_name="Preço sem acomodação")
 
     policies = HTMLField() 
+
+    objects = models.Manager()
+    events_to_come = FutureEventManager()
 
     class Meta:
         verbose_name = 'Evento'

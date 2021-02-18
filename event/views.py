@@ -7,9 +7,11 @@ from event.forms import EventForm, PresentialEventForm
 
 
 class EventListView(ListView):
-    model = Event
+    template_name = 'event/event_list.html'
     context_object_name = 'event_list'
 
+    def get_queryset(self):
+        return Event.events_to_come.all()
 
 class EventDetailView(DetailView):
     model = Event
