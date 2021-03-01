@@ -145,12 +145,8 @@
   object-position: 77%;
 }
 
-.setaEsquerda {
-  margin-right: 155px;
-}
-
-.setaDireita {
-  margin-left: 155px;
+.setaOferendas {
+  width: 30px !important;
 }
 
 .navOferendas {
@@ -163,6 +159,10 @@
   background-color: white;
   padding: 20px 0;
   color: #43754B;
+}
+
+.font-large {
+  font-size: 1.3em;
 }
 
 @media screen and (max-width: 800px) {

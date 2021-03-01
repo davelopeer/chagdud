@@ -363,7 +363,7 @@ footer a:hover {
 
 .styled-link {
   color: #0081AF;
-  display: block;
+  display: inline;
 }
 .styled-link:hover {
   text-decoration: none;

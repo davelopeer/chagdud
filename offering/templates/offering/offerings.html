@@ -31,9 +31,9 @@
             transformador. Cada uma das oferendas realizadas no Khadro Ling é acompanhada 
             de uma prática de meditação especial que a incrementa.
           </p>
+          <br>
           <p>
-            Para realizar sua oferenda, utilize os formulário genérico com todas as opções de oferendas do Khadro Ling.
-            Para a prática de Akshobia, utilize o formulário específico localizado na aba Akshobia.
+            <strong>Para realizar sua oferenda, utilize o formulário genérico com todas as opções de oferendas do Khadro Ling.</strong>
           </p>
         </div>
         </div>
@@ -41,14 +41,14 @@
       <div id="oferendas" class="row">  
           <div class="mb-5 col-md-10 offset-md-1 offset-sm-0 col-sm-12 justify-content-center">
             <nav>
-              <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-                <a class="nav-item navOferendas nav-link active" id="nav-contact-tab" data-toggle="tab" href="#nav-tsog" role="tab" aria-controls="nav-contact" aria-selected="true">Tsog</a>
-                <a class="nav-item navOferendas nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-lamparinas" role="tab" aria-controls="nav-profile" aria-selected="false">Lamparinas</a>
-                <a class="nav-item navOferendas nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-riwo" role="tab" aria-controls="nav-contact" aria-selected="false">Riwo Sangtchö</a>
-                <a class="nav-item navOferendas nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-bandeiras" role="tab" aria-controls="nav-contact" aria-selected="false">Bandeiras</a>
-                <a class="nav-item navOferendas nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-akshobia" role="tab" aria-controls="nav-contact" aria-selected="false">Akshobia</a>
-                <a class="nav-item navOferendas nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-cerimoniais" role="tab" aria-controls="nav-contact" aria-selected="false">Cerimoniais</a>
-                <a class="nav-item navOferendas nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-doacoes" role="tab" aria-controls="nav-contact" aria-selected="false">Doações</a>
+              <div class="nav nav-tabs justify-content-center offering-nav-link" id="nav-tab" role="tablist">
+                <a class="nav-item navOferendas nav-link active offering-nav-link" id="nav-tsog-tab" data-toggle="tab" href="#nav-tsog" role="tab" aria-controls="nav-contact" aria-selected="true">Tsog</a>
+                <a class="nav-item navOferendas nav-link offering-nav-link" id="nav-lamp-tab" data-toggle="tab" href="#nav-lamparinas" role="tab" aria-controls="nav-profile" aria-selected="false">Lamparinas</a>
+                <a class="nav-item navOferendas nav-link offering-nav-link" id="nav-riwo-tab" data-toggle="tab" href="#nav-riwo" role="tab" aria-controls="nav-contact" aria-selected="false">Riwo Sangtchö</a>
+                <a class="nav-item navOferendas nav-link offering-nav-link" id="nav-flag-tab" data-toggle="tab" href="#nav-bandeiras" role="tab" aria-controls="nav-contact" aria-selected="false">Bandeiras</a>
+                <a class="nav-item navOferendas nav-link" id="nav-akshobia-tab" data-toggle="tab" href="#nav-akshobia" role="tab" aria-controls="nav-contact" aria-selected="false">Akshobia</a>
+                <a class="nav-item navOferendas nav-link offering-nav-link" id="nav-cerimonial-tab" data-toggle="tab" href="#nav-cerimoniais" role="tab" aria-controls="nav-contact" aria-selected="false">Cerimoniais</a>
+                <a class="nav-item navOferendas nav-link offering-nav-link" id="nav-donation-tab" data-toggle="tab" href="#nav-doacoes" role="tab" aria-controls="nav-contact" aria-selected="false">Doações</a>
 
               </div>
             </nav>
@@ -604,10 +604,42 @@
               </div>
               <button name='general-form' type="submit" class="btn btn-primary mt-3">Enviar</button>
             </form>
+
+            <div id="akshobia-message" class="hidden">
+              <hr>
+              <p class="font-large">
+                A prática de Akshobia no Khadro Ling não está ocorrendo atualmente. 
+                Para realizar o patrocínio, por favor, entre em contato com a 
+                <a class="styled-link" href="http://mahakaruna.org/">Fundação Mahakaruna</a> , nos Estados Unidos.
+              </p>
+              <hr>
+            </div>
+
           </div>     
         </div>
       </div>
     </div>
   </div>
 </main>
+
+<script>
+  const akshobiaLink = document.getElementById("nav-akshobia-tab");
+  var otherOfferingLinkList = document.getElementsByClassName("offering-nav-link");
+
+  const akshobiaMessage = document.getElementById("akshobia-message");
+  const form = document.getElementsByTagName("form")[0];
+
+  akshobiaLink.onclick = function(){
+    akshobiaMessage.style.display = 'inline';
+    form.style.display = 'none';
+  }
+
+  for (var i=1; i < otherOfferingLinkList.length; i++) {
+    otherOfferingLinkList[i].onclick = function(){
+      akshobiaMessage.style.display = 'none';
+      form.style.display = 'inline';
+    }
+  }
+
+</script>
 {% endblock %}
