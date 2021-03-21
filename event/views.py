@@ -22,7 +22,8 @@ class EventDetailView(DetailView):
         # Different forms for online and presential events
         context = super(EventDetailView, self).get_context_data(**kwargs)
 
-        event = self.get_queryset().first()
+        event_id = self.kwargs['pk']
+        event = self.get_queryset().get(pk=event_id)
         context['user_language'] = 'pt-br'
         if event.event_type == 'online':
             context['form'] = EventForm
@@ -34,8 +35,8 @@ class EventDetailView(DetailView):
     def get_template_names(self, **kwargs):
         # ------------------------------
         # Different templates for online and presential events
-        event = self.get_queryset().first()
-
+        event_id = self.kwargs['pk']
+        event = self.get_queryset().get(pk=event_id)
         if event.event_type == 'online':
             return 'event/event_online_detail.html'
         elif event.event_type == 'presential':
@@ -44,7 +45,6 @@ class EventDetailView(DetailView):
 class OnlineEventFormView(FormView):
     form_class = EventForm
     success_url = '/khadroling/evento/'
-    template_name = 'khadro_ling/about_us.html'
 
     def form_valid(self, form):
         form.send_email()
@@ -53,7 +53,6 @@ class OnlineEventFormView(FormView):
 class PresentialEventFormView(FormView):
     form_class = PresentialEventForm
     success_url = '/khadroling/evento/'
-    template_name = 'khadro_ling/about_us.html'
 
     def form_valid(self, form):
         form.send_email()

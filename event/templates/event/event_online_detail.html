@@ -36,7 +36,7 @@
         <p><i class="fa fa-map-marker" aria-hidden="true"></i> | {{ event.event_type.capitalize }}</p>
       </div>
       <div class="col-md-7 col-sm-12 pt-1">
-        <img class="imgEvento" src="{% static 'khadro_ling/images/khadro.jpg' %}" width="100%">
+        <img class="imgEvento" src="{{ event.event_image.url }}" width="100%">
 
       </div>
       </div>
@@ -49,22 +49,12 @@
     <div class="container">
       <div id="evento" >
         <div class="row align-items-center">   
-          <div class="mb-5 col-md-7 offset-md-1 offset-md-0 col-sm-12 text-justify border-right pr-5">
+          <div class="mb-5 col-md-12 offset-md-1 offset-md-0 col-sm-12 text-justify border-right pr-5">
             <p>
               {{ event.description | linebreaks }}
             </p>
           </div>
 
-          <div class="col-md-4 col-sm-12 mb-5 pl-5">
-            <h3 class="titulo mb-3"> Utilidades</h3>
-            <p><i class="fa fa-bed" aria-hidden="true"></i> | Tipos de hospedagem</p>
-            <p><i class="fa fa-map" aria-hidden="true"></i> | Como chegar</p>
-            <p><i class="fa fa-bus" aria-hidden="true"></i> | Translados</p>
-            <p><i class="fa fa-cutlery" aria-hidden="true"></i> | Alimentação</p>
-            <p><i class="fa fa-info" aria-hidden="true"></i> | Outras informações</p>
-            <p><i class="fa fa-envelope" aria-hidden="true"></i> | Contato</p>
-            <p><i class="fa fa-times" aria-hidden="true"></i> | Cancelamento</p>
-          </div>
         </div>
 
         <div class="col-12 d-flex justify-content-center align-items-center py-5">
@@ -130,7 +120,9 @@
                 <div class="col-md">
                 <div class="form-group">
                   <label for="Estado">Estado</label>
+                  <!-- <select id="states" name="states" class="form-control"> -->
                   {{ form.state }}
+                  <!-- </select> -->
                 </div>
               </div>
               <div class="col-md">
@@ -159,6 +151,16 @@
               <h4 class="titulo">Formas de pagamento</h4>
               <b></b>
             </div>
+
+            
+            <div class="form-check">
+              <!-- <input class="form-check-input" type="radio" name="evento-sem-hospedagem"> -->
+              <label class="form-check-label" for="evento-sem-hospedagem">
+                Valor do evento: R$ {{ event.online_price }}
+              </label>
+            </div>
+
+            <br>
 
             {% if user_language == 'pt-br' %}
               <div class="payment-container">

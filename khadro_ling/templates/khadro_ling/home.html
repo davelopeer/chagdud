@@ -87,7 +87,7 @@
               <div class="row align-items-center">
                 <div class="col-md-6 col-sm-12">
                   <a class="link" href="{% url 'event:event-detail' events.0.pk %}">
-                    <img class="mb-3" src="{% static 'khadro_ling/images/saoPaulo.jpg' %}" alt="Eevento 1" width="100%">
+                    <img class="mb-3" src="{{ events.0.event_image.url }}" alt="Eevento 1" width="100%">
                   </a>
                 </div>
                 <div class="col-md-6 col-sm-12">
@@ -116,7 +116,7 @@
             <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
               <div class="row">
                 <div class="col-md-6 col-sm-12">
-                  <img class="mb-3" src="{% static 'khadro_ling/images/khadro.jpg' %}" alt="Eevento 1" width="100%">
+                  <img class="mb-3" src="{{ events.1.event_image.url }}" alt="Eevento 1" width="100%">
                 </div>
                 <div class="col-md-6 col-sm-12">
                   <h5 class="titulo">{{ events.1.name }}</h5>
@@ -146,7 +146,7 @@
             <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
               <div class="row">
                 <div class="col-md-6 col-sm-12">
-                  <img class="mb-3" src="{% static 'khadro_ling/images/saoPaulo.jpg' %}" alt="Eevento 1" width="100%">
+                  <img class="mb-3" src="{{ events.2.event_image.url }}" alt="Eevento 1" width="100%">
                 </div>
                 <div class="col-md-6 col-sm-12">
                   <h5 class="titulo">{{ events.2.name }}</h5>
@@ -176,7 +176,7 @@
             <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
               <div class="row">
                 <div class="col-md-6 col-sm-12">
-                  <img class="mb-3" src="{% static 'khadro_ling/images/natal.jpg' %}" alt="Eevento 1" width="100%">
+                  <img class="mb-3" src="{{ events.3.event_image.url }}" alt="Eevento 1" width="100%">
                 </div>
                 <div class="col-md-6 col-sm-12">
                   <h5 class="titulo">{{ events.3.name }}</h5>

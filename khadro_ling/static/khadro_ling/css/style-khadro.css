@@ -112,6 +112,8 @@
 
 .imgEvento {
   margin-top: -160px;
+  height: 500px;
+  width: 600px;
   border: 2px solid #fff;
 }
 
@@ -183,6 +185,8 @@
 
   .imgEvento {
     margin-top: 5px;
+    width: inherit;
+    height: inherit;
   }
 
   .inverteMobile {
@@ -193,10 +197,6 @@
     padding: 4rem 0;
 }
 
-.imgEvento {
-  margin-top: 0px;
-
-}
 .sobreEvento {
   padding: 10rem 0;
 }

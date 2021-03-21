@@ -8,6 +8,36 @@ class EventForm(forms.Form):
         ('credito', 'Cartão de Crédito'),
     )
 
+    STATES_CHOICES = (
+        ('AC', 'Acre'),
+        ('AL', 'Alagoas'),
+        ('AP', 'Amapá'),
+        ('AM', 'Amazonas'),
+        ('BA', 'Bahia'),
+        ('CE', 'Ceará'),
+        ('DF', 'Distrito Federal'),
+        ('ES', 'Espírito Santo'),
+        ('GO', 'Goiás'),
+        ('MA', 'Maranhão'),
+        ('MT', 'Mato Grosso'),
+        ('MS', 'Mato Grosso do Sul'),
+        ('MG', 'Minas Gerais'),
+        ('PA', 'Pará'),
+        ('PB', 'Paraíba'),
+        ('PR', 'Paraná'),
+        ('PE', 'Pernambuco'),
+        ('Pi', 'Piauí'),
+        ('RJ', 'Rio de Janeiro'),
+        ('RN', 'Rio Grande do Norte'),
+        ('RS', 'Rio Grande do Sul'),
+        ('RO', 'Rondônia'),
+        ('RR', 'Roraima'),
+        ('SC', 'Santa Catarina'),
+        ('SP', 'São Paulo'),
+        ('SE', 'Sergipe'),
+        ('TO', 'Tocantins'),
+    )
+
     name = forms.CharField(widget=forms.TextInput(attrs={
         'type': 'text',
         'class': 'form-control',
@@ -20,8 +50,8 @@ class EventForm(forms.Form):
         'id': 'email',
         'name': 'email'
     }))
-    phone = forms.IntegerField(widget=forms.TextInput(attrs={
-        'type': 'number',
+    phone = forms.CharField(widget=forms.TextInput(attrs={
+        'type': 'text',
         'class': 'form-control',
         'id': 'telefone',
         'name': 'telefone'
@@ -44,12 +74,12 @@ class EventForm(forms.Form):
         'id': 'cidade',
         'name': 'cidade',
     }))
-    state = forms.CharField(widget=forms.TextInput(attrs={
-        'type': 'text',
+    state = forms.ChoiceField(choices=STATES_CHOICES, widget=forms.Select(attrs={
         'class': 'form-control',
         'id': 'Estado',
         'name': 'estado',
     }))
+
     cep = forms.CharField(widget=forms.TextInput(attrs={
         'type': 'text',
         'class': 'form-control',

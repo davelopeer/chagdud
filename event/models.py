@@ -36,6 +36,7 @@ class Event(models.Model):
     place = models.CharField(max_length=200)
     description = models.TextField(max_length=20000)
     short_description = models.TextField(max_length=1000)
+    event_image = models.ImageField()
 
     participation_text = HTMLField()
 
@@ -45,19 +46,21 @@ class Event(models.Model):
     cielo_link = models.CharField(max_length=1000)
 
     # Accommodations
-    amitaba_accommodation_capacity = models.PositiveIntegerField(verbose_name="Lotação Amitaba")
-    amitaba_accommodation_price = models.DecimalField(max_digits=6, decimal_places=2, verbose_name="Preço Amitaba")
+    amitaba_accommodation_capacity = models.PositiveIntegerField(verbose_name="Lotação Amitaba", null=True, blank=True)
+    amitaba_accommodation_price = models.DecimalField(max_digits=6, decimal_places=2, verbose_name="Preço Amitaba", null=True, blank=True)
 
-    retreat_house_accommodation_capacity = models.PositiveIntegerField(verbose_name="Lotação casa de retiro")
-    retreat_house_accommodation_price = models.DecimalField(max_digits=6, decimal_places=2, verbose_name="Preço casa de retiro")
+    retreat_house_accommodation_capacity = models.PositiveIntegerField(verbose_name="Lotação casa de retiro", null=True, blank=True)
+    retreat_house_accommodation_price = models.DecimalField(max_digits=6, decimal_places=2, verbose_name="Preço casa de retiro", null=True, blank=True)
 
-    dormitory_accommodation_capacity = models.PositiveIntegerField(verbose_name="Lotação dormitório")
-    dormitory_accommodation_price = models.DecimalField(max_digits=6, decimal_places=2, verbose_name="Preço dormitório")
+    dormitory_accommodation_capacity = models.PositiveIntegerField(verbose_name="Lotação dormitório", null=True, blank=True)
+    dormitory_accommodation_price = models.DecimalField(max_digits=6, decimal_places=2, verbose_name="Preço dormitório", null=True, blank=True)
 
-    no_accommodation_capacity = models.PositiveIntegerField(verbose_name="Lotação sem acomodação")
-    no_accommodation_price = models.DecimalField(max_digits=6, decimal_places=2, verbose_name="Preço sem acomodação")
+    no_accommodation_capacity = models.PositiveIntegerField(verbose_name="Lotação sem acomodação", null=True, blank=True)
+    no_accommodation_price = models.DecimalField(max_digits=6, decimal_places=2, verbose_name="Preço sem acomodação", null=True, blank=True)
 
-    policies = HTMLField() 
+    online_price = models.DecimalField(max_digits=6, decimal_places=2, verbose_name="Preço do evento online", null=True, blank=True)
+
+    policies = HTMLField()
 
     objects = models.Manager()
     events_to_come = FutureEventManager()

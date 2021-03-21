@@ -37,7 +37,7 @@
               <span class="d-block mt-3"><a class="link" href="{% url 'event:event-detail' event.pk %}">Saiba mais</a></span>
               </div>
               <div class="col-md-5 col-sm-12 d-flex mb-5">
-                <img class="rounded" src="{% static 'khadro_ling/images/khadro.jpg' %}" width="100%">
+                <img class="rounded" src="{{ event.event_image.url }}" width="100%">
               </div>
     
               <div class="col-md-8 col-sm-4 offset-md-2 border-bottom my-5"></div>
@@ -59,7 +59,7 @@
                 </div>
               </div>
               <div class="col-md-4 col-sm-12 d-flex mb-5">
-                <img class="rounded thumbEvento" src="{% static 'khadro_ling/images/natal.jpg' %}" width="100%">
+                <img class="rounded thumbEvento" src="{{ event.event_image.url }}" width="100%">
               </div>
             {% endif %}
           {% endfor %}
