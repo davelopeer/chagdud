@@ -1,12 +1,13 @@
 from django.urls import path
 from institution.views import HomeView, AboutUsView, TeachersView, \
     DownloadsView, ContactView, SacredDatesView, NewsListView, \
-    NewsDetailView, BranchesView, GenericPageView
+    NewsDetailView, BranchesView, GenericPageView, set_language
 
 app_name = 'institution'
 
 urlpatterns = [
     path('', HomeView.as_view(), name='home'),
+    path('set_language/<str:lang>', set_language, name="set_language"),
     path('contato/', ContactView.as_view(), name='contact'),
     path('datas-sagradas/', SacredDatesView.as_view(), name='sacred-dates'),
     path('downloads/', DownloadsView.as_view(), name='downloads'),

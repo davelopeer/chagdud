@@ -1,10 +1,19 @@
 from django.views.generic import TemplateView, ListView, DetailView
 from django.views.generic.edit import FormView
 from django.urls import reverse
+from django.http import HttpResponseRedirect
+from django.conf import settings
+from django.utils import translation
 
 from institution.forms import ContactForm
 from institution.models import News, SacredDates, GenericPage
 
+
+def set_language(request, lang):
+  translation.activate(lang)
+  response = HttpResponseRedirect(request.META.get('HTTP_REFERER', '/'))
+  response.set_cookie(settings.LANGUAGE_COOKIE_NAME, lang)
+  return response
 
 class HomeView(TemplateView):
      template_name = 'institution/home.html'
