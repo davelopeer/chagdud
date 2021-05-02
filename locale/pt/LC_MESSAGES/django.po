@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-02 11:17-0300\n"
+"POT-Creation-Date: 2021-05-02 11:32-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,24 +20,24 @@ msgstr ""
 
 #: institution/templates/institution/base.html:30
 msgid "institution.base.portuguese-language"
-msgstr "Portugués"
+msgstr "Português"
 
 #: institution/templates/institution/base.html:33
 msgid "institution.base.english-language"
-msgstr "Inglés"
+msgstr "Inglês"
 
 #: institution/templates/institution/base.html:36
 msgid "institution.base.spanish-language"
-msgstr "Español"
+msgstr "Espanhol"
 
 #: institution/templates/institution/base.html:41
 #: institution/templates/institution/base.html:173
 msgid "institution.base.offerings"
-msgstr "Ofrendas"
+msgstr "Oferendas"
 
 #: institution/templates/institution/base.html:44
 msgid "institution.base.downloads"
-msgstr "Descargas"
+msgstr "Downloads"
 
 #: institution/templates/institution/base.html:47
 #: institution/templates/institution/base.html:172
@@ -46,26 +46,26 @@ msgstr "Eventos"
 
 #: institution/templates/institution/base.html:50
 msgid "institution.base.makara-publisher"
-msgstr "Editorial Makara"
+msgstr "Editora Makara"
 
 #: institution/templates/institution/base.html:53
 #: institution/templates/institution/base.html:263
 msgid "institution.base.contact"
-msgstr "Contacto"
+msgstr "Contato"
 
 #: institution/templates/institution/base.html:66
 #: institution/templates/institution/base.html:154
 msgid "institution.base.about-us"
-msgstr "Quienes somos"
+msgstr "Quem somos"
 
 #: institution/templates/institution/base.html:69
 #: institution/templates/institution/base.html:155
 msgid "institution.base.teachers"
-msgstr "Profesores"
+msgstr "Professores"
 
 #: institution/templates/institution/base.html:75
 msgid "institution.base.chagdud-gonpa-south-america"
-msgstr "Chagdud Gonpa América del Sur"
+msgstr "Chagdud Gonpa América do Sul"
 
 #: institution/templates/institution/base.html:83
 #: institution/templates/institution/base.html:161
@@ -75,27 +75,27 @@ msgstr "Brasil"
 #: institution/templates/institution/base.html:89
 #: institution/templates/institution/base.html:168
 msgid "institution.base.chagdud-gonpa-headquarters"
-msgstr "Sede de Chagdud Gonpa Brasil"
+msgstr "Sede do Chagdud Gonpa Brasil"
 
 #: institution/templates/institution/base.html:92
 #: institution/templates/institution/base.html:215
 msgid "institution.base.midwest"
-msgstr "Centro Oeste"
+msgstr "Centro-Oeste"
 
 #: institution/templates/institution/base.html:97
 #: institution/templates/institution/base.html:221
 msgid "institution.base.northeast"
-msgstr "Noreste"
+msgstr "Nordeste"
 
 #: institution/templates/institution/base.html:102
 #: institution/templates/institution/base.html:178
 msgid "institution.base.south"
-msgstr "Sur"
+msgstr "Sul"
 
 #: institution/templates/institution/base.html:119
 #: institution/templates/institution/base.html:197
 msgid "institution.base.southeast"
-msgstr "Sureste"
+msgstr "Sudeste"
 
 #: institution/templates/institution/base.html:134
 #: institution/templates/institution/base.html:226
@@ -104,7 +104,7 @@ msgstr "Norte"
 
 #: institution/templates/institution/base.html:156
 msgid "institution.base.hispanoamerica"
-msgstr "Hispanoamérica"
+msgstr "Hispanomérica"
 
 #: institution/templates/institution/base.html:263
 msgid "institution.base.email"
@@ -112,64 +112,64 @@ msgstr "E-mail"
 
 #: institution/templates/institution/base.html:263
 msgid "institution.base.phone"
-msgstr "Fono"
+msgstr "Fone"
 
 #: institution/templates/institution/home.html:5
 msgid "institution.home.chagdud-gonpa-shouth-america"
-msgstr "Chagdud Gonpa América del Sur"
+msgstr "Chagdud Gonpa América do Sul"
 
 #: institution/templates/institution/home.html:13
 msgid "institution.home.foundation"
-msgstr "Somos una red de práctica de budismo vajrayana fundada por S.E. Chagdud Tulku Rinpoche."
+msgstr "Somos uma rede de centros de prática do budismo vajrayana fundada por S. Ema. Chagdud Tulku Rinpoche."
 
 #: institution/templates/institution/home.html:31
 msgid "institution.home.about-us"
-msgstr "Acerca de nosotros"
+msgstr "Sobre nós"
 
 #: institution/templates/institution/home.html:33
 msgid "institution.home.about-us-text"
-msgstr "Chagdud Gonpa Brasil es parte de una red internacional de centros cuyo origen es Chagdud Gonpa en Tíbet, un monasterio fundado en el siglo XV.  Establecidos en 1994 por SE. Chagdud Tulku Rinpoche, los centros brasileños ofrecen enseñanzas y prácticas de meditación de la tradición Nyingma de Budismo Tibetano Vajrayana."
+msgstr "O Chagdud Gonpa Brasil faz parte de uma rede internacional de centros cuja origem é o Chagdud Gonpa no Tibete, um monastério fundado no século XV. Estabelecidos em 1994 por S. Ema. Chagdud Tulku Rinpoche, os centros brasileiros oferecem ensinamentos e práticas de meditação da tradição Nyingma do Budismo Tibetano Vajraiana."
 
 #: institution/templates/institution/home.html:35
 #: institution/templates/institution/home.html:79
 msgid "institution.home.more-information"
-msgstr "Conozca más"
+msgstr "Conhecer mais"
 
 #: institution/templates/institution/home.html:54
 msgid "institution.home.chagdud-khadro-description"
-msgstr "Chagdud Khadro, esposa de S.E. Chagdud Tulku Rinpoche, es la Directora Esiritual de sus centros en América del Sur."
+msgstr "Chagdud Khadro, esposa do S. Ema. Chagdud Tulku Rinpoche, é a Diretora Espiritual dos seus centros na América do Sul."
 
 #: institution/templates/institution/home.html:56
 msgid "institution.home.more-information-teachers"
-msgstr "Conozca más profesores"
+msgstr "Conhecer mais professores"
 
 #: institution/templates/institution/home.html:67
 msgid "institution.home.chagdud-gonpa-headquarters"
-msgstr "Sede de Chagdud Gonpa Brasil"
+msgstr "Sede do Chagdud Gonpa Brasil"
 
 #: institution/templates/institution/home.html:77
 msgid "institution.home.khadro-ling-text"
-msgstr "Chagdud Gonpa Khadro Ling es la sede de la Fundación Chagdud Gonpa Brasil y está ubicada en la ciudad de Três Coroas, en el estado de Río Grande del Sur."
+msgstr "O Chagdud Gonpa Khadro Ling é a sede da Fundação Chagdud Gonpa Brasil e está localizado na cidade de Três Coroas, no Rio Grande do Sul."
 
 #: institution/templates/institution/home.html:86
 msgid "institution.home.chagdud-gonpa-branches"
-msgstr "Filiales de Chagdud Gonpa Brasil"
+msgstr "Filiais do Chagdud Gonpa Brasil"
 
 #: institution/templates/institution/home.html:92
 msgid "institution.home.where-to-find-branches"
-msgstr "Conozca donde encontrar una de las filiales de Chagdud Gonpa en Brasil"
+msgstr "Saiba onde encontrar uma das filiais do Chagdud Gonpa no Brasil."
 
 #: institution/templates/institution/home.html:95
 msgid "institution.home.branches"
-msgstr "Filiales"
+msgstr "Filiais"
 
 #: institution/templates/institution/home.html:122
 msgid "institution.home.offerings-and-events"
-msgstr "Ofrendas y Eventos"
+msgstr "Oferendas e Eventos"
 
 #: institution/templates/institution/home.html:130
 msgid "institution.home.offerings"
-msgstr "Ofrendas"
+msgstr "Oferendas"
 
 #: institution/templates/institution/home.html:137
 msgid "institution.home.events"
@@ -178,7 +178,7 @@ msgstr "Eventos"
 #: institution/templates/institution/home.html:148
 #: institution/templates/institution/home.html:217
 msgid "institution.home.news"
-msgstr "Noticias y Novedades"
+msgstr "Notícias e Novidades"
 
 #: institution/templates/institution/home.html:194
 #: institution/templates/institution/home.html:269
@@ -188,15 +188,15 @@ msgstr "Anterior"
 #: institution/templates/institution/home.html:200
 #: institution/templates/institution/home.html:275
 msgid "institution.home.next"
-msgstr "Siguiente"
+msgstr "Próximo"
 
 #: institution/templates/institution/home.html:210
 msgid "institution.home.see-all"
-msgstr "Ver todo"
+msgstr "Ver todos"
 
 #: institution/templates/institution/home.html:218
 msgid "institution.home.news-text"
-msgstr ""
+msgstr "Sessão de notícias e texto sobre as novidades sobre a instituição e o budismo em geral."
 
 #: institution/templates/institution/home.html:229
 msgid "Parinirvana de S. Em. Chagdud Tulku Rinpoche"
@@ -210,7 +210,7 @@ msgstr ""
 #: institution/templates/institution/home.html:245
 #: institution/templates/institution/home.html:257
 msgid "Ler mais"
-msgstr ""
+msgstr "Read more"
 
 #: institution/templates/institution/home.html:243
 msgid "Construção do Jardim das 21 Taras"
@@ -230,11 +230,11 @@ msgstr ""
 
 #: institution/templates/institution/home.html:291
 msgid "institution.home.downloads"
-msgstr "Descargas"
+msgstr "Downloads"
 
 #: institution/templates/institution/home.html:300
 msgid "institution.home.sacred-dates"
-msgstr "Fechas Sagradas"
+msgstr "Datas Sagradas"
 
 #: institution/templates/institution/home.html:309
 msgid "institution.home.makara-publisher"

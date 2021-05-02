@@ -1,8 +1,8 @@
 {% extends 'institution/base.html' %}
-{% load static %}
+{% load static i18n %}
 
 {% block head %}
-<title>Chagdud Gonpa América do Sul</title>
+<title>{% trans "institution.home.chagdud-gonpa-shouth-america" %}</title>
 {% endblock %}
 
 {% block body %}
@@ -10,13 +10,10 @@
   <div class="container" >
     <div id="inicio" class="logo justify-content-center align-items-center row justify-content-start">
       <div class="col-md-5 col-sm-12 text-center mt-2">
-        <span class="subtitulo mb-5">Somos uma rede de centros de prática do budismo vajrayana fundada por
-          S. Ema.
-          Chagdud Tulku
-          Rinpoche.</span>
+        <span class="subtitulo mb-5">{% trans "institution.home.foundation" %}</span>
       </div>
       <div class="col-md-5 col-sm-12 text-center mt-2">
-        <img class="imgApres" src="{% static 'institution/images/CTR.jpeg' %}" width="80%">
+        <img class="imgApres" src="{% static 'institution/images/CTR.jpeg' %}" width="80%">"
 
       </div>
     </div>
@@ -31,14 +28,11 @@
       <div class="container">
         <div id="sobreNos" class="row justify-content-center">
           <div class="col-8 text-center">
-            <h3 class="titulo">Sobre nós</h3>
+            <h3 class="titulo">{% trans "institution.home.about-us" %}</h3>
             <div class="mt-4 mb-4">
-              <span>O Chagdud Gonpa Brasil faz parte de uma rede internacional de centros cuja origem é o Chagdud
-                Gonpa no Tibete, um monastério fundado no século XV. Estabelecidos em 1994 por S. Ema.
-                Chagdud Tulku Rinpoche, os centros brasileiros oferecem ensinamentos e práticas de meditação
-                da tradição Nyingma do Budismo Tibetano Vajraiana.</span>
+              <span>{% trans "institution.home.about-us-text" %}</span>
             </div>
-            <a class="link" href="{% url 'institution:about-us' %}">Conhecer mais</a>
+            <a class="link" href="{% url 'institution:about-us' %}">{% trans "institution.home.more-information" %}</a>
           </div>
         </div>
       </div>
@@ -57,21 +51,20 @@
           </div>
           <div class="col-md-4 col-sm-12 justify-content-center text-center">
             <span>
-              Chagdud Khadro, esposa do S. Ema. Chagdud Tulku
-              Rinpoche, é a Diretora Espiritual dos seus centros na América do Sul.
+              {% trans "institution.home.chagdud-khadro-description" %}
             </span>
-            <span class="d-block mt-3"><a class="link" href="{% url 'institution:teachers' %}">Conhecer mais professores</a></span>
+            <span class="d-block mt-3"><a class="link" href="{% url 'institution:teachers' %}">{% trans "institution.home.more-information-teachers" %}</a></span>
           </div>
         </div>
       </div>
       <div id="khadro" class="row py-5">
         <div class="col-md-12 col-sm-12 d-flex justify-content-center align-items-center pt-5">
           <b></b>
-          <h3 class="text-center titulo mr-3 ml-3"> Khadro Ling </h3>
+          <h3 class="text-center titulo mr-3 ml-3">Khadro Ling</h3>
           <b></b>
         </div>
         <div class="col-md-12 col-sm-12 d-flex justify-content-center align-items-center pb-5">
-          <p class="text-center text-black-50"> Sede do Chagdud Gonpa Brasil </p>
+          <p class="text-center text-black-50">{% trans "institution.home.chagdud-gonpa-headquarters" %}</p>
         </div>
 
         <div class="d-flex flex-wrap align-items-center justify-content-center">
@@ -81,26 +74,25 @@
           </div>
           <div class="col-md-4 col-sm-12 mt-3 text-center">
             <span>
-              O Chagdud Gonpa Khadro Ling é a sede da Fundação Chagdud Gonpa Brasil e 
-              está localizado na cidade de Três Coroas, no Rio Grande do Sul.
+              {% trans "institution.home.khadro-ling-text" %}
             </span>
-            <span class="d-block mt-3"><a class="link" href="{% url 'khadroling:home' %}">Saber mais</a></span>
+            <span class="d-block mt-3"><a class="link" href="{% url 'khadroling:home' %}">{% trans "institution.home.more-information" %}</a></span>
           </div>
         </div>
       </div>
       <div id="centros" class="row py-5">
         <div class="col-md-12 col-sm-12 d-flex justify-content-center align-items-center py-5">
           <b></b>
-          <h3 class="text-center titulo mr-3 ml-3"> Filiais do Chagdud Gonpa Brasil  </h3>
+          <h3 class="text-center titulo mr-3 ml-3">{% trans "institution.home.chagdud-gonpa-branches" %}</h3>
           <b></b>
         </div>
         <div class="d-flex flex-wrap align-items-center">
           <div class="col-md-3 col-sm-12 offset-md-2 offset-sm-0 justify-content-center text-center">
             <span>
-              Saiba onde encontrar uma das filiais do Chagdud Gonpa no Brasil.
+              {% trans "institution.home.where-to-find-branches" %}
             </span>
             <br>
-            <span class="d-block mt-3"><a class="link" href="{% url 'institution:branches' %}">Filiais</a></span>
+            <span class="d-block mt-3"><a class="link" href="{% url 'institution:branches' %}">{% trans "institution.home.branches" %}</a></span>
           </div>
           <div class="col-md-5 col-sm-12 d-flex">
             <div class="rowGrid align-items-center">
@@ -127,7 +119,7 @@
       <div id="chagdud" class="row py-5">
         <div class="col-md-12 col-sm-12 d-flex justify-content-center align-items-center py-5">
           <b></b>
-          <h3 class="text-center titulo mr-3 ml-3"> Oferendas e Eventos  </h3>
+          <h3 class="text-center titulo mr-3 ml-3">{% trans "institution.home.offerings-and-events" %}</h3>
           <b></b>
         </div>
 
@@ -135,14 +127,14 @@
           <div class="col-md-4 col-sm-12">
             <a class="linkOE" href="{% url 'offering:offerings' %}">
             <img class="rounded fotoChagdud" src="{% static 'khadro_ling/images/lamparina.jpg' %}">
-            <span class="d-block mt-3">Oferendas</a></span>
+            <span class="d-block mt-3">{% trans "institution.home.offerings" %}</a></span>
 
 
           </div>
           <div class="col-md-4 col-sm-12 justify-content-center text-center">
             <a class="linkOE" href="{% url 'event:event-list' %}">
             <img class="rounded fotoChagdud" src="{% static 'institution/images/home-event.jpg' %}">
-            <span class="d-block mt-3">Eventos</a></span>
+            <span class="d-block mt-3">{% trans "institution.home.events" %}</a></span>
 
           </div>
         </div>
@@ -153,7 +145,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 col-sm-12 text-center">
-            <h3 class="titulo mb-5 text-light">Notícias e Novidades </h3>
+            <h3 class="titulo mb-5 text-light">{% trans "institution.home.news" %}</h3>
             <div class="row mt-5 justify-content-around">
               <div id="carouselExampleControls2" class="carouselOferendas carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
@@ -199,13 +191,13 @@
                   <a class="carousel-control-prev text-black-50" href="#carouselExampleControls2" role="button"
                     data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Anterior</span>
+                    <span class="sr-only">{% trans "institution.home.previous" %}</span>
 
                   </a>
                   <a class="carousel-control-next text-black-50" href="#carouselExampleControls2" role="button"
                     data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Próximo</span>
+                    <span class="sr-only">{% trans "institution.home.next" %}</span>
                   </a>
 
                 </div>
@@ -215,17 +207,16 @@
         </div>
       </div>
       <div class="text-center">
-        <a class="link-page" href="{% url 'institution:news-list' %}"> Ver todos</a>
+        <a class="link-page" href="{% url 'institution:news-list' %}">{% trans "institution.home.see-all" %}</a>
       </div>
     </div>
     <div class="windHorseMobile mt-5">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 col-sm-12 text-center">
-            <h3 class="titulo mb-5 text-light">Notícias e Novidades</h3>
-            <span class="text-light ">Sessão de notícias e texto sobre as novidades sobre a instituição e o budismo
-              em geral.
-              Um texto explicando um pouco sobre o que é.</span>
+            <h3 class="titulo mb-5 text-light">{% trans "institution.home.news" %}</h3>
+            <span class="text-light ">{% trans "institution.home.news-text" %}</span>
+            <!-- Sessão de notícias e texto sobre as novidades sobre a instituição e o budismo em geral. -->
             <div class="row mt-5 justify-content-around">
               <div id="carouselExampleControls2" class="carouselOferendas carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
@@ -235,9 +226,9 @@
                         <div class="card windCard mb-3" style="width: 15rem;">
                           <img class="card-img-top news-images" src="{% static 'institution/images/yeshe.jpg' %}" alt="Imagem de capa do card">
                           <div class="card-body">
-                            <h5 class="card-title">Parinirvana de S. Em. Chagdud Tulku Rinpoche</h5>
-                            <p class="card-text"> 21.12.2019</p>
-                            <a class="link" href="#">Ler mais</a>
+                            <h5 class="card-title">{% trans "Parinirvana de S. Em. Chagdud Tulku Rinpoche" %}</h5>
+                            <p class="card-text">{% trans "21.12.2019" %}</p>
+                            <a class="link" href="#">{% trans "Ler mais" %}</a>
                           </div>
                         </div>
                         </div>
@@ -249,9 +240,9 @@
                         <div class="card windCard mb-3" style="width: 15rem;">
                           <img class="card-img-top news-images" src="{% static 'institution/images/saoPaulo.jpg' %}" alt="Imagem de capa do card">
                           <div class="card-body">
-                            <h5 class="card-title">Construção do Jardim das 21 Taras</h5>
-                            <p class="card-text"> 21.10.2018</p>
-                            <a class="link" href="#">Ler mais</a>
+                            <h5 class="card-title">{% trans "Construção do Jardim das 21 Taras" %}</h5>
+                            <p class="card-text">{% trans "21.10.2018" %}</p>
+                            <a class="link" href="#">{% trans "Ler mais" %}</a>
                           </div>
                         </div>
                       </div>
@@ -261,9 +252,9 @@
                           <div class="card windCard mb-3" style="width: 15rem;">
                             <img class="card-img-top news-images" src="{% static 'institution/images/yeshe.jpg' %}" alt="Imagem de capa do card">
                             <div class="card-body">
-                              <h5 class="card-title">Movendo textos sagrados</h5>
-                              <p class="card-text"> 08.12.2019</p>
-                              <a class="link" href="#">Ler mais</a>
+                              <h5 class="card-title">{% trans "Movendo textos sagrados" %}</h5>
+                              <p class="card-text">{% trans "08.12.2019" %}</p>
+                              <a class="link" href="#">{% trans "Ler mais" %}</a>
                             </div>
                           </div>
                         </div>
@@ -275,13 +266,13 @@
                   <a class="carousel-control-prev text-black-50" href="#carouselExampleControls2" role="button"
                     data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Anterior</span>
+                    <span class="sr-only">{% trans "institution.home.previous" %}</span>
 
                   </a>
                   <a class="carousel-control-next text-black-50" href="#carouselExampleControls2" role="button"
                     data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Próximo</span>
+                    <span class="sr-only">{% trans "institution.home.next" %}</span>
                   </a>
                 </div>
               </div>
@@ -297,7 +288,7 @@
           <a class="" href="{% url 'institution:downloads' %}">
             <img class="card-img-top rounded-circle border" src="{% static 'institution/images/icones-01.png' %}" alt="Imagem de capa do card">
             <div class="card-body text-center">
-              <h5 class="card-title titulo">Downloads</h5>
+              <h5 class="card-title titulo">{% trans "institution.home.downloads" %}</h5>
             </div>
           </a>
         </div>
@@ -306,7 +297,7 @@
           <a class="" href="{% url 'institution:sacred-dates' %}">
             <img class="card-img-top rounded-circle border" src="{% static 'institution/images/icones-02.png' %}" alt="Imagem de capa do card">
             <div class="card-body text-center">
-              <h5 class="card-title titulo">Datas Sagradas</h5>
+              <h5 class="card-title titulo">{% trans "institution.home.sacred-dates" %}</h5>
             </div>
           </a>
         </div>
@@ -315,7 +306,7 @@
           <a class="" href="http://makara.com.br/" target="_blank">
             <img class="card-img-top rounded-circle border" src="{% static 'institution/images/icones-03.png' %}" alt="Imagem de capa do card">
             <div class="card-body text-center">
-              <h5 class="card-title titulo">Editora Makara</h5>
+              <h5 class="card-title titulo">{% trans "institution.home.makara-publisher" %}</h5>
             </div>
           </a>
         </div>
