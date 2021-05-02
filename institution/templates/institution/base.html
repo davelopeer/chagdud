@@ -165,7 +165,7 @@
                   <li>
                     <h5>Khadro Ling </h5>
                         <div class="dropdown">
-                            <a class="dropbtn dropdown-item">{% trans "institution.base.chagdud-gonpa-headquarters" %}<br> 
+                            <a class="dropbtn dropdown-item" href="{% url 'khadroling:home' %}">{% trans "institution.base.chagdud-gonpa-headquarters" %}<br> 
                               Três coroas - RS</a>
                           <div class="dropdown-content">
                             <a class="text-black-50" href="{% url 'khadroling:home' %}" target="blank">Home</a>
@@ -260,13 +260,13 @@
     </p>
     <div class="col-12">
       <p>© 2021 Chagdud Gonpa Brasil / © 2021 Chagdud Gonpa Khadro Ling</p>
-      <p>{% trans "institution.base.contact" %}: <a href="mailto:info@templobudista.org">{% trans "institution.base.email" %}</a> • {% trans "institution.base.phone" %}: (51) 3546-8201 </p>
+      <p>{% trans "institution.base.contact" %}: info@templobudista.org • {% trans "institution.base.phone" %}: (51) 3546-8201 </p>
       <p>Rua Arnaldo Port, 1211 - Cx. Postal 121, CEP 95660-000 - Três Coroas, RS</p>
     </div>
   </footer>
 
   <script>
-    $('.btn-menu').on('click touchstart', function () {
+    $('.btn-menu').on('click', function () {
       $('html').toggleClass('btn-menu-active');
     });
     window.onscroll = function () { myFunction() };

@@ -33,6 +33,21 @@
                 </div>
               </button>
 
+              {% if not audios %}
+                          
+              <div id="collapseOne" class="collapse collapseDown" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    <div class="cardDown row align-items-center">
+                      <div class="col-md-2 col-sm-1 mr-n5">
+                      </div>
+                      <div class="col-md-10 col-sm-10 mt-3">
+                        <h5 class="card-text titulo">Nenhum áudio encontrado</h5>
+                      </div> 
+                    </div>
+                  </div>
+                </div>
+                  
+              {% endif %}
           
               <!-- <div id="collapseOne" class="collapse collapseDown" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body">

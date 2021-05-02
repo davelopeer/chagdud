@@ -25,7 +25,7 @@ class FutureEventManager(models.Manager):
 
 class Event(models.Model):
     EVENT_TYPE_OPTIONS = (
-        ('online', 'Online'),
+        ('online', 'On-line'),
         ('presential', 'Presencial'),
     )
 
@@ -58,7 +58,7 @@ class Event(models.Model):
     no_accommodation_capacity = models.PositiveIntegerField(verbose_name="Lotação sem acomodação", null=True, blank=True)
     no_accommodation_price = models.DecimalField(max_digits=6, decimal_places=2, verbose_name="Preço sem acomodação", null=True, blank=True)
 
-    online_price = models.DecimalField(max_digits=6, decimal_places=2, verbose_name="Preço do evento online", null=True, blank=True)
+    online_price = models.DecimalField(max_digits=6, decimal_places=2, verbose_name="Preço do evento on-line", null=True, blank=True)
 
     policies = HTMLField()
 
