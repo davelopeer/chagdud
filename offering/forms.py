@@ -61,7 +61,7 @@ class OfferingForm(forms.Form):
     # Offerings types
 
     crescent_moon_tara_tsog = forms.DecimalField(required=False, min_value=0, decimal_places=2, widget=forms.TextInput(attrs={
-        'type':'number',
+        'type':'float',
         'class':'form-control',
         'id':'crescent_moon_tara_tsog', 
         'name':'crescent_moon_tara_tsog',
@@ -70,7 +70,7 @@ class OfferingForm(forms.Form):
     }))
 
     guru_tsog = forms.DecimalField(required=False, min_value=0, decimal_places=2, widget=forms.TextInput(attrs={
-        'type':'number',
+        'type':'float',
         'class':'form-control',
         'id':'guru_tsog', 
         'name':'guru_tsog',
@@ -79,7 +79,7 @@ class OfferingForm(forms.Form):
     }))
 
     waning_moon_tara_tsog = forms.DecimalField(required=False, min_value=0, decimal_places=2, widget=forms.TextInput(attrs={
-        'type':'number',
+        'type':'float',
         'class':'form-control',
         'id':'waning_moon_tara_tsog', 
         'name':'waning_moon_tara_tsog',
@@ -88,7 +88,7 @@ class OfferingForm(forms.Form):
     }))
 
     dakini_tsog = forms.DecimalField(required=False, min_value=0, decimal_places=2, widget=forms.TextInput(attrs={
-        'type':'number',
+        'type':'float',
         'class':'form-control',
         'id':'dakini_tsog', 
         'name':'dakini_tsog',
@@ -97,7 +97,7 @@ class OfferingForm(forms.Form):
     }))
 
     riwo_sangcho = forms.DecimalField(required=False, min_value=0, decimal_places=2, widget=forms.TextInput(attrs={
-        'type':'number',
+        'type':'float',
         'class':'form-control',
         'id':'riwo_sangcho', 
         'name':'riwo_sangcho',
@@ -106,7 +106,7 @@ class OfferingForm(forms.Form):
     }))
 
     general_temple_activities = forms.DecimalField(required=False, min_value=0, decimal_places=2, widget=forms.TextInput(attrs={
-        'type':'number',
+        'type':'float',
         'class':'form-control',
         'id':'general_temple_activities', 
         'name':'general_temple_activities',
@@ -115,7 +115,7 @@ class OfferingForm(forms.Form):
     }))
 
     lamps = forms.DecimalField(required=False, min_value=0, decimal_places=2, widget=forms.TextInput(attrs={
-        'type':'number',
+        'type':'float',
         'class':'form-control',
         'id':'lamps', 
         'name':'lamps',
@@ -124,7 +124,7 @@ class OfferingForm(forms.Form):
     }))
 
     prayer_flags = forms.DecimalField(required=False, min_value=0, decimal_places=2, widget=forms.TextInput(attrs={
-        'type':'number',
+        'type':'float',
         'class':'form-control',
         'id':'prayer_flags', 
         'name':'prayer_flags',

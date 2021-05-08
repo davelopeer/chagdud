@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-02 11:32-0300\n"
+"POT-Creation-Date: 2021-05-08 09:49-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -107,10 +107,6 @@ msgid "institution.base.hispanoamerica"
 msgstr "Hispanomérica"
 
 #: institution/templates/institution/base.html:263
-msgid "institution.base.email"
-msgstr "E-mail"
-
-#: institution/templates/institution/base.html:263
 msgid "institution.base.phone"
 msgstr "Fone"
 
@@ -120,7 +116,9 @@ msgstr "Chagdud Gonpa América do Sul"
 
 #: institution/templates/institution/home.html:13
 msgid "institution.home.foundation"
-msgstr "Somos uma rede de centros de prática do budismo vajrayana fundada por S. Ema. Chagdud Tulku Rinpoche."
+msgstr ""
+"Somos uma rede de centros de prática do budismo vajrayana fundada por S. "
+"Ema. Chagdud Tulku Rinpoche."
 
 #: institution/templates/institution/home.html:31
 msgid "institution.home.about-us"
@@ -128,7 +126,12 @@ msgstr "Sobre nós"
 
 #: institution/templates/institution/home.html:33
 msgid "institution.home.about-us-text"
-msgstr "O Chagdud Gonpa Brasil faz parte de uma rede internacional de centros cuja origem é o Chagdud Gonpa no Tibete, um monastério fundado no século XV. Estabelecidos em 1994 por S. Ema. Chagdud Tulku Rinpoche, os centros brasileiros oferecem ensinamentos e práticas de meditação da tradição Nyingma do Budismo Tibetano Vajraiana."
+msgstr ""
+"O Chagdud Gonpa Brasil faz parte de uma rede internacional de centros cuja "
+"origem é o Chagdud Gonpa no Tibete, um monastério fundado no século XV. "
+"Estabelecidos em 1994 por S. Ema. Chagdud Tulku Rinpoche, os centros "
+"brasileiros oferecem ensinamentos e práticas de meditação da tradição "
+"Nyingma do Budismo Tibetano Vajraiana."
 
 #: institution/templates/institution/home.html:35
 #: institution/templates/institution/home.html:79
@@ -137,7 +140,9 @@ msgstr "Conhecer mais"
 
 #: institution/templates/institution/home.html:54
 msgid "institution.home.chagdud-khadro-description"
-msgstr "Chagdud Khadro, esposa do S. Ema. Chagdud Tulku Rinpoche, é a Diretora Espiritual dos seus centros na América do Sul."
+msgstr ""
+"Chagdud Khadro, esposa do S. Ema. Chagdud Tulku Rinpoche, é a Diretora "
+"Espiritual dos seus centros na América do Sul."
 
 #: institution/templates/institution/home.html:56
 msgid "institution.home.more-information-teachers"
@@ -149,7 +154,9 @@ msgstr "Sede do Chagdud Gonpa Brasil"
 
 #: institution/templates/institution/home.html:77
 msgid "institution.home.khadro-ling-text"
-msgstr "O Chagdud Gonpa Khadro Ling é a sede da Fundação Chagdud Gonpa Brasil e está localizado na cidade de Três Coroas, no Rio Grande do Sul."
+msgstr ""
+"O Chagdud Gonpa Khadro Ling é a sede da Fundação Chagdud Gonpa Brasil e está "
+"localizado na cidade de Três Coroas, no Rio Grande do Sul."
 
 #: institution/templates/institution/home.html:86
 msgid "institution.home.chagdud-gonpa-branches"
@@ -196,7 +203,9 @@ msgstr "Ver todos"
 
 #: institution/templates/institution/home.html:218
 msgid "institution.home.news-text"
-msgstr "Sessão de notícias e texto sobre as novidades sobre a instituição e o budismo em geral."
+msgstr ""
+"Sessão de notícias e texto sobre as novidades sobre a instituição e o "
+"budismo em geral."
 
 #: institution/templates/institution/home.html:229
 msgid "Parinirvana de S. Em. Chagdud Tulku Rinpoche"
@@ -239,3 +248,254 @@ msgstr "Datas Sagradas"
 #: institution/templates/institution/home.html:309
 msgid "institution.home.makara-publisher"
 msgstr "Editora Makara"
+
+#: offering/templates/offering/offerings.html:65
+msgid "offerings.tsog-title"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:70
+msgid "offerings.tsog-description-p1"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:74
+msgid "offerings.tsog-description-p2"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:78
+#: offering/templates/offering/offerings.html:108
+#: offering/templates/offering/offerings.html:159
+#: offering/templates/offering/offerings.html:425
+msgid "offerings.attention"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:80
+msgid "offerings.tsog-attention-text"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:96
+msgid "offerings.lamps-title"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:101
+msgid "offerings.lamps-description-p1"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:105
+msgid "offerings.lamps-description-p2"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:110
+msgid "offerings.lamps-attention-text-p1"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:114
+msgid "offerings.lamps-attention-text-p2"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:130
+msgid "offerings.riwo.title"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:135
+msgid "offerings.riwo.description.p1"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:139
+msgid "offerings.riwo.description.p2"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:143
+msgid "offerings.riwo.description.p3"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:147
+msgid "offerings.riwo.description.p4"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:153
+msgid "offerings.riwo.description.p5"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:156
+msgid "offerings.riwo.description.p6"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:161
+msgid "offerings.riwo.attention-text"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:246
+msgid "offerings.akshobia.title"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:251
+msgid "offerings.akshobia.description.p1"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:259
+msgid "offerings.akshobia.intention.title"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:267
+msgid "offerings.akshobia.intention.text.p1"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:270
+msgid "offerings.akshobia.intention.text.p2"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:273
+msgid "offerings.akshobia.intention.text.p3"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:282
+msgid "offerings.akshobia.when-sponsor.title"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:289
+msgid "offerings.akshobia.when-sponsor.text.p1"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:293
+msgid "offerings.akshobia.when-sponsor.text.p2"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:297
+msgid "offerings.akshobia.when-sponsor.text.p3"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:301
+msgid "offerings.akshobia.when-sponsor.text.p4"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:310
+msgid "offerings.akshobia.how-it-works.title"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:316
+msgid "offerings.akshobia.how-it-works.text.p1"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:319
+msgid "offerings.akshobia.how-it-works.text.p2"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:323
+msgid "offerings.akshobia.how-it-works.text.p3"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:327
+msgid "offerings.akshobia.how-it-works.text.p4"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:336
+msgid "offerings.akshobia.arrive-in-brazil-title"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:343
+msgid "offerings.akshobia.arrive-in-brazil-text"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:352
+msgid "offerings.akshobia.tibet-sponsor.title"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:359
+msgid "offerings.akshobia.tibet-sponsor.text"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:369
+msgid "offerings.akshobia.description.p2"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:371
+msgid "offerings.akshobia.description.p3"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:374
+msgid "offerings.akshobia.description.p4"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:376
+msgid "offerings.akshobia.description.p5"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:417
+#: offering/templates/offering/offerings.html:422
+msgid "offerings.donations.title"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:427
+msgid "offerings.donations-attention-text"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:443
+msgid "offerings.form.name"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:447
+msgid "offerings.form.email"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:451
+msgid "offerings.form.total-value"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:454
+msgid "offerings.form.offering-destination"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:457
+msgid "offerings.form.offering-destination.text.p1"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:458
+msgid "offerings.form.offering-destination.text.p2"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:462
+msgid "offerings.form.crescent-moon-tara-tsog"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:467
+msgid "offerings.form.guru-tsog"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:472
+msgid "offerings.form.waning-moon-tara-tsog"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:477
+msgid "offerings.form.dakini-tsog"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:482
+msgid "offerings.form.riwo-sangcho-tsog"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:487
+msgid "offerings.form.general-activities"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:492
+msgid "offerings.form.lamps"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:497
+msgid "offerings.form.prayer-flag"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:502
+msgid "offerings.form.total"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:507
+msgid "offerings.form.dedication"
+msgstr ""
+
+#: offering/templates/offering/offerings.html:545
+msgid "offerings.akshobia.unavailable-warning"
+msgstr ""
+
+#~ msgid "institution.base.email"
+#~ msgstr "E-mail"
