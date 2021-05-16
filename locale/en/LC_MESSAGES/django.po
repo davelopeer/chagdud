@@ -249,170 +249,170 @@ msgstr "Makara Publisher"
 
 #: offering/templates/offering/offerings.html:65
 msgid "offerings.tsog-title"
-msgstr ""
+msgstr "Tsok" 
 
 #: offering/templates/offering/offerings.html:70
 msgid "offerings.tsog-description-p1"
-msgstr ""
+msgstr "Tsok is an elaborated ceremony of Tibetan Buddhism which uses food and drinks of different flavours as objects of meditation and purification. You can participate by making a financial offering towards the tsok."
 
 #: offering/templates/offering/offerings.html:74
 msgid "offerings.tsog-description-p2"
-msgstr ""
+msgstr "Please, make your offering through PayPal using the form below. You can offer any value, and your offering will be completed once we receive the confirmation of the transaction via PayPal."
 
 #: offering/templates/offering/offerings.html:78
 #: offering/templates/offering/offerings.html:108
 #: offering/templates/offering/offerings.html:159
 #: offering/templates/offering/offerings.html:425
 msgid "offerings.attention"
-msgstr ""
+msgstr "Please note"
 
 #: offering/templates/offering/offerings.html:80
 msgid "offerings.tsog-attention-text"
-msgstr ""
+msgstr "Tsok offerings are always collected at 2 pm on the day before each Tsok date. After this time, the offering will be read in the next Tsok according to the Khadro Ling Sacred Dates calendar."
 
 #: offering/templates/offering/offerings.html:96
 msgid "offerings.lamps-title"
-msgstr ""
+msgstr "Butterlamp Offering"
 
 #: offering/templates/offering/offerings.html:101
 msgid "offerings.lamps-description-p1"
-msgstr ""
+msgstr "Hundreds of butterlamps are lit at Khadro Ling everyday as an offering of light to dispel obstacles for all beings. You can participate in this daily offering and can dedicate an specific number of butterlamps to the benefit of your family, yourself or any other being going through difficulties or needing blessings."
 
 #: offering/templates/offering/offerings.html:105
 msgid "offerings.lamps-description-p2"
-msgstr ""
+msgstr "Please, make your offering through PayPal using the form below."
 
 #: offering/templates/offering/offerings.html:110
 msgid "offerings.lamps-attention-text-p1"
-msgstr ""
+msgstr "Butterlamps offerings are collected at 2:00 pm daily to be prepared and read in the moment of their lighting next early morning. After 2:00 pm the offering will be made in the next day."
 
 #: offering/templates/offering/offerings.html:114
 msgid "offerings.lamps-attention-text-p2"
-msgstr ""
+msgstr "If you are offering for more than one day, your dedication will be read during Tara’s puja on the first day. On the following days, it will be read separately in the lamp house."
 
 #: offering/templates/offering/offerings.html:130
 msgid "offerings.riwo.title"
-msgstr ""
+msgstr "Offering Riwo Sangtchö"
 
 #: offering/templates/offering/offerings.html:135
 msgid "offerings.riwo.description.p1"
-msgstr ""
+msgstr "Riwo Sangtchö in Tibetan means “Burnt Offering for Purification on the Mountainside”. This practice is performed daily at Khadro Ling. It is a very powerful practice intended to repel obstacles and negativities, particularly obstacles to our spiritual path. "
 
 #: offering/templates/offering/offerings.html:139
 msgid "offerings.riwo.description.p2"
-msgstr ""
+msgstr "At Khadro Ling, cypress branches and a large number of substances, such as food and tissues, are burned as offerings. This practice of Riwo Sangtchö is a direct transmission of the Rigdzin Sogdrub thermal cycle (“Realization of the Vital Force of the Awakened State Holders”)."
 
 #: offering/templates/offering/offerings.html:143
 msgid "offerings.riwo.description.p3"
-msgstr ""
+msgstr "It was revealed by Terton Lhatsun Nankha Jigmed. He was born in 1597, in Jaryul, Southern Tibet, and was, at the same time, a reincarnation of Vimalamitra and the omniscient Longchenpa. This practice of unbroken lineage was transmitted to Chagdud Rinpoche."
 
 #: offering/templates/offering/offerings.html:147
 msgid "offerings.riwo.description.p4"
-msgstr ""
+msgstr "The great buddhist masters from the present have emphasized that in today's times of degeneration it’s absolutely important and beneficial to practice Riwo Sangtchö."
 
 #: offering/templates/offering/offerings.html:153
 msgid "offerings.riwo.description.p5"
-msgstr ""
+msgstr "At Khadro Ling, it is held every morning, at Padmasambhava’s Pure Land, between 10:30 am and 12 pm (Brasilia Standard Time)."
 
 #: offering/templates/offering/offerings.html:156
 msgid "offerings.riwo.description.p6"
-msgstr ""
+msgstr "You can offer any value, and your offering will be completed once we receive the confirmation of the transaction via PayPal."
 
 #: offering/templates/offering/offerings.html:161
 msgid "offerings.riwo.attention-text"
-msgstr ""
+msgstr "Riwo Sangtchö's offerings are collected every day at 2 pm to be read the next day. After this time the offering will be held on to the next day."
 
 #: offering/templates/offering/offerings.html:246
 msgid "offerings.akshobia.title"
-msgstr ""
+msgstr "The practice of Akshobhya Buddha"
 
 #: offering/templates/offering/offerings.html:251
 msgid "offerings.akshobia.description.p1"
-msgstr ""
+msgstr "Sometimes we experience great despair contemplating the suffering and violence that arise from anger, hatred, confusion, and fear. We yearn to purify our negativities and free our loved ones from negative circumstances. So, we turn to Buddha Akshobhya, who established the intention that sentient beings could purify even extreme non-virtues and escape the terrible circumstances that come from harming others and from someone taking his own life."
 
 #: offering/templates/offering/offerings.html:259
 msgid "offerings.akshobia.intention.title"
-msgstr ""
+msgstr "Buddha Akshobhya's intention"
 
 #: offering/templates/offering/offerings.html:267
 msgid "offerings.akshobia.intention.text.p1"
-msgstr ""
+msgstr "Most of us have already killed some being or taken our own lives, if not in this present life, in previous lives. The karma that follows this act involves illness, accidents, violence, and extemporaneous death. When we know that someone has died an extemporaneous or inauspicious death, we can interrupt negative karma through the practice of Akshobhya."
 
 #: offering/templates/offering/offerings.html:270
 msgid "offerings.akshobia.intention.text.p2"
-msgstr ""
+msgstr "Buddhist teachings indicate that death before birth (by spontaneous or induced abortion), death during youth, violent or frightening deaths, and suicide are signs that the person who died will have difficulty in achieving a spiritually fortunate rebirth."
 
 #: offering/templates/offering/offerings.html:273
 msgid "offerings.akshobia.intention.text.p3"
-msgstr ""
+msgstr "To alleviate such circumstances, Akshobhya promised that whoever creates merit reciting his long mantra a hundred thousand times and sponsoring a sacred image of him would be freed from the lower states of existence and would find release in a fortunate rebirth. This intention of Akshobhya is valid even for those who have died long ago."
 
 #: offering/templates/offering/offerings.html:282
 msgid "offerings.akshobia.when-sponsor.title"
-msgstr ""
+msgstr "When to do or sponsor the practice"
 
 #: offering/templates/offering/offerings.html:289
 msgid "offerings.akshobia.when-sponsor.text.p1"
-msgstr ""
+msgstr "Practitioners can do Akshobhya meditation and purification rituals for themselves and others."
 
 #: offering/templates/offering/offerings.html:293
 msgid "offerings.akshobia.when-sponsor.text.p2"
-msgstr ""
+msgstr "To practice for others, we follow the steps of the Akshobhya liturgy and dedicate the merit to them."
 
 #: offering/templates/offering/offerings.html:297
 msgid "offerings.akshobia.when-sponsor.text.p3"
-msgstr ""
+msgstr "People also sponsor Akshobhya for their pets or animals they killed while driving or other circumstances. Animals can find release from suffering in the animal realm through the practice of Akshobhya."
 
 #: offering/templates/offering/offerings.html:301
 msgid "offerings.akshobia.when-sponsor.text.p4"
-msgstr ""
+msgstr "Due to the length of the Akshobhya mantra and the long time it may take to complete the 100,000 recitations, many practitioners sponsor the recitation for their benefit or for the benefit of the person they have in mind."
 
 #: offering/templates/offering/offerings.html:310
 msgid "offerings.akshobia.how-it-works.title"
-msgstr ""
+msgstr "How it works"
 
 #: offering/templates/offering/offerings.html:316
 msgid "offerings.akshobia.how-it-works.text.p1"
-msgstr ""
+msgstr "What is included when sponsoring Akshobhya's practice?"
 
 #: offering/templates/offering/offerings.html:319
 msgid "offerings.akshobia.how-it-works.text.p2"
-msgstr ""
+msgstr "A practitioner will dedicate an exclusive time to accumulate the mantra. The sponsorship will cover this practitioner's minimum expenses during this period. Although sponsorship is requested in Brazil, the recitation can be performed in Brazil or Tibet."
 
 #: offering/templates/offering/offerings.html:323
 msgid "offerings.akshobia.how-it-works.text.p3"
-msgstr ""
+msgstr "You will sponsor the creation of an image of Akshobhya, in the form of a tsa-tsa, which will be installed on the premises of Khadro Ling."
 
 #: offering/templates/offering/offerings.html:327
 msgid "offerings.akshobia.how-it-works.text.p4"
-msgstr ""
+msgstr "A tsa-tsa is a ceramic tile with the image of Akshobhya. A Bhutanese artist created the mold of the tsa-tsa, which was reproduced in a beautiful blue color. Chagdud Rinpoche instructed that these tsa-tsas should be installed behind the throne of the Buddha Akshobhya statue, at Khadro Ling. The income obtained from these tiles also contributes to the maintenance of the statue and its gardens."
 
 #: offering/templates/offering/offerings.html:336
 msgid "offerings.akshobia.arrive-in-brazil-title"
-msgstr ""
+msgstr "How the practice was introduced in Brazil "
 
 #: offering/templates/offering/offerings.html:343
 msgid "offerings.akshobia.arrive-in-brazil-text"
-msgstr ""
+msgstr "H. E. Chagdud Tulku Rinpoche initiated this practice in Brazil by creating a large statue of Akshobhya at Khadro Ling. Today, the statue is framed by a beautiful garden. Rinpoche also personally sponsored an immense prayer wheel with the Akshobhya mantra. Also, once a year an Akshobya retreat is held at Khadro Ling."
 
 #: offering/templates/offering/offerings.html:352
 msgid "offerings.akshobia.tibet-sponsor.title"
-msgstr ""
+msgstr "Sponsorship in Tibet"
 
 #: offering/templates/offering/offerings.html:359
 msgid "offerings.akshobia.tibet-sponsor.text"
-msgstr ""
+msgstr "To sponsor the practice of Akshobhya in Tibet, make a payment by credit card through the Mahakaruna Foundation, at the website:"
 
 #: offering/templates/offering/offerings.html:369
 msgid "offerings.akshobia.description.p2"
-msgstr ""
+msgstr "The Lord Buddha said:"
 
 #: offering/templates/offering/offerings.html:371
 msgid "offerings.akshobia.description.p3"
-msgstr ""
+msgstr "The Bodhisattva Akshobhya once made this vow: 'Even if the empty space changes, I will not renounce my great vows' […] Wearing the armor of diligence, the bodhisattva Akshobhya was unequaled among the countless thousands of Bodhisattvas [… ] Through his firm vows, Bodhisattva Akshobhya has reached supreme enlightenment”."
 
 #: offering/templates/offering/offerings.html:374
 msgid "offerings.akshobia.description.p4"
-msgstr ""
+msgstr "At the moment sponsorships for Akshobhya’s practice can be requested only via Mahakaruna Foundation based in the USA and under the direction of Tromge Jigme Rinpoche."
 
 #: offering/templates/offering/offerings.html:376
 msgid "offerings.akshobia.description.p5"
@@ -421,7 +421,7 @@ msgstr ""
 #: offering/templates/offering/offerings.html:417
 #: offering/templates/offering/offerings.html:422
 msgid "offerings.donations.title"
-msgstr ""
+msgstr "Donations"
 
 #: offering/templates/offering/offerings.html:427
 msgid "offerings.donations-attention-text"
@@ -429,67 +429,67 @@ msgstr ""
 
 #: offering/templates/offering/offerings.html:443
 msgid "offerings.form.name"
-msgstr ""
+msgstr "Name"
 
 #: offering/templates/offering/offerings.html:447
 msgid "offerings.form.email"
-msgstr ""
+msgstr "E-mail"
 
 #: offering/templates/offering/offerings.html:451
 msgid "offerings.form.total-value"
-msgstr ""
+msgstr "Amount offered"
 
 #: offering/templates/offering/offerings.html:454
 msgid "offerings.form.offering-destination"
-msgstr ""
+msgstr "Purpose of the offering"
 
 #: offering/templates/offering/offerings.html:457
 msgid "offerings.form.offering-destination.text.p1"
-msgstr ""
+msgstr "Purpose of the offering"
 
 #: offering/templates/offering/offerings.html:458
 msgid "offerings.form.offering-destination.text.p2"
-msgstr ""
+msgstr "If you don't want to offer a particular item, just leave it blank. Clicking send you will be directed to the PayPal website."
 
 #: offering/templates/offering/offerings.html:462
 msgid "offerings.form.crescent-moon-tara-tsog"
-msgstr ""
+msgstr "Tara Tsog on the crescent moon:"
 
 #: offering/templates/offering/offerings.html:467
 msgid "offerings.form.guru-tsog"
-msgstr ""
+msgstr "Guru tsog:"
 
 #: offering/templates/offering/offerings.html:472
 msgid "offerings.form.waning-moon-tara-tsog"
-msgstr ""
+msgstr "Tara Tsog on the waning moon:"
 
 #: offering/templates/offering/offerings.html:477
 msgid "offerings.form.dakini-tsog"
-msgstr ""
+msgstr "Dakini tsog:"
 
 #: offering/templates/offering/offerings.html:482
 msgid "offerings.form.riwo-sangcho-tsog"
-msgstr ""
+msgstr "Riwo Sangchö:"
 
 #: offering/templates/offering/offerings.html:487
 msgid "offerings.form.general-activities"
-msgstr ""
+msgstr "General activities of the Temple:"
 
 #: offering/templates/offering/offerings.html:492
 msgid "offerings.form.lamps"
-msgstr ""
+msgstr "Butterlamps (R$ 3 each) - how many butterlamps total, and how many butterlamps a day?"
 
 #: offering/templates/offering/offerings.html:497
 msgid "offerings.form.prayer-flag"
-msgstr ""
+msgstr "Prayer flags (R$ 15 each):"
 
 #: offering/templates/offering/offerings.html:502
 msgid "offerings.form.total"
-msgstr ""
+msgstr "Total"
 
 #: offering/templates/offering/offerings.html:507
 msgid "offerings.form.dedication"
-msgstr ""
+msgstr "Dedication"
 
 #: offering/templates/offering/offerings.html:545
 msgid "offerings.akshobia.unavailable-warning"
