@@ -1,4 +1,5 @@
 from django.db import models
+from django.db.models.base import Model
 from tinymce.models import HTMLField
 from datetime import date
 
@@ -17,6 +18,17 @@ MONTHS = [
     'novembro',
     'dezembro',
 ]
+
+class CieloLinks(models.Model):
+  title = models.CharField(max_length=500)
+  url = models.URLField()
+
+  class Meta:
+      verbose_name = 'Link Cielo'
+      verbose_name_plural = 'Links Cielo'
+
+  def __str__(self):
+      return self.title
 
 class FutureEventManager(models.Manager):
     def get_queryset(self):
@@ -43,7 +55,8 @@ class Event(models.Model):
     start_date = models.DateTimeField()
     end_date = models.DateTimeField()
 
-    cielo_link = models.CharField(max_length=1000)
+    cielo_link = models.ManyToManyField(CieloLinks)
+    paypal_link = models.URLField()
 
     # Accommodations
     amitaba_accommodation_capacity = models.PositiveIntegerField(verbose_name="Lotação Amitaba", null=True, blank=True)
@@ -70,7 +83,7 @@ class Event(models.Model):
         verbose_name_plural = 'Eventos'
 
     def __str__(self):
-        return str(self.id) + self.name
+        return f'{self.name}  |  {self.month_verbose_name(self.start_date.month)}/{self.start_date.year}'
 
     @property
     def start_date_pretty(self):

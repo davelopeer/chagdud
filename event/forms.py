@@ -94,7 +94,7 @@ class EventForm(forms.Form):
         'id': 'aceitoPolitica',
     }))
 
-    payment_options = forms.ChoiceField(choices=PAYMENT_CHOICES, widget=forms.RadioSelect(attrs={
+    payment_options = forms.ChoiceField(required=False, choices=PAYMENT_CHOICES, widget=forms.RadioSelect(attrs={
         'class':'form-check-input',
         'type':'radio',
         'name':'evento'

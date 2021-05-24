@@ -162,7 +162,7 @@
 
             <br>
 
-            {% if user_language == 'pt-br' %}
+            {% if user_language == 'pt' %}
               <div class="payment-container">
                 {% for payment in form.payment_options %}
                   <div class="form-check mt-2">
@@ -197,17 +197,28 @@
                     <label for="comprovante">Envie o comprovante</label>
                     {{ form.deposit_receipt }}
                   </div>
+
+                  <button id="submit-btn}" type="submit" class="btn btn-primary">Pagar</button>
+
                 </div>
 
                 <div id="credit-container" class="hidden">
                   <small>Você será redirecionado para uma outra página.</small>
+
+                  {% for link in event.cielo_link.all %}
+                  <h6 class="mt-5">{{ link.title }}</h6>
+                    <button id="submit-btn-{{ forloop.counter0 }}" type="submit" class="btn btn-primary hidden">Pagar</button>
+                  {% endfor %}
                 </div>
 
-                <button id="submit-btn" type="submit" class="btn btn-primary mt-5 hidden"></button>
-              </div>
-              
-            {% else %}
 
+              </div>
+
+            {% else %}
+              <button id="submit-btn-international" type="submit" class="btn btn-primary hidden">{{ event.paypal_link }}</button>
+              <div id="paypal-container">
+                <small>Você será redirecionado para uma outra página.</small>
+              </div>
             {% endif %}
 
 
@@ -219,38 +230,44 @@
 </main>
 
 <script>
-  const depositCheck = document.getElementById("id_payment_options_0")
-  const depositContainer = document.getElementById("deposit-container")
-
-  const creditCheck = document.getElementById("id_payment_options_1")
-  const creditContainer = document.getElementById("credit-container")
-
-  const button = document.getElementById("submit-btn")
-
-  creditCheck.onclick = function(){
-    button.style.display = 'block';
-    button.innerText = 'Realizar pagamento';
-
-    creditContainer.style.display = 'block';
-    depositContainer.style.display = 'none';
+  if ('{{ user_language }}' === 'pt') {
+    var depositContainer = document.getElementById("deposit-container")
     
-    window.open(url,'_blank');
-  };
+    var depositCheck = document.getElementById("id_payment_options_0")
+    var creditCheck = document.getElementById("id_payment_options_1")
+    var creditContainer = document.getElementById("credit-container")
 
-  depositCheck.onclick = function(){
-    button.style.display = 'block';
-    button.innerText = 'Enviar';
+    creditCheck.onclick = function(){
+      creditContainer.style.display = 'block';
+      depositContainer.style.display = 'none';
+    };
 
-    creditContainer.style.display = 'none';
-    depositContainer.style.display = 'block';
-  };
+    depositCheck.onclick = function(){
+      creditContainer.style.display = 'none';
+      depositContainer.style.display = 'block';
+    };
 
-  button.onclick = function(){
-    const form = document.getElementsByTagName("form")[0]
-    const isValidForm = form.checkValidity();
-    if (isValidForm){
-      window.open('{{ event.cielo_link }}','_blank');
-    }
+    // For loop for each Cielo Link for payment
+    {% for link in event.cielo_link.all %}
+    document.getElementById("submit-btn-{{ forloop.counter0 }}").onclick = function(){
+      var form = document.getElementsByTagName("form")[0]
+      var isValidForm = form.checkValidity();
+      if (isValidForm){
+        window.open('{{ link.url }}','_blank');
+      }
+    };
+    {% endfor %}
+  } else {
+    // International button
+    var buttonInternational = document.getElementById("submit-btn-international")
+
+    buttonInternational.onclick = function(){
+      var form = document.getElementsByTagName("form")[0]
+      var isValidForm = form.checkValidity();
+      if (isValidForm){
+        window.open('{{ event.paypal_link }}','_blank');
+      };
+    };
   };
 
 </script>

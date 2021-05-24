@@ -1,5 +1,5 @@
+from django.conf import settings
 from django.views.generic import TemplateView, ListView, DetailView
-
 from django.views.generic.edit import FormView
 
 from event.models import Event
@@ -24,7 +24,8 @@ class EventDetailView(DetailView):
 
         event_id = self.kwargs['pk']
         event = self.get_queryset().get(pk=event_id)
-        context['user_language'] = 'pt-br'
+        context['user_language'] = self.request.COOKIES['django_language']
+
         if event.event_type == 'online':
             context['form'] = EventForm
         elif event.event_type == 'presential':
@@ -47,13 +48,13 @@ class OnlineEventFormView(FormView):
     success_url = '/khadroling/evento/'
 
     def form_valid(self, form):
-        form.send_email()
-        return super().form_valid(form)
+      form.send_email()
+      return super().form_valid(form)
 
 class PresentialEventFormView(FormView):
     form_class = PresentialEventForm
     success_url = '/khadroling/evento/'
 
     def form_valid(self, form):
-        form.send_email()
-        return super().form_valid(form)
+      form.send_email()
+      return super().form_valid(form)
