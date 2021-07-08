@@ -17,15 +17,6 @@ class OfferingForm(forms.Form):
         'name':'email'
     }))
 
-    offering_value = forms.DecimalField(min_value=0, decimal_places=2, widget=forms.TextInput(attrs={
-        'type':'number',
-        'class':'form-control',
-        'id':'valor', 
-        'name':'valor',
-        'step': '.01',
-        'min': '0'
-    }))
-
     dedication = forms.CharField(widget=forms.Textarea(attrs={
         'class':'form-control',
         'id':'dedicacao',

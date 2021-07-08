@@ -33,7 +33,6 @@ class Offering(object):
     context = {
         'name': data['name'],
         'email': data['email'],
-        'offering_value': data['offering_value'],
         'crescent_moon_tara_tsog': data['crescent_moon_tara_tsog'],
         'guru_tsog': data['guru_tsog'],
         'waning_moon_tara_tsog': data['waning_moon_tara_tsog'],

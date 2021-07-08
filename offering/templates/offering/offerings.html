@@ -119,7 +119,7 @@
                 </div>
               </div>
 
-              <!-- RIWO SANGCHÖ -->
+              <!-- RIWO SANGTCHÖ -->
 
               <div class="tab-pane fade" id="nav-riwo" role="tabpanel" aria-labelledby="nav-contact-tab">
                 <div class="row">
@@ -152,9 +152,6 @@
                     <p>
                       {% trans "offerings.riwo.description.p5" %}
                     </p>
-                    <p>
-                      {% trans "offerings.riwo.description.p6" %}
-                    </p>
 
                     <h5 class="text-dark"><strong>{% trans "offerings.attention" %}</strong></h5>
                     <p>
@@ -164,7 +161,7 @@
                 </div>
               </div>
 
-              <!-- BANDEIRAS --
+              <!-- BANDEIRAS -->
 
               <div class="tab-pane fade" id="nav-bandeiras" role="tabpanel" aria-labelledby="nav-contact-tab">
                 <div class="row">
@@ -370,12 +367,7 @@
                     <p>
                       <i>{% trans "offerings.akshobia.description.p3" %}</i>
                     </p>
-                    <p>
-                      {% trans "offerings.akshobia.description.p4" %}
-                    </p>
-                    <p>{% trans "offerings.akshobia.description.p5" %}
-                    </p>
-                  </div>
+                   </div>
                 </div>
               </div>
 
@@ -498,7 +490,7 @@
                 {{ form.prayer_flags }}
               </div>
 
-              <div class="form-group">
+              <div class="form-group total-value">
                 <label for="prayer_flags">{% trans "offerings.form.total" %}</label>
                 R$ <span id="total-offered">0</span>
               </div>
@@ -542,7 +534,10 @@
                 <!-- A prática de Akshobia no Khadro Ling não está ocorrendo atualmente. 
                 Para realizar o patrocínio, por favor, entre em contato com a 
                 <a class="styled-link" href="http://mahakaruna.org/">Fundação Mahakaruna</a> , nos Estados Unidos. -->
-                {% trans "offerings.akshobia.unavailable-warning" %}
+                {% trans "offerings.akshobia.unavailable-warning.p1" %}
+              </p>
+              <p class="font-large">
+                {% trans "offerings.akshobia.unavailable-warning.p2" %}
               </p>
               <hr>
             </div>

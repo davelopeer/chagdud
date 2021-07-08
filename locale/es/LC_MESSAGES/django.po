@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-08 09:49-0300\n"
+"POT-Creation-Date: 2021-07-08 17:02-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,14 +19,17 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: institution/templates/institution/base.html:30
+#: khadro_ling/templates/khadro_ling/base.html:30
 msgid "institution.base.portuguese-language"
 msgstr "Portugués"
 
 #: institution/templates/institution/base.html:33
+#: khadro_ling/templates/khadro_ling/base.html:33
 msgid "institution.base.english-language"
 msgstr "Inglés"
 
 #: institution/templates/institution/base.html:36
+#: khadro_ling/templates/khadro_ling/base.html:36
 msgid "institution.base.spanish-language"
 msgstr "Español"
 
@@ -253,22 +256,31 @@ msgstr "Ofrenda de Tsog"
 
 #: offering/templates/offering/offerings.html:70
 msgid "offerings.tsog-description-p1"
-msgstr "Tsog es una ceremonia elaborada del Budismo Tibetano que usa alimentos y bebidas de diferentes sabores como objetos de meditación y purificación. Usted puede ser partícipe haciendo ofrendas en dinero para el tsog."
+msgstr ""
+"Tsog es una ceremonia elaborada del Budismo Tibetano que usa alimentos y "
+"bebidas de diferentes sabores como objetos de meditación y purificación. "
+"Usted puede ser partícipe haciendo ofrendas en dinero para el tsog."
 
 #: offering/templates/offering/offerings.html:74
 msgid "offerings.tsog-description-p2"
-msgstr "Por favor realice su ofrenda a través de PayPal usando el formulario a continuación."
+msgstr ""
+"Por favor realice su ofrenda a través de PayPal usando el formulario a "
+"continuación."
 
 #: offering/templates/offering/offerings.html:78
 #: offering/templates/offering/offerings.html:108
-#: offering/templates/offering/offerings.html:159
-#: offering/templates/offering/offerings.html:425
+#: offering/templates/offering/offerings.html:156
+#: offering/templates/offering/offerings.html:422
 msgid "offerings.attention"
 msgstr "Nota"
 
 #: offering/templates/offering/offerings.html:80
 msgid "offerings.tsog-attention-text"
-msgstr "Las ofrendas de Tsog son recogidas a las 2pm el día antes de la fecha del Tsog, de manera que puedan ser organizadas y leídas en el día respectivo. Después de esta hora, las ofrendas serán leídas en el siguiente Tsog de acuerdo al calendario de Khadro Ling."
+msgstr ""
+"Las ofrendas de Tsog son recogidas a las 2pm el día antes de la fecha del "
+"Tsog, de manera que puedan ser organizadas y leídas en el día respectivo. "
+"Después de esta hora, las ofrendas serán leídas en el siguiente Tsog de "
+"acuerdo al calendario de Khadro Ling."
 
 #: offering/templates/offering/offerings.html:96
 msgid "offerings.lamps-title"
@@ -276,19 +288,31 @@ msgstr "Ofrenda de Lamparitas"
 
 #: offering/templates/offering/offerings.html:101
 msgid "offerings.lamps-description-p1"
-msgstr "Cientos de lamparitas se prenden en Khadro Ling cada día como ofrenda de luz para disipar obstáculos para todos los seres. Usted puede ser partícipe de esta ofrenda diaria y puede dedicar un número específico de lamparitas para el beneficio de su familia, de Usted mismo, o cualquier otro ser que esté pasando por dificultades o esté necesitando bendiciones."
+msgstr ""
+"Cientos de lamparitas se prenden en Khadro Ling cada día como ofrenda de luz "
+"para disipar obstáculos para todos los seres. Usted puede ser partícipe de "
+"esta ofrenda diaria y puede dedicar un número específico de lamparitas para "
+"el beneficio de su familia, de Usted mismo, o cualquier otro ser que esté "
+"pasando por dificultades o esté necesitando bendiciones."
 
 #: offering/templates/offering/offerings.html:105
 msgid "offerings.lamps-description-p2"
-msgstr "Por favor realice su ofrenda a través de PayPal usando el formulario a continuación."
+msgstr ""
+"Por favor realice su ofrenda a través de PayPal usando el formulario a "
+"continuación."
 
 #: offering/templates/offering/offerings.html:110
 msgid "offerings.lamps-attention-text-p1"
-msgstr "Las ofrendas de lamparitas se recogen a las 2pm cada día, para ser preparadas y leídas al momento de ser encendidas al día siguiente temprano en la mañana. Después de las 2pm, la ofrenda será hecha al día subsiguiente."
+msgstr ""
+"Las ofrendas de lamparitas se recogen a las 2pm cada día, para ser "
+"preparadas y leídas al momento de ser encendidas al día siguiente temprano "
+"en la mañana. Después de las 2pm, la ofrenda será hecha al día subsiguiente."
 
 #: offering/templates/offering/offerings.html:114
 msgid "offerings.lamps-attention-text-p2"
-msgstr "Si enviaste una ofrenda para varios días, leeremos la dedicación el primer día, en la puja de Tara. Los demás días se leerá en la casa de lamparitas."
+msgstr ""
+"Si enviaste una ofrenda para varios días, leeremos la dedicación el primer "
+"día, en la puja de Tara. Los demás días se leerá en la casa de lamparitas."
 
 #: offering/templates/offering/offerings.html:130
 msgid "offerings.riwo.title"
@@ -296,204 +320,304 @@ msgstr "Ofrenda de Riwo Sangtchö"
 
 #: offering/templates/offering/offerings.html:135
 msgid "offerings.riwo.description.p1"
-msgstr "Riwo Sangtchö (en tibetano, “Ofrenda Quemada para Purificación en la Ladera de la Montaña”) es realizada diariamente en Khadro Ling."
+msgstr ""
+"Riwo Sangtchö (en tibetano, “Ofrenda Quemada para Purificación en la Ladera "
+"de la Montaña”) es realizada diariamente en Khadro Ling."
 
 #: offering/templates/offering/offerings.html:139
 msgid "offerings.riwo.description.p2"
-msgstr "Es una práctica muy poderosa para repeler obstáculos y negatividades.  Particularmente, los obstáculos a nuestro camino espiritual.  En Khadro Ling, se queman ramas de ciprés y una gran cantidad de substancias, como alimentos y telas."
+msgstr ""
+"Es una práctica muy poderosa para repeler obstáculos y negatividades.  "
+"Particularmente, los obstáculos a nuestro camino espiritual.  En Khadro "
+"Ling, se queman ramas de ciprés y una gran cantidad de substancias, como "
+"alimentos y telas."
 
 #: offering/templates/offering/offerings.html:143
 msgid "offerings.riwo.description.p3"
-msgstr "La práctica de Riwo Sangchod hecha en Khadro Ling es una instrucción de transmisión directa del ciclo terma Rigdzin Sogdrub (“Realización de la Fuerza Vital de los Detentores del Estado Despierto”). Fue revelada por el Terton Terton Lhatsun Nankha Jigmed.  Él nació en 1597, en Jaryul, al sur de Tíbet y era, al mismo tiempo, una reencarnación de Vimalamitra y del omnisciente Longchenpa. Esta práctica de linaje ininterrumpido fue transmitida a Chagdud Rinpoche."
+msgstr ""
+"La práctica de Riwo Sangtchöd hecha en Khadro Ling es una instrucción de "
+"transmisión directa del ciclo terma Rigdzin Sogdrub (“Realización de la "
+"Fuerza Vital de los Detentores del Estado Despierto”). Fue revelada por el "
+"Terton Terton Lhatsun Nankha Jigmed.  Él nació en 1597, en Jaryul, al sur de "
+"Tíbet y era, al mismo tiempo, una reencarnación de Vimalamitra y del "
+"omnisciente Longchenpa. Esta práctica de linaje ininterrumpido fue "
+"transmitida a Chagdud Rinpoche."
 
 #: offering/templates/offering/offerings.html:147
 msgid "offerings.riwo.description.p4"
-msgstr "Nuestros Maestros actuales enfatizan que, en los tiempos degenerados actuales, es absolutamente importante y beneficioso acumular la práctica de Riwo Sangchod."
+msgstr ""
+"Nuestros Maestros actuales enfatizan que, en los tiempos degenerados "
+"actuales, es absolutamente importante y beneficioso acumular la práctica de "
+"Riwo Sangtchöd."
 
 #: offering/templates/offering/offerings.html:153
 msgid "offerings.riwo.description.p5"
-msgstr "La práctica de Riwo Sangchod también puede ser hecha en la casa – de una forma igualmente poderosa -, quemando solo inciensos.  En Khadro Ling, es practicada de forma elaborada, todas las mañanas, en la Tierra Pura de Padmasambava, entre las 10:30am y las 12 horas.  Durante los eventos, comienza a las 7:45 am."
+msgstr ""
+"La práctica de Riwo Sangtchöd también puede ser hecha en la casa – de una "
+"forma igualmente poderosa -, quemando solo inciensos.  En Khadro Ling, es "
+"practicada de forma elaborada, todas las mañanas, en la Tierra Pura de "
+"Padmasambava, entre las 10:30am y las 12 horas.  Durante los eventos, "
+"comienza a las 7:45 am."
 
-#: offering/templates/offering/offerings.html:156
-msgid "offerings.riwo.description.p6"
-msgstr "Usted puede ofrecer cualquier valor.  Su ofrenda será hecha después de confirmada la transacción vía PayPal."
-
-#: offering/templates/offering/offerings.html:161
+#: offering/templates/offering/offerings.html:158
 msgid "offerings.riwo.attention-text"
-msgstr "Las ofrendas de Riwo Sangtchö son reunidas siempre a las 14 horas de cada día para que puedan ser organizadas y leídas al momento de la práctica del día siguiente.  Después de este horario, la ofrenda será realizada al día subsiguiente."
+msgstr ""
+"Las ofrendas de Riwo Sangtchö son reunidas siempre a las 14 horas de cada "
+"día para que puedan ser organizadas y leídas al momento de la práctica del "
+"día siguiente.  Después de este horario, la ofrenda será realizada al día "
+"subsiguiente."
 
-#: offering/templates/offering/offerings.html:246
+#: offering/templates/offering/offerings.html:243
 msgid "offerings.akshobia.title"
 msgstr "Práctica del Buda Akshobia"
 
-#: offering/templates/offering/offerings.html:251
+#: offering/templates/offering/offerings.html:248
 msgid "offerings.akshobia.description.p1"
-msgstr "A veces experimentamos una gran desesperación cuando contemplamos el sufrimiento y la violencia que surgen de la rabia, del odio, de la confusión y del miedo.  Anhelamos purificar nuestras negatividades y liberar a nuestros seres queridos de circunstancias adversas.  El Buda Akshobia estableció la intención de que los seres sintientes pudiesen purificar hasta incluso no virtudes extremas y escapar de las terribles circunstancias que surgen de causar daño a otros y de quitarse la vida."
+msgstr ""
+"A veces experimentamos una gran desesperación cuando contemplamos el "
+"sufrimiento y la violencia que surgen de la rabia, del odio, de la confusión "
+"y del miedo.  Anhelamos purificar nuestras negatividades y liberar a "
+"nuestros seres queridos de circunstancias adversas.  El Buda Akshobia "
+"estableció la intención de que los seres sintientes pudiesen purificar hasta "
+"incluso no virtudes extremas y escapar de las terribles circunstancias que "
+"surgen de causar daño a otros y de quitarse la vida."
 
-#: offering/templates/offering/offerings.html:259
+#: offering/templates/offering/offerings.html:256
 msgid "offerings.akshobia.intention.title"
 msgstr "La intención del Buda Akshobia"
 
-#: offering/templates/offering/offerings.html:267
+#: offering/templates/offering/offerings.html:264
 msgid "offerings.akshobia.intention.text.p1"
-msgstr "La mayoría de nosotros ya mató algún ser o se quitó la vida, si no en esta vida presente, en vidas anteriores.  El karma que sigue a ese acto involucra enfermedades, accidentes, violencia y muerte extemporánea.  Cuando sabemos que alguien tuvo una muerte extemporánea o no auspiciosa, podemos interrumpir el karma negativo por medio de la práctica de Akshobia."
+msgstr ""
+"La mayoría de nosotros ya mató algún ser o se quitó la vida, si no en esta "
+"vida presente, en vidas anteriores.  El karma que sigue a ese acto involucra "
+"enfermedades, accidentes, violencia y muerte extemporánea.  Cuando sabemos "
+"que alguien tuvo una muerte extemporánea o no auspiciosa, podemos "
+"interrumpir el karma negativo por medio de la práctica de Akshobia."
+
+#: offering/templates/offering/offerings.html:267
+msgid "offerings.akshobia.intention.text.p2"
+msgstr ""
+"Las enseñanzas budistas indican que la muerte antes del nacimiento (por "
+"aborto espontaneo o inducido), la muerte durante la juventud, muertes "
+"violentas o amenazantes y el suicidio son señales de que la persona que "
+"murió tendrá dificultad en obtener un renacimiento afortunado y bien dotado "
+"espiritualmente"
 
 #: offering/templates/offering/offerings.html:270
-msgid "offerings.akshobia.intention.text.p2"
-msgstr "Las enseñanzas budistas indican que la muerte antes del nacimiento (por aborto espontaneo o inducido), la muerte durante la juventud, muertes violentas o amenazantes y el suicidio son señales de que la persona que murió tendrá dificultad en obtener un renacimiento afortunado y bien dotado espiritualmente"
-
-#: offering/templates/offering/offerings.html:273
 msgid "offerings.akshobia.intention.text.p3"
-msgstr "Para aliviar tales circunstancias, Akshobia prometió que quien crease mérito, recitando cien mil veces su mantra largo y patrocinando una imagen sagrada de el, sería liberado de los estados inferiores de existencia y encontraría la liberación en un renacimiento afortunado.  Esa intención de Akshobia es válida incluso para aquellos que han muerto hace mucho tiempo."
+msgstr ""
+"Para aliviar tales circunstancias, Akshobia prometió que quien crease "
+"mérito, recitando cien mil veces su mantra largo y patrocinando una imagen "
+"sagrada de el, sería liberado de los estados inferiores de existencia y "
+"encontraría la liberación en un renacimiento afortunado.  Esa intención de "
+"Akshobia es válida incluso para aquellos que han muerto hace mucho tiempo."
 
-#: offering/templates/offering/offerings.html:282
+#: offering/templates/offering/offerings.html:279
 msgid "offerings.akshobia.when-sponsor.title"
 msgstr "Cuando hacer/patrocinar la práctica"
 
-#: offering/templates/offering/offerings.html:289
+#: offering/templates/offering/offerings.html:286
 msgid "offerings.akshobia.when-sponsor.text.p1"
-msgstr "Los practicantes pueden hacer la meditación y los rituales de purificación de Akshobia para si mismos y para otros."
+msgstr ""
+"Los practicantes pueden hacer la meditación y los rituales de purificación "
+"de Akshobia para si mismos y para otros."
 
-#: offering/templates/offering/offerings.html:293
+#: offering/templates/offering/offerings.html:290
 msgid "offerings.akshobia.when-sponsor.text.p2"
-msgstr "Para practicar para otros, seguimos los pasos de la liturgia de Akshobia y, en la conclusión, dedicamos el mérito a ellos."
+msgstr ""
+"Para practicar para otros, seguimos los pasos de la liturgia de Akshobia y, "
+"en la conclusión, dedicamos el mérito a ellos."
 
-#: offering/templates/offering/offerings.html:297
+#: offering/templates/offering/offerings.html:294
 msgid "offerings.akshobia.when-sponsor.text.p3"
-msgstr "Las personas también atricinan Akshobia para sus mascotas o para animales que mataron mientras conducían un auto o en otras circunstancias. Los animales pueden encontrar liberación del sufrimiento del reino animal por medio de la práctica de Akshobia."
+msgstr ""
+"Las personas también atricinan Akshobia para sus mascotas o para animales "
+"que mataron mientras conducían un auto o en otras circunstancias. Los "
+"animales pueden encontrar liberación del sufrimiento del reino animal por "
+"medio de la práctica de Akshobia."
 
-#: offering/templates/offering/offerings.html:301
+#: offering/templates/offering/offerings.html:298
 msgid "offerings.akshobia.when-sponsor.text.p4"
-msgstr "Debido a la extensión del mantra de Akshobia y a la cantidad de tiempo que puede ser necesario para completar las 100 mil recitaciones, muchos practicantes patrocinan la recitación en su propio beneficio o de las personas que tengan en mente."
+msgstr ""
+"Debido a la extensión del mantra de Akshobia y a la cantidad de tiempo que "
+"puede ser necesario para completar las 100 mil recitaciones, muchos "
+"practicantes patrocinan la recitación en su propio beneficio o de las "
+"personas que tengan en mente."
 
-#: offering/templates/offering/offerings.html:310
+#: offering/templates/offering/offerings.html:307
 msgid "offerings.akshobia.how-it-works.title"
 msgstr "¿Como funciona?"
 
-#: offering/templates/offering/offerings.html:316
+#: offering/templates/offering/offerings.html:313
 msgid "offerings.akshobia.how-it-works.text.p1"
 msgstr "¿Qué esta incluido cuando se patrocina la práctica de Akshobia?"
 
-#: offering/templates/offering/offerings.html:319
+#: offering/templates/offering/offerings.html:316
 msgid "offerings.akshobia.how-it-works.text.p2"
-msgstr "Un practicante va a dedicar un tiempo exclusivo para acumular el mantra.  El patrocinio cubre los gastos mínimos de ese practicante durante ese período. A pesar de que el patrocinio sea solicitado en Brasil, la recitación puede ser realizada en el país o en el Tíbet."
+msgstr ""
+"Un practicante va a dedicar un tiempo exclusivo para acumular el mantra.  El "
+"patrocinio cubre los gastos mínimos de ese practicante durante ese período. "
+"A pesar de que el patrocinio sea solicitado en Brasil, la recitación puede "
+"ser realizada en el país o en el Tíbet."
 
-#: offering/templates/offering/offerings.html:323
+#: offering/templates/offering/offerings.html:320
 msgid "offerings.akshobia.how-it-works.text.p3"
-msgstr "Usted va a patrocinar la creación de una imagen de Akshobia, en la forma de una tsa-tsa, que será colocada en instalaciones de Khadro Ling."
+msgstr ""
+"Usted va a patrocinar la creación de una imagen de Akshobia, en la forma de "
+"una tsa-tsa, que será colocada en instalaciones de Khadro Ling."
 
-#: offering/templates/offering/offerings.html:327
+#: offering/templates/offering/offerings.html:324
 msgid "offerings.akshobia.how-it-works.text.p4"
-msgstr "Tsa-tsa es un azulejo de cerámica con una imagen de Akshobia en relieve. Un artista butanés creó un molde de tsa-tsa, que fue reproducido en un bello color azul.  Chagdud Rinpoche instruyó que esas tsa-tsas fueran instaladas detrás del trono de la estatua de Buda Akshobia, en Khadro Ling.  Los ingresos obtenidos con los azulejos también contribuyen a la mantención de la estatua y de los jardines."
+msgstr ""
+"Tsa-tsa es un azulejo de cerámica con una imagen de Akshobia en relieve. Un "
+"artista butanés creó un molde de tsa-tsa, que fue reproducido en un bello "
+"color azul.  Chagdud Rinpoche instruyó que esas tsa-tsas fueran instaladas "
+"detrás del trono de la estatua de Buda Akshobia, en Khadro Ling.  Los "
+"ingresos obtenidos con los azulejos también contribuyen a la mantención de "
+"la estatua y de los jardines."
 
-#: offering/templates/offering/offerings.html:336
+#: offering/templates/offering/offerings.html:333
 msgid "offerings.akshobia.arrive-in-brazil-title"
 msgstr "Cómo la práctica llegó a Brasil"
 
-#: offering/templates/offering/offerings.html:343
+#: offering/templates/offering/offerings.html:340
 msgid "offerings.akshobia.arrive-in-brazil-text"
-msgstr "S.E. Chagdud Tulku Rinpoche estableció la práctica de Akshobia en Brasil al crear una estatua de grandes dimensiones del Buda, en Khadro Ling.  Hoy, la estatua se encuentra enmarcada por un bello jardín.  Rinpoché también patrocinó personalmente una inmensa rueda de oración con el mantra de Akshobia"
+msgstr ""
+"S.E. Chagdud Tulku Rinpoche estableció la práctica de Akshobia en Brasil al "
+"crear una estatua de grandes dimensiones del Buda, en Khadro Ling.  Hoy, la "
+"estatua se encuentra enmarcada por un bello jardín.  Rinpoché también "
+"patrocinó personalmente una inmensa rueda de oración con el mantra de "
+"Akshobia"
 
-#: offering/templates/offering/offerings.html:352
+#: offering/templates/offering/offerings.html:349
 msgid "offerings.akshobia.tibet-sponsor.title"
 msgstr "Patrocinio en Tíbet"
 
-#: offering/templates/offering/offerings.html:359
+#: offering/templates/offering/offerings.html:356
 msgid "offerings.akshobia.tibet-sponsor.text"
-msgstr "Para patrocinar a práctica de Akshobia en Tíbet, haga un pago vía tarjeta de crédito por medio de la Fundación Mahakaruna, a través del sitio: http://mahakaruna.org"
+msgstr ""
+"Para patrocinar a práctica de Akshobia en Tíbet, haga un pago vía tarjeta de "
+"crédito por medio de la Fundación Mahakaruna, a través del sitio: http://"
+"mahakaruna.org"
 
-#: offering/templates/offering/offerings.html:369
+#: offering/templates/offering/offerings.html:366
 msgid "offerings.akshobia.description.p2"
 msgstr "El Señor Buda dice:"
 
-#: offering/templates/offering/offerings.html:371
+#: offering/templates/offering/offerings.html:368
 msgid "offerings.akshobia.description.p3"
-msgstr "“Cierta vez, el Bodhisattva Akshobia hizo el voto: ‘Aunque el espacio vacío cambie, no renunciaré a mis grandes votos’ […] Al vestir la armadura de la diligencia, el bodhisattva Akshobia no tenía igual entre los innumerables millares de Bodhisattvas […] A través de sus votos firmes, el Bodhisattva Akshobia llego a la iluminación suprema.”"
+msgstr ""
+"“Cierta vez, el Bodhisattva Akshobia hizo el voto: ‘Aunque el espacio vacío "
+"cambie, no renunciaré a mis grandes votos’ […] Al vestir la armadura de la "
+"diligencia, el bodhisattva Akshobia no tenía igual entre los innumerables "
+"millares de Bodhisattvas […] A través de sus votos firmes, el Bodhisattva "
+"Akshobia llego a la iluminación suprema.”"
 
-#: offering/templates/offering/offerings.html:374
+#: offering/templates/offering/offerings.html:371
 msgid "offerings.akshobia.description.p4"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:376
+#: offering/templates/offering/offerings.html:373
 msgid "offerings.akshobia.description.p5"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:417
-#: offering/templates/offering/offerings.html:422
+#: offering/templates/offering/offerings.html:414
+#: offering/templates/offering/offerings.html:419
 msgid "offerings.donations.title"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:427
+#: offering/templates/offering/offerings.html:424
 msgid "offerings.donations-attention-text"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:443
+#: offering/templates/offering/offerings.html:440
 msgid "offerings.form.name"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:447
+#: offering/templates/offering/offerings.html:444
 msgid "offerings.form.email"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:451
+#: offering/templates/offering/offerings.html:448
 msgid "offerings.form.total-value"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:454
+#: offering/templates/offering/offerings.html:451
 msgid "offerings.form.offering-destination"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:457
+#: offering/templates/offering/offerings.html:454
 msgid "offerings.form.offering-destination.text.p1"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:458
+#: offering/templates/offering/offerings.html:455
 msgid "offerings.form.offering-destination.text.p2"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:462
+#: offering/templates/offering/offerings.html:459
 msgid "offerings.form.crescent-moon-tara-tsog"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:467
+#: offering/templates/offering/offerings.html:464
 msgid "offerings.form.guru-tsog"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:472
+#: offering/templates/offering/offerings.html:469
 msgid "offerings.form.waning-moon-tara-tsog"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:477
+#: offering/templates/offering/offerings.html:474
 msgid "offerings.form.dakini-tsog"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:482
+#: offering/templates/offering/offerings.html:479
 msgid "offerings.form.riwo-sangcho-tsog"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:487
+#: offering/templates/offering/offerings.html:484
 msgid "offerings.form.general-activities"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:492
+#: offering/templates/offering/offerings.html:489
 msgid "offerings.form.lamps"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:497
+#: offering/templates/offering/offerings.html:494
 msgid "offerings.form.prayer-flag"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:502
+#: offering/templates/offering/offerings.html:499
 msgid "offerings.form.total"
-msgstr ""
+msgstr "Valor total de la oferta"
 
-#: offering/templates/offering/offerings.html:507
+#: offering/templates/offering/offerings.html:504
 msgid "offerings.form.dedication"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:545
-msgid "offerings.akshobia.unavailable-warning"
+#: offering/templates/offering/offerings.html:542
+#, fuzzy
+#| msgid "offerings.akshobia.description.p1"
+msgid "offerings.akshobia.unavailable-warning.p1"
 msgstr ""
+"A veces experimentamos una gran desesperación cuando contemplamos el "
+"sufrimiento y la violencia que surgen de la rabia, del odio, de la confusión "
+"y del miedo.  Anhelamos purificar nuestras negatividades y liberar a "
+"nuestros seres queridos de circunstancias adversas.  El Buda Akshobia "
+"estableció la intención de que los seres sintientes pudiesen purificar hasta "
+"incluso no virtudes extremas y escapar de las terribles circunstancias que "
+"surgen de causar daño a otros y de quitarse la vida."
+
+#: offering/templates/offering/offerings.html:545
+#, fuzzy
+#| msgid "offerings.akshobia.description.p2"
+msgid "offerings.akshobia.unavailable-warning.p2"
+msgstr "El Señor Buda dice:"
+
+#~ msgid "offerings.riwo.description.p6"
+#~ msgstr ""
+#~ "Usted puede ofrecer cualquier valor.  Su ofrenda será hecha después de "
+#~ "confirmada la transacción vía PayPal."
 
 #~ msgid "institution.base.email"
 #~ msgstr "E-mail"
