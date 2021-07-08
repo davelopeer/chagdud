@@ -24,7 +24,11 @@ class EventDetailView(DetailView):
 
         event_id = self.kwargs['pk']
         event = self.get_queryset().get(pk=event_id)
-        context['user_language'] = self.request.COOKIES['django_language']
+
+        if 'django_language' in self.request.COOKIES.keys():
+          context['user_language'] = self.request.COOKIES['django_language']
+        else:
+          context['user_language'] = 'pt'
 
         if event.event_type == 'online':
             context['form'] = EventForm

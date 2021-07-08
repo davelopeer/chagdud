@@ -13,14 +13,21 @@ def offerings_view(request):
        'form': OfferingForm()
     }
 
+    if 'django_language' in request.COOKIES.keys():
+      context['user_language'] = request.COOKIES['django_language']
+    else:
+      context['user_language'] = 'pt'
+
     if request.method == 'POST':
         post_keys = request.POST.keys()
         if 'general-form' in post_keys:
-            form = OfferingForm(request.POST, request.FILES)
-
-        if form.is_valid():
+          form = OfferingForm(request.POST, request.FILES)
+          print('aaaaaaaaaaaaaaaaaaaa')
+          if form.is_valid():
             mail_sended = form.send_email()
             context['mail_sended'] = True if mail_sended else False
+          else:
+            print(form.errors)
 
     return render(request, template, context=context)
 

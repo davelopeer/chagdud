@@ -20,7 +20,7 @@ msgstr ""
 
 #: event/templates/event/event_list.html:26
 msgid "event-list.no-event"
-msgstr "There are no scheduled events at Khadro Ling"
+msgstr "There are no scheduled events at Khadro Ling."
 
 #: institution/templates/institution/base.html:30
 #: khadro_ling/templates/khadro_ling/base.html:30

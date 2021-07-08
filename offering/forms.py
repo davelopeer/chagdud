@@ -25,14 +25,14 @@ class OfferingForm(forms.Form):
         'placeholder':'Nome da pessoa ou sua intenção ao oferecer'
     }))
 
-    deposit_date = forms.CharField(widget=forms.TextInput(attrs={
+    deposit_date = forms.CharField(required=False, widget=forms.TextInput(attrs={
         'type':'date',
         'class':'form-control',
         'id':'data',
         'name':'data'
     }))
 
-    deposit_value = forms.DecimalField(min_value=0, decimal_places=2, widget=forms.TextInput(attrs={
+    deposit_value = forms.DecimalField(required=False, min_value=0, decimal_places=2, widget=forms.TextInput(attrs={
         'type':'number',
         'class':'form-control',
         'id':'valor', 
@@ -41,7 +41,7 @@ class OfferingForm(forms.Form):
         'min': '0'
     }))
 
-    deposit_receipt = forms.FileField(widget=forms.FileInput(attrs={
+    deposit_receipt = forms.FileField(required=False, widget=forms.FileInput(attrs={
         'type': 'file',
         'class': 'form-control-file',
         'name': 'comprovante',

@@ -57,8 +57,9 @@ class Offering(object):
     )
     mail.content_subtype = "html"
 
-    deposit_receipt = data['deposit_receipt']
-    mail.attach(deposit_receipt.name, deposit_receipt.read())
+    if data['deposit_receipt']:
+      deposit_receipt = data['deposit_receipt']
+      mail.attach(deposit_receipt.name, deposit_receipt.read())
 
     return mail.send()
 
@@ -101,7 +102,8 @@ class DrubchenOffering(models.Model, Offering):
     )
     mail.content_subtype = "html"
 
-    deposit_receipt = data['deposit_receipt']
-    mail.attach(deposit_receipt.name, deposit_receipt.read())
+    if data['deposit_receipt']:
+      deposit_receipt = data['deposit_receipt']
+      mail.attach(deposit_receipt.name, deposit_receipt.read())
 
     return mail.send()
