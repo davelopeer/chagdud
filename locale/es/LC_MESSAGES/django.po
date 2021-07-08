@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-08 17:02-0300\n"
+"POT-Creation-Date: 2021-07-08 18:18-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: event/templates/event/event_list.html:26
+msgid "event-list.no-event"
+msgstr "No hay próximos eventos en Khadro Ling."
 
 #: institution/templates/institution/base.html:30
 #: khadro_ling/templates/khadro_ling/base.html:30
@@ -270,7 +274,7 @@ msgstr ""
 #: offering/templates/offering/offerings.html:78
 #: offering/templates/offering/offerings.html:108
 #: offering/templates/offering/offerings.html:156
-#: offering/templates/offering/offerings.html:422
+#: offering/templates/offering/offerings.html:417
 msgid "offerings.attention"
 msgstr "Nota"
 
@@ -514,88 +518,80 @@ msgstr ""
 "millares de Bodhisattvas […] A través de sus votos firmes, el Bodhisattva "
 "Akshobia llego a la iluminación suprema.”"
 
-#: offering/templates/offering/offerings.html:371
-msgid "offerings.akshobia.description.p4"
-msgstr ""
-
-#: offering/templates/offering/offerings.html:373
-msgid "offerings.akshobia.description.p5"
-msgstr ""
-
+#: offering/templates/offering/offerings.html:409
 #: offering/templates/offering/offerings.html:414
-#: offering/templates/offering/offerings.html:419
 msgid "offerings.donations.title"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:424
+#: offering/templates/offering/offerings.html:419
 msgid "offerings.donations-attention-text"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:440
+#: offering/templates/offering/offerings.html:435
 msgid "offerings.form.name"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:444
+#: offering/templates/offering/offerings.html:439
 msgid "offerings.form.email"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:448
+#: offering/templates/offering/offerings.html:443
 msgid "offerings.form.total-value"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:451
+#: offering/templates/offering/offerings.html:446
 msgid "offerings.form.offering-destination"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:454
+#: offering/templates/offering/offerings.html:449
 msgid "offerings.form.offering-destination.text.p1"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:455
+#: offering/templates/offering/offerings.html:450
 msgid "offerings.form.offering-destination.text.p2"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:459
+#: offering/templates/offering/offerings.html:454
 msgid "offerings.form.crescent-moon-tara-tsog"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:464
+#: offering/templates/offering/offerings.html:459
 msgid "offerings.form.guru-tsog"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:469
+#: offering/templates/offering/offerings.html:464
 msgid "offerings.form.waning-moon-tara-tsog"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:474
+#: offering/templates/offering/offerings.html:469
 msgid "offerings.form.dakini-tsog"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:479
+#: offering/templates/offering/offerings.html:474
 msgid "offerings.form.riwo-sangcho-tsog"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:484
+#: offering/templates/offering/offerings.html:479
 msgid "offerings.form.general-activities"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:489
+#: offering/templates/offering/offerings.html:484
 msgid "offerings.form.lamps"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:494
+#: offering/templates/offering/offerings.html:489
 msgid "offerings.form.prayer-flag"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:499
+#: offering/templates/offering/offerings.html:494
 msgid "offerings.form.total"
 msgstr "Valor total de la oferta"
 
-#: offering/templates/offering/offerings.html:504
+#: offering/templates/offering/offerings.html:499
 msgid "offerings.form.dedication"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:542
+#: offering/templates/offering/offerings.html:537
 #, fuzzy
 #| msgid "offerings.akshobia.description.p1"
 msgid "offerings.akshobia.unavailable-warning.p1"
@@ -608,7 +604,7 @@ msgstr ""
 "incluso no virtudes extremas y escapar de las terribles circunstancias que "
 "surgen de causar daño a otros y de quitarse la vida."
 
-#: offering/templates/offering/offerings.html:545
+#: offering/templates/offering/offerings.html:540
 #, fuzzy
 #| msgid "offerings.akshobia.description.p2"
 msgid "offerings.akshobia.unavailable-warning.p2"

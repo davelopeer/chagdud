@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-08 17:02-0300\n"
+"POT-Creation-Date: 2021-07-08 18:18-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: event/templates/event/event_list.html:26
+msgid "event-list.no-event"
+msgstr "Não há eventos programados no Khadro Ling."
 
 #: institution/templates/institution/base.html:30
 #: khadro_ling/templates/khadro_ling/base.html:30
@@ -272,7 +276,7 @@ msgstr ""
 #: offering/templates/offering/offerings.html:78
 #: offering/templates/offering/offerings.html:108
 #: offering/templates/offering/offerings.html:156
-#: offering/templates/offering/offerings.html:422
+#: offering/templates/offering/offerings.html:417
 msgid "offerings.attention"
 msgstr "Atenção"
 
@@ -511,107 +515,108 @@ msgstr ""
 "de Bodisatvas […] Através de seus votos firmes, o Bodisatva Akshobia chegou "
 "à iluminação suprema.”"
 
-#: offering/templates/offering/offerings.html:371
-msgid "offerings.akshobia.description.p4"
-msgstr ""
-"No momento, o patrocínio de prática de Akshobia pode ser requisitado somente "
-"via a Fundação Mahakaruna, sediada nos Estados Unidos e sob a direção de "
-"Tromge Jigme Rinpoche."
-
-#: offering/templates/offering/offerings.html:373
-msgid "offerings.akshobia.description.p5"
-msgstr ""
-"Em casos de dúvida, por favor, entre em contato conosco pelo e-mail "
-"patrocinio@templobudista.org ou diretamente com a Fundação Mahakaruna pelo e-"
-"mail tais@mahakaruna.org (Você pode escrever o e-mail em português)."
-
+#: offering/templates/offering/offerings.html:409
 #: offering/templates/offering/offerings.html:414
-#: offering/templates/offering/offerings.html:419
 msgid "offerings.donations.title"
 msgstr "Doações"
 
-#: offering/templates/offering/offerings.html:424
+#: offering/templates/offering/offerings.html:419
 msgid "offerings.donations-attention-text"
 msgstr ""
 "Você pode oferecer qualquer valor. Sua oferenda será feita após a "
 "confirmação do depósito."
 
-#: offering/templates/offering/offerings.html:440
+#: offering/templates/offering/offerings.html:435
 msgid "offerings.form.name"
 msgstr "Nome"
 
-#: offering/templates/offering/offerings.html:444
+#: offering/templates/offering/offerings.html:439
 msgid "offerings.form.email"
 msgstr "Email"
 
-#: offering/templates/offering/offerings.html:448
+#: offering/templates/offering/offerings.html:443
 msgid "offerings.form.total-value"
 msgstr "Valor da oferenda em R$"
 
-#: offering/templates/offering/offerings.html:451
+#: offering/templates/offering/offerings.html:446
 msgid "offerings.form.offering-destination"
 msgstr "Destino da oferenda"
 
-#: offering/templates/offering/offerings.html:454
+#: offering/templates/offering/offerings.html:449
 msgid "offerings.form.offering-destination.text.p1"
 msgstr "Preencha o valor de cada oferenda."
 
-#: offering/templates/offering/offerings.html:455
+#: offering/templates/offering/offerings.html:450
 msgid "offerings.form.offering-destination.text.p2"
 msgstr ""
 "Se você não quiser oferecer um determinado item, é só deixá-lo em branco."
 
-#: offering/templates/offering/offerings.html:459
+#: offering/templates/offering/offerings.html:454
 msgid "offerings.form.crescent-moon-tara-tsog"
 msgstr "Tsog de Tara na lua crescente"
 
-#: offering/templates/offering/offerings.html:464
+#: offering/templates/offering/offerings.html:459
 msgid "offerings.form.guru-tsog"
 msgstr "Tsog de Guru"
 
-#: offering/templates/offering/offerings.html:469
+#: offering/templates/offering/offerings.html:464
 msgid "offerings.form.waning-moon-tara-tsog"
 msgstr "Tsog de Tara na lua minguante"
 
-#: offering/templates/offering/offerings.html:474
+#: offering/templates/offering/offerings.html:469
 msgid "offerings.form.dakini-tsog"
 msgstr "Tsog de Dakini"
 
-#: offering/templates/offering/offerings.html:479
+#: offering/templates/offering/offerings.html:474
 msgid "offerings.form.riwo-sangcho-tsog"
 msgstr "Riwo Sangtchö"
 
-#: offering/templates/offering/offerings.html:484
+#: offering/templates/offering/offerings.html:479
 msgid "offerings.form.general-activities"
 msgstr "Atividades gerais do Templo"
 
-#: offering/templates/offering/offerings.html:489
+#: offering/templates/offering/offerings.html:484
 msgid "offerings.form.lamps"
 msgstr "Lamparinas (R$ 3 cada) - quantas, e quantas por dia?"
 
-#: offering/templates/offering/offerings.html:494
+#: offering/templates/offering/offerings.html:489
 msgid "offerings.form.prayer-flag"
 msgstr "Bandeiras de oração (R$ 15 cada)"
 
-#: offering/templates/offering/offerings.html:499
+#: offering/templates/offering/offerings.html:494
 msgid "offerings.form.total"
 msgstr "Valor total da oferenda"
 
-#: offering/templates/offering/offerings.html:504
+#: offering/templates/offering/offerings.html:499
 msgid "offerings.form.dedication"
 msgstr "Dedicação"
 
-#: offering/templates/offering/offerings.html:542
+#: offering/templates/offering/offerings.html:537
 msgid "offerings.akshobia.unavailable-warning.p1"
 msgstr ""
 "No momento, o patrocínio de prática de Akshobia pode ser requisitado somente "
 "via a Fundação Mahakaruna, sediada nos Estados Unidos e sob a direção de "
 "Tromge Jigme Rinpoche."
 
-#: offering/templates/offering/offerings.html:545
+#: offering/templates/offering/offerings.html:540
 msgid "offerings.akshobia.unavailable-warning.p2"
 msgstr ""
-"Em casos de dúvida, por favor, entre em contato conosco pelo e-mail patrocinio@templobudista.org ou diretamente com a Fundação Mahakaruna pelo e-mail tais@mahakaruna.org (Você pode escrever o e-mail em português)."
+"Em casos de dúvida, por favor, entre em contato conosco pelo e-mail "
+"patrocinio@templobudista.org ou diretamente com a Fundação Mahakaruna pelo e-"
+"mail tais@mahakaruna.org (Você pode escrever o e-mail em português)."
+
+#~ msgid "offerings.akshobia.description.p4"
+#~ msgstr ""
+#~ "No momento, o patrocínio de prática de Akshobia pode ser requisitado "
+#~ "somente via a Fundação Mahakaruna, sediada nos Estados Unidos e sob a "
+#~ "direção de Tromge Jigme Rinpoche."
+
+#~ msgid "offerings.akshobia.description.p5"
+#~ msgstr ""
+#~ "Em casos de dúvida, por favor, entre em contato conosco pelo e-mail "
+#~ "patrocinio@templobudista.org ou diretamente com a Fundação Mahakaruna "
+#~ "pelo e-mail tais@mahakaruna.org (Você pode escrever o e-mail em "
+#~ "português)."
 
 #~ msgid "offerings.riwo.description.p6"
 #~ msgstr ""

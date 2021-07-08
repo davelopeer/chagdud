@@ -173,6 +173,10 @@
   font-weight: bold;
 }
 
+.no-event {
+  margin: 100px auto 20%;
+}
+
 @media screen and (max-width: 800px) {
   .tab-content {
     text-align: center !important;
