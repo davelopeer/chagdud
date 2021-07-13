@@ -1,3 +1,4 @@
+import pdb
 from django import forms
 from offering.models import Offering, DrubchenOffering
 
@@ -57,7 +58,8 @@ class OfferingForm(forms.Form):
         'id':'crescent_moon_tara_tsog', 
         'name':'crescent_moon_tara_tsog',
         'step': '.05',
-        'min': '0'
+        'min': '0',
+        'placeholder': 'Valor oferecido',
     }))
 
     guru_tsog = forms.DecimalField(required=False, min_value=0, decimal_places=2, widget=forms.TextInput(attrs={
@@ -66,7 +68,8 @@ class OfferingForm(forms.Form):
         'id':'guru_tsog', 
         'name':'guru_tsog',
         'step': '.05',
-        'min': '0'
+        'min': '0',
+        'placeholder': 'Valor oferecido',
     }))
 
     waning_moon_tara_tsog = forms.DecimalField(required=False, min_value=0, decimal_places=2, widget=forms.TextInput(attrs={
@@ -75,7 +78,8 @@ class OfferingForm(forms.Form):
         'id':'waning_moon_tara_tsog', 
         'name':'waning_moon_tara_tsog',
         'step': '.05',
-        'min': '0'
+        'min': '0',
+        'placeholder': 'Valor oferecido',
     }))
 
     dakini_tsog = forms.DecimalField(required=False, min_value=0, decimal_places=2, widget=forms.TextInput(attrs={
@@ -84,7 +88,8 @@ class OfferingForm(forms.Form):
         'id':'dakini_tsog', 
         'name':'dakini_tsog',
         'step': '.05',
-        'min': '0'
+        'min': '0',
+        'placeholder': 'Valor oferecido',
     }))
 
     riwo_sangcho = forms.DecimalField(required=False, min_value=0, decimal_places=2, widget=forms.TextInput(attrs={
@@ -93,7 +98,8 @@ class OfferingForm(forms.Form):
         'id':'riwo_sangcho', 
         'name':'riwo_sangcho',
         'step': '.05',
-        'min': '0'
+        'min': '0',
+        'placeholder': 'Valor oferecido',
     }))
 
     general_temple_activities = forms.DecimalField(required=False, min_value=0, decimal_places=2, widget=forms.TextInput(attrs={
@@ -102,30 +108,43 @@ class OfferingForm(forms.Form):
         'id':'general_temple_activities', 
         'name':'general_temple_activities',
         'step': '.05',
-        'min': '0'
+        'min': '0',
+        'placeholder': 'Valor oferecido',
     }))
 
-    lamps = forms.DecimalField(required=False, min_value=0, decimal_places=2, widget=forms.TextInput(attrs={
-        'type':'float',
+    lamps_quantity = forms.DecimalField(required=False, min_value=0, decimal_places=2, widget=forms.TextInput(attrs={
+        'type':'int',
         'class':'form-control',
-        'id':'lamps', 
-        'name':'lamps',
+        'id':'lamps_quantity', 
+        'name':'lamps_quantity',
         'step': '.05',
-        'min': '0'
+        'min': '0',
+        'placeholder': 'Quantidade oferecida',
+    }))
+
+    lamps_quantity_by_day = forms.DecimalField(required=False, min_value=0, decimal_places=2, widget=forms.TextInput(attrs={
+        'type':'int',
+        'class':'form-control',
+        'id':'lamps_quantity_by_day', 
+        'name':'lamps_quantity_by_day',
+        'step': '.05',
+        'min': '0',
+        'placeholder': 'Quantidade oferecida por dia',
     }))
 
     prayer_flags = forms.DecimalField(required=False, min_value=0, decimal_places=2, widget=forms.TextInput(attrs={
-        'type':'float',
+        'type':'int',
         'class':'form-control',
         'id':'prayer_flags', 
         'name':'prayer_flags',
         'step': '.05',
-        'min': '0'
+        'min': '0',
+        'placeholder': 'Quantidade oferecida',
     }))
 
     def send_email(self):
         data = self.cleaned_data
-
+        import pdb; pdb.set_trace()
         mail_sended = Offering.send_offering_data_email(data)
         Offering.send_user_confirmation_email(data)
 

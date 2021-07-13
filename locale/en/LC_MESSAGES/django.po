@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 09:56-0300\n"
+"POT-Creation-Date: 2021-07-13 15:22-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,11 +34,21 @@ msgstr "Chagdud Gonpa Brazil"
 
 #: institution/templates/institution/about_us.html:30
 msgid "institution.about-us.chagdud-gonpa-brazil.p1"
-msgstr "Chagdud Gonpa Brazil belongs to an international network of Buddhist centers whose origin is Chagdud Gonpa in Tibet, a monastery founded in the 15th century. In Brazil, it was established in 1994 by S. Ema. Chagdud Tulku Rinpoche, and offers teachings and meditation practices from the Nyingma tradition of Tibetan Vajrayana Buddhism."
+msgstr ""
+"Chagdud Gonpa Brazil belongs to an international network of Buddhist centers "
+"whose origin is Chagdud Gonpa in Tibet, a monastery founded in the 15th "
+"century. In Brazil, it was established in 1994 by S. Ema. Chagdud Tulku "
+"Rinpoche, and offers teachings and meditation practices from the Nyingma "
+"tradition of Tibetan Vajrayana Buddhism."
 
 #: institution/templates/institution/about_us.html:31
 msgid "institution.about-us.chagdud-gonpa-brazil.p2"
-msgstr "The headquarters of Chagdud Gonpa Brasil is Chagdud Gonpa Khadro Ling, located in Três Coroas, Rio Grande do Sul. Since Chagdud Rinpoche's Parinirvana in 2002, all the Chagdud Gonpa in South America (Brazil, Chile and Uruguay) has been under the spiritual direction of Chagdud Khadro, Rinpoche’s wife and student."
+msgstr ""
+"The headquarters of Chagdud Gonpa Brasil is Chagdud Gonpa Khadro Ling, "
+"located in Três Coroas, Rio Grande do Sul. Since Chagdud Rinpoche's "
+"Parinirvana in 2002, all the Chagdud Gonpa in South America (Brazil, Chile "
+"and Uruguay) has been under the spiritual direction of Chagdud Khadro, "
+"Rinpoche’s wife and student."
 
 #: institution/templates/institution/about_us.html:33
 msgid "institution.about-us.chagdud-gonpa-hispano-america.title"
@@ -46,15 +56,29 @@ msgstr "Chagdud Gonpa Hispano-America"
 
 #: institution/templates/institution/about_us.html:36
 msgid "institution.about-us.chagdud-gonpa-hispano-america.p1"
-msgstr "Chagdud Gonpa Hispano-America was founded to carry out the of S. Ema. Chagdud Tulku Rinpoche to establish the Buddhadharma, particularly the Nyingma tradition, in the Spanish-speaking countries of Latin America. Since Chagdud Rinpoche's Parinirvana in 2002, the organization has been under the spiritual direction of his wife and student, Chagdud Khadro."
+msgstr ""
+"Chagdud Gonpa Hispano-America was founded to carry out the of S. Ema. "
+"Chagdud Tulku Rinpoche to establish the Buddhadharma, particularly the "
+"Nyingma tradition, in the Spanish-speaking countries of Latin America. Since "
+"Chagdud Rinpoche's Parinirvana in 2002, the organization has been under the "
+"spiritual direction of his wife and student, Chagdud Khadro."
 
 #: institution/templates/institution/about_us.html:38
 msgid "institution.about-us.chagdud-gonpa-hispano-america.p2"
-msgstr "In Uruguay, about an hour and a half from Montevideo, surrounded by beautiful mountains, there is a temple called Sengue Dzong (Lion's Fortress). The temple is made of stone according to the Eastern Tibet and Bhutanese architectural style. The interior of the temple is ornamented in the Tibetan style and its central altar presents four statues sculpted by Bhutanese artists. Its meditation room is an inspiring place for retreats and teachings."
+msgstr ""
+"In Uruguay, about an hour and a half from Montevideo, surrounded by "
+"beautiful mountains, there is a temple called Sengue Dzong (Lion's "
+"Fortress). The temple is made of stone according to the Eastern Tibet and "
+"Bhutanese architectural style. The interior of the temple is ornamented in "
+"the Tibetan style and its central altar presents four statues sculpted by "
+"Bhutanese artists. Its meditation room is an inspiring place for retreats "
+"and teachings."
 
 #: institution/templates/institution/about_us.html:40
 msgid "institution.about-us.chagdud-gonpa-hispano-america.p3"
-msgstr "In Montevideo, a well-established group - Chagdud Gonpa Montevideo - meets weekly for meditation practices. "
+msgstr ""
+"In Montevideo, a well-established group - Chagdud Gonpa Montevideo - meets "
+"weekly for meditation practices. "
 
 #: institution/templates/institution/about_us.html:44
 msgid "institution.about-us.chagdud-gonpa-hispano-america.image-description"
@@ -62,7 +86,9 @@ msgstr "Sengue Dzong temple, about an hour and a half from Montevideo, Uruguay"
 
 #: institution/templates/institution/about_us.html:47
 msgid "institution.about-us.chagdud-gonpa-hispano-america.p4"
-msgstr "There is also a very active sangha in Santiago, Chile, maintaining a weekly schedule of meditation practices of Vajrayana Buddhism."
+msgstr ""
+"There is also a very active sangha in Santiago, Chile, maintaining a weekly "
+"schedule of meditation practices of Vajrayana Buddhism."
 
 #: institution/templates/institution/about_us.html:51
 msgid "institution.about-us.chagdud-gonpa-foundation.title"
@@ -70,11 +96,30 @@ msgstr "Chagdud Gonpa North America Foundation"
 
 #: institution/templates/institution/about_us.html:55
 msgid "institution.about-us.chagdud-gonpa-foundation.p1"
-msgstr "In 1983, answering the request of students in California and Oregon, Chagdud Rinpoche agreed to establish Chagdud Gonpa Foundation in North America as a means to expand his teachings and activities in the West and renew his connection to Tibet's Chagdud Gonpa: a connection that extends over five hundred years, sixteen lives and decades of life in exile. Rinpoche visited Tibet four years later, in 1987, and the power of the deep connection with his centuries-old Dharma seat became evident as a source of blessings for the newly established Chagdud Gonpa in the West."
+msgstr ""
+"In 1983, answering the request of students in California and Oregon, Chagdud "
+"Rinpoche agreed to establish Chagdud Gonpa Foundation in North America as a "
+"means to expand his teachings and activities in the West and renew his "
+"connection to Tibet's Chagdud Gonpa: a connection that extends over five "
+"hundred years, sixteen lives and decades of life in exile. Rinpoche visited "
+"Tibet four years later, in 1987, and the power of the deep connection with "
+"his centuries-old Dharma seat became evident as a source of blessings for "
+"the newly established Chagdud Gonpa in the West."
 
 #: institution/templates/institution/about_us.html:57
 msgid "institution.about-us.chagdud-gonpa-foundation.p2"
-msgstr "In 1988, a vast and splendid expanse of land was acquired in Northern California and Chagdud Rinpoche named it Rigdzin Ling, “the home of the awake state holders”, which became the headquarters of the Chagdud Gonpa Foundation in North America. The place was consecrated by great ceremonies, innumerable offerings, and prayers of aspiration. In addition to providing public teaching and retreats, Rigdzin Ling is home to Padma Publishing - the Foundation's editorial seal, which publishes sadhanas (liturgies), translated books and compilations of teachings that serve as meditation manuals; and Tibetan Treasures, the Chagdud Gonpa store that distributes Padma Publishing books in addition to other Dharma books, and articles for practice."
+msgstr ""
+"In 1988, a vast and splendid expanse of land was acquired in Northern "
+"California and Chagdud Rinpoche named it Rigdzin Ling, “the home of the "
+"awake state holders”, which became the headquarters of the Chagdud Gonpa "
+"Foundation in North America. The place was consecrated by great ceremonies, "
+"innumerable offerings, and prayers of aspiration. In addition to providing "
+"public teaching and retreats, Rigdzin Ling is home to Padma Publishing - the "
+"Foundation's editorial seal, which publishes sadhanas (liturgies), "
+"translated books and compilations of teachings that serve as meditation "
+"manuals; and Tibetan Treasures, the Chagdud Gonpa store that distributes "
+"Padma Publishing books in addition to other Dharma books, and articles for "
+"practice."
 
 #: institution/templates/institution/about_us.html:61
 msgid "institution.about-us.chagdud-gonpa-foundation.image-description"
@@ -82,13 +127,18 @@ msgstr "Chagdud Gonpa Rigdzin Ling, California."
 
 #: institution/templates/institution/about_us.html:64
 msgid "institution.about-us.chagdud-gonpa-foundation.p3"
-msgstr "Currently, the Foundation's spiritual activities are overseen by a group of eight lamas and senior practitioners known as the Spiritual Directorate. Tromge Jigme Rinpoche serves as the main initiation lama of Chagdud Gonpa and Lama Padma Gyatso as the main teacher and resident of Rigdzin Ling."
+msgstr ""
+"Currently, the Foundation's spiritual activities are overseen by a group of "
+"eight lamas and senior practitioners known as the Spiritual Directorate. "
+"Tromge Jigme Rinpoche serves as the main initiation lama of Chagdud Gonpa "
+"and Lama Padma Gyatso as the main teacher and resident of Rigdzin Ling."
 
 #: institution/templates/institution/about_us.html:67
 #, fuzzy
 #| msgid "institution.base.chagdud-gonpa-south-america"
 msgid "institution.about-us.chagdud-gonpa-foundation.p4"
-msgstr "For more information about the Chagdud Gonpa North America Foundation, visit"
+msgstr ""
+"For more information about the Chagdud Gonpa North America Foundation, visit"
 
 #: institution/templates/institution/about_us.html:70
 msgid "institution.about-us.chagdud-gonpa-italy.title"
@@ -96,7 +146,11 @@ msgstr "Chagdud Gonpa Italy"
 
 #: institution/templates/institution/about_us.html:74
 msgid "institution.about-us.chagdud-gonpa-italy.p1"
-msgstr "A small group of practitioners from Torino and Imperia, in northern Italy, have regularly maintained meditation practices of the Vajrayana Buddhism. Lama Sherab Drolma visits them annually for small retreats with lectures and meditation practice sessions."
+msgstr ""
+"A small group of practitioners from Torino and Imperia, in northern Italy, "
+"have regularly maintained meditation practices of the Vajrayana Buddhism. "
+"Lama Sherab Drolma visits them annually for small retreats with lectures and "
+"meditation practice sessions."
 
 #: institution/templates/institution/about_us.html:75
 msgid "institution.about-us.chagdud-gonpa-italy.p2"
@@ -647,24 +701,26 @@ msgid "offerings.form.general-activities"
 msgstr "General activities of the Temple:"
 
 #: offering/templates/offering/offerings.html:484
-msgid "offerings.form.lamps"
-msgstr ""
-"Butterlamps (R$ 3 each) - how many butterlamps total, and how many "
-"butterlamps a day?"
+msgid "offerings.form.lamps_quantity"
+msgstr "Butterlamps (R$ 3 each) - how many butterlamps?"
 
 #: offering/templates/offering/offerings.html:489
+msgid "offerings.form.lamps_quantity_by_day"
+msgstr "Butterlamps - how many butterlamps a day?"
+
+#: offering/templates/offering/offerings.html:494
 msgid "offerings.form.prayer-flag"
 msgstr "Prayer flags (R$ 15 each):"
 
-#: offering/templates/offering/offerings.html:494
+#: offering/templates/offering/offerings.html:499
 msgid "offerings.form.total"
 msgstr "Total offering value"
 
-#: offering/templates/offering/offerings.html:499
+#: offering/templates/offering/offerings.html:504
 msgid "offerings.form.dedication"
 msgstr "Dedication"
 
-#: offering/templates/offering/offerings.html:549
+#: offering/templates/offering/offerings.html:554
 #, fuzzy
 #| msgid "offerings.akshobia.description.p1"
 msgid "offerings.akshobia.unavailable-warning.p1"
@@ -677,7 +733,7 @@ msgstr ""
 "circumstances that come from harming others and from someone taking his own "
 "life."
 
-#: offering/templates/offering/offerings.html:552
+#: offering/templates/offering/offerings.html:557
 #, fuzzy
 #| msgid "offerings.akshobia.description.p2"
 msgid "offerings.akshobia.unavailable-warning.p2"

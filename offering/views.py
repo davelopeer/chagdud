@@ -22,7 +22,7 @@ def offerings_view(request):
         post_keys = request.POST.keys()
         if 'general-form' in post_keys:
           form = OfferingForm(request.POST, request.FILES)
-          print('aaaaaaaaaaaaaaaaaaaa')
+
           if form.is_valid():
             mail_sended = form.send_email()
             context['mail_sended'] = True if mail_sended else False
