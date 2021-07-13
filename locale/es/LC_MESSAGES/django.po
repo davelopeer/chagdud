@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-08 18:18-0300\n"
+"POT-Creation-Date: 2021-07-13 09:56-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,6 +21,84 @@ msgstr ""
 #: event/templates/event/event_list.html:26
 msgid "event-list.no-event"
 msgstr "No hay próximos eventos en Khadro Ling."
+
+#: institution/templates/institution/about_us.html:6
+#: institution/templates/institution/about_us.html:14
+msgid "institution.about-us.title"
+msgstr "Quiénes somos"
+
+#: institution/templates/institution/about_us.html:6
+#: institution/templates/institution/about_us.html:27
+msgid "institution.about-us.chagdud-gonpa-brazil.title"
+msgstr "Chagdud Gonpa Brasil"
+
+#: institution/templates/institution/about_us.html:30
+msgid "institution.about-us.chagdud-gonpa-brazil.p1"
+msgstr "Chagdud Gonpa Brasil es parte de una red internacional de centros cuyo origen es Chagdud Gonpa en Tíbet, un monasterio fundado en el siglo XV.  Establecidos en 1994 por SE. Chagdud Tulku Rinpoche, los centros brasileños ofrecen enseñanzas y prácticas de meditación de la tradición Nyingma de Budismo Tibetano Vajrayana."
+
+#: institution/templates/institution/about_us.html:31
+msgid "institution.about-us.chagdud-gonpa-brazil.p2"
+msgstr "Chagdud Gonpa Khadro Ling es la sede de Chagdud Gonpa Brasil y está ubicado en Três Coroas, en Río Grande del Sur. Desde el parinirvana de Rinpoche en 2002, la red sud-americana de filiales está bajo la dirección espiritual de Chagdud Khadro."
+
+#: institution/templates/institution/about_us.html:33
+msgid "institution.about-us.chagdud-gonpa-hispano-america.title"
+msgstr "Chagdud Gonpa Hispanoamérica"
+
+#: institution/templates/institution/about_us.html:36
+msgid "institution.about-us.chagdud-gonpa-hispano-america.p1"
+msgstr "Chagdud Gonpa Hispanoamérica fue fundada para realizar la aspiración de S. Ema. Chagdud Tulku Rinpoche de establecer en darma de Buda, particularmente los linajes nyingmapa, en los países de lengua española de América Latina. Desde el parinirvana de Rinpoche, en 2002, la organización está bajo la dirección espiritual de su esposa y alumna, Chagdud Khadro."
+
+#: institution/templates/institution/about_us.html:38
+msgid "institution.about-us.chagdud-gonpa-hispano-america.p2"
+msgstr "En Uruguay, a cerca de una hora y media de Montevideo, cercada por bellas montañas, existe una construcción hecha de piedra en el estilo arquitectónico de Tíbet Oriental y de Bután llamada Sengue Dzong (Fortaleza del León). El interior de este templo está ornamentado al estilo tibetano y cuatro estatuas componen su altar central. Las estatuas fueron esculpidas por maestros artistas butaneses."
+
+#: institution/templates/institution/about_us.html:40
+msgid "institution.about-us.chagdud-gonpa-hispano-america.p3"
+msgstr "Su sala de meditación es un lugar inspirador para retiros y enseñanzas. En Montevideo, un grupo bien establecido – Chagdud Gonpa Montevideo – se reúne semanalmente para prácticas de meditación."
+
+#: institution/templates/institution/about_us.html:44
+msgid "institution.about-us.chagdud-gonpa-hispano-america.image-description"
+msgstr "El templo Sengue Dzong, a cerca de una hora y media de Montevideo, en Uruguay."
+
+#: institution/templates/institution/about_us.html:47
+msgid "institution.about-us.chagdud-gonpa-hispano-america.p4"
+msgstr "En Chile, en Santiago, existe una sangha dinámica de Chagdud Gonpa que mantiene una programación semanal de prácticas de meditación de Budismo Vajrayana."
+
+#: institution/templates/institution/about_us.html:51
+msgid "institution.about-us.chagdud-gonpa-foundation.title"
+msgstr "Fundación Chagdud Gonpa"
+
+#: institution/templates/institution/about_us.html:55
+msgid "institution.about-us.chagdud-gonpa-foundation.p1"
+msgstr "En 1983, a solicitud de estudiantes en California y en Oregon, Chagdud Rinpoche aceptó establecer la Fundación Chagdud Gonpa como un medio para expandir sus enseñanzas y actividades en Occidente y renovar su conexión con Chagdud Gonpa en Tíbet: una conexión que se extiende a lo largo de quinientos años, dieciséis vidas y décadas de vida en el exilio. Rinpoche visitó Tíbet cuatro años más tarde, en 1987, y el poder de la profunda conexión con su base del Darma de muchos siglos se volvió evidente como una fuente de bendiciones para el recién establecido Chagdud Gonpa en Occidente."
+
+#: institution/templates/institution/about_us.html:57
+msgid "institution.about-us.chagdud-gonpa-foundation.p2"
+msgstr "En 1988, una vasta y espléndida extensión de tierra fue adquirida al norte de Califronia, y Chagdud Rinpoche la nombró Rigdzin Ling, “la morada de los detentores del estado despierto”, la cual se volvió la sede de la Funcaión Chagdud Gonpa en América del Norte. El lugar fue consagrado por grandes ceremonias, innumerables ofrendas y oraciones de aspiración. Además de proporcionar enseñanzas públicas y retiros Rigdzin Ling alberga a Padma Publishing – el sello editorial de la Fundación, que publica sadhanas (liturgias), libros traducidos y compilaciones de enseñanzas que sirven como manuales de meditación; y a Tibetan Treasures, la tienda de Chagdud Gonpa que distribuye los libros de Padma Publishing además de otros libros de Darma así como permite la disponibilidad de artículos para la práctica."
+
+#: institution/templates/institution/about_us.html:61
+msgid "institution.about-us.chagdud-gonpa-foundation.image-description"
+msgstr "Chagdud Gonpa Rigdzin Ling, California."
+
+#: institution/templates/institution/about_us.html:64
+msgid "institution.about-us.chagdud-gonpa-foundation.p3"
+msgstr "Actualmente las actividades espirituales de la Fundación son supervisadas por un grupo de ocho lamas y practicantes antiguos conocido como Dirección Espiritual. Tromge Jigme Rinpoche sirve como el lama principal de iniciaciones de Chagdud Gonpa, y Lama Pedma Gyatso como profesor principal y residente de Rigdzin Ling."
+
+#: institution/templates/institution/about_us.html:67
+msgid "institution.about-us.chagdud-gonpa-foundation.p4"
+msgstr "Para más información sobre la Fundación Chagdud Gonpa América del Norte consulte"
+
+#: institution/templates/institution/about_us.html:70
+msgid "institution.about-us.chagdud-gonpa-italy.title"
+msgstr "Chagdud Gonpa Italia"
+
+#: institution/templates/institution/about_us.html:74
+msgid "institution.about-us.chagdud-gonpa-italy.p1"
+msgstr "Un pequeño grupo de practicantes de Torino e Imperia, al norte de Italia, han mantenido, con regularidad, prácticas de meditación de Budismo Vajrayana y Lama Sherab Drolma los visita anualmente para pequeños retiros con charlas y sesiones de práctica de meditación."
+
+#: institution/templates/institution/about_us.html:75
+msgid "institution.about-us.chagdud-gonpa-italy.p2"
+msgstr "Para más informaciones del centro italiano, entre a la página de"
 
 #: institution/templates/institution/base.html:30
 #: khadro_ling/templates/khadro_ling/base.html:30
@@ -591,7 +669,7 @@ msgstr "Valor total de la oferta"
 msgid "offerings.form.dedication"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:537
+#: offering/templates/offering/offerings.html:549
 #, fuzzy
 #| msgid "offerings.akshobia.description.p1"
 msgid "offerings.akshobia.unavailable-warning.p1"
@@ -604,7 +682,7 @@ msgstr ""
 "incluso no virtudes extremas y escapar de las terribles circunstancias que "
 "surgen de causar daño a otros y de quitarse la vida."
 
-#: offering/templates/offering/offerings.html:540
+#: offering/templates/offering/offerings.html:552
 #, fuzzy
 #| msgid "offerings.akshobia.description.p2"
 msgid "offerings.akshobia.unavailable-warning.p2"
