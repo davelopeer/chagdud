@@ -1,5 +1,5 @@
 {% extends 'khadro_ling/base.html' %}
-{% load static %}
+{% load static event_extras %}
 
 
 {% block head %}
@@ -15,7 +15,7 @@
       <p class="mesData">{{ event.short_month }}</p>
     </div>
     <div class="col-md-9">
-      <h1 class="mb-3 titulo text-dark">{{ event.name }}</h1>
+      <h1 class="mb-3 titulo text-dark">{% get_event_name_by_language event user_language %}</h1>
     </div>
   </div>
   </div>
@@ -27,8 +27,8 @@
         <p><i class="fa fa-user" aria-hidden="true"></i> | Com {{ event.vajra_master }}</p>
         <p><i class="fa fa-calendar" aria-hidden="true"></i> | De {{ event.start_date_pretty }}, a {{ event.end_date_pretty }}</p>
         <p><i class="fa fa-check-square-o" aria-hidden="true"></i>
-          {% if event.requirements %}
-            | {{ event.requirements }}
+          {% if event.requirements_pt %}
+            | {% get_event_requirements_by_language event user_language %}
           {% else %}
             | Não há pré-requisitos para a participação neste evento.
           {% endif %}
@@ -51,7 +51,7 @@
         <div class="row align-items-center">   
           <div class="mb-5 col-md-12 offset-md-1 offset-md-0 col-sm-12 text-justify border-right pr-5">
             <p>
-              {{ event.description | linebreaks }}
+              <pre>{% get_event_description_by_language event user_language %}</pre>
             </p>
           </div>
 
@@ -138,7 +138,7 @@
               <b></b>
             </div>
           
-            {{ event.policies | safe }}
+            {% get_event_policies_by_language event user_language %}
         
             <div class="form-check mt-5">
               {{ form.accepts_policy_terms}}

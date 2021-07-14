@@ -42,15 +42,34 @@ class Event(models.Model):
     )
 
     event_type = models.CharField(max_length=20, choices=EVENT_TYPE_OPTIONS)
-    name = models.CharField(max_length=500)
+
+    name_pt = models.CharField(max_length=500)
+    name_en = models.CharField(max_length=500)
+    name_es = models.CharField(max_length=500)
+
     vajra_master = models.CharField(max_length=200)
-    requirements = models.CharField(max_length=1000, null=True, blank=True)
-    place = models.CharField(max_length=200)
-    description = models.TextField(max_length=20000)
-    short_description = models.TextField(max_length=1000)
+
+    requirements_pt = models.CharField(max_length=1000, null=True, blank=True)
+    requirements_en = models.CharField(max_length=1000, null=True, blank=True)
+    requirements_es = models.CharField(max_length=1000, null=True, blank=True)
+
+    place_pt = models.CharField(max_length=200)
+    place_en = models.CharField(max_length=200)
+    place_es = models.CharField(max_length=200)
+
+    description_pt = models.TextField(max_length=20000)
+    description_en = models.TextField(max_length=20000)
+    description_es = models.TextField(max_length=20000)
+
+    short_description_pt = models.TextField(max_length=1000)
+    short_description_en = models.TextField(max_length=1000)
+    short_description_es = models.TextField(max_length=1000)
+
     event_image = models.ImageField()
 
-    participation_text = HTMLField()
+    participation_text_pt = HTMLField()
+    participation_text_en = HTMLField()
+    participation_text_es = HTMLField()
 
     start_date = models.DateTimeField()
     end_date = models.DateTimeField()
@@ -73,7 +92,9 @@ class Event(models.Model):
 
     online_price = models.DecimalField(max_digits=6, decimal_places=2, verbose_name="Preço do evento on-line", null=True, blank=True)
 
-    policies = HTMLField()
+    policies_pt = HTMLField()
+    policies_en = HTMLField()
+    policies_es = HTMLField()
 
     objects = models.Manager()
     events_to_come = FutureEventManager()
@@ -83,7 +104,28 @@ class Event(models.Model):
         verbose_name_plural = 'Eventos'
 
     def __str__(self):
-        return f'{self.name}  |  {self.month_verbose_name(self.start_date.month)}/{self.start_date.year}'
+        return f'{self.name_pt}  |  {self.month_verbose_name(self.start_date.month)}/{self.start_date.year}'
+  
+    def get_name(self, lang='pt'):
+      return getattr(self, 'name_' + lang)
+
+    def get_requirements(self, lang='pt'):
+      return getattr(self, 'requirements_' + lang)
+
+    def get_place(self, lang='pt'):
+      return getattr(self, 'place_' + lang)
+
+    def get_description(self, lang='pt'):
+      return getattr(self, 'description_' + lang)
+
+    def get_short_description(self, lang='pt'):
+      return getattr(self, 'short_description_' + lang)
+
+    def get_participation_text(self, lang='pt'):
+      return getattr(self, 'participation_text_' + lang)
+
+    def get_policies(self, lang='pt'):
+      return getattr(self, 'policies_' + lang)
 
     @property
     def start_date_pretty(self):

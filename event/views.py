@@ -13,6 +13,16 @@ class EventListView(ListView):
     def get_queryset(self):
         return Event.events_to_come.all()
 
+    def get_context_data(self, **kwargs):
+        context = super(EventListView, self).get_context_data(**kwargs)
+
+        if 'django_language' in self.request.COOKIES.keys():
+          context['user_language'] = self.request.COOKIES['django_language']
+        else:
+          context['user_language'] = 'pt'
+
+        return context
+
 class EventDetailView(DetailView):
     model = Event
     context_object_name = 'event'

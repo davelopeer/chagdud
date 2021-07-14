@@ -1,5 +1,5 @@
 {% extends 'khadro_ling/base.html' %}
-{% load static i18n %}
+{% load static i18n event_extras %}
 
 {% block head %}
 <title>Eventos | Khadro Ling</title>
@@ -32,14 +32,14 @@
           {% for event in event_list %}
           {% if forloop.first %}
               <div class="mb-5 col-md-5 offset-md-1 offset-md-0 col-sm-12 justify-content-center">
-                <h3 class="titulo">{{ event.name }}</h3>
+                <h3 class="titulo">{% get_event_name_by_language event user_language %}</h3>
               <b class="mb-2"></b>
               <p class="legenda text-black-50">
                 De {{ event.start_date.day }}/{{ event.start_date.month }}/{{ event.start_date.year }} 
                 até {{ event.end_date.day }}/{{ event.end_date.month }}/{{ event.end_date.year }} 
               </p>
               <span>
-                {{ event.short_description }}
+                {% get_event_short_description_by_language event user_language %}
               </span>
               <span class="d-block mt-3"><a class="link" href="{% url 'event:event-detail' event.pk %}">Saiba mais</a></span>
               </div>

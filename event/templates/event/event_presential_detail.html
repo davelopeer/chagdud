@@ -1,5 +1,5 @@
 {% extends 'khadro_ling/base.html' %}
-{% load static %}
+{% load static event_extras %}
 
 
 {% block head %}
@@ -15,7 +15,7 @@
       <p class="mesData">{{ event.short_month }}</p>
     </div>
     <div class="col-md-9">
-      <h1 class="mb-3 titulo text-dark">{{ event.name }}</h1>
+      <h1 class="mb-3 titulo text-dark">{% get_event_name_by_language event user_language %}</h1>
     </div>
   </div>
   </div>
@@ -27,13 +27,13 @@
         <p><i class="fa fa-user" aria-hidden="true"></i> | Com {{ event.vajra_master }}</p>
         <p><i class="fa fa-calendar" aria-hidden="true"></i> | De {{ event.start_date_pretty }}, a {{ event.end_date_pretty }}</p>
         <p><i class="fa fa-check-square-o" aria-hidden="true"></i>
-          {% if event.requirements %}
-            | {{ event.requirements }}
+          {% if event.requirements_pt %}
+            | {% get_event_requirements_by_language event user_language %}
           {% else %}
             | Não há pré-requisitos para a participação neste evento.
           {% endif %}
         </p>
-        <p><i class="fa fa-map-marker" aria-hidden="true"></i> | {{ event.place }}</p>
+        <p><i class="fa fa-map-marker" aria-hidden="true"></i> | {% get_event_place_by_language event user_language %}</p>
       </div>
       <div class="col-md-7 col-sm-12 pt-1">
         <img class="imgEvento" src="{{ event.event_image.url }}" width="100%">
@@ -51,7 +51,7 @@
         <div class="row align-items-center">   
           <div class="mb-5 col-md-7 offset-md-1 offset-md-0 col-sm-12 text-justify border-right pr-5">
             <p>
-              {{ event.description | linebreaks }}
+              {% get_event_description_by_language event user_language %}
             </p>
           </div>
 
@@ -188,7 +188,7 @@
           <b></b>
 
           <div class="mt-4">
-            {{ event.participation_text | safe }}
+            {% get_event_participation_text_by_language event user_language %}
           </div>
 
           <div class="row mt-5">
@@ -350,7 +350,7 @@
             <b></b>
           </div>
         
-          {{ event.policies | safe }}
+          {% get_event_policies_by_language event user_language %}
 
           <div class="form-check mt-5">
             {{ form.accepts_policy_terms}}
