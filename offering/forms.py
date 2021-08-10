@@ -144,7 +144,7 @@ class OfferingForm(forms.Form):
 
     def send_email(self):
         data = self.cleaned_data
-        import pdb; pdb.set_trace()
+
         mail_sended = Offering.send_offering_data_email(data)
         Offering.send_user_confirmation_email(data)
 

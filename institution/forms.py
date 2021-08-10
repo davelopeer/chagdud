@@ -1,6 +1,5 @@
 from django import forms
-from django.core.mail import send_mail
-from django.conf import settings
+from institution.helpers import send_mail
 
 
 class ContactForm(forms.Form):
@@ -23,13 +22,12 @@ class ContactForm(forms.Form):
     }))
 
     def send_email(self, **kwargs):
-        name = self.cleaned_data['name']
-        email = self.cleaned_data['email']
-        message = self.cleaned_data['message']
-        return send_mail(
-            f'Mensagem de contato de {name}',
-            message,
-            email,
-            [settings.CONTACT_EMAIL],
-            fail_silently=False
-        )
+      name = self.cleaned_data['name']
+      email = self.cleaned_data['email']
+      body = self.cleaned_data['message']
+      
+      return send_mail(
+        to = email,
+        subject = f'Mensagem de contato de {name}',
+        body = body
+      )

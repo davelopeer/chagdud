@@ -150,18 +150,17 @@ class EventForm(forms.Form):
             deposit_value: {deposit_value}
         '''
 
-        mail = EmailMessage(
-            subject,
-            message,
-            settings.CONTACT_EMAIL,
-            [settings.CONTACT_EMAIL]
+        if data['deposit_receipt']:
+          deposit_receipt = self.cleaned_data['deposit_receipt']
+        else:
+          deposit_receipt = None
+
+        return send_mail(
+          to=settings.CONTACT_EMAIL,
+          subject=subject,
+          body=message,
+          attachment=deposit_receipt
         )
-
-        if self.cleaned_data['deposit_receipt']:
-            deposit_receipt = self.cleaned_data['deposit_receipt']
-            mail.attach(deposit_receipt.name, deposit_receipt.read())
-
-        return mail.send()
 
 class PresentialEventForm(EventForm):
     GENDER_CHOICES = (
@@ -267,15 +266,14 @@ class PresentialEventForm(EventForm):
             deposit_value: {deposit_value}
         '''
 
-        mail = EmailMessage(
-            subject,
-            message,
-            settings.CONTACT_EMAIL,
-            [settings.CONTACT_EMAIL]
+        if data['deposit_receipt']:
+          deposit_receipt = self.cleaned_data['deposit_receipt']
+        else:
+          deposit_receipt = None
+
+        return send_mail(
+          to=settings.CONTACT_EMAIL,
+          subject=subject,
+          body=message,
+          attachment=deposit_receipt
         )
-
-        if self.cleaned_data['deposit_receipt']:
-            deposit_receipt = self.cleaned_data['deposit_receipt']
-            mail.attach(deposit_receipt.name, deposit_receipt.read())
-
-        return mail.send()

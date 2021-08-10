@@ -3,6 +3,7 @@ from django.conf import settings
 from django.template.loader import render_to_string
 from django.core.mail import EmailMessage
 from tinymce.models import HTMLField
+from institution.helpers import send_mail
 
 
 
@@ -18,15 +19,11 @@ class Offering(object):
     subject = f'Oferenda enviada com sucesso'
     message = render_to_string('offering/email/email_user_confirmation.html', context)
 
-    mail = EmailMessage(
-        subject,
-        message,
-        settings.CONTACT_EMAIL,
-        [email]
+    return send_mail(
+      to=email,
+      subject=subject,
+      body=message
     )
-    mail.content_subtype = "html"
-
-    return mail.send()
 
   @staticmethod
   def send_offering_data_email(data):
@@ -47,23 +44,21 @@ class Offering(object):
         'deposit_value': data['deposit_value'],
     }
 
+    email = data['email']
     subject = f'Oferenda'
     message = render_to_string('offering/email/email_data.html', context)
 
-    mail = EmailMessage(
-        subject,
-        message,
-        settings.CONTACT_EMAIL,
-        [settings.CONTACT_EMAIL]
-    )
-    mail.content_subtype = "html"
-
     if data['deposit_receipt']:
       deposit_receipt = data['deposit_receipt']
-      mail.attach(deposit_receipt.name, deposit_receipt.read())
+    else:
+      deposit_receipt = None
 
-    return mail.send()
-
+    return send_mail(
+      to=email,
+      subject=subject,
+      body=message,
+      attachment=deposit_receipt
+    )
 
 class DrubchenOffering(models.Model, Offering):
   slug = models.SlugField()
@@ -95,16 +90,14 @@ class DrubchenOffering(models.Model, Offering):
     subject = f'Oferenda de Drubchen'
     message = render_to_string('offering/email/drubchen_email_data.html', context)
 
-    mail = EmailMessage(
-        subject,
-        message,
-        settings.CONTACT_EMAIL,
-        [settings.CONTACT_EMAIL]
-    )
-    mail.content_subtype = "html"
-
     if data['deposit_receipt']:
       deposit_receipt = data['deposit_receipt']
-      mail.attach(deposit_receipt.name, deposit_receipt.read())
+    else:
+      deposit_receipt = None
 
-    return mail.send()
+    return send_mail(
+      to=email,
+      subject=subject,
+      body=message,
+      attachment=deposit_receipt
+    )

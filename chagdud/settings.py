@@ -151,9 +151,11 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Email
 
 EMAIL_HOST = 'smtp.sendgrid.net'
-EMAIL_HOST_USER = 'apikey'
-EMAIL_HOST_PASSWORD = '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'
+EMAIL_HOST_USER = 'newchgdud'
+EMAIL_HOST_PASSWORD = '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'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
-CONTACT_EMAIL = 'davidbarenco@gmail.com'
+CONTACT_EMAIL = 'david.barenco@hotmail.com'
+
+SENDGRID_API_SECRET_KEY = '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'
