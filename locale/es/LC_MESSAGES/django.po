@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 15:22-0300\n"
+"POT-Creation-Date: 2021-08-10 19:46-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -390,6 +390,184 @@ msgstr "Fechas Sagradas"
 msgid "institution.home.makara-publisher"
 msgstr "Editora Makara"
 
+#: institution/templates/institution/teachers.html:7
+#: institution/templates/institution/teachers.html:17
+msgid "institution.teachers.title"
+msgstr "Profesores"
+
+#: institution/templates/institution/teachers.html:7
+msgid "institution.teachers.chagdud-gonpa-brazil.title"
+msgstr "Chagdud Gonpa Brasil"
+
+#: institution/templates/institution/teachers.html:28
+msgid "institution.teachers.intro.p1"
+msgstr "En la lengua tibetana, el término correspondiente a ‘profesor’ es ‘lama’."
+
+#: institution/templates/institution/teachers.html:29
+msgid "institution.teachers.intro.p2"
+msgstr "La significa elevado, en términos de realización trascendente. Ma significa compasión maternal, como la de una madre por su propio hijo. La unión de realización y compasión, un lama tiene la capacidad de beneficiar a los demás."
+
+#: institution/templates/institution/teachers.html:31
+msgid "institution.teachers.founder"
+msgstr "Fundador"
+
+#: institution/templates/institution/teachers.html:39
+#: institution/templates/institution/teachers.html:55
+msgid "institution.teachers.chagdud-tulku-rinpoche.title"
+msgstr "S. Ema. Chagdud Tulku Rinpoche"
+
+#: institution/templates/institution/teachers.html:41
+msgid "institution.teachers.chagdud-tulku-rinpoche.p1"
+msgstr "Su Eminencia Chagdud Tulku Rinpoche nació en el Este del Tíbet (Kham) en 1930. Reconocido a los cuatro años como un tulku (encarnación de un maestro de meditación), recibió entrenamiento riguroso y profundizó sus estudios en retiros extensos. Él tenía una afinidad especial con las artes sagradas y con la medicina tibetana y era famoso por su voz maravillosa como cantante."
+
+#: institution/templates/institution/teachers.html:43
+msgid "institution.teachers.chagdud-tulku-rinpoche.p2"
+msgstr "En 1959, él escapó de la ocupación comunista de Tíbet y vivió exiliado en comunidades de refugiados en la India y en Nepal hasta establecerse en los Estados Unidos en 1979. A pedido de sus alumnos occidentales, estableció la Fundación Chagdud Gonpa, una red de centros del linaje Nyingma de budismo Vajrayana. En 1995, Rinpoche se trasladó a Brasil, estableció Chagdud Gonpa Brasil y comenzó la construcción del centro principal, Khadro Ling, en Río Grande del Sur. Cuando murió, en 2002, había establecido más de 20 centros en Brasil, Uruguay y Chile."
+
+#: institution/templates/institution/teachers.html:48
+msgid "institution.teachers.chagdud-tulku-rinpoche.p3"
+msgstr "Al viajar y enseñar constantemente, irradiando entusiasmo y compasión, se volvió el lama de corazón de centenas de alumnos y fue una inspiración profunda para millares de personas.  Cuando le preguntaban el motivo por el cual, en vez de permanecer cómodo en Estados Unidos, decidió trasladarse a Brasil a los sesenta y cuatro años, respondía :”Percibí la fe de los brasileños y el interés que tenían en el budismo y quise enseñarles”."
+
+#: institution/templates/institution/teachers.html:51
+msgid "institution.teachers.chagdud-tulku-rinpoche.p4"
+msgstr "Ahora, en un ciclo completo, el tulku de Chagdud Rinpoche fue reconocido por Khempo Ngagchung, en Tíbet. Conocido como Chagdud Yangsi, es el foco de oraciones y aspiraciones profundas de los miembros de la sangha alrededor del mundo."
+
+#: institution/templates/institution/teachers.html:53
+msgid "institution.teachers.chagdud-tulku-rinpoche.p5"
+msgstr "“Si tuviese que dejar solamente un legado, sería el de la sabiduría de la motivación pura. Si tuviese que ser conocido por un solo título, sería el del lama de la motivación…Al momento en que nuestros corazones se inclinan hacia la compasión por todos los seres, nuestra motivación se expande en dirección a la motivación que todo lo abarca de un bodhisattva.”"
+
+#: institution/templates/institution/teachers.html:67
+msgid "institution.teachers.chagdud-khadro"
+msgstr "Chagdud Khadro"
+
+#: institution/templates/institution/teachers.html:68
+msgid "institution.teachers.chagdud-khadro.p1"
+msgstr "Conoció a Su Eminencia Chagdud Tulku Rinpoche en 1978 y se casó con él en 1979. Fue su alumna por veintitrés años. Al ordenarla lama, en 1997, Chagdud Rinpoche la designó como la futura directora espiritual de Chagdud Gonpa Brasil."
+
+#: institution/templates/institution/teachers.html:70
+msgid "institution.teachers.chagdud-khadro.p2"
+msgstr "Desde el parinirvana de Rinpoche, en 2002, Chagdud Khadro se ha concentrado en dar continuidad al entrenamiento vajrayana de alta calidad establecido por él."
+
+#: institution/templates/institution/teachers.html:72
+msgid "institution.teachers.chagdud-khadro.p3"
+msgstr "Durante el tiempo que vivió con Rinpoche, Khadro recibió entrenamiento constante, desde la organización de actividades del Darma, hasta las enseñanzas y práctica del Vajrayana."
+
+#: institution/templates/institution/teachers.html:74
+msgid "institution.teachers.chagdud-khadro.p4"
+msgstr "Ella colaboró en la confección de la autobiografía de él – El señor de la Danza – y, bajo su orientación, compiló comentarios de sus enseñanzas sobre las prácticas de Ngöndro del tesoro de Dudjom; sobre la práctica de Powa, revelada por Longsal Nyingpo; y sobre la versión corta de Tara Roja de Apong Terton."
+
+#: institution/templates/institution/teachers.html:78
+msgid "institution.teachers.chagdud-khadro.p5"
+msgstr "Como antigua directora y editora de Padma Publishing en los Estados Unidos, Khadro editó muchas traducciones y obras tibetanas."
+
+#: institution/templates/institution/teachers.html:80
+msgid "institution.teachers.chagdud-khadro.p6"
+msgstr "Chagdud Khadro ha sido incansable en mantener el legado dejado por S. Ema. Chagdud Tulku Rinpoche. Ella supervisó la construcción de un Zangdog Palri: la Tierra Pura de Guru Rinpoche, y trabaja con traducciones y publicaciones de textos en portugués y español."
+
+#: institution/templates/institution/teachers.html:82
+msgid "institution.teachers.chagdud-khadro.p7"
+msgstr "Khadro continúa dando asistencia a proyectos de apoyo espiritual a quien está muriendo y a los cuidadores de pacientes en estado terminal; y supervisa las actividades y enseña en todas las filiales de Chagdud Gonpa Brasil y Chagdud Gonpa Hispanoamérica. Ella también concede enseñanzas en Europa, Estados Unidos y Australia."
+
+#: institution/templates/institution/teachers.html:91
+msgid "institution.teachers.tromge-jigme-rinpoche.title"
+msgstr "Tromge Jigme Rinpoche"
+
+#: institution/templates/institution/teachers.html:92
+msgid "institution.teachers.tromge-jigme-rinpoche.p1"
+msgstr "Tromge Jigme Rinpoche es hijo de Su Eminencia Chagdud Tulku Rinpoche. Nació en 1964 en Orissa, en la India, donde tuvo la buena fortuna de recibir una educación budista tradicional. Fie extensamente entrenado en la enseñanzas y prácticas de la tradición Nyingma del Budismo Tibetano."
+
+#: institution/templates/institution/teachers.html:94
+msgid "institution.teachers.tromge-jigme-rinpoche.p2"
+msgstr "Inmigró a Estados Unidos en 1988. Actualmente, Rinpoche viaja por América del Norte, América del Sur y Asia concediendo enseñanzas y consejos con su gentil sabiduría y cordialidad. Entrena alumnos en la meditación más elevada de Dzogchen y es maestro vajra de muchas grandes ceremonias e iniciaciones en las filiales de Chagdud Gonpa en las Américas del Norte y del Sur."
+
+#: institution/templates/institution/teachers.html:96
+msgid "institution.teachers.tromge-jigme-rinpoche.p3.1"
+msgstr "Además de compartir responsabilidades sobre los monasterios en Tíbet y Nepal, es el fundador y director de "
+
+#: institution/templates/institution/teachers.html:98
+msgid "institution.teachers.tromge-jigme-rinpoche.p3.2"
+msgstr " y director de la Fundación Mahakaruna, una institución de caridad internacional fundada por Chagdud Rinpoche que apoya a personas mayores, enfermas y necesitadas en varias partes de Asia además de trabajar para preservar la cultura del Budismo Tibetano."
+
+#: institution/templates/institution/teachers.html:108
+msgid "institution.teachers.lama-tsering-everest.title"
+msgstr "Lama Tsering Everest"
+
+#: institution/templates/institution/teachers.html:109
+msgid "institution.teachers.lama-tsering-everest.p1"
+msgstr "Nacida en los EUA, Lama Tsering fue, por más de once años, intérprete de S. Ema. Chagdud Tulku Rinpoche."
+
+#: institution/templates/institution/teachers.html:110
+msgid "institution.teachers.lama-tsering-everest.p2"
+msgstr "Después de completar, en 1995, un retiro de tres años, recibió la ordenación de Lama, siendo así autorizada a dar enseñanzas e iniciaciones de budismo vajrayana. En ese mismo año, fue invitada a dar enseñanzas en Brasil, para donde se mudó poco después, asumiendo la coordinación del centro en São Paulo, Odsal Ling."
+
+#: institution/templates/institution/teachers.html:111
+msgid "institution.teachers.lama-tsering-everest.p3"
+msgstr "Reconocida por su estilo contundente y de buen humor, Lama Tsering enfoca sus enseñanzas en el desarrollo de la compasión y en la aplicación de la filosofía budista en la vida diaria."
+
+#: institution/templates/institution/teachers.html:120
+msgid "institution.teachers.lama-padma-norbu.title"
+msgstr "Lama Padma Norbu"
+
+#: institution/templates/institution/teachers.html:121
+msgid "institution.teachers.lama-padma-norbu.p1"
+msgstr "Nació en Estados Unidos, en 1948, y en su juventud se formó y trabajó como ingeniero eléctrico. Conoció a su profesor, S. Ema. Chagdud Tulku Rinpoche, en 1980 y, después de completar el ciclo de enseñanzas y retiros de Dzogchen, fue ordenado lama en la tradición vajrayana en 1995."
+
+#: institution/templates/institution/teachers.html:122
+msgid "institution.teachers.lama-padma-norbu.p2"
+msgstr "Por 20 años trabajó con Rinpoche en la ejecución de varios proyectos como la construcción de centros de retiro y del Templo Khadro Ling, en el sur de Brasil."
+
+#: institution/templates/institution/teachers.html:123
+msgid "institution.teachers.lama-padma-norbu.p3"
+msgstr "Posteriormente, completó un retiro solitario de dos años bajo la orientación de Chagdud Rinpoche y fue alentado a dar enseñanzas y a compartir su experiencia en la integración de principios budistas con los desafíos de la vida cotidiana."
+
+#: institution/templates/institution/teachers.html:124
+msgid "institution.teachers.lama-padma-norbu.p4"
+msgstr "Actualmente, vive en el Templo Odsal Ling, donde divide su tiempo entre prácticas de meditación y los varios proyectos de la sangha."
+
+#: institution/templates/institution/teachers.html:133
+msgid "institution.teachers.lama-sherab-drolma.title"
+msgstr "Lama Sherab Drolma"
+
+#: institution/templates/institution/teachers.html:134
+msgid "institution.teachers.lama-sherab-drolma.p1"
+msgstr "Lama Sherab Drolma fue traductora de S. Ema. Chagdud Tulku Rinpoche durante el período que él residió en Brasil. También trabajó como su asistente personal y lo ayudó en la administración de las actividades durante la construcción de Chagdud Gonpa Khadro Ling."
+
+#: institution/templates/institution/teachers.html:136
+msgid "institution.teachers.lama-sherab-drolma.p2"
+msgstr "Fue ordenada Lama por S. Ema. Chagdud Tulku Rinpoche en 2002. Es una de las profesoras residentes de Khadro Ling y viaja por Brasil dando apoyo a los practicantes a través de enseñanzas, consejo espiritual y práctica."
+
+#: institution/templates/institution/teachers.html:146
+msgid "institution.teachers.lama-yeshe-drolma.title"
+msgstr "Lama Yeshe Drolma"
+
+#: institution/templates/institution/teachers.html:147
+msgid "institution.teachers.lama-yeshe-drolma.p1"
+msgstr "Lama Yeshe fue estudiante de S. Ema. Chagdud Tulku Rinpoche desde 1990. Después de su encuentro con Rinpoche en Brasil, ella viajó a Rigdzin Ling en California, donde participó en muchos retiros importantes y rápidamente aprendió excelente inglés."
+
+#: institution/templates/institution/teachers.html:148
+msgid "institution.teachers.lama-yeshe-drolma.p2"
+msgstr "Ella volvió a Brasil a finales de 1994, sirviendo como traductora a Rinpoche y Chagdud Khadro. Durante este tiempo en Brasil, ella también se transformó en una excelente bailarina de las tradicionales danzas sagradas de Budismo Vajrayana. Durante los tres últimos años de vida de Rinpoche, Lama Yeshe supervisó sus retiros de Dzogchen, ganando respeto por su estricta e intuitiva orientación."
+
+#: institution/templates/institution/teachers.html:149
+msgid "institution.teachers.lama-yeshe-drolma.p3"
+msgstr "Ordenada en 2002, a pedido de Rinpoche ella interrumpió un prolongado retiro personal para servir, junto a su marido, Lama Rigdzin, como lama residente en Chagdud Gonpa Dordje Ling en Curitiba, Paraná."
+
+#: institution/templates/institution/teachers.html:158
+msgid "institution.teachers.lama-rigdzin-dordje.title"
+msgstr "Lama Rigdzin Dordje"
+
+#: institution/templates/institution/teachers.html:159
+msgid "institution.teachers.lama-rigdzin-dordje.p1"
+msgstr "Lama Rigdzin fue estudiante de S. Ema. Chagdud Tulku Rinpoche desde 1992, al principio en Rigdzin Ling, California, y, desde 1995, en Brasil. Durante este período él asistió a muchas enseñanzas y retiros, y sirvió a Rinpoché de varias maneras."
+
+#: institution/templates/institution/teachers.html:160
+msgid "institution.teachers.lama-rigdzin-dordje.p2"
+msgstr "Sus habilidades en construcción y artesanía fueron extremadamente valiosas durante la construcción del templo en Khadro Ling, y, siendo un excelente artista, trabajó con Rinpoche en proyectos artísticos, más destacablemente en la gran estatua de Buda Akshobia. Él también sirvió como tchopen (maestro de altar), umze (maestro de canto), bailarín de la danza de los lamas y como traductor de Rinpoche."
+
+#: institution/templates/institution/teachers.html:161
+msgid "institution.teachers.lama-rigdzin-dordje.p3"
+msgstr "Sus cualidades fueron oficialmente reconocidas por Rinpoche en una ordenación como lama en 2002. Lama Rigdzin y su esposa, Lama Yeshe, fueron invitados a ser los lamas residentes de Chagdud Gonpa Dordje Ling en Curitiba, Parana. Lama Rigdzin se comunica en portugués."
+
 #: offering/templates/offering/offerings.html:65
 msgid "offerings.tsog-title"
 msgstr "Ofrenda de Tsog"
@@ -758,6 +936,3 @@ msgstr "El Señor Buda dice:"
 #~ msgstr ""
 #~ "Usted puede ofrecer cualquier valor.  Su ofrenda será hecha después de "
 #~ "confirmada la transacción vía PayPal."
-
-#~ msgid "institution.base.email"
-#~ msgstr "E-mail"

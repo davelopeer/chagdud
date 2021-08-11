@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-13 15:22-0300\n"
+"POT-Creation-Date: 2021-08-10 19:46-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -388,6 +388,184 @@ msgstr "Sacred Dates"
 msgid "institution.home.makara-publisher"
 msgstr "Makara Publisher"
 
+#: institution/templates/institution/teachers.html:7
+#: institution/templates/institution/teachers.html:17
+msgid "institution.teachers.title"
+msgstr "Teachers"
+
+#: institution/templates/institution/teachers.html:7
+msgid "institution.teachers.chagdud-gonpa-brazil.title"
+msgstr "Chagdud Gonpa Brazil"
+
+#: institution/templates/institution/teachers.html:28
+msgid "institution.teachers.intro.p1"
+msgstr "In Tibetan, the corresponding term for “teacher” is “lama”."
+
+#: institution/templates/institution/teachers.html:29
+msgid "institution.teachers.intro.p2"
+msgstr "“La” means “high”, in terms of transcendent achievement. “Ma” means “maternal compassion”, like that of a mother for her child. In the union of fulfillment and compassion, a lama is able to benefit others."
+
+#: institution/templates/institution/teachers.html:31
+msgid "institution.teachers.founder"
+msgstr "Founder"
+
+#: institution/templates/institution/teachers.html:39
+#: institution/templates/institution/teachers.html:55
+msgid "institution.teachers.chagdud-tulku-rinpoche.title"
+msgstr "S. Ema. Chagdud Tulku Rinpoche"
+
+#: institution/templates/institution/teachers.html:41
+msgid "institution.teachers.chagdud-tulku-rinpoche.p1"
+msgstr "His Eminence Chagdud Tulku Rinpoche was born in eastern Tibet, in the Kham region, in 1930. Recognized at the age of four as a tulku (incarnation of a meditation master), he received rigorous training and furthered his studies in extensive retreats. He had a special affinity for sacred arts and Tibetan medicine and was famous for his wonderful voice as a singer."
+
+#: institution/templates/institution/teachers.html:43
+msgid "institution.teachers.chagdud-tulku-rinpoche.p2"
+msgstr "In 1959, he escaped the communist occupation of Tibet and lived in exile in refugee communities in India and Nepal until he settled in the United States in 1979. At the request of his western students, he established the Chagdud Gonpa Foundation, a successful network of centers of the Nyingma lineage of Vajrayana Buddhism. In 1994, Rinpoche moved to Brazil, founded Chagdud Gonpa Brasil, and started the project to build his main headquarters - Khadro Ling - in Rio Grande do Sul. "
+
+#: institution/templates/institution/teachers.html:48
+msgid "institution.teachers.chagdud-tulku-rinpoche.p3"
+msgstr "As he traveled and taught constantly, radiating enthusiasm and compassion, he became the lama of the hearts of hundreds of students and was a profound inspiration for thousands of others. When asked why, at the age of sixty-four, he moved to South America instead of staying comfortably in the United States, he replied: “I noticed the faith of Brazilians and their interest in Buddhism and wanted to teach them”."
+
+#: institution/templates/institution/teachers.html:51
+msgid "institution.teachers.chagdud-tulku-rinpoche.p4"
+msgstr "When he died in 2002, he had already established more than twenty centers in Brazil, Uruguay, and Chile. Now, in a complete cycle, Chagdud Rinpoche's tulku has been recognized by Khenpo Ngagchung in Tibet. Known as Chagdud Yangsi, he is the focus of the deep prayers and aspirations of sangha members around the world."
+
+#: institution/templates/institution/teachers.html:53
+msgid "institution.teachers.chagdud-tulku-rinpoche.p5"
+msgstr "“If I had to leave only one legacy, it would be the wisdom of pure motivation. If I had to be known by a single title, it would be the Lama of motivation... The moment our hearts are inclined to compassion for all beings, our motivation expands towards the all-encompassing motivation of a bodhisattva.” — S. Ema. Chagdud Tulku Rinpoche"
+
+#: institution/templates/institution/teachers.html:67
+msgid "institution.teachers.chagdud-khadro"
+msgstr "Chagdud Khadro"
+
+#: institution/templates/institution/teachers.html:68
+msgid "institution.teachers.chagdud-khadro.p1"
+msgstr "Chagdud Khadro met His Eminence Chagdud Tulku Rinpoche in 1978 and married him in 1979. She was his student for twenty-three years. When ordaining her lama in 1997, Chagdud Rinpoche appointed her as the future spiritual director of Chagdud Gonpa Brasil."
+
+#: institution/templates/institution/teachers.html:70
+msgid "institution.teachers.chagdud-khadro.p2"
+msgstr "Since Rinpoche's Parinirvana in 2002, Chagdud Khadro has focused on continuing the high-quality Vajrayana training he established."
+
+#: institution/templates/institution/teachers.html:72
+msgid "institution.teachers.chagdud-khadro.p3"
+msgstr "During the time she lived with Rinpoche, Khadro received constant training, from the organization of Dharma activities to the teachings and practice of Vajrayana."
+
+#: institution/templates/institution/teachers.html:74
+msgid "institution.teachers.chagdud-khadro.p4"
+msgstr "She collaborated in the making of his autobiography - Lord of the Dance - and, under his guidance, compiled comments on his teachings on Ngöndro's practice from Dudjom's treasure; about Powa's practice, revealed by Longsal Nyingpo; and on the concise version of Apong Terton's Red Tara."
+
+#: institution/templates/institution/teachers.html:78
+msgid "institution.teachers.chagdud-khadro.p5"
+msgstr "As a former director and editor of Padma Publishing in the United States, Khadro edited many translations of Tibetan books."
+
+#: institution/templates/institution/teachers.html:80
+msgid "institution.teachers.chagdud-khadro.p6"
+msgstr "Chagdud Khadro has been relentless in maintaining the legacy left by S.Ema. Chagdud Tulku Rinpoche. She supervised the construction of a Zangdog Palri: Guru Rinpoche's Pure Land."
+
+#: institution/templates/institution/teachers.html:82
+msgid "institution.teachers.chagdud-khadro.p7"
+msgstr "Chagdud Khadro continues to work with translations and publications of texts in Portuguese and Spanish. She also engages in projects that offer spiritual support for the dying and the caregivers of terminally ill patients. She supervises the activities and teaches at all locations of Chagdud Gonpa Brasil and Chagdud Gonpa Hispano-America. She also teaches in Europe, United States, and Australia."
+
+#: institution/templates/institution/teachers.html:91
+msgid "institution.teachers.tromge-jigme-rinpoche.title"
+msgstr "Tromge Jigme Rinpoche"
+
+#: institution/templates/institution/teachers.html:92
+msgid "institution.teachers.tromge-jigme-rinpoche.p1"
+msgstr "Tromge Jigme Rinpoche is the son of His Eminence Chagdud Tulku Rinpoche. He was born in 1964 in Orissa, India, where he had the good fortune to receive a traditional Buddhist education. He was extensively trained in the teachings and practices of the Nyingma tradition of Tibetan Buddhism."
+
+#: institution/templates/institution/teachers.html:94
+msgid "institution.teachers.tromge-jigme-rinpoche.p2"
+msgstr "He immigrated to the United States in 1988 and has dedicating himself to preserve the culture of Tibetan Buddhism. Currently, Jigme Rinpoche travels across North America, South America, and Asia giving teachings and advice with his gentle wisdom and warmth. He trains students in Dzogchen's highest meditation and he is the Vajrayana master of many great ceremonies and initiations at Chagdud Gonpa's centers in North and South America."
+
+#: institution/templates/institution/teachers.html:96
+msgid "institution.teachers.tromge-jigme-rinpoche.p3.1"
+msgstr "In addition to sharing responsibility for monasteries in Tibet and Nepal, he is the founder and director of the "
+
+#: institution/templates/institution/teachers.html:98
+msgid "institution.teachers.tromge-jigme-rinpoche.p3.2"
+msgstr " and director of the Mahakaruna Foundation, an international charity founded by Chagdud Rinpoche that assists the elderly, the sick, and those in need in various parts of Asia."
+
+#: institution/templates/institution/teachers.html:108
+msgid "institution.teachers.lama-tsering-everest.title"
+msgstr "Lama Tsering Everest"
+
+#: institution/templates/institution/teachers.html:109
+msgid "institution.teachers.lama-tsering-everest.p1"
+msgstr "Born in the USA, Lama Tsering was, for more than eleven years, an interpreter of S. Ema. Chagdud Tulku Rinpoche."
+
+#: institution/templates/institution/teachers.html:110
+msgid "institution.teachers.lama-tsering-everest.p2"
+msgstr "After completing a three-year retreat in 1995, she received Lama's ordination and was thus authorized to give teachings and initiations according to the Vajrayana Buddhism. That same year, she was invited to teach in Brazil, where she moved soon after, assuming the coordination of Odsal Ling, the center in São Paulo."
+
+#: institution/templates/institution/teachers.html:111
+msgid "institution.teachers.lama-tsering-everest.p3"
+msgstr "Recognized for her blunt and humorous style, Lama Tsering focuses her teachings on developing compassion and applying Buddhist philosophy in daily life."
+
+#: institution/templates/institution/teachers.html:120
+msgid "institution.teachers.lama-padma-norbu.title"
+msgstr "Lama Padma Norbu"
+
+#: institution/templates/institution/teachers.html:121
+msgid "institution.teachers.lama-padma-norbu.p1"
+msgstr "Lama Norbu was born in the United States in 1948. In his youth, he graduated and worked as an electrical engineer. He met his teacher, S. Ema. Chagdud Tulku Rinpoche in 1980 and, after completing Dzogchen's teachings and retreat cycle, he was ordained Lama in the Vajrayana tradition in 1995."
+
+#: institution/templates/institution/teachers.html:122
+msgid "institution.teachers.lama-padma-norbu.p2"
+msgstr "For 20 years he worked with Rinpoche in the execution of several projects such as the construction of retreat centers and the Khadro Ling Temple, in southern Brazil."
+
+#: institution/templates/institution/teachers.html:123
+msgid "institution.teachers.lama-padma-norbu.p3"
+msgstr "Subsequently, he completed a two-year solitary retreat under the guidance of Chagdud Rinpoche and was encouraged to teach and share his experience in integrating Buddhist principles with the challenges of everyday life."
+
+#: institution/templates/institution/teachers.html:124
+msgid "institution.teachers.lama-padma-norbu.p4"
+msgstr "Currently, he lives at the Odsal Ling Temple, where he divides his time between meditation practices and the various sangha projects."
+
+#: institution/templates/institution/teachers.html:133
+msgid "institution.teachers.lama-sherab-drolma.title"
+msgstr "Lama Sherab Drolma"
+
+#: institution/templates/institution/teachers.html:134
+msgid "institution.teachers.lama-sherab-drolma.p1"
+msgstr "Lama Sherab was a translator for S. Ema. Chagdud Tulku Rinpoche during his time in Brazil. She also worked as his assistant and helped him manage the activities during the construction of Chagdud Gonpa Khadro Ling."
+
+#: institution/templates/institution/teachers.html:136
+msgid "institution.teachers.lama-sherab-drolma.p2"
+msgstr "She was ordained Lama by S. Ema. Chagdud Tulku Rinpoche in 2002. She is one of the resident teachers at Khadro Ling and travels around Brazil and abroad giving support to practitioners through teaching, spiritual counseling, and practice."
+
+#: institution/templates/institution/teachers.html:146
+msgid "institution.teachers.lama-yeshe-drolma.title"
+msgstr "Lama Yeshe Drolma"
+
+#: institution/templates/institution/teachers.html:147
+msgid "institution.teachers.lama-yeshe-drolma.p1"
+msgstr "Lama Yeshe was a student of S. Ema. Chagdud Tulku Rinpoche since 1990. After meeting Rinpoche in Brazil, she traveled to Rigdzin Ling in California, where she participated in many important retreats and quickly learned excellent English."
+
+#: institution/templates/institution/teachers.html:148
+msgid "institution.teachers.lama-yeshe-drolma.p2"
+msgstr "She returned to Brazil in late 1994, serving as a translator for Rinpoche and Chagdud Khadro. During that time in Brazil, she also became an excellent dancer of the traditional sacred dances of Vajrayana Buddhism. During the last three years of Rinpoche's life, Lama Yeshe oversaw his Dzogchen retreats, gaining respect for his strict and intuitive guidance."
+
+#: institution/templates/institution/teachers.html:149
+msgid "institution.teachers.lama-yeshe-drolma.p3"
+msgstr "Ordained in 2002, at the request of Rinpoche, she interrupted a prolonged personal retreat to serve, along with her husband, Lama Rigdzin, as a resident lama at Chagdud Gonpa Dordje Ling in Curitiba, Paraná."
+
+#: institution/templates/institution/teachers.html:158
+msgid "institution.teachers.lama-rigdzin-dordje.title"
+msgstr "Lama Rigdzin Dordje"
+
+#: institution/templates/institution/teachers.html:159
+msgid "institution.teachers.lama-rigdzin-dordje.p1"
+msgstr "Lama Rigdzin was a student of S. Ema. Chagdud Tulku Rinpoche since 1992, first at Rigdzin Ling, California, and, since 1995, in Brazil. During this time he attended many teachings and retreats and served Rinpoche in a variety of ways."
+
+#: institution/templates/institution/teachers.html:160
+msgid "institution.teachers.lama-rigdzin-dordje.p2"
+msgstr "His skills in construction and craftsmanship were extremely valuable during the construction of the temple at Khadro Ling, and, being an excellent artist, he worked with Rinpoche on artistic projects, most notably on the great statue of Buddha Akshobia. He also served as a tchopen (altar master), umze (chanting master), lama dance dancer, and as a translator for Rinpoche."
+
+#: institution/templates/institution/teachers.html:161
+msgid "institution.teachers.lama-rigdzin-dordje.p3"
+msgstr "His qualities were officially recognized by Rinpoche in his ordination as Lama in 2002. Lama Rigdzin and his wife, Lama Yeshe, were invited to be the resident lamas of Chagdud Gonpa Dordje Ling in Curitiba, Paraná. Lama Rigdzin communicates in Portuguese."
+
 #: offering/templates/offering/offerings.html:65
 msgid "offerings.tsog-title"
 msgstr "Tsok"
@@ -453,12 +631,12 @@ msgstr ""
 
 #: offering/templates/offering/offerings.html:130
 msgid "offerings.riwo.title"
-msgstr "Offering Riwo Sangtchö"
+msgstr "Offering Riwo Sanchod"
 
 #: offering/templates/offering/offerings.html:135
 msgid "offerings.riwo.description.p1"
 msgstr ""
-"Riwo Sangtchö in Tibetan means “Burnt Offering for Purification on the "
+"Riwo Sanchod in Tibetan means “Burnt Offering for Purification on the "
 "Mountainside”. This practice is performed daily at Khadro Ling. It is a very "
 "powerful practice intended to repel obstacles and negativities, particularly "
 "obstacles to our spiritual path. "
@@ -467,7 +645,7 @@ msgstr ""
 msgid "offerings.riwo.description.p2"
 msgstr ""
 "At Khadro Ling, cypress branches and a large number of substances, such as "
-"food and tissues, are burned as offerings. This practice of Riwo Sangtchö is "
+"food and tissues, are burned as offerings. This practice of Riwo Sanchod is "
 "a direct transmission of the Rigdzin Sogdrub thermal cycle (“Realization of "
 "the Vital Force of the Awakened State Holders”)."
 
@@ -484,7 +662,7 @@ msgid "offerings.riwo.description.p4"
 msgstr ""
 "The great buddhist masters from the present have emphasized that in today's "
 "times of degeneration it’s absolutely important and beneficial to practice "
-"Riwo Sangtchö."
+"Riwo Sanchod."
 
 #: offering/templates/offering/offerings.html:153
 msgid "offerings.riwo.description.p5"
@@ -495,8 +673,8 @@ msgstr ""
 #: offering/templates/offering/offerings.html:158
 msgid "offerings.riwo.attention-text"
 msgstr ""
-"Riwo Sangtchö's offerings are collected every day at 2 pm to be read the "
-"next day. After this time the offering will be held on to the next day."
+"Riwo Sanchod's offerings are collected every day at 2 pm to be read the next "
+"day. After this time the offering will be held on to the next day."
 
 #: offering/templates/offering/offerings.html:243
 msgid "offerings.akshobia.title"
@@ -668,7 +846,7 @@ msgstr "Purpose of the offering"
 
 #: offering/templates/offering/offerings.html:449
 msgid "offerings.form.offering-destination.text.p1"
-msgstr "Purpose of the offering"
+msgstr "Fill in the value of each offering."
 
 #: offering/templates/offering/offerings.html:450
 msgid "offerings.form.offering-destination.text.p2"
@@ -694,7 +872,7 @@ msgstr "Dakini tsog:"
 
 #: offering/templates/offering/offerings.html:474
 msgid "offerings.form.riwo-sangcho-tsog"
-msgstr "Riwo Sangtchö:"
+msgstr "Riwo Sanchod:"
 
 #: offering/templates/offering/offerings.html:479
 msgid "offerings.form.general-activities"
@@ -749,6 +927,3 @@ msgstr "The Lord Buddha said:"
 #~ msgstr ""
 #~ "You can offer any value, and your offering will be completed once we "
 #~ "receive the confirmation of the transaction via PayPal."
-
-#~ msgid "institution.base.email"
-#~ msgstr "Email"
