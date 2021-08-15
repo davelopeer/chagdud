@@ -1,9 +1,9 @@
 {% extends 'institution/base.html' %}
-{% load static %}
+{% load static i18n %}
 
 {% block head %}
 <link href="{% static 'institution/css/style-chagdud.css' %}" rel="stylesheet">
-<title>Downloads | Chagdud Gonpa América do Sul</title>
+<title>{% trans 'institution.downloads.title' %} | {% trans "institution.home.chagdud-gonpa-shouth-america" %}</title>
 {% endblock %}
 
 {% block body %}
@@ -12,7 +12,7 @@
     <div class="logo row justify-content-center">
       <div class="col-md-12 col-sm-12 mt-5 pt-2 text-center">
 
-        <h1 class="mb-5 titulo">Downloads</h1>
+        <h1 class="mb-5 titulo">{% trans 'institution.downloads.title' %}</h1>
       </div>
     </div>
   </div>
@@ -28,7 +28,7 @@
               <button class="btn btn-link text-black-50 text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 <div class="card-header" id="headingOne">
                   <p class="mb-0"><i class="fa fa-chevron-right mr-2" aria-hidden="true"></i> 
-                      Áudios
+                      {% trans 'institution.downloads.audios' %}
                   </p>
                 </div>
               </button>
@@ -41,7 +41,7 @@
                       <div class="col-md-2 col-sm-1 mr-n5">
                       </div>
                       <div class="col-md-10 col-sm-10 mt-3">
-                        <h5 class="card-text titulo">Nenhum áudio encontrado</h5>
+                        <h5 class="card-text titulo">{% trans 'institution.downloads.audios.no-audio-text' %}</h5>
                       </div> 
                     </div>
                   </div>
@@ -126,7 +126,7 @@
                 <button class="btn btn-link  text-black-50 text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                   <div class="card-header" id="headingTwo">
                     <p class="mb-0"><i class="fa fa-chevron-right mr-2" aria-hidden="true"></i> 
-                      Textos
+                      {% trans 'institution.downloads.texts' %}
                     </p>
                   </div>
                 </button>

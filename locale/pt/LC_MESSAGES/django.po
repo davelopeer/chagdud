@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-13 21:03-0300\n"
+"POT-Creation-Date: 2021-08-15 18:29-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,6 +24,8 @@ msgstr "Não há eventos programados no Khadro Ling."
 
 #: institution/templates/institution/about_us.html:6
 #: institution/templates/institution/about_us.html:14
+#: khadro_ling/templates/khadro_ling/about_us.html:5
+#: khadro_ling/templates/khadro_ling/about_us.html:14
 msgid "institution.about-us.title"
 msgstr "Quem Somos"
 
@@ -251,9 +253,27 @@ msgstr "Hispanomérica"
 msgid "institution.base.phone"
 msgstr "Fone"
 
+#: institution/templates/institution/downloads.html:6
+#: institution/templates/institution/downloads.html:15
+msgid "institution.downloads.title"
+msgstr "Downloads"
+
+#: institution/templates/institution/downloads.html:6
 #: institution/templates/institution/home.html:5
 msgid "institution.home.chagdud-gonpa-shouth-america"
 msgstr "Chagdud Gonpa América do Sul"
+
+#: institution/templates/institution/downloads.html:31
+msgid "institution.downloads.audios"
+msgstr "Áudios"
+
+#: institution/templates/institution/downloads.html:44
+msgid "institution.downloads.audios.no-audio-text"
+msgstr "Nenhum áudio encontrado"
+
+#: institution/templates/institution/downloads.html:129
+msgid "institution.downloads.texts"
+msgstr "Textos"
 
 #: institution/templates/institution/home.html:13
 msgid "institution.home.foundation"
