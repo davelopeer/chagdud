@@ -1,5 +1,5 @@
 {% extends 'khadro_ling/base.html' %}
-{% load static %}
+{% load static event_extras%}
 
 {% block head %}
 <title>Khadro Ling</title>
@@ -65,18 +65,18 @@
         <div class="col-md-3 col-sm-5 offset-md-1 offset-sm-0 border-right menuTabs">
           <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
             <a class="nav-link active titulo titulo border-bottom" id="v-pills-home-tab" data-toggle="pill"
-              href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">{{ events.0.name }}</a>
+              href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">{% get_event_name_by_language events.0 user_language %}</a>
             {% if events.1 %}
             <a class="nav-link titulo titulo border-bottom" id="v-pills-profile-tab" data-toggle="pill"
-              href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">{{ events.1.name }}</a>
+              href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">{% get_event_name_by_language events.1 user_language %}</a>
             {% endif %}
             {% if events.2 %}
             <a class="nav-link titulo titulo border-bottom" id="v-pills-messages-tab" data-toggle="pill"
-              href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">{{ events.2.name }}</a>
+              href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">{% get_event_name_by_language events.2 user_language %}</a>
             {% endif %}
             {% if events.3 %}
             <a class="nav-link titulo titulo border-bottom" id="v-pills-settings-tab" data-toggle="pill"
-              href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">{{ events.3.name }}</a>
+              href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">{% get_event_name_by_language events.3 user_language %}</a>
             {% endif %}
           </div>
         </div>
@@ -85,13 +85,13 @@
             <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
               aria-labelledby="v-pills-home-tab">
               <div class="row align-items-center">
-                <div class="col-md-6 col-sm-12">
+                <div class="col-md-8 col-sm-12">
                   <a class="link" href="{% url 'event:event-detail' events.0.pk %}">
-                    <img class="mb-3" src="{{ events.0.event_image.url }}" alt="Eevento 1" width="100%">
+                    <img class="mb-3" src="{{ events.0.event_image.url }}" alt="Eevento 1" width="350px" height="350px">
                   </a>
                 </div>
-                <div class="col-md-6 col-sm-12">
-                  <h5 class="titulo">{{ events.0.name }}</h5>
+                <div class="col-md-4 col-sm-12">
+                  <h5 class="titulo">{% get_event_name_by_language events.0 user_language %}</h5>
                   <br>
                   <p><i class="fa fa-user-circle-o" aria-hidden="true"></i> Com {{ events.0.vajra_master }}</p>
                   <p><i class="fa fa-calendar-check-o" aria-hidden="true"></i> De {{ events.0.start_date_pretty }},
@@ -115,11 +115,11 @@
             {% if events.1 %}
             <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
               <div class="row">
-                <div class="col-md-6 col-sm-12">
-                  <img class="mb-3" src="{{ events.1.event_image.url }}" alt="Eevento 1" width="100%">
+                <div class="col-md-8 col-sm-12">
+                  <img class="mb-3" src="{{ events.1.event_image.url }}" alt="Eevento 1" width="350px" height="350px">
                 </div>
-                <div class="col-md-6 col-sm-12">
-                  <h5 class="titulo">{{ events.1.name }}</h5>
+                <div class="col-md-4 col-sm-12">
+                  <h5 class="titulo">{% get_event_name_by_language events.1 user_language %}</h5>
                   <br>
                   <p><i class="fa fa-user-circle-o" aria-hidden="true"></i> Com {{ events.1.vajra_master }}</p>
                   <p><i class="fa fa-calendar-check-o" aria-hidden="true"></i> De {{ events.1.start_date_pretty }},
@@ -145,11 +145,11 @@
             {% if events.2 %}
             <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
               <div class="row">
-                <div class="col-md-6 col-sm-12">
-                  <img class="mb-3" src="{{ events.2.event_image.url }}" alt="Eevento 1" width="100%">
+                <div class="col-md-8 col-sm-12">
+                  <img class="mb-3" src="{{ events.2.event_image.url }}" alt="Eevento 1" width="350px" height="350px">
                 </div>
-                <div class="col-md-6 col-sm-12">
-                  <h5 class="titulo">{{ events.2.name }}</h5>
+                <div class="col-md-4 col-sm-12">
+                  <h5 class="titulo">{% get_event_name_by_language events.2 user_language %}</h5>
                   <br>
                   <p><i class="fa fa-user-circle-o" aria-hidden="true"></i> Com {{ events.2.vajra_master }}</p>
                   <p><i class="fa fa-calendar-check-o" aria-hidden="true"></i> De {{ events.2.start_date_pretty }},
@@ -175,11 +175,11 @@
             {% if events.3 %}
             <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
               <div class="row">
-                <div class="col-md-6 col-sm-12">
-                  <img class="mb-3" src="{{ events.3.event_image.url }}" alt="Eevento 1" width="100%">
+                <div class="col-md-8 col-sm-12">
+                  <img class="mb-3" src="{{ events.3.event_image.url }}" alt="Eevento 1" width="350px" height="350px">
                 </div>
-                <div class="col-md-6 col-sm-12">
-                  <h5 class="titulo">{{ events.3.name }}</h5>
+                <div class="col-md-4 col-sm-12">
+                  <h5 class="titulo">{% get_event_name_by_language events.3 user_language %}</h5>
                   <br>
                   <p><i class="fa fa-user-circle-o" aria-hidden="true"></i> Com {{ events.3.vajra_master }}</p>
                   <p><i class="fa fa-calendar-check-o" aria-hidden="true"></i> De {{ events.3.start_date_pretty }}, a {{ events.3.end_date_pretty }}</p>

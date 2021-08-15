@@ -44,7 +44,7 @@
               <span class="d-block mt-3"><a class="link" href="{% url 'event:event-detail' event.pk %}">Saiba mais</a></span>
               </div>
               <div class="col-md-5 col-sm-12 d-flex mb-5">
-                <img class="rounded" src="{{ event.event_image.url }}" width="100%">
+                <img class="rounded " src="{{ event.event_image.url }}" width="500px" height="500px">
               </div>
     
               <div class="col-md-8 col-sm-4 offset-md-2 border-bottom my-5"></div>
@@ -55,65 +55,21 @@
                   <p class="mesData">abr</p>
                 </div>
                 <div class="nomeEvento col-10">
-                <h4 class="titulo">{{ event.name }}</h4>
+                <h4 class="titulo">{% get_event_name_by_language event user_language %}</h4>
               <b class="mb-2"></b>
                 </div>
                 <div class="ml-4"> 
                 <span>
-                  {{ event.short_description }}
+                  {% get_event_short_description_by_language event user_language %}
                 </span>
                 <span class="d-block mt-2"><a class="link" href="{% url 'event:event-detail' event.pk %}">Saiba mais</a></span>
                 </div>
               </div>
               <div class="col-md-4 col-sm-12 d-flex mb-5">
-                <img class="rounded thumbEvento" src="{{ event.event_image.url }}" width="100%">
+                <img class="rounded" src="{{ event.event_image.url }}" width="300px" height="300px">
               </div>
             {% endif %}
           {% endfor %}
-<!-- 
-
-          <div class="d-flex flex-wrap mb-5 col-md-4 offset-md-2 col-sm-12 justify-content-center">
-            <div class="data col-md-2 mb-2">
-              <p class="diaData">29</p>
-              <p class="mesData">jun</p>
-            </div>
-            <div class="nomeEvento col-10">
-            <h4 class="titulo"> Drubchen de Essência do Siddhi </h4>
-          <b class="mb-2"></b>
-            </div>
-            <div class="ml-4"> 
-            <span>
-              A Essência do Sidi (em tibetano: Rangjung Padme Nyingtik) é um tesouro revelado por 
-              Kyabje Dilgo Khyentse Rinpoche (1910-1991). Essa prática foi introduzida no Chagdud 
-              Gonpa após, em 1987, o pró...
-            </span>
-            <span class="d-block mt-2"><a class="link" href="{% url 'event:event-detail' 3 %}">Saiba mais</a></span>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-12 d-flex mb-5">
-            <img class="rounded thumbEvento" src="{% static 'khadro_ling/images/natal.jpg' %}" width="100%">
-          </div>
-
-          <div class="d-flex flex-wrap mb-5 col-md-4 offset-md-2 col-sm-12 justify-content-center">
-            <div class="data col-md-2 mb-2">
-              <p class="diaData">11</p>
-              <p class="mesData">ago</p>
-            </div>
-            <div class="nomeEvento col-10">
-            <h4 class="titulo"> Treinamento Vajrayana </h4>
-          <b class="mb-2"></b>
-            </div>
-            <div class="ml-4"> 
-            <span>
-              Retiro de 2 semanas com JTR.
-            </span>
-            <span class="d-block mt-2"><a class="link" href="{% url 'event:event-detail' 4 %}">Saiba mais</a></span>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-12 d-flex mb-5">
-            <img class="rounded thumbEvento" src="{% static 'khadro_ling/images/natal.jpg' %}" width="100%">
-          </div> -->
-
 
         </div>
       </div>
