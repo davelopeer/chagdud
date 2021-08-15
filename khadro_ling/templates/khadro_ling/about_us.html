@@ -1,5 +1,5 @@
 {% extends 'khadro_ling/base.html' %}
-{% load static %}
+{% load static i18n %}
 
 {% block head %}
 <title>Khadro Ling - Quem Somos</title>
@@ -56,36 +56,30 @@
           </div>
 
           <div class="col-md-7 col-sm-12 mt-5">
-            <h4 class="titulo mb-4"> Chagdud Khadro </h4>
-            <p>Chagdud Khadro conheceu Sua Eminência Chagdud Tulku Rinpoche em março de 
-              1978, casou-se com ele em 1979 e foi aluna dedicada até o parinirvana dele, 
-              no dia de seu aniversário de casamento, vinte e três anos mais tarde.</p>
+            <h4 class="titulo mb-4"> {% trans "institution.teachers.chagdud-khadro" %} </h4>
+            <p>{% trans "institution.teachers.chagdud-khadro.p1" %}</p>
 
-              <p>Ao ordená-la lama, em 1997, Chagdud Rinpoche designou-a para ser a futura 
-                diretora espiritual do Chagdud Gonpa Brasil. Na função de lama dirigente 
-                após a transição de Rinpoche, Khadro tem se concentrado em dar continuidade 
-                ao treinamento vajraiana de alta qualidade estabelecido por ele.</p>
+            <p>{% trans "institution.teachers.chagdud-khadro.p2" %}</p>
                 
-                <p>Durante o tempo vivido com o Rinpoche, Khadro recebeu treinamento constante, 
-                  que abrangeram desde a organização de atividades do Darma, até os ensinamentos 
-                  e prática do Vajraiana. Ela colaborou em sua autobiografia: O Senhor da Dança e; 
-                  sob sua orientação, compilou comentários de seus ensinamentos sobre a prática 
-                  do ngöndro do Dudjom Tersar; sobre a prática de powa de Longsal Nyingpo e 
-                  sobre a versão concisa de Tara Vermelha de Apong Terton. </p>
+            <p>{% trans "institution.teachers.chagdud-khadro.p3" %} </p>
+            
+            <p>{% trans "institution.teachers.chagdud-khadro.p4" %} </p>
+
+            <p>{% trans "institution.teachers.chagdud-khadro.p5" %}</p>
+
           </div>
-          
-          
+
           <div class=" colDireita col-md-5 col-sm-12 mt-5">
             <img class="imgChagdud" src="{% static 'khadro_ling/images/khadro_mauria3.jpg' %}" width="100%">
             <b></b>
           </div>
+
           <div class="col-md-12 col-sm-12">
-            <p>Antiga diretora e editora da Padma Publishing nos Estados Unidos, 
-              Khadro editou muitas traduções de obras tibetanas. 
-              Após sua mudança para o Brasil, em 1995, ela passou a trabalhar 
-              na publicação de traduções para o português e o espanhol de 
-              textos do budismo tibetano.</p>
-            </div>
+          <p>{% trans "institution.teachers.chagdud-khadro.p6" %}</p>
+
+          <p>{% trans "institution.teachers.chagdud-khadro.p7" %}</p>
+
+        </div>
 
             <div class="col-12 border-bottom my-5"></div>
 
@@ -95,16 +89,10 @@
             </div>
 
             <div class="col-md-7 col-sm-12 mt-5 mb-4">
-            <h4 class="titulo mb-4"> Lama Sherab Drolma </h4>
-            <p>Lama Sherab  Drolma foi tradutora de S. Ema. Chagdud Tulku Rinpoche durante 
-              o período em que ele residiu no Brasil. Também trabalhou como sua assistente 
-              pessoal e o ajudou na administração das atividades durante a construção do 
-              Chagdud Gonpa Khadro Ling. </p>
+            <h4 class="titulo mb-4"> {% trans "institution.teachers.lama-sherab-drolma.title" %} </h4>
+            <p>{% trans "institution.teachers.lama-sherab-drolma.p1" %}</p> 
 
-              <p>Foi ordenada Lama por S. Ema. Chagdud Tulku Rinpoche em 2002. 
-                É uma das professoras residentes do Khadro Ling e viaja pelo Brasil 
-                dando suporte aos praticantes através de ensinamentos, aconselhamento
-                 espiritual e prática.</p>
+            <p>{% trans "institution.teachers.lama-sherab-drolma.p2" %}</p>
               
           </div>
 

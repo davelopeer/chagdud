@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-10 19:46-0300\n"
+"POT-Creation-Date: 2021-08-13 21:03-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -403,7 +403,10 @@ msgstr "In Tibetan, the corresponding term for “teacher” is “lama”."
 
 #: institution/templates/institution/teachers.html:29
 msgid "institution.teachers.intro.p2"
-msgstr "“La” means “high”, in terms of transcendent achievement. “Ma” means “maternal compassion”, like that of a mother for her child. In the union of fulfillment and compassion, a lama is able to benefit others."
+msgstr ""
+"“La” means “high”, in terms of transcendent achievement. “Ma” means "
+"“maternal compassion”, like that of a mother for her child. In the union of "
+"fulfillment and compassion, a lama is able to benefit others."
 
 #: institution/templates/institution/teachers.html:31
 msgid "institution.teachers.founder"
@@ -416,55 +419,115 @@ msgstr "S. Ema. Chagdud Tulku Rinpoche"
 
 #: institution/templates/institution/teachers.html:41
 msgid "institution.teachers.chagdud-tulku-rinpoche.p1"
-msgstr "His Eminence Chagdud Tulku Rinpoche was born in eastern Tibet, in the Kham region, in 1930. Recognized at the age of four as a tulku (incarnation of a meditation master), he received rigorous training and furthered his studies in extensive retreats. He had a special affinity for sacred arts and Tibetan medicine and was famous for his wonderful voice as a singer."
+msgstr ""
+"His Eminence Chagdud Tulku Rinpoche was born in eastern Tibet, in the Kham "
+"region, in 1930. Recognized at the age of four as a tulku (incarnation of a "
+"meditation master), he received rigorous training and furthered his studies "
+"in extensive retreats. He had a special affinity for sacred arts and Tibetan "
+"medicine and was famous for his wonderful voice as a singer."
 
 #: institution/templates/institution/teachers.html:43
 msgid "institution.teachers.chagdud-tulku-rinpoche.p2"
-msgstr "In 1959, he escaped the communist occupation of Tibet and lived in exile in refugee communities in India and Nepal until he settled in the United States in 1979. At the request of his western students, he established the Chagdud Gonpa Foundation, a successful network of centers of the Nyingma lineage of Vajrayana Buddhism. In 1994, Rinpoche moved to Brazil, founded Chagdud Gonpa Brasil, and started the project to build his main headquarters - Khadro Ling - in Rio Grande do Sul. "
+msgstr ""
+"In 1959, he escaped the communist occupation of Tibet and lived in exile in "
+"refugee communities in India and Nepal until he settled in the United States "
+"in 1979. At the request of his western students, he established the Chagdud "
+"Gonpa Foundation, a successful network of centers of the Nyingma lineage of "
+"Vajrayana Buddhism. In 1994, Rinpoche moved to Brazil, founded Chagdud Gonpa "
+"Brasil, and started the project to build his main headquarters - Khadro Ling "
+"- in Rio Grande do Sul. "
 
 #: institution/templates/institution/teachers.html:48
 msgid "institution.teachers.chagdud-tulku-rinpoche.p3"
-msgstr "As he traveled and taught constantly, radiating enthusiasm and compassion, he became the lama of the hearts of hundreds of students and was a profound inspiration for thousands of others. When asked why, at the age of sixty-four, he moved to South America instead of staying comfortably in the United States, he replied: “I noticed the faith of Brazilians and their interest in Buddhism and wanted to teach them”."
+msgstr ""
+"As he traveled and taught constantly, radiating enthusiasm and compassion, "
+"he became the lama of the hearts of hundreds of students and was a profound "
+"inspiration for thousands of others. When asked why, at the age of sixty-"
+"four, he moved to South America instead of staying comfortably in the United "
+"States, he replied: “I noticed the faith of Brazilians and their interest in "
+"Buddhism and wanted to teach them”."
 
 #: institution/templates/institution/teachers.html:51
 msgid "institution.teachers.chagdud-tulku-rinpoche.p4"
-msgstr "When he died in 2002, he had already established more than twenty centers in Brazil, Uruguay, and Chile. Now, in a complete cycle, Chagdud Rinpoche's tulku has been recognized by Khenpo Ngagchung in Tibet. Known as Chagdud Yangsi, he is the focus of the deep prayers and aspirations of sangha members around the world."
+msgstr ""
+"When he died in 2002, he had already established more than twenty centers in "
+"Brazil, Uruguay, and Chile. Now, in a complete cycle, Chagdud Rinpoche's "
+"tulku has been recognized by Khenpo Ngagchung in Tibet. Known as Chagdud "
+"Yangsi, he is the focus of the deep prayers and aspirations of sangha "
+"members around the world."
 
 #: institution/templates/institution/teachers.html:53
 msgid "institution.teachers.chagdud-tulku-rinpoche.p5"
-msgstr "“If I had to leave only one legacy, it would be the wisdom of pure motivation. If I had to be known by a single title, it would be the Lama of motivation... The moment our hearts are inclined to compassion for all beings, our motivation expands towards the all-encompassing motivation of a bodhisattva.” — S. Ema. Chagdud Tulku Rinpoche"
+msgstr ""
+"“If I had to leave only one legacy, it would be the wisdom of pure "
+"motivation. If I had to be known by a single title, it would be the Lama of "
+"motivation... The moment our hearts are inclined to compassion for all "
+"beings, our motivation expands towards the all-encompassing motivation of a "
+"bodhisattva.” — S. Ema. Chagdud Tulku Rinpoche"
 
 #: institution/templates/institution/teachers.html:67
+#: khadro_ling/templates/khadro_ling/about_us.html:59
 msgid "institution.teachers.chagdud-khadro"
 msgstr "Chagdud Khadro"
 
 #: institution/templates/institution/teachers.html:68
+#: khadro_ling/templates/khadro_ling/about_us.html:60
 msgid "institution.teachers.chagdud-khadro.p1"
-msgstr "Chagdud Khadro met His Eminence Chagdud Tulku Rinpoche in 1978 and married him in 1979. She was his student for twenty-three years. When ordaining her lama in 1997, Chagdud Rinpoche appointed her as the future spiritual director of Chagdud Gonpa Brasil."
+msgstr ""
+"Chagdud Khadro met His Eminence Chagdud Tulku Rinpoche in 1978 and married "
+"him in 1979. She was his student for twenty-three years. When ordaining her "
+"lama in 1997, Chagdud Rinpoche appointed her as the future spiritual "
+"director of Chagdud Gonpa Brasil."
 
 #: institution/templates/institution/teachers.html:70
+#: khadro_ling/templates/khadro_ling/about_us.html:62
 msgid "institution.teachers.chagdud-khadro.p2"
-msgstr "Since Rinpoche's Parinirvana in 2002, Chagdud Khadro has focused on continuing the high-quality Vajrayana training he established."
+msgstr ""
+"Since Rinpoche's Parinirvana in 2002, Chagdud Khadro has focused on "
+"continuing the high-quality Vajrayana training he established."
 
 #: institution/templates/institution/teachers.html:72
+#: khadro_ling/templates/khadro_ling/about_us.html:64
 msgid "institution.teachers.chagdud-khadro.p3"
-msgstr "During the time she lived with Rinpoche, Khadro received constant training, from the organization of Dharma activities to the teachings and practice of Vajrayana."
+msgstr ""
+"During the time she lived with Rinpoche, Khadro received constant training, "
+"from the organization of Dharma activities to the teachings and practice of "
+"Vajrayana."
 
 #: institution/templates/institution/teachers.html:74
+#: khadro_ling/templates/khadro_ling/about_us.html:66
 msgid "institution.teachers.chagdud-khadro.p4"
-msgstr "She collaborated in the making of his autobiography - Lord of the Dance - and, under his guidance, compiled comments on his teachings on Ngöndro's practice from Dudjom's treasure; about Powa's practice, revealed by Longsal Nyingpo; and on the concise version of Apong Terton's Red Tara."
+msgstr ""
+"She collaborated in the making of his autobiography - Lord of the Dance - "
+"and, under his guidance, compiled comments on his teachings on Ngöndro's "
+"practice from Dudjom's treasure; about Powa's practice, revealed by Longsal "
+"Nyingpo; and on the concise version of Apong Terton's Red Tara."
 
 #: institution/templates/institution/teachers.html:78
+#: khadro_ling/templates/khadro_ling/about_us.html:68
 msgid "institution.teachers.chagdud-khadro.p5"
-msgstr "As a former director and editor of Padma Publishing in the United States, Khadro edited many translations of Tibetan books."
+msgstr ""
+"As a former director and editor of Padma Publishing in the United States, "
+"Khadro edited many translations of Tibetan books."
 
 #: institution/templates/institution/teachers.html:80
+#: khadro_ling/templates/khadro_ling/about_us.html:78
 msgid "institution.teachers.chagdud-khadro.p6"
-msgstr "Chagdud Khadro has been relentless in maintaining the legacy left by S.Ema. Chagdud Tulku Rinpoche. She supervised the construction of a Zangdog Palri: Guru Rinpoche's Pure Land."
+msgstr ""
+"Chagdud Khadro has been relentless in maintaining the legacy left by S.Ema. "
+"Chagdud Tulku Rinpoche. She supervised the construction of a Zangdog Palri: "
+"Guru Rinpoche's Pure Land."
 
 #: institution/templates/institution/teachers.html:82
+#: khadro_ling/templates/khadro_ling/about_us.html:80
 msgid "institution.teachers.chagdud-khadro.p7"
-msgstr "Chagdud Khadro continues to work with translations and publications of texts in Portuguese and Spanish. She also engages in projects that offer spiritual support for the dying and the caregivers of terminally ill patients. She supervises the activities and teaches at all locations of Chagdud Gonpa Brasil and Chagdud Gonpa Hispano-America. She also teaches in Europe, United States, and Australia."
+msgstr ""
+"Chagdud Khadro continues to work with translations and publications of texts "
+"in Portuguese and Spanish. She also engages in projects that offer spiritual "
+"support for the dying and the caregivers of terminally ill patients. She "
+"supervises the activities and teaches at all locations of Chagdud Gonpa "
+"Brasil and Chagdud Gonpa Hispano-America. She also teaches in Europe, United "
+"States, and Australia."
 
 #: institution/templates/institution/teachers.html:91
 msgid "institution.teachers.tromge-jigme-rinpoche.title"
@@ -472,19 +535,34 @@ msgstr "Tromge Jigme Rinpoche"
 
 #: institution/templates/institution/teachers.html:92
 msgid "institution.teachers.tromge-jigme-rinpoche.p1"
-msgstr "Tromge Jigme Rinpoche is the son of His Eminence Chagdud Tulku Rinpoche. He was born in 1964 in Orissa, India, where he had the good fortune to receive a traditional Buddhist education. He was extensively trained in the teachings and practices of the Nyingma tradition of Tibetan Buddhism."
+msgstr ""
+"Tromge Jigme Rinpoche is the son of His Eminence Chagdud Tulku Rinpoche. He "
+"was born in 1964 in Orissa, India, where he had the good fortune to receive "
+"a traditional Buddhist education. He was extensively trained in the "
+"teachings and practices of the Nyingma tradition of Tibetan Buddhism."
 
 #: institution/templates/institution/teachers.html:94
 msgid "institution.teachers.tromge-jigme-rinpoche.p2"
-msgstr "He immigrated to the United States in 1988 and has dedicating himself to preserve the culture of Tibetan Buddhism. Currently, Jigme Rinpoche travels across North America, South America, and Asia giving teachings and advice with his gentle wisdom and warmth. He trains students in Dzogchen's highest meditation and he is the Vajrayana master of many great ceremonies and initiations at Chagdud Gonpa's centers in North and South America."
+msgstr ""
+"He immigrated to the United States in 1988 and has dedicating himself to "
+"preserve the culture of Tibetan Buddhism. Currently, Jigme Rinpoche travels "
+"across North America, South America, and Asia giving teachings and advice "
+"with his gentle wisdom and warmth. He trains students in Dzogchen's highest "
+"meditation and he is the Vajrayana master of many great ceremonies and "
+"initiations at Chagdud Gonpa's centers in North and South America."
 
 #: institution/templates/institution/teachers.html:96
 msgid "institution.teachers.tromge-jigme-rinpoche.p3.1"
-msgstr "In addition to sharing responsibility for monasteries in Tibet and Nepal, he is the founder and director of the "
+msgstr ""
+"In addition to sharing responsibility for monasteries in Tibet and Nepal, he "
+"is the founder and director of the "
 
 #: institution/templates/institution/teachers.html:98
 msgid "institution.teachers.tromge-jigme-rinpoche.p3.2"
-msgstr " and director of the Mahakaruna Foundation, an international charity founded by Chagdud Rinpoche that assists the elderly, the sick, and those in need in various parts of Asia."
+msgstr ""
+" and director of the Mahakaruna Foundation, an international charity founded "
+"by Chagdud Rinpoche that assists the elderly, the sick, and those in need in "
+"various parts of Asia."
 
 #: institution/templates/institution/teachers.html:108
 msgid "institution.teachers.lama-tsering-everest.title"
@@ -492,15 +570,25 @@ msgstr "Lama Tsering Everest"
 
 #: institution/templates/institution/teachers.html:109
 msgid "institution.teachers.lama-tsering-everest.p1"
-msgstr "Born in the USA, Lama Tsering was, for more than eleven years, an interpreter of S. Ema. Chagdud Tulku Rinpoche."
+msgstr ""
+"Born in the USA, Lama Tsering was, for more than eleven years, an "
+"interpreter of S. Ema. Chagdud Tulku Rinpoche."
 
 #: institution/templates/institution/teachers.html:110
 msgid "institution.teachers.lama-tsering-everest.p2"
-msgstr "After completing a three-year retreat in 1995, she received Lama's ordination and was thus authorized to give teachings and initiations according to the Vajrayana Buddhism. That same year, she was invited to teach in Brazil, where she moved soon after, assuming the coordination of Odsal Ling, the center in São Paulo."
+msgstr ""
+"After completing a three-year retreat in 1995, she received Lama's "
+"ordination and was thus authorized to give teachings and initiations "
+"according to the Vajrayana Buddhism. That same year, she was invited to "
+"teach in Brazil, where she moved soon after, assuming the coordination of "
+"Odsal Ling, the center in São Paulo."
 
 #: institution/templates/institution/teachers.html:111
 msgid "institution.teachers.lama-tsering-everest.p3"
-msgstr "Recognized for her blunt and humorous style, Lama Tsering focuses her teachings on developing compassion and applying Buddhist philosophy in daily life."
+msgstr ""
+"Recognized for her blunt and humorous style, Lama Tsering focuses her "
+"teachings on developing compassion and applying Buddhist philosophy in daily "
+"life."
 
 #: institution/templates/institution/teachers.html:120
 msgid "institution.teachers.lama-padma-norbu.title"
@@ -508,31 +596,53 @@ msgstr "Lama Padma Norbu"
 
 #: institution/templates/institution/teachers.html:121
 msgid "institution.teachers.lama-padma-norbu.p1"
-msgstr "Lama Norbu was born in the United States in 1948. In his youth, he graduated and worked as an electrical engineer. He met his teacher, S. Ema. Chagdud Tulku Rinpoche in 1980 and, after completing Dzogchen's teachings and retreat cycle, he was ordained Lama in the Vajrayana tradition in 1995."
+msgstr ""
+"Lama Norbu was born in the United States in 1948. In his youth, he graduated "
+"and worked as an electrical engineer. He met his teacher, S. Ema. Chagdud "
+"Tulku Rinpoche in 1980 and, after completing Dzogchen's teachings and "
+"retreat cycle, he was ordained Lama in the Vajrayana tradition in 1995."
 
 #: institution/templates/institution/teachers.html:122
 msgid "institution.teachers.lama-padma-norbu.p2"
-msgstr "For 20 years he worked with Rinpoche in the execution of several projects such as the construction of retreat centers and the Khadro Ling Temple, in southern Brazil."
+msgstr ""
+"For 20 years he worked with Rinpoche in the execution of several projects "
+"such as the construction of retreat centers and the Khadro Ling Temple, in "
+"southern Brazil."
 
 #: institution/templates/institution/teachers.html:123
 msgid "institution.teachers.lama-padma-norbu.p3"
-msgstr "Subsequently, he completed a two-year solitary retreat under the guidance of Chagdud Rinpoche and was encouraged to teach and share his experience in integrating Buddhist principles with the challenges of everyday life."
+msgstr ""
+"Subsequently, he completed a two-year solitary retreat under the guidance of "
+"Chagdud Rinpoche and was encouraged to teach and share his experience in "
+"integrating Buddhist principles with the challenges of everyday life."
 
 #: institution/templates/institution/teachers.html:124
 msgid "institution.teachers.lama-padma-norbu.p4"
-msgstr "Currently, he lives at the Odsal Ling Temple, where he divides his time between meditation practices and the various sangha projects."
+msgstr ""
+"Currently, he lives at the Odsal Ling Temple, where he divides his time "
+"between meditation practices and the various sangha projects."
 
 #: institution/templates/institution/teachers.html:133
+#: khadro_ling/templates/khadro_ling/about_us.html:92
 msgid "institution.teachers.lama-sherab-drolma.title"
 msgstr "Lama Sherab Drolma"
 
 #: institution/templates/institution/teachers.html:134
+#: khadro_ling/templates/khadro_ling/about_us.html:93
 msgid "institution.teachers.lama-sherab-drolma.p1"
-msgstr "Lama Sherab was a translator for S. Ema. Chagdud Tulku Rinpoche during his time in Brazil. She also worked as his assistant and helped him manage the activities during the construction of Chagdud Gonpa Khadro Ling."
+msgstr ""
+"Lama Sherab was a translator for S. Ema. Chagdud Tulku Rinpoche during his "
+"time in Brazil. She also worked as his assistant and helped him manage the "
+"activities during the construction of Chagdud Gonpa Khadro Ling."
 
 #: institution/templates/institution/teachers.html:136
+#: khadro_ling/templates/khadro_ling/about_us.html:95
 msgid "institution.teachers.lama-sherab-drolma.p2"
-msgstr "She was ordained Lama by S. Ema. Chagdud Tulku Rinpoche in 2002. She is one of the resident teachers at Khadro Ling and travels around Brazil and abroad giving support to practitioners through teaching, spiritual counseling, and practice."
+msgstr ""
+"She was ordained Lama by S. Ema. Chagdud Tulku Rinpoche in 2002. She is one "
+"of the resident teachers at Khadro Ling and travels around Brazil and abroad "
+"giving support to practitioners through teaching, spiritual counseling, and "
+"practice."
 
 #: institution/templates/institution/teachers.html:146
 msgid "institution.teachers.lama-yeshe-drolma.title"
@@ -540,15 +650,27 @@ msgstr "Lama Yeshe Drolma"
 
 #: institution/templates/institution/teachers.html:147
 msgid "institution.teachers.lama-yeshe-drolma.p1"
-msgstr "Lama Yeshe was a student of S. Ema. Chagdud Tulku Rinpoche since 1990. After meeting Rinpoche in Brazil, she traveled to Rigdzin Ling in California, where she participated in many important retreats and quickly learned excellent English."
+msgstr ""
+"Lama Yeshe was a student of S. Ema. Chagdud Tulku Rinpoche since 1990. After "
+"meeting Rinpoche in Brazil, she traveled to Rigdzin Ling in California, "
+"where she participated in many important retreats and quickly learned "
+"excellent English."
 
 #: institution/templates/institution/teachers.html:148
 msgid "institution.teachers.lama-yeshe-drolma.p2"
-msgstr "She returned to Brazil in late 1994, serving as a translator for Rinpoche and Chagdud Khadro. During that time in Brazil, she also became an excellent dancer of the traditional sacred dances of Vajrayana Buddhism. During the last three years of Rinpoche's life, Lama Yeshe oversaw his Dzogchen retreats, gaining respect for his strict and intuitive guidance."
+msgstr ""
+"She returned to Brazil in late 1994, serving as a translator for Rinpoche "
+"and Chagdud Khadro. During that time in Brazil, she also became an excellent "
+"dancer of the traditional sacred dances of Vajrayana Buddhism. During the "
+"last three years of Rinpoche's life, Lama Yeshe oversaw his Dzogchen "
+"retreats, gaining respect for his strict and intuitive guidance."
 
 #: institution/templates/institution/teachers.html:149
 msgid "institution.teachers.lama-yeshe-drolma.p3"
-msgstr "Ordained in 2002, at the request of Rinpoche, she interrupted a prolonged personal retreat to serve, along with her husband, Lama Rigdzin, as a resident lama at Chagdud Gonpa Dordje Ling in Curitiba, Paraná."
+msgstr ""
+"Ordained in 2002, at the request of Rinpoche, she interrupted a prolonged "
+"personal retreat to serve, along with her husband, Lama Rigdzin, as a "
+"resident lama at Chagdud Gonpa Dordje Ling in Curitiba, Paraná."
 
 #: institution/templates/institution/teachers.html:158
 msgid "institution.teachers.lama-rigdzin-dordje.title"
@@ -556,15 +678,61 @@ msgstr "Lama Rigdzin Dordje"
 
 #: institution/templates/institution/teachers.html:159
 msgid "institution.teachers.lama-rigdzin-dordje.p1"
-msgstr "Lama Rigdzin was a student of S. Ema. Chagdud Tulku Rinpoche since 1992, first at Rigdzin Ling, California, and, since 1995, in Brazil. During this time he attended many teachings and retreats and served Rinpoche in a variety of ways."
+msgstr ""
+"Lama Rigdzin was a student of S. Ema. Chagdud Tulku Rinpoche since 1992, "
+"first at Rigdzin Ling, California, and, since 1995, in Brazil. During this "
+"time he attended many teachings and retreats and served Rinpoche in a "
+"variety of ways."
 
 #: institution/templates/institution/teachers.html:160
 msgid "institution.teachers.lama-rigdzin-dordje.p2"
-msgstr "His skills in construction and craftsmanship were extremely valuable during the construction of the temple at Khadro Ling, and, being an excellent artist, he worked with Rinpoche on artistic projects, most notably on the great statue of Buddha Akshobia. He also served as a tchopen (altar master), umze (chanting master), lama dance dancer, and as a translator for Rinpoche."
+msgstr ""
+"His skills in construction and craftsmanship were extremely valuable during "
+"the construction of the temple at Khadro Ling, and, being an excellent "
+"artist, he worked with Rinpoche on artistic projects, most notably on the "
+"great statue of Buddha Akshobia. He also served as a tchopen (altar master), "
+"umze (chanting master), lama dance dancer, and as a translator for Rinpoche."
 
 #: institution/templates/institution/teachers.html:161
 msgid "institution.teachers.lama-rigdzin-dordje.p3"
-msgstr "His qualities were officially recognized by Rinpoche in his ordination as Lama in 2002. Lama Rigdzin and his wife, Lama Yeshe, were invited to be the resident lamas of Chagdud Gonpa Dordje Ling in Curitiba, Paraná. Lama Rigdzin communicates in Portuguese."
+msgstr ""
+"His qualities were officially recognized by Rinpoche in his ordination as "
+"Lama in 2002. Lama Rigdzin and his wife, Lama Yeshe, were invited to be the "
+"resident lamas of Chagdud Gonpa Dordje Ling in Curitiba, Paraná. Lama "
+"Rigdzin communicates in Portuguese."
+
+#: offering/templates/offering/offerings.html:5
+#: offering/templates/offering/offerings.html:14
+msgid "offerings.title"
+msgstr "Offerings"
+
+#: offering/templates/offering/offerings.html:45
+msgid "offerings.tab.tsog"
+msgstr "Tsok"
+
+#: offering/templates/offering/offerings.html:46
+msgid "offerings.tab.lamp"
+msgstr "Butterlamp"
+
+#: offering/templates/offering/offerings.html:47
+msgid "offerings.tab.riwo"
+msgstr "Riwo Sangtchö"
+
+#: offering/templates/offering/offerings.html:48
+msgid "offerings.tab.flags"
+msgstr "Prayer Flags"
+
+#: offering/templates/offering/offerings.html:49
+msgid "offerings.tab.akshobia"
+msgstr "Akshobhya"
+
+#: offering/templates/offering/offerings.html:50
+msgid "offerings.tab.cerimonials"
+msgstr "Cerimonials"
+
+#: offering/templates/offering/offerings.html:51
+msgid "offerings.tab.donations"
+msgstr "Donations"
 
 #: offering/templates/offering/offerings.html:65
 msgid "offerings.tsog-title"
@@ -587,7 +755,7 @@ msgstr ""
 #: offering/templates/offering/offerings.html:78
 #: offering/templates/offering/offerings.html:108
 #: offering/templates/offering/offerings.html:156
-#: offering/templates/offering/offerings.html:417
+#: offering/templates/offering/offerings.html:403
 msgid "offerings.attention"
 msgstr "Please note"
 
@@ -676,11 +844,82 @@ msgstr ""
 "Riwo Sanchod's offerings are collected every day at 2 pm to be read the next "
 "day. After this time the offering will be held on to the next day."
 
-#: offering/templates/offering/offerings.html:243
+#: offering/templates/offering/offerings.html:172
+msgid "offerings.flags.title"
+msgstr "Prayer Flags Offerings"
+
+#: offering/templates/offering/offerings.html:177
+msgid "offerings.flags.1"
+msgstr "The new prayer flags at Khadro Ling Temple"
+
+#: offering/templates/offering/offerings.html:178
+msgid "offerings.flags.p2"
+msgstr "Três Coroas - RS"
+
+#: offering/templates/offering/offerings.html:182
+msgid "offerings.flags.p3"
+msgstr ""
+"Over the centuries, colorful prayer flags fluttered on the mountains and "
+"monasteries of Tibet and the Himalayas, with their mantras and auspicious "
+"wishes blowing in the wind to the whole world. At Chagdud Gonpa Khadro Ling "
+"Buddhist Temple, our flags are specifically printed with the longevity "
+"mantra of Amitayus, the Buddha who protects from extemporaneous death and "
+"disease and increases prosperity and well-being. This year, five colors were "
+"used in the prayer flags mandala (a sacred arrangement). In this context, "
+"the colors have the following representations:"
+
+#: offering/templates/offering/offerings.html:187
+msgid "offerings.flags.p4"
+msgstr ""
+"The blue color represents the element of water and the activity of peace."
+
+#: offering/templates/offering/offerings.html:191
+msgid "offerings.flags.p5"
+msgstr ""
+"The yellow color represents the earth element and the activity of enhancing "
+"all positive qualities."
+
+#: offering/templates/offering/offerings.html:195
+msgid "offerings.flags.p6"
+msgstr ""
+"The red color represents the element of fire and the activity of magnetizing "
+"through love and compassion."
+
+#: offering/templates/offering/offerings.html:199
+msgid "offerings.flags.p7"
+msgstr ""
+"The green color represents the element of wind and the activity of subduing "
+"negativity."
+
+#: offering/templates/offering/offerings.html:202
+msgid "offerings.flags.p8"
+msgstr ""
+"The white color on the victory banner located at the top of the flags "
+"represents the space element and the enlightened activity."
+
+#: offering/templates/offering/offerings.html:209
+msgid "offerings.flags.p9"
+msgstr ""
+"The flags are sponsored by visitors of the temple. Sponsors write personal "
+"dedications and aspirations, which are read when new flags replace the ones "
+"tattered and faded over time as they blow mantras with the wind."
+
+#: offering/templates/offering/offerings.html:213
+msgid "offerings.flags.p10"
+msgstr ""
+"Also, whenever a set of flags is purchased at the Dakini Arts store, located "
+"at the temple, a percentage of the price goes to the prayer flags mandala. "
+"In this way, an expandable interdependence of auspiciousness is generated."
+
+#: offering/templates/offering/offerings.html:216
+msgid "offerings.flags.p11"
+msgstr "May all beings benefit!"
+
+#: offering/templates/offering/offerings.html:229
 msgid "offerings.akshobia.title"
 msgstr "The practice of Akshobhya Buddha"
 
-#: offering/templates/offering/offerings.html:248
+#: offering/templates/offering/offerings.html:234
 msgid "offerings.akshobia.description.p1"
 msgstr ""
 "Sometimes we experience great despair contemplating the suffering and "
@@ -691,11 +930,11 @@ msgstr ""
 "circumstances that come from harming others and from someone taking his own "
 "life."
 
-#: offering/templates/offering/offerings.html:256
+#: offering/templates/offering/offerings.html:242
 msgid "offerings.akshobia.intention.title"
 msgstr "Buddha Akshobhya's intention"
 
-#: offering/templates/offering/offerings.html:264
+#: offering/templates/offering/offerings.html:250
 msgid "offerings.akshobia.intention.text.p1"
 msgstr ""
 "Most of us have already killed some being or taken our own lives, if not in "
@@ -704,7 +943,7 @@ msgstr ""
 "know that someone has died an extemporaneous or inauspicious death, we can "
 "interrupt negative karma through the practice of Akshobhya."
 
-#: offering/templates/offering/offerings.html:267
+#: offering/templates/offering/offerings.html:253
 msgid "offerings.akshobia.intention.text.p2"
 msgstr ""
 "Buddhist teachings indicate that death before birth (by spontaneous or "
@@ -712,7 +951,7 @@ msgstr ""
 "suicide are signs that the person who died will have difficulty in achieving "
 "a spiritually fortunate rebirth."
 
-#: offering/templates/offering/offerings.html:270
+#: offering/templates/offering/offerings.html:256
 msgid "offerings.akshobia.intention.text.p3"
 msgstr ""
 "To alleviate such circumstances, Akshobhya promised that whoever creates "
@@ -721,45 +960,45 @@ msgstr ""
 "would find release in a fortunate rebirth. This intention of Akshobhya is "
 "valid even for those who have died long ago."
 
-#: offering/templates/offering/offerings.html:279
+#: offering/templates/offering/offerings.html:265
 msgid "offerings.akshobia.when-sponsor.title"
 msgstr "When to do or sponsor the practice"
 
-#: offering/templates/offering/offerings.html:286
+#: offering/templates/offering/offerings.html:272
 msgid "offerings.akshobia.when-sponsor.text.p1"
 msgstr ""
 "Practitioners can do Akshobhya meditation and purification rituals for "
 "themselves and others."
 
-#: offering/templates/offering/offerings.html:290
+#: offering/templates/offering/offerings.html:276
 msgid "offerings.akshobia.when-sponsor.text.p2"
 msgstr ""
 "To practice for others, we follow the steps of the Akshobhya liturgy and "
 "dedicate the merit to them."
 
-#: offering/templates/offering/offerings.html:294
+#: offering/templates/offering/offerings.html:280
 msgid "offerings.akshobia.when-sponsor.text.p3"
 msgstr ""
 "People also sponsor Akshobhya for their pets or animals they killed while "
 "driving or other circumstances. Animals can find release from suffering in "
 "the animal realm through the practice of Akshobhya."
 
-#: offering/templates/offering/offerings.html:298
+#: offering/templates/offering/offerings.html:284
 msgid "offerings.akshobia.when-sponsor.text.p4"
 msgstr ""
 "Due to the length of the Akshobhya mantra and the long time it may take to "
 "complete the 100,000 recitations, many practitioners sponsor the recitation "
 "for their benefit or for the benefit of the person they have in mind."
 
-#: offering/templates/offering/offerings.html:307
+#: offering/templates/offering/offerings.html:293
 msgid "offerings.akshobia.how-it-works.title"
 msgstr "How it works"
 
-#: offering/templates/offering/offerings.html:313
+#: offering/templates/offering/offerings.html:299
 msgid "offerings.akshobia.how-it-works.text.p1"
 msgstr "What is included when sponsoring Akshobhya's practice?"
 
-#: offering/templates/offering/offerings.html:316
+#: offering/templates/offering/offerings.html:302
 msgid "offerings.akshobia.how-it-works.text.p2"
 msgstr ""
 "A practitioner will dedicate an exclusive time to accumulate the mantra. The "
@@ -767,13 +1006,13 @@ msgstr ""
 "period. Although sponsorship is requested in Brazil, the recitation can be "
 "performed in Brazil or Tibet."
 
-#: offering/templates/offering/offerings.html:320
+#: offering/templates/offering/offerings.html:306
 msgid "offerings.akshobia.how-it-works.text.p3"
 msgstr ""
 "You will sponsor the creation of an image of Akshobhya, in the form of a tsa-"
 "tsa, which will be installed on the premises of Khadro Ling."
 
-#: offering/templates/offering/offerings.html:324
+#: offering/templates/offering/offerings.html:310
 msgid "offerings.akshobia.how-it-works.text.p4"
 msgstr ""
 "A tsa-tsa is a ceramic tile with the image of Akshobhya. A Bhutanese artist "
@@ -783,11 +1022,11 @@ msgstr ""
 "obtained from these tiles also contributes to the maintenance of the statue "
 "and its gardens."
 
-#: offering/templates/offering/offerings.html:333
+#: offering/templates/offering/offerings.html:319
 msgid "offerings.akshobia.arrive-in-brazil-title"
 msgstr "How the practice was introduced in Brazil "
 
-#: offering/templates/offering/offerings.html:340
+#: offering/templates/offering/offerings.html:326
 msgid "offerings.akshobia.arrive-in-brazil-text"
 msgstr ""
 "H. E. Chagdud Tulku Rinpoche initiated this practice in Brazil by creating a "
@@ -796,21 +1035,21 @@ msgstr ""
 "with the Akshobhya mantra. Also, once a year an Akshobya retreat is held at "
 "Khadro Ling."
 
-#: offering/templates/offering/offerings.html:349
+#: offering/templates/offering/offerings.html:335
 msgid "offerings.akshobia.tibet-sponsor.title"
 msgstr "Sponsorship in Tibet"
 
-#: offering/templates/offering/offerings.html:356
+#: offering/templates/offering/offerings.html:342
 msgid "offerings.akshobia.tibet-sponsor.text"
 msgstr ""
 "To sponsor the practice of Akshobhya in Tibet, make a payment by credit card "
 "through the Mahakaruna Foundation, at the website:"
 
-#: offering/templates/offering/offerings.html:366
+#: offering/templates/offering/offerings.html:352
 msgid "offerings.akshobia.description.p2"
 msgstr "The Lord Buddha said:"
 
-#: offering/templates/offering/offerings.html:368
+#: offering/templates/offering/offerings.html:354
 msgid "offerings.akshobia.description.p3"
 msgstr ""
 "The Bodhisattva Akshobhya once made this vow: 'Even if the empty space "
@@ -819,103 +1058,98 @@ msgstr ""
 "thousands of Bodhisattvas [… ] Through his firm vows, Bodhisattva Akshobhya "
 "has reached supreme enlightenment”."
 
-#: offering/templates/offering/offerings.html:409
-#: offering/templates/offering/offerings.html:414
+#: offering/templates/offering/offerings.html:395
+#: offering/templates/offering/offerings.html:400
 msgid "offerings.donations.title"
 msgstr "Donations"
 
-#: offering/templates/offering/offerings.html:419
+#: offering/templates/offering/offerings.html:405
 msgid "offerings.donations-attention-text"
 msgstr ""
 
-#: offering/templates/offering/offerings.html:435
+#: offering/templates/offering/offerings.html:421
 msgid "offerings.form.name"
 msgstr "Name"
 
-#: offering/templates/offering/offerings.html:439
+#: offering/templates/offering/offerings.html:425
 msgid "offerings.form.email"
 msgstr "E-mail"
 
-#: offering/templates/offering/offerings.html:443
-msgid "offerings.form.total-value"
-msgstr "Amount offered"
-
-#: offering/templates/offering/offerings.html:446
+#: offering/templates/offering/offerings.html:428
 msgid "offerings.form.offering-destination"
 msgstr "Purpose of the offering"
 
-#: offering/templates/offering/offerings.html:449
+#: offering/templates/offering/offerings.html:431
 msgid "offerings.form.offering-destination.text.p1"
 msgstr "Fill in the value of each offering."
 
-#: offering/templates/offering/offerings.html:450
+#: offering/templates/offering/offerings.html:432
 msgid "offerings.form.offering-destination.text.p2"
 msgstr ""
 "If you don't want to offer a particular item, just leave it blank. "
 "Clicking send you will be directed to the PayPal website."
 
-#: offering/templates/offering/offerings.html:454
+#: offering/templates/offering/offerings.html:436
 msgid "offerings.form.crescent-moon-tara-tsog"
 msgstr "Tara Tsog on the crescent moon:"
 
-#: offering/templates/offering/offerings.html:459
+#: offering/templates/offering/offerings.html:441
 msgid "offerings.form.guru-tsog"
 msgstr "Guru tsog:"
 
-#: offering/templates/offering/offerings.html:464
+#: offering/templates/offering/offerings.html:446
 msgid "offerings.form.waning-moon-tara-tsog"
 msgstr "Tara Tsog on the waning moon:"
 
-#: offering/templates/offering/offerings.html:469
+#: offering/templates/offering/offerings.html:451
 msgid "offerings.form.dakini-tsog"
 msgstr "Dakini tsog:"
 
-#: offering/templates/offering/offerings.html:474
+#: offering/templates/offering/offerings.html:456
 msgid "offerings.form.riwo-sangcho-tsog"
 msgstr "Riwo Sanchod:"
 
-#: offering/templates/offering/offerings.html:479
+#: offering/templates/offering/offerings.html:461
 msgid "offerings.form.general-activities"
 msgstr "General activities of the Temple:"
 
-#: offering/templates/offering/offerings.html:484
+#: offering/templates/offering/offerings.html:466
 msgid "offerings.form.lamps_quantity"
 msgstr "Butterlamps (R$ 3 each) - how many butterlamps?"
 
-#: offering/templates/offering/offerings.html:489
+#: offering/templates/offering/offerings.html:471
 msgid "offerings.form.lamps_quantity_by_day"
 msgstr "Butterlamps - how many butterlamps a day?"
 
-#: offering/templates/offering/offerings.html:494
+#: offering/templates/offering/offerings.html:476
 msgid "offerings.form.prayer-flag"
 msgstr "Prayer flags (R$ 15 each):"
 
-#: offering/templates/offering/offerings.html:499
+#: offering/templates/offering/offerings.html:481
 msgid "offerings.form.total"
 msgstr "Total offering value"
 
-#: offering/templates/offering/offerings.html:504
+#: offering/templates/offering/offerings.html:486
 msgid "offerings.form.dedication"
 msgstr "Dedication"
 
-#: offering/templates/offering/offerings.html:554
-#, fuzzy
-#| msgid "offerings.akshobia.description.p1"
+#: offering/templates/offering/offerings.html:525
+msgid "offerings.form.redirect_text"
+msgstr "You will be redirected to a new page."
+
+#: offering/templates/offering/offerings.html:536
 msgid "offerings.akshobia.unavailable-warning.p1"
 msgstr ""
-"Sometimes we experience great despair contemplating the suffering and "
-"violence that arise from anger, hatred, confusion, and fear. We yearn to "
-"purify our negativities and free our loved ones from negative circumstances. "
-"So, we turn to Buddha Akshobhya, who established the intention that sentient "
-"beings could purify even extreme non-virtues and escape the terrible "
-"circumstances that come from harming others and from someone taking his own "
-"life."
+"At the present moment, the Akshobia practice sponsorship can only be "
+"requested through the US-based Mahakaruna Foundation, under the direction of "
+"Tromge Jigme Rinpoche."
 
-#: offering/templates/offering/offerings.html:557
-#, fuzzy
-#| msgid "offerings.akshobia.description.p2"
+#: offering/templates/offering/offerings.html:539
 msgid "offerings.akshobia.unavailable-warning.p2"
-msgstr "The Lord Buddha said:"
+msgstr ""
+"In case of doubt, please contact us at patrocinio@templobudista.org or "
+"directly with the Mahakaruna Foundation at tais@mahakaruna.org (You can "
+"write the email in Portuguese)."
 
 #~ msgid "offerings.akshobia.description.p4"
 #~ msgstr ""
