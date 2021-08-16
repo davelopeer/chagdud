@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-15 18:29-0300\n"
+"POT-Creation-Date: 2021-08-16 18:49-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,87 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#: event/templates/event/event_list.html:5
+#: event/templates/event/event_list.html:14
+msgid "event-list.title"
+msgstr "Eventos"
+
 #: event/templates/event/event_list.html:26
 msgid "event-list.no-event"
 msgstr "No hay próximos eventos en Khadro Ling."
+
+#: event/templates/event/event_list.html:44
+#: event/templates/event/event_list.html:65
+msgid "event-list.learn-more"
+msgstr "Saber más sobre"
+
+#: event/templates/event/event_online_detail.html:33
+msgid "online-event.no-requirements"
+msgstr "No hay requisitos previos para participar en este evento."
+
+#: event/templates/event/event_online_detail.html:62
+msgid "online-event.application-form"
+msgstr "Ficha de inscripción"
+
+#: event/templates/event/event_online_detail.html:69
+msgid "online-event.personal-information"
+msgstr "Datos personales"
+
+#: event/templates/event/event_online_detail.html:77
+msgid "online-event.form.full-name"
+msgstr "Nombre Completo"
+
+#: event/templates/event/event_online_detail.html:80
+msgid "online-event.no-abbreviations"
+msgstr "Sin Abreviaturas"
+
+#: event/templates/event/event_online_detail.html:86
+msgid "online-event.form.email"
+msgstr "Correo electrónico"
+
+#: event/templates/event/event_online_detail.html:94
+msgid "online-event.form.phone"
+msgstr "Número de Teléfono"
+
+#: event/templates/event/event_online_detail.html:100
+msgid "online-event.form.birth-date"
+msgstr "Fecha de Nacimiento"
+
+#: event/templates/event/event_online_detail.html:108
+msgid "online-event.form.address"
+msgstr "Dirección"
+
+#: event/templates/event/event_online_detail.html:114
+msgid "online-event.form.city"
+msgstr "Ciudad"
+
+#: event/templates/event/event_online_detail.html:122
+msgid "online-event.form.state"
+msgstr "Estado"
+
+#: event/templates/event/event_online_detail.html:130
+msgid "online-event.form.postal"
+msgstr "Código postal"
+
+#: event/templates/event/event_online_detail.html:137
+msgid "online-event.policies-alert"
+msgstr "Al enviar este formulario de solicitud:"
+
+#: event/templates/event/event_online_detail.html:146
+msgid "online-event.accept-policies-text"
+msgstr "He leído y acepto los términos anteriores."
+
+#: event/templates/event/event_online_detail.html:151
+msgid "online-event.payment-title"
+msgstr "Formas de pago"
+
+#: event/templates/event/event_online_detail.html:159
+msgid "online-event.event-value-text"
+msgstr "Valor del evento"
+
+#: event/templates/event/event_online_detail.html:222
+msgid "online-event.payment-redirect-text"
+msgstr "Serás redirigido a otra página."
 
 #: institution/templates/institution/about_us.html:6
 #: institution/templates/institution/about_us.html:14

@@ -2,7 +2,7 @@
 {% load static i18n event_extras %}
 
 {% block head %}
-<title>Eventos | Khadro Ling</title>
+<title>{% trans 'event-list.title' %} | Khadro Ling</title>
 {% endblock %}
 
 {% block body %}
@@ -11,7 +11,7 @@
     <div class="logo row justify-content-center">
       <div class="col-md-12 col-sm-12 mt-5 pt-1 text-center">
 
-        <h1 class="mb-5 titulo text-white">Eventos</h1>
+        <h1 class="mb-5 titulo text-white">{% trans 'event-list.title' %}</h1>
       </div>
     </div>
   </div>
@@ -41,7 +41,7 @@
               <span>
                 {% get_event_short_description_by_language event user_language %}
               </span>
-              <span class="d-block mt-3"><a class="link" href="{% url 'event:event-detail' event.pk %}">Saiba mais</a></span>
+              <span class="d-block mt-3"><a class="link" href="{% url 'event:event-detail' event.pk %}">{% trans 'event-list.learn-more' %}</a></span>
               </div>
               <div class="col-md-5 col-sm-12 d-flex mb-5">
                 <img class="rounded " src="{{ event.event_image.url }}" width="500px" height="500px">
@@ -52,7 +52,7 @@
               <div class="d-flex flex-wrap mb-5 col-md-4 offset-md-2 col-sm-12 justify-content-center">
                 <div class="data col-md-2 mb-2">
                   <p class="diaData">{{ event.start_date.day }}</p>
-                  <p class="mesData">abr</p>
+                  <p class="mesData">{{ event.short_month }}</p>
                 </div>
                 <div class="nomeEvento col-10">
                 <h4 class="titulo">{% get_event_name_by_language event user_language %}</h4>
@@ -62,7 +62,7 @@
                 <span>
                   {% get_event_short_description_by_language event user_language %}
                 </span>
-                <span class="d-block mt-2"><a class="link" href="{% url 'event:event-detail' event.pk %}">Saiba mais</a></span>
+                <span class="d-block mt-2"><a class="link" href="{% url 'event:event-detail' event.pk %}">{% trans 'event-list.learn-more' %}</a></span>
                 </div>
               </div>
               <div class="col-md-4 col-sm-12 d-flex mb-5">
