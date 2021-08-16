@@ -1,6 +1,7 @@
 from django import forms
 from django.conf import settings
-from django.core.mail import EmailMessage
+from institution.helpers import send_mail
+
 
 class EventForm(forms.Form):
     PAYMENT_CHOICES = (
@@ -150,7 +151,7 @@ class EventForm(forms.Form):
             deposit_value: {deposit_value}
         '''
 
-        if data['deposit_receipt']:
+        if self.cleaned_data['deposit_receipt']:
           deposit_receipt = self.cleaned_data['deposit_receipt']
         else:
           deposit_receipt = None
@@ -266,7 +267,7 @@ class PresentialEventForm(EventForm):
             deposit_value: {deposit_value}
         '''
 
-        if data['deposit_receipt']:
+        if self.cleaned_data['deposit_receipt']:
           deposit_receipt = self.cleaned_data['deposit_receipt']
         else:
           deposit_receipt = None
