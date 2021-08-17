@@ -10,7 +10,7 @@ from institution.models import News, SacredDates, GenericPage
 
 
 def set_language(request, lang):
-  translation.activate(lang)
+  # translation.activate(lang)  
   response = HttpResponseRedirect(request.META.get('HTTP_REFERER', '/'))
   response.set_cookie(settings.LANGUAGE_COOKIE_NAME, lang)
   return response

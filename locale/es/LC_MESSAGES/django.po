@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-16 18:49-0300\n"
+"POT-Creation-Date: 2021-08-16 21:28-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -808,6 +808,23 @@ msgstr ""
 "invitados a ser los lamas residentes de Chagdud Gonpa Dordje Ling en "
 "Curitiba, Parana. Lama Rigdzin se comunica en portugués."
 
+#: offering/forms.py:27 offering/forms.py:208
+msgid "offering-form.placeholder.dedication"
+msgstr "Nombre de la persona o su intención al ofrecer"
+
+#: offering/forms.py:63 offering/forms.py:73 offering/forms.py:83
+#: offering/forms.py:93 offering/forms.py:103 offering/forms.py:113
+msgid "offering-form.placeholder.value-offered"
+msgstr "Ejemplo: 15.50"
+
+#: offering/forms.py:123 offering/forms.py:143
+msgid "offering-form.placeholder.quantity-offered"
+msgstr "Ejemplo: 5"
+
+#: offering/forms.py:133
+msgid "offering-form.placeholder.quantity-offered-by-day"
+msgstr "Ejemplo: 1 por día y 3 el último día"
+
 #: offering/templates/offering/offerings.html:5
 #: offering/templates/offering/offerings.html:14
 msgid "offerings.title"
@@ -1190,11 +1207,11 @@ msgstr ""
 
 #: offering/templates/offering/offerings.html:421
 msgid "offerings.form.name"
-msgstr ""
+msgstr "Nombre"
 
 #: offering/templates/offering/offerings.html:425
 msgid "offerings.form.email"
-msgstr ""
+msgstr "E-mail "
 
 #: offering/templates/offering/offerings.html:428
 msgid "offerings.form.offering-destination"
@@ -1210,43 +1227,39 @@ msgstr ""
 
 #: offering/templates/offering/offerings.html:436
 msgid "offerings.form.crescent-moon-tara-tsog"
-msgstr ""
+msgstr "Tsog de Tara en la luna creciente"
 
 #: offering/templates/offering/offerings.html:441
 msgid "offerings.form.guru-tsog"
-msgstr ""
+msgstr "Tsog de Guru"
 
 #: offering/templates/offering/offerings.html:446
 msgid "offerings.form.waning-moon-tara-tsog"
-msgstr ""
+msgstr "Tsog de Tara en la luna menguante"
 
 #: offering/templates/offering/offerings.html:451
 msgid "offerings.form.dakini-tsog"
-msgstr ""
+msgstr "Tsog de Dakini"
 
 #: offering/templates/offering/offerings.html:456
 msgid "offerings.form.riwo-sangcho-tsog"
-msgstr ""
+msgstr "Riwo Sangchö"
 
 #: offering/templates/offering/offerings.html:461
 msgid "offerings.form.general-activities"
-msgstr ""
+msgstr "Actividades generales del Templo"
 
 #: offering/templates/offering/offerings.html:466
-#, fuzzy
-#| msgid "offerings.lamps-title"
 msgid "offerings.form.lamps_quantity"
-msgstr "Ofrenda de Lamparitas "
+msgstr "Lamparitas (R$ 3 cada una) – ¿cuántas? "
 
 #: offering/templates/offering/offerings.html:471
-#, fuzzy
-#| msgid "offerings.form.total"
 msgid "offerings.form.lamps_quantity_by_day"
-msgstr "Valor total de la oferta"
+msgstr "Lamparitas - ¿cuántas por día?"
 
 #: offering/templates/offering/offerings.html:476
 msgid "offerings.form.prayer-flag"
-msgstr ""
+msgstr "Banderas de oración (R$ 15 cada una)"
 
 #: offering/templates/offering/offerings.html:481
 msgid "offerings.form.total"
@@ -1254,7 +1267,7 @@ msgstr "Valor total de la oferta"
 
 #: offering/templates/offering/offerings.html:486
 msgid "offerings.form.dedication"
-msgstr ""
+msgstr "Dedicación"
 
 #: offering/templates/offering/offerings.html:525
 msgid "offerings.form.redirect_text"
@@ -1273,6 +1286,9 @@ msgstr ""
 "En caso de duda, contáctenos por correo electrónico patrocinio@templobudista."
 "org o directamente con la Fundación Mahakaruna por correo electrónico "
 "tais@mahakaruna.org (puede escribir el correo electrónico en portugués)."
+
+#~ msgid "Valor oferecido"
+#~ msgstr "Valor ofrecido"
 
 #~ msgid "offerings.riwo.description.p6"
 #~ msgstr ""

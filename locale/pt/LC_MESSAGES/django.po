@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-16 18:49-0300\n"
+"POT-Creation-Date: 2021-08-16 21:28-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -805,6 +805,23 @@ msgstr ""
 "onvidados a ser os lamas residentes do Chagdud Gonpa Dordje Ling em "
 "Curitiba, Paraná. Lama Rigdzin se comunica em português."
 
+#: offering/forms.py:27 offering/forms.py:208
+msgid "offering-form.placeholder.dedication"
+msgstr "Nome da pessoa ou sua intenção ao oferecer"
+
+#: offering/forms.py:63 offering/forms.py:73 offering/forms.py:83
+#: offering/forms.py:93 offering/forms.py:103 offering/forms.py:113
+msgid "offering-form.placeholder.value-offered"
+msgstr "Exemplo: 15.50"
+
+#: offering/forms.py:123 offering/forms.py:143
+msgid "offering-form.placeholder.quantity-offered"
+msgstr "Exemplo: 5"
+
+#: offering/forms.py:133
+msgid "offering-form.placeholder.quantity-offered-by-day"
+msgstr "Exemplo: 1 por dia e 3 no último dia"
+
 #: offering/templates/offering/offerings.html:5
 #: offering/templates/offering/offerings.html:14
 msgid "offerings.title"
@@ -1263,6 +1280,9 @@ msgstr ""
 "Em casos de dúvida, por favor, entre em contato conosco pelo e-mail "
 "patrocinio@templobudista.org ou diretamente com a Fundação Mahakaruna pelo e-"
 "mail tais@mahakaruna.org (Você pode escrever o e-mail em português)."
+
+#~ msgid "Valor oferecido"
+#~ msgstr "Valor oferecido"
 
 #~ msgid "offerings.akshobia.description.p4"
 #~ msgstr ""

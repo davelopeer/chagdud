@@ -1,6 +1,7 @@
 import pdb
 from django import forms
 from offering.models import Offering, DrubchenOffering
+from django.utils.translation import gettext_lazy as _
 
 
 class OfferingForm(forms.Form):
@@ -23,7 +24,7 @@ class OfferingForm(forms.Form):
         'id':'dedicacao',
         'name':'dedicacao',
         'rows':'3',
-        'placeholder':'Nome da pessoa ou sua intenção ao oferecer'
+        'placeholder':_('offering-form.placeholder.dedication')
     }))
 
     deposit_date = forms.CharField(required=False, widget=forms.TextInput(attrs={
@@ -59,7 +60,7 @@ class OfferingForm(forms.Form):
         'name':'crescent_moon_tara_tsog',
         'step': '.05',
         'min': '0',
-        'placeholder': 'Valor oferecido',
+        'placeholder': _('offering-form.placeholder.value-offered'),
     }))
 
     guru_tsog = forms.DecimalField(required=False, min_value=0, decimal_places=2, widget=forms.TextInput(attrs={
@@ -69,7 +70,7 @@ class OfferingForm(forms.Form):
         'name':'guru_tsog',
         'step': '.05',
         'min': '0',
-        'placeholder': 'Valor oferecido',
+        'placeholder': _('offering-form.placeholder.value-offered'),
     }))
 
     waning_moon_tara_tsog = forms.DecimalField(required=False, min_value=0, decimal_places=2, widget=forms.TextInput(attrs={
@@ -79,7 +80,7 @@ class OfferingForm(forms.Form):
         'name':'waning_moon_tara_tsog',
         'step': '.05',
         'min': '0',
-        'placeholder': 'Valor oferecido',
+        'placeholder': _('offering-form.placeholder.value-offered'),
     }))
 
     dakini_tsog = forms.DecimalField(required=False, min_value=0, decimal_places=2, widget=forms.TextInput(attrs={
@@ -89,7 +90,7 @@ class OfferingForm(forms.Form):
         'name':'dakini_tsog',
         'step': '.05',
         'min': '0',
-        'placeholder': 'Valor oferecido',
+        'placeholder': _('offering-form.placeholder.value-offered'),
     }))
 
     riwo_sangcho = forms.DecimalField(required=False, min_value=0, decimal_places=2, widget=forms.TextInput(attrs={
@@ -99,7 +100,7 @@ class OfferingForm(forms.Form):
         'name':'riwo_sangcho',
         'step': '.05',
         'min': '0',
-        'placeholder': 'Valor oferecido',
+        'placeholder': _('offering-form.placeholder.value-offered'),
     }))
 
     general_temple_activities = forms.DecimalField(required=False, min_value=0, decimal_places=2, widget=forms.TextInput(attrs={
@@ -109,7 +110,7 @@ class OfferingForm(forms.Form):
         'name':'general_temple_activities',
         'step': '.05',
         'min': '0',
-        'placeholder': 'Valor oferecido',
+        'placeholder': _('offering-form.placeholder.value-offered'),
     }))
 
     lamps_quantity = forms.DecimalField(required=False, min_value=0, decimal_places=2, widget=forms.TextInput(attrs={
@@ -119,7 +120,7 @@ class OfferingForm(forms.Form):
         'name':'lamps_quantity',
         'step': '.05',
         'min': '0',
-        'placeholder': 'Quantidade oferecida',
+        'placeholder': _('offering-form.placeholder.quantity-offered'),
     }))
 
     lamps_quantity_by_day = forms.DecimalField(required=False, min_value=0, decimal_places=2, widget=forms.TextInput(attrs={
@@ -129,7 +130,7 @@ class OfferingForm(forms.Form):
         'name':'lamps_quantity_by_day',
         'step': '.05',
         'min': '0',
-        'placeholder': 'Quantidade oferecida por dia',
+        'placeholder': _('offering-form.placeholder.quantity-offered-by-day'),
     }))
 
     prayer_flags = forms.DecimalField(required=False, min_value=0, decimal_places=2, widget=forms.TextInput(attrs={
@@ -139,7 +140,7 @@ class OfferingForm(forms.Form):
         'name':'prayer_flags',
         'step': '.05',
         'min': '0',
-        'placeholder': 'Quantidade oferecida',
+        'placeholder': _('offering-form.placeholder.quantity-offered'),
     }))
 
     def send_email(self):
@@ -204,7 +205,7 @@ class DrubchenOfferingForm(forms.Form):
         'id':'dedicacao',
         'name':'dedicacao',
         'rows':'3',
-        'placeholder':'Nome da pessoa ou sua intenção ao oferecer'
+        'placeholder':_('offering-form.placeholder.dedication')
     }))
 
     deposit_date = forms.CharField(widget=forms.TextInput(attrs={
