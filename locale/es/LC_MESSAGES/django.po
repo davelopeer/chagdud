@@ -98,7 +98,7 @@ msgstr "Valor del evento"
 
 #: event/templates/event/event_online_detail.html:222
 msgid "online-event.payment-redirect-text"
-msgstr "Serás redirigido a otra página."
+msgstr "Al hacer clic en el botón de paypal, serás redirigido a la página de PayPal  para realizar el abono."
 
 #: institution/templates/institution/about_us.html:6
 #: institution/templates/institution/about_us.html:14
@@ -943,7 +943,7 @@ msgstr ""
 #: offering/templates/offering/offerings.html:143
 msgid "offerings.riwo.description.p3"
 msgstr ""
-"La práctica de Riwo Sangtchöd hecha en Khadro Ling es una instrucción de "
+"La práctica de Riwo Sangtchö hecha en Khadro Ling es una instrucción de "
 "transmisión directa del ciclo terma Rigdzin Sogdrub (“Realización de la "
 "Fuerza Vital de los Detentores del Estado Despierto”). Fue revelada por el "
 "Terton Terton Lhatsun Nankha Jigmed.  Él nació en 1597, en Jaryul, al sur de "
@@ -956,12 +956,12 @@ msgid "offerings.riwo.description.p4"
 msgstr ""
 "Nuestros Maestros actuales enfatizan que, en los tiempos degenerados "
 "actuales, es absolutamente importante y beneficioso acumular la práctica de "
-"Riwo Sangtchöd."
+"Riwo Sangtchö."
 
 #: offering/templates/offering/offerings.html:153
 msgid "offerings.riwo.description.p5"
 msgstr ""
-"La práctica de Riwo Sangtchöd también puede ser hecha en la casa – de una "
+"La práctica de Riwo Sangtchö también puede ser hecha en la casa – de una "
 "forma igualmente poderosa -, quemando solo inciensos.  En Khadro Ling, es "
 "practicada de forma elaborada, todas las mañanas, en la Tierra Pura de "
 "Padmasambava, entre las 10:30am y las 12 horas.  Durante los eventos, "
@@ -1271,7 +1271,7 @@ msgstr "Dedicación"
 
 #: offering/templates/offering/offerings.html:525
 msgid "offerings.form.redirect_text"
-msgstr "Serás redirigido a otra página."
+msgstr "Al hacer clic en el botón de paypal, serás redirigido a la página de PayPal  para realizar el abono."
 
 #: offering/templates/offering/offerings.html:536
 msgid "offerings.akshobia.unavailable-warning.p1"

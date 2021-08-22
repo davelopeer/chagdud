@@ -98,7 +98,7 @@ msgstr "Event value"
 
 #: event/templates/event/event_online_detail.html:222
 msgid "online-event.payment-redirect-text"
-msgstr "You will be redirected "
+msgstr "Clicking on the bottom you will be redirected to PayPal page for finish your registration."
 
 #: institution/templates/institution/about_us.html:6
 #: institution/templates/institution/about_us.html:14

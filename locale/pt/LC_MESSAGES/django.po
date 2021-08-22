@@ -941,7 +941,7 @@ msgstr ""
 #: offering/templates/offering/offerings.html:143
 msgid "offerings.riwo.description.p3"
 msgstr ""
-"A prática de Riwo Sangtchöd feita no Khadro Ling é uma instrução de "
+"A prática de Riwo Sangtchö feita no Khadro Ling é uma instrução de "
 "transmissão direta do ciclo terma Rigdzin Sogdrub (“Realização da Força "
 "Vital dos Detentores do Estado Desperto”). Foi revelada pelo Terton Lhatsun "
 "Nankha Jigmed. Ele nasceu em 1597, em Jaryul, no sul do Tibete e era, ao "
@@ -953,7 +953,7 @@ msgid "offerings.riwo.description.p4"
 msgstr ""
 "Os nossos Mestres do presente enfatizam que, nos tempos de degenerescência "
 "atuais, é absolutamente importante e benéfico acumular a prática de Riwo "
-"Sangtchöd."
+"Sangtchö."
 
 #: offering/templates/offering/offerings.html:153
 msgid "offerings.riwo.description.p5"
